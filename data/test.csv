@@ -1,0 +1,41 @@
+sample_text,class_name,class_number
+"Hi, I'm trying to track my order, but the website is showing an error. Can you assist?",Order Tracking,1
+"Hello, I'm interested in trying a specialty pizza. Can you provide some recommendations?",Menu and Ingredients,2
+"Hello, I'm unable to update my account information. Can you help me resolve this?",Technical Support,5
+"Hello, I ordered a pizza and it was overcooked and burnt on the edges. Can you improve the cooking time?",Quality Concerns,6
+"Hi, I just received a notification that my order is delayed. Can you provide more information?",Order Tracking,1
+Hey there! Can you make my pizza with a mix of mozzarella and cheddar cheese?,Special Requests,9
+"Hi, my order was delivered to the wrong address entirely. Can you ensure this doesn't happen again?",Delivery Issues,3
+"Hi, I just wanted to say that your desserts are to die for! I can't get enough of them!",Compliments and Feedback,8
+Hey there! Can you tell me if you have any vegan options on your menu?,General Inquiry,7
+"Hi, my payment went through, but I didn't receive an order confirmation. Can you verify if my order was placed?",Payment and Billing,4
+"Hello, the pizza crust was burnt and tough to chew. Can you improve the crust quality?",Quality Concerns,6
+"Hello, I'm always impressed by the variety of toppings and flavors you offer. Keep up the great work!",Compliments and Feedback,8
+Hey there! I received the wrong order. Can you help me get the correct one?,Delivery Issues,3
+"Hi, I'd like to split the payment for my order between two credit cards. Is that possible?",Payment and Billing,4
+Good morning! I'd like to order a gluten-free pizza with chicken and mushrooms.,Order Placement,0
+Hey there! Do you have any recommendations for pairing wines with your pizzas?,General Inquiry,7
+"Hello, I'd like to customize my pizza with BBQ sauce instead of marinara.",Special Requests,9
+"Hello, my order was delivered much later than the estimated time. Can you provide an explanation?",Delivery Issues,3
+"Hi, I accidentally used the wrong payment method for my order. Can you update it for me?",Payment and Billing,4
+"Hello, I'd like to request extra marinara sauce for my pasta.",Special Requests,9
+"Hi, I'd like my pizza sliced into squares instead of traditional wedges.",Special Requests,9
+"Hi, I placed an order about 30 minutes ago. Can you please provide an update on its status?",Order Tracking,1
+"Hello, I received my order, but the pizza box was torn and leaking grease. Can you replace it?",Delivery Issues,3
+"Hi, I just wanted to let you know that your garlic knots are my favorite! They're always so delicious!",Compliments and Feedback,8
+"Hello, I'm looking to order a pizza for my son's birthday party. Do you have any kid-friendly options?",Menu and Ingredients,2
+"Hi, can you recommend some vegetarian pizza options?",Menu and Ingredients,2
+"Hello, I'm looking to place a delivery order for a family-sized feast including pizza, pasta, and salad.",Order Placement,0
+"Hello, I'm trying to track my order but the tracking link isn't working. Can you assist?",Order Tracking,1
+"Hello, I received a notification that my payment failed, but I'm not sure why. Can you provide more information?",Payment and Billing,4
+"Hi, the salad I received was missing some of the advertised ingredients. Can you ensure better preparation?",Quality Concerns,6
+Hey there! Your restaurant has become my go-to spot for pizza. I recommend it to all my friends!,Compliments and Feedback,8
+"Hi, I'm interested in the vegetarian options for your salads. Can you provide details?",Menu and Ingredients,2
+"Hello, the toppings on my pizza were not evenly distributed. Can you ensure better toppings distribution next time?",Quality Concerns,6
+Good afternoon! I'd like to order a specialty pizza with the chef's recommended toppings.,Order Placement,0
+"Hello, I'm encountering an error message when I try to update my payment method. Can you assist with this issue?",Technical Support,5
+"Hi, I'm having trouble logging into my account. It keeps saying my password is incorrect. Can you help?",Technical Support,5
+"Hello, do you provide catering services for events?",General Inquiry,7
+"Hello, I'm having trouble navigating through the menu options on the mobile app. Can you provide guidance?",Technical Support,5
+Hey there! Can I place an order for a half-sized pizza for a solo dinner?,Order Placement,0
+"Hi, can you tell me if you offer any gluten-free dessert options?",General Inquiry,7

@@ -1,0 +1,1059 @@
+[
+  {
+    "Company Name": "Pizza Mia",
+    "Taxonomy": [
+      {
+        "Topic number": 1,
+        "Topic Name": "Order Placement",
+        "Topic Description": "Assistance with placing orders, selecting items, customization, and providing information on deals."
+      },
+      {
+        "Topic number": 2,
+        "Topic Name": "Order Tracking",
+        "Topic Description": "Inquiries about the status of orders, tracking delivery progress, estimated delivery time updates, and address confirmation."
+      },
+      {
+        "Topic number": 3,
+        "Topic Name": "Menu and Ingredients",
+        "Topic Description": "Clarification on ingredients used, dietary restrictions, suggestions for vegetarian or vegan options, and nutritional information."
+      },
+      {
+        "Topic number": 4,
+        "Topic Name": "Delivery Issues",
+        "Topic Description": "Handling late deliveries, missing items, incorrect orders, complaints about delivery personnel, and special delivery requests."
+      },
+      {
+        "Topic number": 5,
+        "Topic Name": "Payment and Billing",
+        "Topic Description": "Assistance with payment methods, billing discrepancies, refund requests, and applying promo codes or vouchers."
+      },
+      {
+        "Topic number": 6,
+        "Topic Name": "Technical Support",
+        "Topic Description": "Troubleshooting online ordering platform issues, login/account problems, browser compatibility, and mobile app support."
+      },
+      {
+        "Topic number": 7,
+        "Topic Name": "Quality Concerns",
+        "Topic Description": "Dealing with complaints regarding food quality, packaging, presentation, and providing feedback on customer experience."
+      },
+      {
+        "Topic number": 8,
+        "Topic Name": "Special Requests",
+        "Topic Description": "Handling requests for specific pizza customization, catering inquiries, dietary accommodations, and organizing group orders."
+      },
+      {
+        "Topic number": 9,
+        "Topic Name": "Loyalty Programs",
+        "Topic Description": "Enrollment in loyalty programs, points balance inquiries, redeeming rewards, and clarifying program terms and conditions."
+      },
+      {
+        "Topic number": 10,
+        "Topic Name": "General Inquiries",
+        "Topic Description": "Providing information on store locations, hours of operation, corporate inquiries, employment opportunities, and promotional events."
+      }
+    ],
+    "Examples": [
+      {
+        "sample_text": "Hi there! I'd like to place an order for delivery to 123 Main Street.",
+        "class": "Order Placement",
+        "class number": 0
+      },
+      {
+        "sample_text": "Good evening! Can I order a large pepperoni pizza with extra cheese for pickup?",
+        "class": "Order Placement",
+        "class number": 0
+      },
+      {
+        "sample_text": "Hello! I'd like to order a vegetarian pizza with no onions, please.",
+        "class": "Order Placement",
+        "class number": 0
+      },
+      {
+        "sample_text": "Hi, can I place an order for two medium pizzas, one Hawaiian and one Margherita?",
+        "class": "Order Placement",
+        "class number": 0
+      },
+      {
+        "sample_text": "Hey! I'm interested in ordering a combo deal with a pizza, garlic knots, and soda.",
+        "class": "Order Placement",
+        "class number": 0
+      },
+      {
+        "sample_text": "Hi, can you assist me in adding a side of buffalo wings to my existing order?",
+        "class": "Order Placement",
+        "class number": 0
+      },
+      {
+        "sample_text": "Good morning! I'd like to order a gluten-free pizza with chicken and mushrooms.",
+        "class": "Order Placement",
+        "class number": 0
+      },
+      {
+        "sample_text": "Hello, I'm looking to place a delivery order for a family-sized feast including pizza, pasta, and salad.",
+        "class": "Order Placement",
+        "class number": 0
+      },
+      {
+        "sample_text": "Hi! Can I customize a half-and-half pizza with different toppings on each side?",
+        "class": "Order Placement",
+        "class number": 0
+      },
+      {
+        "sample_text": "Hey there! I'd like to place an order for a party pack including multiple pizzas and sides.",
+        "class": "Order Placement",
+        "class number": 0
+      },
+      {
+        "sample_text": "Good afternoon! I'd like to order a specialty pizza with the chef's recommended toppings.",
+        "class": "Order Placement",
+        "class number": 0
+      },
+      {
+        "sample_text": "Hello, I'd like to place an order for delivery to my office address. Can you please confirm the nearest branch?",
+        "class": "Order Placement",
+        "class number": 0
+      },
+      {
+        "sample_text": "Hi, can I order a dessert pizza along with my regular order?",
+        "class": "Order Placement",
+        "class number": 0
+      },
+      {
+        "sample_text": "Good evening! I'm looking to order a pizza for pickup, but I need it ready in 20 minutes. Is that possible?",
+        "class": "Order Placement",
+        "class number": 0
+      },
+      {
+        "sample_text": "Hey there! Can I place an order for a half-sized pizza for a solo dinner?",
+        "class": "Order Placement",
+        "class number": 0
+      },
+      {
+        "sample_text": "Hello! I'd like to order a cheeseless pizza with extra veggies, please.",
+        "class": "Order Placement",
+        "class number": 0
+      },
+      {
+        "sample_text": "Hi, I'm interested in ordering a deep-dish pizza with extra sauce. Can you accommodate that?",
+        "class": "Order Placement",
+        "class number": 0
+      },
+      {
+        "sample_text": "Good morning! I'd like to place an order for a pizza party package for my child's birthday.",
+        "class": "Order Placement",
+        "class number": 0
+      },
+      {
+        "sample_text": "Hello, can I add a note to my order requesting no olives on the pizza?",
+        "class": "Order Placement",
+        "class number": 0
+      },
+      {
+        "sample_text": "Hi, I'm ready to place an order for pickup. Can you recommend your specialty pizza?",
+        "class": "Order Placement",
+        "class number": 0
+      },
+      {
+        "sample_text": "Hi, I placed an order about 30 minutes ago. Can you please provide an update on its status?",
+        "class": "Order Tracking",
+        "class number": 1
+      },
+      {
+        "sample_text": "Hello, I'm trying to track my order but the tracking link isn't working. Can you assist?",
+        "class": "Order Tracking",
+        "class number": 1
+      },
+      {
+        "sample_text": "Hey there! My order was scheduled for delivery an hour ago, but I haven't received it yet. What's the status?",
+        "class": "Order Tracking",
+        "class number": 1
+      },
+      {
+        "sample_text": "Hi, I need to change the delivery address for my order. Can you update it in your system?",
+        "class": "Order Tracking",
+        "class number": 1
+      },
+      {
+        "sample_text": "Hello, I received a notification that my order was delivered, but I haven't received it. Can you check the delivery status?",
+        "class": "Order Tracking",
+        "class number": 1
+      },
+      {
+        "sample_text": "Hi, I'm tracking my order and it shows it's out for delivery. Can you provide an estimated arrival time?",
+        "class": "Order Tracking",
+        "class number": 1
+      },
+      {
+        "sample_text": "Hello, I accidentally closed the order tracking page. Can you resend the tracking link?",
+        "class": "Order Tracking",
+        "class number": 1
+      },
+      {
+        "sample_text": "Hi, I need to cancel my order, but I can't track it. Can you confirm its status and cancel it for me?",
+        "class": "Order Tracking",
+        "class number": 1
+      },
+      {
+        "sample_text": "Hello, I placed an order but forgot to note any special delivery instructions. Can I add them now?",
+        "class": "Order Tracking",
+        "class number": 1
+      },
+      {
+        "sample_text": "Hi, my order was supposed to be delivered by now, but I haven't received any updates. Can you check on it?",
+        "class": "Order Tracking",
+        "class number": 1
+      },
+      {
+        "sample_text": "Hello, my tracking link is showing an error message. Can you troubleshoot the issue?",
+        "class": "Order Tracking",
+        "class number": 1
+      },
+      {
+        "sample_text": "Hi, I just received a notification that my order is delayed. Can you provide more information?",
+        "class": "Order Tracking",
+        "class number": 1
+      },
+      {
+        "sample_text": "Hello, I'm trying to track my order, but it's saying no information is available. Can you help?",
+        "class": "Order Tracking",
+        "class number": 1
+      },
+      {
+        "sample_text": "Hi, my order was marked as delivered, but I haven't received it yet. Can you investigate?",
+        "class": "Order Tracking",
+        "class number": 1
+      },
+      {
+        "sample_text": "Hello, my order status hasn't been updated for a while. Can you provide an update?",
+        "class": "Order Tracking",
+        "class number": 1
+      },
+      {
+        "sample_text": "Hi, I accidentally closed the order confirmation page before noting the order number. Can you help me track it?",
+        "class": "Order Tracking",
+        "class number": 1
+      },
+      {
+        "sample_text": "Hello, my order was supposed to arrive 30 minutes ago, but it hasn't. Can you check its status?",
+        "class": "Order Tracking",
+        "class number": 1
+      },
+      {
+        "sample_text": "Hi, I'm trying to track my order, but the website is showing an error. Can you assist?",
+        "class": "Order Tracking",
+        "class number": 1
+      },
+      {
+        "sample_text": "Hello, I received a message that my order is delayed due to weather conditions. Can you confirm?",
+        "class": "Order Tracking",
+        "class number": 1
+      },
+      {
+        "sample_text": "Hi, I'm tracking my order, but it seems stuck at a certain location. Can you provide more information?",
+        "class": "Order Tracking",
+        "class number": 1
+      },
+      {
+        "sample_text": "Hi, I'm curious about the ingredients used in your BBQ Chicken Pizza. Can you provide details?",
+        "class": "Menu and Ingredients",
+        "class number": 2
+      },
+      {
+        "sample_text": "Hello, I have a nut allergy. Can you tell me which pizzas are safe for me to order?",
+        "class": "Menu and Ingredients",
+        "class number": 2
+      },
+      {
+        "sample_text": "Hey there! Do you have any gluten-free crust options available?",
+        "class": "Menu and Ingredients",
+        "class number": 2
+      },
+      {
+        "sample_text": "Hi, can you recommend some vegetarian pizza options?",
+        "class": "Menu and Ingredients",
+        "class number": 2
+      },
+      {
+        "sample_text": "Hello, I'm interested in the nutritional information for your Margherita Pizza. Where can I find it?",
+        "class": "Menu and Ingredients",
+        "class number": 2
+      },
+      {
+        "sample_text": "Hi, do you offer any vegan cheese substitutes for your pizzas?",
+        "class": "Menu and Ingredients",
+        "class number": 2
+      },
+      {
+        "sample_text": "Hello, I'm looking to order a pizza for my son's birthday party. Do you have any kid-friendly options?",
+        "class": "Menu and Ingredients",
+        "class number": 2
+      },
+      {
+        "sample_text": "Hi, are there any spicy pizza options on your menu?",
+        "class": "Menu and Ingredients",
+        "class number": 2
+      },
+      {
+        "sample_text": "Hello, I'm interested in trying a specialty pizza. Can you provide some recommendations?",
+        "class": "Menu and Ingredients",
+        "class number": 2
+      },
+      {
+        "sample_text": "Hi, I'm planning a party and would like to order some appetizers along with the pizzas. What do you recommend?",
+        "class": "Menu and Ingredients",
+        "class number": 2
+      },
+      {
+        "sample_text": "Hello, I have a dairy intolerance. Can you tell me which pizzas I should avoid?",
+        "class": "Menu and Ingredients",
+        "class number": 2
+      },
+      {
+        "sample_text": "Hi, do you offer any low-carb options for your pizzas?",
+        "class": "Menu and Ingredients",
+        "class number": 2
+      },
+      {
+        "sample_text": "Hello, are your pizza crusts made with whole wheat flour?",
+        "class": "Menu and Ingredients",
+        "class number": 2
+      },
+      {
+        "sample_text": "Hi, I'm interested in the ingredients used in your Alfredo sauce. Can you provide more information?",
+        "class": "Menu and Ingredients",
+        "class number": 2
+      },
+      {
+        "sample_text": "Hello, I have a shellfish allergy. Are there any pizzas that may contain shellfish or traces of it?",
+        "class": "Menu and Ingredients",
+        "class number": 2
+      },
+      {
+        "sample_text": "Hi, do you offer any specialty crust options like cauliflower crust?",
+        "class": "Menu and Ingredients",
+        "class number": 2
+      },
+      {
+        "sample_text": "Hello, I'm looking for a pizza with a good balance of protein and carbs. Can you recommend one?",
+        "class": "Menu and Ingredients",
+        "class number": 2
+      },
+      {
+        "sample_text": "Hi, I'm interested in the vegetarian options for your salads. Can you provide details?",
+        "class": "Menu and Ingredients",
+        "class number": 2
+      },
+      {
+        "sample_text": "Hello, do you offer any specialty toppings that are unique to your pizzeria?",
+        "class": "Menu and Ingredients",
+        "class number": 2
+      },
+      {
+        "sample_text": "Hi, are your pizzas made with organic ingredients?",
+        "class": "Menu and Ingredients",
+        "class number": 2
+      },
+      {
+        "sample_text": "Hi, my order was supposed to arrive 30 minutes ago, but it hasn't. Can you check its status?",
+        "class": "Delivery Issues",
+        "class number": 3
+      },
+      {
+        "sample_text": "Hello, I received my order, but one of the pizzas is missing. Can you please assist?",
+        "class": "Delivery Issues",
+        "class number": 3
+      },
+      {
+        "sample_text": "Hey there! I received the wrong order. Can you help me get the correct one?",
+        "class": "Delivery Issues",
+        "class number": 3
+      },
+      {
+        "sample_text": "Hi, I ordered a large pizza, but it arrived cold. Can you send a replacement?",
+        "class": "Delivery Issues",
+        "class number": 3
+      },
+      {
+        "sample_text": "Hello, the delivery driver left my order at the wrong address. What should I do?",
+        "class": "Delivery Issues",
+        "class number": 3
+      },
+      {
+        "sample_text": "Hi, I requested contactless delivery, but the driver insisted on handing me the food directly. Can you address this?",
+        "class": "Delivery Issues",
+        "class number": 3
+      },
+      {
+        "sample_text": "Hello, my order was delivered late, and I missed my lunch break waiting for it. Can you compensate for the inconvenience?",
+        "class": "Delivery Issues",
+        "class number": 3
+      },
+      {
+        "sample_text": "Hi, I received my order, but the garlic knots are burnt. Can you replace them?",
+        "class": "Delivery Issues",
+        "class number": 3
+      },
+      {
+        "sample_text": "Hello, my order was damaged during delivery, and some items are squished. Can you send a replacement?",
+        "class": "Delivery Issues",
+        "class number": 3
+      },
+      {
+        "sample_text": "Hi, I ordered extra sauce with my pizza, but it wasn't included in the delivery. Can you fix this?",
+        "class": "Delivery Issues",
+        "class number": 3
+      },
+      {
+        "sample_text": "Hello, the delivery driver was rude and refused to follow my instructions for contactless delivery. Can you address this behavior?",
+        "class": "Delivery Issues",
+        "class number": 3
+      },
+      {
+        "sample_text": "Hi, I received my order, but the pizza was cold and soggy. Can you send a fresh one?",
+        "class": "Delivery Issues",
+        "class number": 3
+      },
+      {
+        "sample_text": "Hello, I ordered extra cheese on my pizza, but it seems like there's hardly any. Can you rectify this?",
+        "class": "Delivery Issues",
+        "class number": 3
+      },
+      {
+        "sample_text": "Hi, my order was delivered to the wrong address entirely. Can you ensure this doesn't happen again?",
+        "class": "Delivery Issues",
+        "class number": 3
+      },
+      {
+        "sample_text": "Hello, I received my order, but the pizza box was torn and leaking grease. Can you replace it?",
+        "class": "Delivery Issues",
+        "class number": 3
+      },
+      {
+        "sample_text": "Hi, the delivery driver forgot to include my drink with the order. Can you arrange to send it separately?",
+        "class": "Delivery Issues",
+        "class number": 3
+      },
+      {
+        "sample_text": "Hello, my order was delivered much later than the estimated time. Can you provide an explanation?",
+        "class": "Delivery Issues",
+        "class number": 3
+      },
+      {
+        "sample_text": "Hi, I received my order, but the pizza toppings are not what I requested. Can you fix this?",
+        "class": "Delivery Issues",
+        "class number": 3
+      },
+      {
+        "sample_text": "Hello, I ordered a salad, but it was missing the dressing. Can you send it separately?",
+        "class": "Delivery Issues",
+        "class number": 3
+      },
+      {
+        "sample_text": "Hi, my order was delivered with the wrong dipping sauce. Can you provide the correct one?",
+        "class": "Delivery Issues",
+        "class number": 3
+      },
+      {
+        "sample_text": "Hi, I'm trying to use my gift card to pay for my order, but it's not working. Can you assist?",
+        "class": "Payment and Billing",
+        "class number": 4
+      },
+      {
+        "sample_text": "Hello, I just noticed a discrepancy in the total amount charged on my credit card statement. Can you help me understand?",
+        "class": "Payment and Billing",
+        "class number": 4
+      },
+      {
+        "sample_text": "Hey there! I received a promo code for a discount, but it's not being applied to my order. Can you check?",
+        "class": "Payment and Billing",
+        "class number": 4
+      },
+      {
+        "sample_text": "Hi, my payment went through, but I didn't receive an order confirmation. Can you verify if my order was placed?",
+        "class": "Payment and Billing",
+        "class number": 4
+      },
+      {
+        "sample_text": "Hello, I'm trying to redeem my rewards points for a free pizza, but the system won't let me. Can you assist?",
+        "class": "Payment and Billing",
+        "class number": 4
+      },
+      {
+        "sample_text": "Hi, I received my order, but the receipt shows an incorrect item. Can you update it?",
+        "class": "Payment and Billing",
+        "class number": 4
+      },
+      {
+        "sample_text": "Hello, my credit card was charged twice for the same order. Can you refund the duplicate charge?",
+        "class": "Payment and Billing",
+        "class number": 4
+      },
+      {
+        "sample_text": "Hi, I'd like to apply a store credit to my order. How can I do that?",
+        "class": "Payment and Billing",
+        "class number": 4
+      },
+      {
+        "sample_text": "Hello, I have a coupon for a free dessert with my order. How do I ensure it's included?",
+        "class": "Payment and Billing",
+        "class number": 4
+      },
+      {
+        "sample_text": "Hi, my payment method was declined, but I know the funds are available. Can you help resolve this issue?",
+        "class": "Payment and Billing",
+        "class number": 4
+      },
+      {
+        "sample_text": "Hello, I received an email saying my payment didn't go through, but my bank statement shows the charge. Can you confirm the payment status?",
+        "class": "Payment and Billing",
+        "class number": 4
+      },
+      {
+        "sample_text": "Hi, I accidentally placed an order and need to cancel it before it's processed. Can you assist?",
+        "class": "Payment and Billing",
+        "class number": 4
+      },
+      {
+        "sample_text": "Hello, my order total seems higher than expected. Can you review the charges for me?",
+        "class": "Payment and Billing",
+        "class number": 4
+      },
+      {
+        "sample_text": "Hi, I'd like to split the payment for my order between two credit cards. Is that possible?",
+        "class": "Payment and Billing",
+        "class number": 4
+      },
+      {
+        "sample_text": "Hello, I received a notification that my payment failed, but I'm not sure why. Can you provide more information?",
+        "class": "Payment and Billing",
+        "class number": 4
+      },
+      {
+        "sample_text": "Hi, I accidentally used the wrong payment method for my order. Can you update it for me?",
+        "class": "Payment and Billing",
+        "class number": 4
+      },
+      {
+        "sample_text": "Hello, I placed an order and selected cash on delivery, but now I want to change the payment method. Can you assist?",
+        "class": "Payment and Billing",
+        "class number": 4
+      },
+      {
+        "sample_text": "Hi, I'm trying to add a new payment method to my account, but it's not being accepted. Can you troubleshoot?",
+        "class": "Payment and Billing",
+        "class number": 4
+      },
+      {
+        "sample_text": "Hello, my order total was higher than expected due to a service fee. Can you explain the additional charge?",
+        "class": "Payment and Billing",
+        "class number": 4
+      },
+      {
+        "sample_text": "Hi, I accidentally made a duplicate payment for my order. Can you refund one of the charges?",
+        "class": "Payment and Billing",
+        "class number": 4
+      },
+      {
+        "sample_text": "Hi, I'm having trouble logging into my account. It keeps saying my password is incorrect. Can you help?",
+        "class": "Technical Support",
+        "class number": 5
+      },
+      {
+        "sample_text": "Hello, I'm trying to place an order on your website, but it's not loading properly. Can you check if there's an issue?",
+        "class": "Technical Support",
+        "class number": 5
+      },
+      {
+        "sample_text": "Hey there! I'm unable to add items to my cart on the mobile app. Can you provide assistance?",
+        "class": "Technical Support",
+        "class number": 5
+      },
+      {
+        "sample_text": "Hi, I'm using the mobile app to order, but it's crashing every time I try to proceed to checkout. Can you help me troubleshoot?",
+        "class": "Technical Support",
+        "class number": 5
+      },
+      {
+        "sample_text": "Hello, the website is displaying an error message when I try to select my delivery address. Can you assist?",
+        "class": "Technical Support",
+        "class number": 5
+      },
+      {
+        "sample_text": "Hi, I'm experiencing issues with the payment processing on the website. Can you look into it?",
+        "class": "Technical Support",
+        "class number": 5
+      },
+      {
+        "sample_text": "Hello, I'm unable to update my account information. Can you help me resolve this?",
+        "class": "Technical Support",
+        "class number": 5
+      },
+      {
+        "sample_text": "Hi, I keep getting logged out of my account automatically. Can you fix this issue?",
+        "class": "Technical Support",
+        "class number": 5
+      },
+      {
+        "sample_text": "Hello, I'm trying to apply a promo code, but the website is not accepting it. Can you assist with this?",
+        "class": "Technical Support",
+        "class number": 5
+      },
+      {
+        "sample_text": "Hi, the images of menu items are not loading on the website. Can you check what's causing the problem?",
+        "class": "Technical Support",
+        "class number": 5
+      },
+      {
+        "sample_text": "Hello, the 'forgot password' link on the login page is not working. Can you provide another way to reset my password?",
+        "class": "Technical Support",
+        "class number": 5
+      },
+      {
+        "sample_text": "Hi, I'm trying to view my order history, but the page is not loading. Can you help me access it?",
+        "class": "Technical Support",
+        "class number": 5
+      },
+      {
+        "sample_text": "Hello, I'm encountering an error message when I try to update my payment method. Can you assist with this issue?",
+        "class": "Technical Support",
+        "class number": 5
+      },
+      {
+        "sample_text": "Hi, the website is not displaying the current deals and promotions. Can you refresh the page or update the information?",
+        "class": "Technical Support",
+        "class number": 5
+      },
+      {
+        "sample_text": "Hello, I'm having trouble navigating through the menu options on the mobile app. Can you provide guidance?",
+        "class": "Technical Support",
+        "class number": 5
+      },
+      {
+        "sample_text": "Hi, I'm trying to change my delivery address, but the system is not saving the changes. Can you assist with this issue?",
+        "class": "Technical Support",
+        "class number": 5
+      },
+      {
+        "sample_text": "Hello, I'm encountering a 'server error' message when I try to complete my order. Can you help me proceed?",
+        "class": "Technical Support",
+        "class number": 5
+      },
+      {
+        "sample_text": "Hi, I'm having difficulty finding the customer support contact information on the website. Can you provide it to me?",
+        "class": "Technical Support",
+        "class number": 5
+      },
+      {
+        "sample_text": "Hello, the mobile app is not showing my saved addresses. Can you troubleshoot this issue?",
+        "class": "Technical Support",
+        "class number": 5
+      },
+      {
+        "sample_text": "Hi, the website is displaying an error message when I try to access the 'help' section. Can you provide assistance?",
+        "class": "Technical Support",
+        "class number": 5
+      },
+      {
+        "sample_text": "Hi, I ordered a pizza and it arrived burnt. Can you ensure better quality next time?",
+        "class": "Quality Concerns",
+        "class number": 6
+      },
+      {
+        "sample_text": "Hello, the pizza I received was cold and soggy. Can you send a fresh one?",
+        "class": "Quality Concerns",
+        "class number": 6
+      },
+      {
+        "sample_text": "Hey there! I ordered a salad, but the lettuce looks wilted and old. Can you provide a replacement?",
+        "class": "Quality Concerns",
+        "class number": 6
+      },
+      {
+        "sample_text": "Hi, the garlic knots I received were stale and hard. Can you send a new batch?",
+        "class": "Quality Concerns",
+        "class number": 6
+      },
+      {
+        "sample_text": "Hello, I ordered a pizza with extra cheese, but it seems like there's hardly any cheese on it. Can you fix this?",
+        "class": "Quality Concerns",
+        "class number": 6
+      },
+      {
+        "sample_text": "Hi, I ordered a pizza and it was dripping with grease. Can you ensure less oily toppings next time?",
+        "class": "Quality Concerns",
+        "class number": 6
+      },
+      {
+        "sample_text": "Hello, the pizza crust was burnt and tough to chew. Can you improve the crust quality?",
+        "class": "Quality Concerns",
+        "class number": 6
+      },
+      {
+        "sample_text": "Hi, I ordered a pasta dish, but it was overcooked and mushy. Can you provide a replacement?",
+        "class": "Quality Concerns",
+        "class number": 6
+      },
+      {
+        "sample_text": "Hello, the toppings on my pizza were not evenly distributed. Can you ensure better toppings distribution next time?",
+        "class": "Quality Concerns",
+        "class number": 6
+      },
+      {
+        "sample_text": "Hi, the salad dressing I received was expired. Can you send a fresh one?",
+        "class": "Quality Concerns",
+        "class number": 6
+      },
+      {
+        "sample_text": "Hello, I ordered a pizza with extra sauce, but it seems like there's hardly any sauce on it. Can you fix this?",
+        "class": "Quality Concerns",
+        "class number": 6
+      },
+      {
+        "sample_text": "Hi, I ordered a dessert, but it was stale and tasted old. Can you provide a fresh one?",
+        "class": "Quality Concerns",
+        "class number": 6
+      },
+      {
+        "sample_text": "Hello, the pizza box was damaged, and some of the pizza toppings got squished. Can you replace the damaged items?",
+        "class": "Quality Concerns",
+        "class number": 6
+      },
+      {
+        "sample_text": "Hi, I ordered a pizza with vegetables, but they were undercooked and crunchy. Can you ensure better cooking next time?",
+        "class": "Quality Concerns",
+        "class number": 6
+      },
+      {
+        "sample_text": "Hello, I ordered a gluten-free pizza, but it seems like it was contaminated with gluten. Can you ensure better handling?",
+        "class": "Quality Concerns",
+        "class number": 6
+      },
+      {
+        "sample_text": "Hi, the pizza sauce tasted off. Can you improve the sauce quality?",
+        "class": "Quality Concerns",
+        "class number": 6
+      },
+      {
+        "sample_text": "Hello, I ordered a pizza with fresh basil, but it was wilted and brown. Can you provide fresh toppings?",
+        "class": "Quality Concerns",
+        "class number": 6
+      },
+      {
+        "sample_text": "Hi, the cheese on my pizza was rubbery and didn't melt properly. Can you ensure better cheese quality?",
+        "class": "Quality Concerns",
+        "class number": 6
+      },
+      {
+        "sample_text": "Hello, I ordered a pizza and it was overcooked and burnt on the edges. Can you improve the cooking time?",
+        "class": "Quality Concerns",
+        "class number": 6
+      },
+      {
+        "sample_text": "Hi, the salad I received was missing some of the advertised ingredients. Can you ensure better preparation?",
+        "class": "Quality Concerns",
+        "class number": 6
+      },
+      {
+        "sample_text": "Hi, what are your opening hours on weekends?",
+        "class": "General Inquiry",
+        "class number": 7
+      },
+      {
+        "sample_text": "Hello, do you offer any discounts for large orders?",
+        "class": "General Inquiry",
+        "class number": 7
+      },
+      {
+        "sample_text": "Hey there! Can you tell me if you have any vegan options on your menu?",
+        "class": "General Inquiry",
+        "class number": 7
+      },
+      {
+        "sample_text": "Hi, what's the estimated delivery time for my area?",
+        "class": "General Inquiry",
+        "class number": 7
+      },
+      {
+        "sample_text": "Hello, do you provide catering services for events?",
+        "class": "General Inquiry",
+        "class number": 7
+      },
+      {
+        "sample_text": "Hey, what's the difference between your thin crust and hand-tossed pizzas?",
+        "class": "General Inquiry",
+        "class number": 7
+      },
+      {
+        "sample_text": "Hi, can you tell me if your ingredients are sourced locally?",
+        "class": "General Inquiry",
+        "class number": 7
+      },
+      {
+        "sample_text": "Hello, do you offer any options for customers with dietary restrictions?",
+        "class": "General Inquiry",
+        "class number": 7
+      },
+      {
+        "sample_text": "Hey there! Is there a minimum order requirement for delivery?",
+        "class": "General Inquiry",
+        "class number": 7
+      },
+      {
+        "sample_text": "Hi, do you have any special promotions for first-time customers?",
+        "class": "General Inquiry",
+        "class number": 7
+      },
+      {
+        "sample_text": "Hello, can you provide information about the ingredients used in your gluten-free crust?",
+        "class": "General Inquiry",
+        "class number": 7
+      },
+      {
+        "sample_text": "Hi, do you offer any options for customers with nut allergies?",
+        "class": "General Inquiry",
+        "class number": 7
+      },
+      {
+        "sample_text": "Hello, can you provide details about your loyalty rewards program?",
+        "class": "General Inquiry",
+        "class number": 7
+      },
+      {
+        "sample_text": "Hey there! Do you have any recommendations for pairing wines with your pizzas?",
+        "class": "General Inquiry",
+        "class number": 7
+      },
+      {
+        "sample_text": "Hi, can you tell me if you offer any gluten-free dessert options?",
+        "class": "General Inquiry",
+        "class number": 7
+      },
+      {
+        "sample_text": "Hello, do you have nutritional information available for your menu items?",
+        "class": "General Inquiry",
+        "class number": 7
+      },
+      {
+        "sample_text": "Hi, do you provide contactless delivery options?",
+        "class": "General Inquiry",
+        "class number": 7
+      },
+      {
+        "sample_text": "Hello, what's the best way to reheat leftover pizza?",
+        "class": "General Inquiry",
+        "class number": 7
+      },
+      {
+        "sample_text": "Hi, can you tell me if you offer any vegan cheese alternatives?",
+        "class": "General Inquiry",
+        "class number": 7
+      },
+      {
+        "sample_text": "Hello, do you accept orders over the phone?",
+        "class": "General Inquiry",
+        "class number": 7
+      },
+      {
+        "sample_text": "Hi, I just wanted to say that your pizza was absolutely delicious!",
+        "class": "Compliments and Feedback",
+        "class number": 8
+      },
+      {
+        "sample_text": "Hello, I wanted to compliment your delivery driver for being so friendly and polite!",
+        "class": "Compliments and Feedback",
+        "class number": 8
+      },
+      {
+        "sample_text": "Hey there! I just wanted to say that your customer service team was very helpful and attentive!",
+        "class": "Compliments and Feedback",
+        "class number": 8
+      },
+      {
+        "sample_text": "Hi, I've been ordering from you for years, and I just wanted to say that your quality has always been top-notch!",
+        "class": "Compliments and Feedback",
+        "class number": 8
+      },
+      {
+        "sample_text": "Hello, I wanted to give feedback on my recent order. Everything was perfect, from the taste to the delivery time!",
+        "class": "Compliments and Feedback",
+        "class number": 8
+      },
+      {
+        "sample_text": "Hey there! Your online ordering system is so user-friendly and convenient. Great job!",
+        "class": "Compliments and Feedback",
+        "class number": 8
+      },
+      {
+        "sample_text": "Hi, I just wanted to let you know that your garlic knots are my favorite! They're always so delicious!",
+        "class": "Compliments and Feedback",
+        "class number": 8
+      },
+      {
+        "sample_text": "Hello, I wanted to compliment your chef on the amazing flavors of the specialty pizza I ordered!",
+        "class": "Compliments and Feedback",
+        "class number": 8
+      },
+      {
+        "sample_text": "Hey there! Your pizza never disappoints. It's always fresh, hot, and delicious!",
+        "class": "Compliments and Feedback",
+        "class number": 8
+      },
+      {
+        "sample_text": "Hi, I just wanted to say that your customer service team went above and beyond to resolve my issue. Thank you!",
+        "class": "Compliments and Feedback",
+        "class number": 8
+      },
+      {
+        "sample_text": "Hello, I'm always impressed by the variety of toppings and flavors you offer. Keep up the great work!",
+        "class": "Compliments and Feedback",
+        "class number": 8
+      },
+      {
+        "sample_text": "Hey there! Your delivery was so quick, and the pizza arrived piping hot. Excellent service!",
+        "class": "Compliments and Feedback",
+        "class number": 8
+      },
+      {
+        "sample_text": "Hi, I just wanted to say that your desserts are to die for! I can't get enough of them!",
+        "class": "Compliments and Feedback",
+        "class number": 8
+      },
+      {
+        "sample_text": "Hello, I wanted to give a shoutout to your team for always being so accommodating to my special requests!",
+        "class": "Compliments and Feedback",
+        "class number": 8
+      },
+      {
+        "sample_text": "Hey there! Your restaurant has become my go-to spot for pizza. I recommend it to all my friends!",
+        "class": "Compliments and Feedback",
+        "class number": 8
+      },
+      {
+        "sample_text": "Hi, I just wanted to express my appreciation for the consistent quality of your food and service!",
+        "class": "Compliments and Feedback",
+        "class number": 8
+      },
+      {
+        "sample_text": "Hello, I wanted to compliment your restaurant for always maintaining cleanliness and hygiene standards!",
+        "class": "Compliments and Feedback",
+        "class number": 8
+      },
+      {
+        "sample_text": "Hey there! Your pizza never fails to satisfy my cravings. Thank you for always delivering excellence!",
+        "class": "Compliments and Feedback",
+        "class number": 8
+      },
+      {
+        "sample_text": "Hi, I just wanted to say that your online ordering process is seamless and hassle-free. Great job!",
+        "class": "Compliments and Feedback",
+        "class number": 8
+      },
+      {
+        "sample_text": "Hello, I wanted to give feedback on the friendliness and professionalism of your staff. They're amazing!",
+        "class": "Compliments and Feedback",
+        "class number": 8
+      },
+      {
+        "sample_text": "Hi, I'd like to request extra cheese on my pizza, please.",
+        "class": "Special Requests",
+        "class number": 9
+      },
+      {
+        "sample_text": "Hello, can you make my pizza with half pepperoni and half mushrooms?",
+        "class": "Special Requests",
+        "class number": 9
+      },
+      {
+        "sample_text": "Hey there! I'm allergic to onions. Can you ensure my order is onion-free?",
+        "class": "Special Requests",
+        "class number": 9
+      },
+      {
+        "sample_text": "Hi, can you make my pizza well-done with crispy crust?",
+        "class": "Special Requests",
+        "class number": 9
+      },
+      {
+        "sample_text": "Hello, I'd like to request extra sauce on the side for dipping.",
+        "class": "Special Requests",
+        "class number": 9
+      },
+      {
+        "sample_text": "Hey there! Can you make my salad without croutons?",
+        "class": "Special Requests",
+        "class number": 9
+      },
+      {
+        "sample_text": "Hi, I'd like my pizza sliced into squares instead of traditional wedges.",
+        "class": "Special Requests",
+        "class number": 9
+      },
+      {
+        "sample_text": "Hello, can you make my pasta dish with gluten-free noodles?",
+        "class": "Special Requests",
+        "class number": 9
+      },
+      {
+        "sample_text": "Hey there! I'd like to request extra garlic butter sauce for my breadsticks.",
+        "class": "Special Requests",
+        "class number": 9
+      },
+      {
+        "sample_text": "Hi, can you make my pizza with a gluten-free crust?",
+        "class": "Special Requests",
+        "class number": 9
+      },
+      {
+        "sample_text": "Hello, I'd like to customize my pizza with BBQ sauce instead of marinara.",
+        "class": "Special Requests",
+        "class number": 9
+      },
+      {
+        "sample_text": "Hey there! Can you make my pizza with a mix of mozzarella and cheddar cheese?",
+        "class": "Special Requests",
+        "class number": 9
+      },
+      {
+        "sample_text": "Hi, can you add extra olives to my pizza, please?",
+        "class": "Special Requests",
+        "class number": 9
+      },
+      {
+        "sample_text": "Hello, I'm vegetarian. Can you ensure my pizza has no meat toppings?",
+        "class": "Special Requests",
+        "class number": 9
+      },
+      {
+        "sample_text": "Hey there! Can you make my pizza with a stuffed crust?",
+        "class": "Special Requests",
+        "class number": 9
+      },
+      {
+        "sample_text": "Hi, I'd like to request extra spice on my wings.",
+        "class": "Special Requests",
+        "class number": 9
+      },
+      {
+        "sample_text": "Hello, can you make my pizza with a combination of regular and spicy sausage?",
+        "class": "Special Requests",
+        "class number": 9
+      },
+      {
+        "sample_text": "Hey there! Can you add pineapple to my pizza, please?",
+        "class": "Special Requests",
+        "class number": 9
+      },
+      {
+        "sample_text": "Hi, I'm lactose intolerant. Can you make my pizza with dairy-free cheese?",
+        "class": "Special Requests",
+        "class number": 9
+      },
+      {
+        "sample_text": "Hello, I'd like to request extra marinara sauce for my pasta.",
+        "class": "Special Requests",
+        "class number": 9
+      }
+    ]
+  }
+]

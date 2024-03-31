@@ -1,0 +1,161 @@
+sample_text,class_name,class_number
+"Hello, I wanted to give feedback on my recent order. Everything was perfect, from the taste to the delivery time!",Compliments and Feedback,8
+"Hi, I ordered a dessert, but it was stale and tasted old. Can you provide a fresh one?",Quality Concerns,6
+"Hello, the 'forgot password' link on the login page is not working. Can you provide another way to reset my password?",Technical Support,5
+"Hi, I'm interested in ordering a deep-dish pizza with extra sauce. Can you accommodate that?",Order Placement,0
+"Hi, I'm having difficulty finding the customer support contact information on the website. Can you provide it to me?",Technical Support,5
+"Hello, the pizza box was damaged, and some of the pizza toppings got squished. Can you replace the damaged items?",Quality Concerns,6
+"Hi, the pizza sauce tasted off. Can you improve the sauce quality?",Quality Concerns,6
+"Hello, I received my order, but one of the pizzas is missing. Can you please assist?",Delivery Issues,3
+"Hey! I'm interested in ordering a combo deal with a pizza, garlic knots, and soda.",Order Placement,0
+"Hi, I ordered a pizza and it was dripping with grease. Can you ensure less oily toppings next time?",Quality Concerns,6
+"Hello, I have a nut allergy. Can you tell me which pizzas are safe for me to order?",Menu and Ingredients,2
+Hey there! I'd like to request extra garlic butter sauce for my breadsticks.,Special Requests,9
+Hey there! Is there a minimum order requirement for delivery?,General Inquiry,7
+"Hello, I wanted to compliment your restaurant for always maintaining cleanliness and hygiene standards!",Compliments and Feedback,8
+Hey there! I'd like to place an order for a party pack including multiple pizzas and sides.,Order Placement,0
+"Hi, can you make my pizza well-done with crispy crust?",Special Requests,9
+"Hello, can you make my pizza with half pepperoni and half mushrooms?",Special Requests,9
+"Hello, I'd like to request extra sauce on the side for dipping.",Special Requests,9
+"Hello, I accidentally closed the order tracking page. Can you resend the tracking link?",Order Tracking,1
+"Hi, can you assist me in adding a side of buffalo wings to my existing order?",Order Placement,0
+"Hello, the website is displaying an error message when I try to select my delivery address. Can you assist?",Technical Support,5
+"Hi, I just wanted to say that your customer service team went above and beyond to resolve my issue. Thank you!",Compliments and Feedback,8
+"Hi, do you offer any low-carb options for your pizzas?",Menu and Ingredients,2
+"Hi, I'm experiencing issues with the payment processing on the website. Can you look into it?",Technical Support,5
+"Hi, I keep getting logged out of my account automatically. Can you fix this issue?",Technical Support,5
+"Hello, I'm vegetarian. Can you ensure my pizza has no meat toppings?",Special Requests,9
+"Hello, do you offer any discounts for large orders?",General Inquiry,7
+"Hello, do you offer any options for customers with dietary restrictions?",General Inquiry,7
+"Hi, I ordered a large pizza, but it arrived cold. Can you send a replacement?",Delivery Issues,3
+"Hi, my order was marked as delivered, but I haven't received it yet. Can you investigate?",Order Tracking,1
+Hey there! I just wanted to say that your customer service team was very helpful and attentive!,Compliments and Feedback,8
+Hi! Can I customize a half-and-half pizza with different toppings on each side?,Order Placement,0
+"Hi, I received my order, but the receipt shows an incorrect item. Can you update it?",Payment and Billing,4
+"Hi, my order was supposed to be delivered by now, but I haven't received any updates. Can you check on it?",Order Tracking,1
+"Hi, my order was supposed to arrive 30 minutes ago, but it hasn't. Can you check its status?",Delivery Issues,3
+"Hi, I'm planning a party and would like to order some appetizers along with the pizzas. What do you recommend?",Menu and Ingredients,2
+"Hi, I ordered extra sauce with my pizza, but it wasn't included in the delivery. Can you fix this?",Delivery Issues,3
+"Hi, are there any spicy pizza options on your menu?",Menu and Ingredients,2
+"Hi, the garlic knots I received were stale and hard. Can you send a new batch?",Quality Concerns,6
+"Hey there! My order was scheduled for delivery an hour ago, but I haven't received it yet. What's the status?",Order Tracking,1
+"Hey there! Your pizza never disappoints. It's always fresh, hot, and delicious!",Compliments and Feedback,8
+"Hi, do you offer any specialty crust options like cauliflower crust?",Menu and Ingredients,2
+"Hi, do you offer any options for customers with nut allergies?",General Inquiry,7
+"Hello, my tracking link is showing an error message. Can you troubleshoot the issue?",Order Tracking,1
+"Hi, I'm interested in the ingredients used in your Alfredo sauce. Can you provide more information?",Menu and Ingredients,2
+"Hello, I'm trying to track my order, but it's saying no information is available. Can you help?",Order Tracking,1
+"Hi, I'm trying to change my delivery address, but the system is not saving the changes. Can you assist with this issue?",Technical Support,5
+"Hello, the delivery driver left my order at the wrong address. What should I do?",Delivery Issues,3
+"Hello, the delivery driver was rude and refused to follow my instructions for contactless delivery. Can you address this behavior?",Delivery Issues,3
+"Hi, I'm tracking my order, but it seems stuck at a certain location. Can you provide more information?",Order Tracking,1
+"Hello, my credit card was charged twice for the same order. Can you refund the duplicate charge?",Payment and Billing,4
+"Hello, the mobile app is not showing my saved addresses. Can you troubleshoot this issue?",Technical Support,5
+"Hi, can I place an order for two medium pizzas, one Hawaiian and one Margherita?",Order Placement,0
+"Hi, I accidentally placed an order and need to cancel it before it's processed. Can you assist?",Payment and Billing,4
+"Hello, my order total was higher than expected due to a service fee. Can you explain the additional charge?",Payment and Billing,4
+"Hello, I received a notification that my order was delivered, but I haven't received it. Can you check the delivery status?",Order Tracking,1
+"Hi, I'm ready to place an order for pickup. Can you recommend your specialty pizza?",Order Placement,0
+"Hi, the cheese on my pizza was rubbery and didn't melt properly. Can you ensure better cheese quality?",Quality Concerns,6
+Good evening! Can I order a large pepperoni pizza with extra cheese for pickup?,Order Placement,0
+"Hello, I'm trying to redeem my rewards points for a free pizza, but the system won't let me. Can you assist?",Payment and Billing,4
+"Hello, I ordered a gluten-free pizza, but it seems like it was contaminated with gluten. Can you ensure better handling?",Quality Concerns,6
+"Hello, I'm interested in the nutritional information for your Margherita Pizza. Where can I find it?",Menu and Ingredients,2
+"Hi, the delivery driver forgot to include my drink with the order. Can you arrange to send it separately?",Delivery Issues,3
+"Hi, can you tell me if your ingredients are sourced locally?",General Inquiry,7
+"Hi, I'm curious about the ingredients used in your BBQ Chicken Pizza. Can you provide details?",Menu and Ingredients,2
+"Hi, I'm trying to add a new payment method to my account, but it's not being accepted. Can you troubleshoot?",Payment and Billing,4
+"Hey there! I received a promo code for a discount, but it's not being applied to my order. Can you check?",Payment and Billing,4
+"Hello, my order was supposed to arrive 30 minutes ago, but it hasn't. Can you check its status?",Order Tracking,1
+"Hi, I need to change the delivery address for my order. Can you update it in your system?",Order Tracking,1
+"Hi, I just wanted to say that your pizza was absolutely delicious!",Compliments and Feedback,8
+"Hi, can you tell me if you offer any vegan cheese alternatives?",General Inquiry,7
+"Hello, I placed an order and selected cash on delivery, but now I want to change the payment method. Can you assist?",Payment and Billing,4
+"Hello, I have a coupon for a free dessert with my order. How do I ensure it's included?",Payment and Billing,4
+"Hey there! I ordered a salad, but the lettuce looks wilted and old. Can you provide a replacement?",Quality Concerns,6
+"Hello, I wanted to give feedback on the friendliness and professionalism of your staff. They're amazing!",Compliments and Feedback,8
+"Hello, I wanted to give a shoutout to your team for always being so accommodating to my special requests!",Compliments and Feedback,8
+"Hi, I ordered a pizza and it arrived burnt. Can you ensure better quality next time?",Quality Concerns,6
+"Hi, what's the estimated delivery time for my area?",General Inquiry,7
+"Hello, do you accept orders over the phone?",General Inquiry,7
+"Hello, the pizza I received was cold and soggy. Can you send a fresh one?",Quality Concerns,6
+"Hello, can I add a note to my order requesting no olives on the pizza?",Order Placement,0
+"Hello, I placed an order but forgot to note any special delivery instructions. Can I add them now?",Order Tracking,1
+"Hi, do you offer any vegan cheese substitutes for your pizzas?",Menu and Ingredients,2
+"Hello, can you make my pasta dish with gluten-free noodles?",Special Requests,9
+"Hi, I'd like to request extra cheese on my pizza, please.",Special Requests,9
+"Hi, are your pizzas made with organic ingredients?",Menu and Ingredients,2
+"Hello, I ordered a pizza with fresh basil, but it was wilted and brown. Can you provide fresh toppings?",Quality Concerns,6
+"Hi, I've been ordering from you for years, and I just wanted to say that your quality has always been top-notch!",Compliments and Feedback,8
+"Hi, my order was delivered with the wrong dipping sauce. Can you provide the correct one?",Delivery Issues,3
+"Hello, can you provide details about your loyalty rewards program?",General Inquiry,7
+"Hello, I'd like to place an order for delivery to my office address. Can you please confirm the nearest branch?",Order Placement,0
+"Hello, I have a shellfish allergy. Are there any pizzas that may contain shellfish or traces of it?",Menu and Ingredients,2
+"Hello, I received a message that my order is delayed due to weather conditions. Can you confirm?",Order Tracking,1
+"Hello, my order status hasn't been updated for a while. Can you provide an update?",Order Tracking,1
+"Hello, I ordered a salad, but it was missing the dressing. Can you send it separately?",Delivery Issues,3
+"Hi, the website is not displaying the current deals and promotions. Can you refresh the page or update the information?",Technical Support,5
+"Hello, I ordered extra cheese on my pizza, but it seems like there's hardly any. Can you rectify this?",Delivery Issues,3
+"Hi, the website is displaying an error message when I try to access the 'help' section. Can you provide assistance?",Technical Support,5
+Hey there! Your online ordering system is so user-friendly and convenient. Great job!,Compliments and Feedback,8
+Hi there! I'd like to place an order for delivery to 123 Main Street.,Order Placement,0
+"Hello, I'm trying to place an order on your website, but it's not loading properly. Can you check if there's an issue?",Technical Support,5
+"Hello, can you make my pizza with a combination of regular and spicy sausage?",Special Requests,9
+"Hello, are your pizza crusts made with whole wheat flour?",Menu and Ingredients,2
+"Hello, I have a dairy intolerance. Can you tell me which pizzas I should avoid?",Menu and Ingredients,2
+"Hello, I ordered a pizza with extra cheese, but it seems like there's hardly any cheese on it. Can you fix this?",Quality Concerns,6
+"Hi, I'm lactose intolerant. Can you make my pizza with dairy-free cheese?",Special Requests,9
+"Hi, my payment method was declined, but I know the funds are available. Can you help resolve this issue?",Payment and Billing,4
+"Hey there! Can you add pineapple to my pizza, please?",Special Requests,9
+"Hello, I wanted to compliment your delivery driver for being so friendly and polite!",Compliments and Feedback,8
+"Hi, I just wanted to say that your online ordering process is seamless and hassle-free. Great job!",Compliments and Feedback,8
+"Hello, I received an email saying my payment didn't go through, but my bank statement shows the charge. Can you confirm the payment status?",Payment and Billing,4
+Hey there! I'm unable to add items to my cart on the mobile app. Can you provide assistance?,Technical Support,5
+"Hi, I accidentally closed the order confirmation page before noting the order number. Can you help me track it?",Order Tracking,1
+Hey there! Do you have any gluten-free crust options available?,Menu and Ingredients,2
+"Hi, do you provide contactless delivery options?",General Inquiry,7
+"Hi, I'm tracking my order and it shows it's out for delivery. Can you provide an estimated arrival time?",Order Tracking,1
+"Hello! I'd like to order a cheeseless pizza with extra veggies, please.",Order Placement,0
+"Hi, I'm trying to view my order history, but the page is not loading. Can you help me access it?",Technical Support,5
+"Hi, I'd like to apply a store credit to my order. How can I do that?",Payment and Billing,4
+"Hi, what are your opening hours on weekends?",General Inquiry,7
+Hey there! Can you make my pizza with a stuffed crust?,Special Requests,9
+"Hello, I just noticed a discrepancy in the total amount charged on my credit card statement. Can you help me understand?",Payment and Billing,4
+"Hi, I ordered a pizza with vegetables, but they were undercooked and crunchy. Can you ensure better cooking next time?",Quality Concerns,6
+"Hi, can I order a dessert pizza along with my regular order?",Order Placement,0
+"Hi, I ordered a pasta dish, but it was overcooked and mushy. Can you provide a replacement?",Quality Concerns,6
+"Good evening! I'm looking to order a pizza for pickup, but I need it ready in 20 minutes. Is that possible?",Order Placement,0
+"Hello, I'm encountering a 'server error' message when I try to complete my order. Can you help me proceed?",Technical Support,5
+"Hello, my order total seems higher than expected. Can you review the charges for me?",Payment and Billing,4
+"Hello, I ordered a pizza with extra sauce, but it seems like there's hardly any sauce on it. Can you fix this?",Quality Concerns,6
+"Hey, what's the difference between your thin crust and hand-tossed pizzas?",General Inquiry,7
+"Hi, I'm trying to use my gift card to pay for my order, but it's not working. Can you assist?",Payment and Billing,4
+"Hi, I need to cancel my order, but I can't track it. Can you confirm its status and cancel it for me?",Order Tracking,1
+"Hello, do you offer any specialty toppings that are unique to your pizzeria?",Menu and Ingredients,2
+"Hello, can you provide information about the ingredients used in your gluten-free crust?",General Inquiry,7
+"Hi, I accidentally made a duplicate payment for my order. Can you refund one of the charges?",Payment and Billing,4
+"Hi, I received my order, but the pizza toppings are not what I requested. Can you fix this?",Delivery Issues,3
+"Hi, I just wanted to express my appreciation for the consistent quality of your food and service!",Compliments and Feedback,8
+"Hi, do you have any special promotions for first-time customers?",General Inquiry,7
+Hey there! Your pizza never fails to satisfy my cravings. Thank you for always delivering excellence!,Compliments and Feedback,8
+"Hi, the images of menu items are not loading on the website. Can you check what's causing the problem?",Technical Support,5
+"Hi, I received my order, but the pizza was cold and soggy. Can you send a fresh one?",Delivery Issues,3
+Hey there! Can you make my salad without croutons?,Special Requests,9
+Good morning! I'd like to place an order for a pizza party package for my child's birthday.,Order Placement,0
+"Hi, can you make my pizza with a gluten-free crust?",Special Requests,9
+"Hi, I'm using the mobile app to order, but it's crashing every time I try to proceed to checkout. Can you help me troubleshoot?",Technical Support,5
+"Hi, I'd like to request extra spice on my wings.",Special Requests,9
+"Hi, the salad dressing I received was expired. Can you send a fresh one?",Quality Concerns,6
+"Hi, can you add extra olives to my pizza, please?",Special Requests,9
+"Hello, I wanted to compliment your chef on the amazing flavors of the specialty pizza I ordered!",Compliments and Feedback,8
+"Hey there! Your delivery was so quick, and the pizza arrived piping hot. Excellent service!",Compliments and Feedback,8
+"Hello, I'm looking for a pizza with a good balance of protein and carbs. Can you recommend one?",Menu and Ingredients,2
+"Hello! I'd like to order a vegetarian pizza with no onions, please.",Order Placement,0
+"Hello, my order was damaged during delivery, and some items are squished. Can you send a replacement?",Delivery Issues,3
+"Hi, I received my order, but the garlic knots are burnt. Can you replace them?",Delivery Issues,3
+"Hello, what's the best way to reheat leftover pizza?",General Inquiry,7
+"Hello, I'm trying to apply a promo code, but the website is not accepting it. Can you assist with this?",Technical Support,5
+"Hello, do you have nutritional information available for your menu items?",General Inquiry,7
+"Hi, I requested contactless delivery, but the driver insisted on handing me the food directly. Can you address this?",Delivery Issues,3
+Hey there! I'm allergic to onions. Can you ensure my order is onion-free?,Special Requests,9
+"Hello, my order was delivered late, and I missed my lunch break waiting for it. Can you compensate for the inconvenience?",Delivery Issues,3
