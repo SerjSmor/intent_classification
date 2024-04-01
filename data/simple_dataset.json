@@ -1,0 +1,114 @@
+[
+  {
+    "Company Name": "Regular online business",
+    "Taxonomy": [
+      {
+        "Topic number": 1,
+        "Topic Name": "Billing inquiries",
+        "Topic Description": "Questions about billing, billing issues such as billing not received"
+      },
+      {
+        "Topic number": 2,
+        "Topic Name": "Gift cards payment issues",
+        "Topic Description": "Unable to pay with gift card and similar issues"
+      },
+      {
+        "Topic number": 3,
+        "Topic Name": "Promo Codes and discounts",
+        "Topic Description": "Issues with promo codes or discounts"
+      },
+      {
+        "Topic number": 4,
+        "Topic Name": "Refund requests",
+        "Topic Description": "Refund requests"
+      },
+      {
+        "Topic number": 5,
+        "Topic Name": "Cancel subscription",
+        "Topic Description": "Canceling subscription, pausing subscription"
+      },
+      {
+        "Topic number": 6,
+        "Topic Name": "General inquiries",
+        "Topic Description": "General questions not related to any specific topic"
+      },
+      {
+        "Topic number": 7,
+        "Topic Name": "Broken item",
+        "Topic Description": "Complaints that a piece or the whole item is broken"
+      },
+      {
+        "Topic number": 8,
+        "Topic Name": "Missing item",
+        "Topic Description": "An item that was ordered is not in the package"
+      },
+      {
+        "Topic number": 9,
+        "Topic Name": "Order status",
+        "Topic Description": "When should the order arrive?"
+      },
+      {
+        "Topic number": 10,
+        "Topic Name": "Other",
+        "Topic Description": "Anything that is not related"
+      }
+    ],
+    "Examples": [
+      {
+        "sample_text": "Hi, I'm trying to use my gift card to pay for my order, but it's not working. Can you assist?",
+        "class": "Gift Cards payment issues",
+        "class number": 2
+      },
+      {
+        "sample_text": "Hello, I just noticed a discrepancy in the total amount charged on my credit card statement. Can you help me understand?",
+        "class": "Billing inquiries",
+        "class number": 1
+      },
+      {
+        "sample_text": "Hey there! I received a promo code for a discount, but it's not being applied to my order. Can you check?",
+        "class": "Promo codes and discounts",
+        "class number": 3
+      },
+      {
+        "sample_text": "I want to cancel subscription",
+        "class": "Cancel subscription",
+        "class number": 5
+      },
+      {
+        "sample_text": "I want a refund",
+        "class": "Refund requests",
+        "class number": 4
+      },
+      {
+        "sample_text": "Hey",
+        "class": "General inquiries",
+        "class number": 6
+      },
+      {
+        "sample_text": "what is your name",
+        "class": "General inquiries",
+        "class number": 6
+      },
+      {
+        "sample_text": "I hate this thing, it never works, how about just fixing it once?",
+        "class": "Broken item",
+        "class number": 7
+      },
+      {
+        "sample_text": "Where is the box?",
+        "class": "Missing item",
+        "class number": 8
+      },
+      {
+        "sample_text": "When should the package arrive?",
+        "class": "Order status",
+        "class number": 9
+      },
+      {
+        "sample_text": "I don't get it, I really don't how many times I can ask for the same thing. Can I speak to someone who actually has some sense? Every day is the same with you. This shipment should have been here by now!",
+        "class": "Order status",
+        "class number": 9
+      }
+    ]
+  }
+]

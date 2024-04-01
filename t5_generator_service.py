@@ -4,14 +4,14 @@ from transformers import T5ForConditionalGeneration, T5Tokenizer
 import pandas as pd
 
 from app.utils import build_prompt
-from consts import FULL_PROMPT
-from dataset import load_dataset
 
 # Load the pre-trained T5 model and tokenizer
 # model_name = "google/flan-t5-base"
 # model_name = "google/flan-t5-xl"
 # model_name = "google/flan-t5-large"
-model_name = "models/flan_t5_base_generator"
+# model_name = "models/flan_t5_base_generator"
+model_name = "models/flan-t5-small"
+model_suffix = model_name.split("/")[1]
 model = T5ForConditionalGeneration.from_pretrained(model_name)
 tokenizer = T5Tokenizer.from_pretrained(model_name)
 
@@ -30,7 +30,11 @@ examples = [
     "I want to cancel subscription",
     "I want a refund",
     "Hey",
-    "what is your name"
+    "what is your name",
+    "I hate this thing, it never works, how about just fixing it once?",
+    "Where is the box?",
+    "When should the package arrive?",
+    "I don't get it, I really don't how many times I can ask for the same thing. Can I speak to someone who actually has some sense? Every day is the same with you. This shipment should have been here by now!"
     # Add more examples here
 ]
 prompt = '''
@@ -40,12 +44,15 @@ prompt = '''
 4. Refund requests
 5. Cancel subscription
 6. General inquiries
-7. Other
+7. Broken item
+8. Missing item
+9. Order status
+10. Other
 '''
 
 for example in tqdm(examples):
     # Concatenate the prompt with the example
-    input_text = build_prompt(example, prompt)
+    input_text = build_prompt(example, prompt, "Regular Online Business", "Regular stuff")
     # print(input_text)
     # Tokenize the concatenated inp_ut text
     input_ids = tokenizer.encode(input_text, return_tensors="pt", max_length=512, truncation=True).to(device)
@@ -62,3 +69,5 @@ for example in tqdm(examples):
 # Create a DataFrame to store the results
 df = pd.DataFrame(data=results)
 print(df.to_string())
+
+df.to_csv(f"data/{model_suffix}_predictions.csv")

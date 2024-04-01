@@ -11,3 +11,8 @@ OPTIONS
 9. Compliments and Feedback
 10. Special Requests
 '''
+
+GENERATOR_LABELS = "generator_labels"
+PROMPT_OPTIONS = "prompt_options"
+GENERATOR_TEXT = "generator_text"
+DEFAULT_PREDICTION_CSV = "data/predictions.csv"

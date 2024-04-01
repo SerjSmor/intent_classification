@@ -90,7 +90,7 @@ def train(model_name=FLAN_T5_BASE):
 
     # Evaluate the model
     trainer.evaluate()
-    save_dir = "models/pizza_company/flan_t5_base/"
+    save_dir = "archived_experiments/pizza_company/flan_t5_base/"
     trainer.save_model(save_dir)
     tokenizer.save_pretrained(save_dir)
 

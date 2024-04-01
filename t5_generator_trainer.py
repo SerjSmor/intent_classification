@@ -1,3 +1,5 @@
+import argparse
+
 from transformers import AutoTokenizer, AutoModelForSequenceClassification, TrainingArguments, Trainer, \
     T5ForConditionalGeneration
 from sklearn.metrics import accuracy_score, precision_recall_fscore_support
@@ -6,11 +8,14 @@ import torch
 import pandas as pd
 
 from app.utils import build_prompt
-from consts import FULL_PROMPT
+from consts import FULL_PROMPT, GENERATOR_TEXT, GENERATOR_LABELS
 
-FLAN_T5_BASE = 'google/flan-t5-base'
+FLAN_T5_BASE = "google/flan-t5-base"
+FLAN_T5_LARGE = "google/flan-t5-large"
+FLAN_T5_SMALL = "google/flan-t5-small"
 
-# Convert to PyTorch datasets
+TWENTY_EPOCHS = 20
+DEFAULT_BATCH_SIZE = 16
 
 class Seq2SeqDataset(torch.utils.data.Dataset):
     def __init__(self, encodings):
@@ -34,23 +39,18 @@ def tokenize_pairs(tokenizer, source_texts, target_texts):
 
 
 
-def train(model_name=FLAN_T5_BASE):
+def train(model_name: str = FLAN_T5_BASE, epochs: int = TWENTY_EPOCHS, batch_size: int = DEFAULT_BATCH_SIZE):
     tokenizer = AutoTokenizer.from_pretrained(model_name)
 
     df_train = pd.read_csv("data/train.csv")
     df_validation = pd.read_csv("data/test.csv")
     # Example dataset
 
+    train_texts = df_train[GENERATOR_TEXT].tolist()  # Should be a list of texts
+    train_labels = df_train[GENERATOR_LABELS].tolist()  # Should be a list of integer labels
 
-    df_train["generator_text"] = df_train["sample_text"].apply(lambda text: build_prompt(text, FULL_PROMPT))
-    train_texts = df_train["generator_text"].tolist()  # Should be a list of texts
-    df_train["generator_labels"] = df_train.apply(lambda row: f"Class name: {row['class_name']}, Class number: {row['class_number']}", axis=1)
-    train_labels = df_train["generator_labels"].tolist()  # Should be a list of integer labels
-
-    df_validation["generator_text"] = df_validation["sample_text"].apply(lambda text: build_prompt(text, FULL_PROMPT))
-    val_texts = df_validation["generator_text"].tolist()  # Validation texts
-    df_validation["generator_labels"] = df_validation.apply(lambda row: f"Class name: {row['class_name']}, Class number: {row['class_number']}", axis=1)
-    val_labels = df_validation["generator_labels"].tolist()  # Validation labels
+    val_texts = df_validation[GENERATOR_TEXT].tolist()  # Validation texts
+    val_labels = df_validation[GENERATOR_LABELS].tolist()  # Validation labels
 
         # Example usage
     train_encodings = tokenize_pairs(tokenizer, train_texts, train_labels)
@@ -70,9 +70,9 @@ def train(model_name=FLAN_T5_BASE):
     # Define training arguments
     training_args = TrainingArguments(
         output_dir='./results',
-        num_train_epochs=40,
-        per_device_train_batch_size=16,
-        per_device_eval_batch_size=16,
+        num_train_epochs=epochs,
+        per_device_train_batch_size=batch_size,
+        per_device_eval_batch_size=batch_size,
         warmup_steps=500,
         weight_decay=0.01,
         logging_dir='./logs',
@@ -94,9 +94,18 @@ def train(model_name=FLAN_T5_BASE):
 
     # Evaluate the model
     trainer.evaluate()
-    save_dir = "models/pizza_company/flan_t5_base_generator/"
+    model_suffix = model_name.split("/")[1]
+    save_dir = f"models/{model_suffix}/"
+    print(f"saving model in {save_dir}")
     trainer.save_model(save_dir)
     tokenizer.save_pretrained(save_dir)
 
 if __name__ == '__main__':
-    train()
+    parser = argparse.ArgumentParser(description="Trainer")
+    parser.add_argument("-m", "--model-name", default=FLAN_T5_BASE)
+    parser.add_argument("-e", "--epochs", type=int, default=TWENTY_EPOCHS)
+    parser.add_argument("-bs", "--batch-size", type=int, default=DEFAULT_BATCH_SIZE)
+
+    args = parser.parse_args()
+    print(vars(args))
+    train(args.model_name, epochs=args.epochs, batch_size=args.batch_size)

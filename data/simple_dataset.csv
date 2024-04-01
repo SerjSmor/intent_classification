@@ -1,0 +1,309 @@
+sample_text,class_name,class_number,Company Name,generator_labels,prompt_options,generator_text
+"Hi, I'm trying to use my gift card to pay for my order, but it's not working. Can you assist?",Gift Cards payment issues,2,Regular online business,Class name: Gift Cards payment issues,"
+        OPTIONS:
+        2.Gift Cards payment issues
+1.Billing inquiries
+3.Promo codes and discounts
+5.Cancel subscription
+4.Refund requests
+6.General inquiries
+7.Broken item
+8.Missing item
+9.Order status
+    ","
+Customer: Hi, I'm trying to use my gift card to pay for my order, but it's not working. Can you assist?.
+END MESSAGE
+Choose one topic that matches customer's issue.
+
+        OPTIONS:
+        2.Gift Cards payment issues
+1.Billing inquiries
+3.Promo codes and discounts
+5.Cancel subscription
+4.Refund requests
+6.General inquiries
+7.Broken item
+8.Missing item
+9.Order status
+    
+"
+"Hello, I just noticed a discrepancy in the total amount charged on my credit card statement. Can you help me understand?",Billing inquiries,1,Regular online business,Class name: Billing inquiries,"
+        OPTIONS:
+        2.Gift Cards payment issues
+1.Billing inquiries
+3.Promo codes and discounts
+5.Cancel subscription
+4.Refund requests
+6.General inquiries
+7.Broken item
+8.Missing item
+9.Order status
+    ","
+Customer: Hello, I just noticed a discrepancy in the total amount charged on my credit card statement. Can you help me understand?.
+END MESSAGE
+Choose one topic that matches customer's issue.
+
+        OPTIONS:
+        2.Gift Cards payment issues
+1.Billing inquiries
+3.Promo codes and discounts
+5.Cancel subscription
+4.Refund requests
+6.General inquiries
+7.Broken item
+8.Missing item
+9.Order status
+    
+"
+"Hey there! I received a promo code for a discount, but it's not being applied to my order. Can you check?",Promo codes and discounts,3,Regular online business,Class name: Promo codes and discounts,"
+        OPTIONS:
+        2.Gift Cards payment issues
+1.Billing inquiries
+3.Promo codes and discounts
+5.Cancel subscription
+4.Refund requests
+6.General inquiries
+7.Broken item
+8.Missing item
+9.Order status
+    ","
+Customer: Hey there! I received a promo code for a discount, but it's not being applied to my order. Can you check?.
+END MESSAGE
+Choose one topic that matches customer's issue.
+
+        OPTIONS:
+        2.Gift Cards payment issues
+1.Billing inquiries
+3.Promo codes and discounts
+5.Cancel subscription
+4.Refund requests
+6.General inquiries
+7.Broken item
+8.Missing item
+9.Order status
+    
+"
+I want to cancel subscription,Cancel subscription,5,Regular online business,Class name: Cancel subscription,"
+        OPTIONS:
+        2.Gift Cards payment issues
+1.Billing inquiries
+3.Promo codes and discounts
+5.Cancel subscription
+4.Refund requests
+6.General inquiries
+7.Broken item
+8.Missing item
+9.Order status
+    ","
+Customer: I want to cancel subscription.
+END MESSAGE
+Choose one topic that matches customer's issue.
+
+        OPTIONS:
+        2.Gift Cards payment issues
+1.Billing inquiries
+3.Promo codes and discounts
+5.Cancel subscription
+4.Refund requests
+6.General inquiries
+7.Broken item
+8.Missing item
+9.Order status
+    
+"
+I want a refund,Refund requests,4,Regular online business,Class name: Refund requests,"
+        OPTIONS:
+        2.Gift Cards payment issues
+1.Billing inquiries
+3.Promo codes and discounts
+5.Cancel subscription
+4.Refund requests
+6.General inquiries
+7.Broken item
+8.Missing item
+9.Order status
+    ","
+Customer: I want a refund.
+END MESSAGE
+Choose one topic that matches customer's issue.
+
+        OPTIONS:
+        2.Gift Cards payment issues
+1.Billing inquiries
+3.Promo codes and discounts
+5.Cancel subscription
+4.Refund requests
+6.General inquiries
+7.Broken item
+8.Missing item
+9.Order status
+    
+"
+Hey,General inquiries,6,Regular online business,Class name: General inquiries,"
+        OPTIONS:
+        2.Gift Cards payment issues
+1.Billing inquiries
+3.Promo codes and discounts
+5.Cancel subscription
+4.Refund requests
+6.General inquiries
+7.Broken item
+8.Missing item
+9.Order status
+    ","
+Customer: Hey.
+END MESSAGE
+Choose one topic that matches customer's issue.
+
+        OPTIONS:
+        2.Gift Cards payment issues
+1.Billing inquiries
+3.Promo codes and discounts
+5.Cancel subscription
+4.Refund requests
+6.General inquiries
+7.Broken item
+8.Missing item
+9.Order status
+    
+"
+what is your name,General inquiries,6,Regular online business,Class name: General inquiries,"
+        OPTIONS:
+        2.Gift Cards payment issues
+1.Billing inquiries
+3.Promo codes and discounts
+5.Cancel subscription
+4.Refund requests
+6.General inquiries
+7.Broken item
+8.Missing item
+9.Order status
+    ","
+Customer: what is your name.
+END MESSAGE
+Choose one topic that matches customer's issue.
+
+        OPTIONS:
+        2.Gift Cards payment issues
+1.Billing inquiries
+3.Promo codes and discounts
+5.Cancel subscription
+4.Refund requests
+6.General inquiries
+7.Broken item
+8.Missing item
+9.Order status
+    
+"
+"I hate this thing, it never works, how about just fixing it once?",Broken item,7,Regular online business,Class name: Broken item,"
+        OPTIONS:
+        2.Gift Cards payment issues
+1.Billing inquiries
+3.Promo codes and discounts
+5.Cancel subscription
+4.Refund requests
+6.General inquiries
+7.Broken item
+8.Missing item
+9.Order status
+    ","
+Customer: I hate this thing, it never works, how about just fixing it once?.
+END MESSAGE
+Choose one topic that matches customer's issue.
+
+        OPTIONS:
+        2.Gift Cards payment issues
+1.Billing inquiries
+3.Promo codes and discounts
+5.Cancel subscription
+4.Refund requests
+6.General inquiries
+7.Broken item
+8.Missing item
+9.Order status
+    
+"
+Where is the box?,Missing item,8,Regular online business,Class name: Missing item,"
+        OPTIONS:
+        2.Gift Cards payment issues
+1.Billing inquiries
+3.Promo codes and discounts
+5.Cancel subscription
+4.Refund requests
+6.General inquiries
+7.Broken item
+8.Missing item
+9.Order status
+    ","
+Customer: Where is the box?.
+END MESSAGE
+Choose one topic that matches customer's issue.
+
+        OPTIONS:
+        2.Gift Cards payment issues
+1.Billing inquiries
+3.Promo codes and discounts
+5.Cancel subscription
+4.Refund requests
+6.General inquiries
+7.Broken item
+8.Missing item
+9.Order status
+    
+"
+When should the package arrive?,Order status,9,Regular online business,Class name: Order status,"
+        OPTIONS:
+        2.Gift Cards payment issues
+1.Billing inquiries
+3.Promo codes and discounts
+5.Cancel subscription
+4.Refund requests
+6.General inquiries
+7.Broken item
+8.Missing item
+9.Order status
+    ","
+Customer: When should the package arrive?.
+END MESSAGE
+Choose one topic that matches customer's issue.
+
+        OPTIONS:
+        2.Gift Cards payment issues
+1.Billing inquiries
+3.Promo codes and discounts
+5.Cancel subscription
+4.Refund requests
+6.General inquiries
+7.Broken item
+8.Missing item
+9.Order status
+    
+"
+"I don't get it, I really don't how many times I can ask for the same thing. Can I speak to someone who actually has some sense? Every day is the same with you. This shipment should have been here by now!",Order status,9,Regular online business,Class name: Order status,"
+        OPTIONS:
+        2.Gift Cards payment issues
+1.Billing inquiries
+3.Promo codes and discounts
+5.Cancel subscription
+4.Refund requests
+6.General inquiries
+7.Broken item
+8.Missing item
+9.Order status
+    ","
+Customer: I don't get it, I really don't how many times I can ask for the same thing. Can I speak to someone who actually has some sense? Every day is the same with you. This shipment should have been here by now!.
+END MESSAGE
+Choose one topic that matches customer's issue.
+
+        OPTIONS:
+        2.Gift Cards payment issues
+1.Billing inquiries
+3.Promo codes and discounts
+5.Cancel subscription
+4.Refund requests
+6.General inquiries
+7.Broken item
+8.Missing item
+9.Order status
+    
+"

@@ -1055,5 +1055,2087 @@
         "class number": 9
       }
     ]
+  },
+  {
+    "Company Name": "Online Banking",
+    "Taxonomy": [
+      {
+        "Topic Number": 1,
+        "Topic Name": "Account Balance Inquiry",
+        "Topic Description": "Inquiries related to checking account, savings account, or credit card balances."
+      },
+      {
+        "Topic Number": 2,
+        "Topic Name": "Transaction Disputes",
+        "Topic Description": "Disputes or discrepancies in transactions, such as unauthorized charges or incorrect amounts."
+      },
+      {
+        "Topic Number": 3,
+        "Topic Name": "Online Banking Assistance",
+        "Topic Description": "Help with online banking services, including login issues, password resets, or navigation assistance."
+      },
+      {
+        "Topic Number": 4,
+        "Topic Name": "Bill Payments",
+        "Topic Description": "Questions or issues related to paying bills online, setting up automatic payments, or payment confirmation."
+      },
+      {
+        "Topic Number": 5,
+        "Topic Name": "Mobile Banking Support",
+        "Topic Description": "Assistance with mobile banking apps, troubleshooting app errors, or mobile deposit inquiries."
+      },
+      {
+        "Topic Number": 6,
+        "Topic Name": "Account Closure",
+        "Topic Description": "Requests or assistance with closing an account, including necessary steps and confirmation."
+      },
+      {
+        "Topic Number": 7,
+        "Topic Name": "Fraud Prevention",
+        "Topic Description": "Reporting suspected fraud, unauthorized transactions, or phishing attempts."
+      },
+      {
+        "Topic Number": 8,
+        "Topic Name": "Interest Rates Inquiry",
+        "Topic Description": "Inquiries regarding interest rates on loans, savings accounts, or certificates of deposit (CDs)."
+      },
+      {
+        "Topic Number": 9,
+        "Topic Name": "Loan Application",
+        "Topic Description": "Assistance with applying for a loan, questions about loan types, eligibility criteria, or application status."
+      },
+      {
+        "Topic Number": 10,
+        "Topic Name": "Credit Score Inquiry",
+        "Topic Description": "Questions or requests for information about credit scores, credit reports, or credit monitoring services."
+      },
+      {
+        "Topic Number": 11,
+        "Topic Name": "Account Statement Request",
+        "Topic Description": "Requests for account statements, transaction history, or tax documents."
+      },
+      {
+        "Topic Number": 12,
+        "Topic Name": "Card Replacement",
+        "Topic Description": "Requests for replacing lost, stolen, or damaged debit cards, credit cards, or ATM cards."
+      },
+      {
+        "Topic Number": 13,
+        "Topic Name": "Branch Location and Hours",
+        "Topic Description": "Inquiries about branch locations, operating hours, services offered, or appointments."
+      },
+      {
+        "Topic Number": 14,
+        "Topic Name": "Investment Accounts",
+        "Topic Description": "Assistance with investment accounts, retirement planning, stock trading, or portfolio management."
+      },
+      {
+        "Topic Number": 15,
+        "Topic Name": "Online Security",
+        "Topic Description": "Questions or concerns about online security measures, account protection, or password security."
+      },
+      {
+        "Topic Number": 16,
+        "Topic Name": "Account Upgrades",
+        "Topic Description": "Inquiries about upgrading account types, benefits of premium accounts, or eligibility criteria."
+      },
+      {
+        "Topic Number": 17,
+        "Topic Name": "Customer Feedback",
+        "Topic Description": "Providing feedback, suggestions, or complaints about the banking services or customer experience."
+      },
+      {
+        "Topic Number": 18,
+        "Topic Name": "Tax-related Questions",
+        "Topic Description": "Questions or assistance regarding tax documents, reporting interest income, or tax-related forms."
+      },
+      {
+        "Topic Number": 19,
+        "Topic Name": "Lost or Stolen Checks",
+        "Topic Description": "Reporting lost or stolen checks, placing stop payments, or reissuing checks."
+      },
+      {
+        "Topic Number": 20,
+        "Topic Name": "Account Reinstatement",
+        "Topic Description": "Requests for reinstating a closed or suspended account, including necessary steps and documentation."
+      }
+    ],
+    "Examples": [
+      {
+        "sample_text": "Hi, I'd like to check my current balance in my checking account.",
+        "class": "Account Balance Inquiry",
+        "class number": 1
+      },
+      {
+        "sample_text": "Hello, can you provide me with the balance of my savings account?",
+        "class": "Account Balance Inquiry",
+        "class number": 1
+      },
+      {
+        "sample_text": "Hey there! I need to know the available balance on my credit card.",
+        "class": "Account Balance Inquiry",
+        "class number": 1
+      },
+      {
+        "sample_text": "Hi, I'm curious about the balance in my checking account.",
+        "class": "Account Balance Inquiry",
+        "class number": 1
+      },
+      {
+        "sample_text": "Hello, could you please tell me the remaining balance in my savings account?",
+        "class": "Account Balance Inquiry",
+        "class number": 1
+      },
+      {
+        "sample_text": "Hey, I need assistance in checking my recent account balance.",
+        "class": "Account Balance Inquiry",
+        "class number": 1
+      },
+      {
+        "sample_text": "Hi, I'm trying to find out how much money I have in my checking account.",
+        "class": "Account Balance Inquiry",
+        "class number": 1
+      },
+      {
+        "sample_text": "Hello, can you check the balance of my savings account for me?",
+        "class": "Account Balance Inquiry",
+        "class number": 1
+      },
+      {
+        "sample_text": "Hey there! I'm wondering if you can help me check my credit card balance.",
+        "class": "Account Balance Inquiry",
+        "class number": 1
+      },
+      {
+        "sample_text": "Hi, I need to know the balance of my checking account for budgeting purposes.",
+        "class": "Account Balance Inquiry",
+        "class number": 1
+      },
+      {
+        "sample_text": "Hello, could you provide me with the current balance of my savings account?",
+        "class": "Account Balance Inquiry",
+        "class number": 1
+      },
+      {
+        "sample_text": "Hey, I'm trying to keep track of my finances. Can you tell me my account balance?",
+        "class": "Account Balance Inquiry",
+        "class number": 1
+      },
+      {
+        "sample_text": "Hi, can you check my checking account balance and let me know?",
+        "class": "Account Balance Inquiry",
+        "class number": 1
+      },
+      {
+        "sample_text": "Hello, I'd like to inquire about the balance in my savings account, please.",
+        "class": "Account Balance Inquiry",
+        "class number": 1
+      },
+      {
+        "sample_text": "Hey there! I'm unsure of my current credit card balance. Can you assist?",
+        "class": "Account Balance Inquiry",
+        "class number": 1
+      },
+      {
+        "sample_text": "Hi, I need to check the balance of my checking account before making a purchase.",
+        "class": "Account Balance Inquiry",
+        "class number": 1
+      },
+      {
+        "sample_text": "Hello, could you please provide me with the balance of my savings account?",
+        "class": "Account Balance Inquiry",
+        "class number": 1
+      },
+      {
+        "sample_text": "Hey, I'm trying to plan my expenses. Can you tell me my current account balance?",
+        "class": "Account Balance Inquiry",
+        "class number": 1
+      },
+      {
+        "sample_text": "Hi, I'd like to verify the balance of my checking account.",
+        "class": "Account Balance Inquiry",
+        "class number": 1
+      },
+      {
+        "sample_text": "Hello, can you give me the balance of my credit card account?",
+        "class": "Account Balance Inquiry",
+        "class number": 1
+      },
+      {
+        "sample_text": "Hi, I noticed a transaction on my account that I did not authorize.",
+        "class": "Transaction Disputes",
+        "class number": 2
+      },
+      {
+        "sample_text": "Hello, there is a discrepancy in my recent transaction. Can you help me resolve it?",
+        "class": "Transaction Disputes",
+        "class number": 2
+      },
+      {
+        "sample_text": "Hey there! I think there is an incorrect charge on my account. Can you assist?",
+        "class": "Transaction Disputes",
+        "class number": 2
+      },
+      {
+        "sample_text": "Hi, I'd like to dispute a charge on my credit card statement.",
+        "class": "Transaction Disputes",
+        "class number": 2
+      },
+      {
+        "sample_text": "Hello, I received a receipt for a purchase I didn't make. Can you investigate?",
+        "class": "Transaction Disputes",
+        "class number": 2
+      },
+      {
+        "sample_text": "Hey, I'm seeing a transaction on my account that I don't recognize. Can you look into it?",
+        "class": "Transaction Disputes",
+        "class number": 2
+      },
+      {
+        "sample_text": "Hi, I believe there was a double charge on my debit card. Can you help me fix it?",
+        "class": "Transaction Disputes",
+        "class number": 2
+      },
+      {
+        "sample_text": "Hello, I need assistance in disputing a transaction on my account.",
+        "class": "Transaction Disputes",
+        "class number": 2
+      },
+      {
+        "sample_text": "Hey there! I received an email about a purchase I didn't make. What should I do?",
+        "class": "Transaction Disputes",
+        "class number": 2
+      },
+      {
+        "sample_text": "Hi, there is a transaction on my account that I did not authorize. Can you help me?",
+        "class": "Transaction Disputes",
+        "class number": 2
+      },
+      {
+        "sample_text": "Hello, I'd like to report a fraudulent transaction on my credit card.",
+        "class": "Transaction Disputes",
+        "class number": 2
+      },
+      {
+        "sample_text": "Hey, I noticed an incorrect withdrawal from my account. Can you assist me?",
+        "class": "Transaction Disputes",
+        "class number": 2
+      },
+      {
+        "sample_text": "Hi, I need help resolving a discrepancy in my recent transaction history.",
+        "class": "Transaction Disputes",
+        "class number": 2
+      },
+      {
+        "sample_text": "Hello, there is an unknown charge on my account. Can you investigate?",
+        "class": "Transaction Disputes",
+        "class number": 2
+      },
+      {
+        "sample_text": "Hey there! I believe there was an error in processing my payment. Can you check?",
+        "class": "Transaction Disputes",
+        "class number": 2
+      },
+      {
+        "sample_text": "Hi, I'm disputing a charge on my account and need assistance.",
+        "class": "Transaction Disputes",
+        "class number": 2
+      },
+      {
+        "sample_text": "Hello, I need to dispute a transaction on my debit card. Can you help me?",
+        "class": "Transaction Disputes",
+        "class number": 2
+      },
+      {
+        "sample_text": "Hey, I received a statement with a charge I don't recognize. Can you investigate?",
+        "class": "Transaction Disputes",
+        "class number": 2
+      },
+      {
+        "sample_text": "Hi, I need to report a suspicious transaction on my account.",
+        "class": "Transaction Disputes",
+        "class number": 2
+      },
+      {
+        "sample_text": "Hello, I noticed an unauthorized transaction on my credit card statement.",
+        "class": "Transaction Disputes",
+        "class number": 2
+      },
+      {
+        "sample_text": "Hi, I'm having trouble logging into my online banking account.",
+        "class": "Online Banking Assistance",
+        "class number": 3
+      },
+      {
+        "sample_text": "Hello, I forgot my online banking password. Can you help me reset it?",
+        "class": "Online Banking Assistance",
+        "class number": 3
+      },
+      {
+        "sample_text": "Hey there! I'm having trouble navigating through the online banking website.",
+        "class": "Online Banking Assistance",
+        "class number": 3
+      },
+      {
+        "sample_text": "Hi, I need assistance in setting up my online banking account.",
+        "class": "Online Banking Assistance",
+        "class number": 3
+      },
+      {
+        "sample_text": "Hello, I'm trying to access my account online but it's not working. Can you assist?",
+        "class": "Online Banking Assistance",
+        "class number": 3
+      },
+      {
+        "sample_text": "Hey, I'm unable to access my online banking account. Can you troubleshoot?",
+        "class": "Online Banking Assistance",
+        "class number": 3
+      },
+      {
+        "sample_text": "Hi, I'm encountering errors while trying to transfer funds online.",
+        "class": "Online Banking Assistance",
+        "class number": 3
+      },
+      {
+        "sample_text": "Hello, I'm locked out of my online banking account. Can you unlock it?",
+        "class": "Online Banking Assistance",
+        "class number": 3
+      },
+      {
+        "sample_text": "Hey there! I need help registering for online banking. Can you guide me?",
+        "class": "Online Banking Assistance",
+        "class number": 3
+      },
+      {
+        "sample_text": "Hi, I'm experiencing issues with the online banking app. Can you fix it?",
+        "class": "Online Banking Assistance",
+        "class number": 3
+      },
+      {
+        "sample_text": "Hello, I need to update my contact information on my online banking profile.",
+        "class": "Online Banking Assistance",
+        "class number": 3
+      },
+      {
+        "sample_text": "Hey, I'm unable to view my account statements online. Can you help me?",
+        "class": "Online Banking Assistance",
+        "class number": 3
+      },
+      {
+        "sample_text": "Hi, I'd like to check my recent bill payments.",
+        "class": "Bill Payments",
+        "class number": 4
+      },
+      {
+        "sample_text": "Hello, I need assistance in setting up automatic bill payments.",
+        "class": "Bill Payments",
+        "class number": 4
+      },
+      {
+        "sample_text": "Hey there! I didn't receive a confirmation for my bill payment. Can you help?",
+        "class": "Bill Payments",
+        "class number": 4
+      },
+      {
+        "sample_text": "Hi, I accidentally paid the wrong bill. Can you assist me in reversing it?",
+        "class": "Bill Payments",
+        "class number": 4
+      },
+      {
+        "sample_text": "Hello, I'm having trouble adding a new payee for bill payments. Can you troubleshoot?",
+        "class": "Bill Payments",
+        "class number": 4
+      },
+      {
+        "sample_text": "Hey, I'd like to inquire about the processing time for bill payments.",
+        "class": "Bill Payments",
+        "class number": 4
+      },
+      {
+        "sample_text": "Hi, I need help canceling a scheduled bill payment. Can you assist?",
+        "class": "Bill Payments",
+        "class number": 4
+      },
+      {
+        "sample_text": "Hello, I'm unable to view my bill payment history. Can you help me access it?",
+        "class": "Bill Payments",
+        "class number": 4
+      },
+      {
+        "sample_text": "Hi, I'm having trouble accessing the mobile banking app. Can you help?",
+        "class": "Mobile Banking Support",
+        "class number": 5
+      },
+      {
+        "sample_text": "Hello, I'm unable to deposit a check using the mobile banking app. Can you assist?",
+        "class": "Mobile Banking Support",
+        "class number": 5
+      },
+      {
+        "sample_text": "Hey there! I'm seeing an error message when trying to transfer money via the mobile app.",
+        "class": "Mobile Banking Support",
+        "class number": 5
+      },
+      {
+        "sample_text": "Hi, the mobile banking app is freezing on my device. Can you provide a solution?",
+        "class": "Mobile Banking Support",
+        "class number": 5
+      },
+      {
+        "sample_text": "Hello, I'm trying to pay a bill using the mobile app but it's not working. Can you help?",
+        "class": "Mobile Banking Support",
+        "class number": 5
+      },
+      {
+        "sample_text": "Hey, I need assistance setting up fingerprint login on the mobile banking app.",
+        "class": "Mobile Banking Support",
+        "class number": 5
+      },
+      {
+        "sample_text": "Hi, I'm unable to view my account balance on the mobile banking app. Can you troubleshoot?",
+        "class": "Mobile Banking Support",
+        "class number": 5
+      },
+      {
+        "sample_text": "Hello, the mobile banking app is crashing whenever I try to log in. Can you fix it?",
+        "class": "Mobile Banking Support",
+        "class number": 5
+      },
+      {
+        "sample_text": "Hey there! I'm getting an 'invalid credentials' error on the mobile app. Can you assist?",
+        "class": "Mobile Banking Support",
+        "class number": 5
+      },
+      {
+        "sample_text": "Hi, I'm unable to find the mobile deposit feature on the banking app. Can you guide me?",
+        "class": "Mobile Banking Support",
+        "class number": 5
+      },
+      {
+        "sample_text": "Hello, I need help updating my mobile phone number in the banking app settings.",
+        "class": "Mobile Banking Support",
+        "class number": 5
+      },
+      {
+        "sample_text": "Hey, I'm unable to locate the mobile app in the app store. Can you provide assistance?",
+        "class": "Mobile Banking Support",
+        "class number": 5
+      },
+      {
+        "sample_text": "Hi, I received a notification about a security update for the mobile app. Can you provide details?",
+        "class": "Mobile Banking Support",
+        "class number": 5
+      },
+      {
+        "sample_text": "Hello, the mobile app is showing outdated account information. Can you help refresh it?",
+        "class": "Mobile Banking Support",
+        "class number": 5
+      },
+      {
+        "sample_text": "Hey there! I'm having trouble navigating through the mobile banking app. Can you assist?",
+        "class": "Mobile Banking Support",
+        "class number": 5
+      },
+      {
+        "sample_text": "Hi, I accidentally logged out of the mobile banking app and can't log back in. Can you help?",
+        "class": "Mobile Banking Support",
+        "class number": 5
+      },
+      {
+        "sample_text": "Hello, the mobile app is not displaying recent transactions. Can you troubleshoot?",
+        "class": "Mobile Banking Support",
+        "class number": 5
+      },
+      {
+        "sample_text": "Hey, I'm unable to update the mobile app to the latest version. Can you provide guidance?",
+        "class": "Mobile Banking Support",
+        "class number": 5
+      },
+      {
+        "sample_text": "Hi, I'm receiving an error message when trying to link accounts on the mobile app. Can you assist?",
+        "class": "Mobile Banking Support",
+        "class number": 5
+      },
+      {
+        "sample_text": "Hello, I'm trying to find the mobile check deposit feature in the app. Can you help?",
+        "class": "Mobile Banking Support",
+        "class number": 5
+      },
+      {
+        "sample_text": "Hi, I want to close my savings account. Can you assist with the process?",
+        "class": "Account Closure",
+        "class number": 6
+      },
+      {
+        "sample_text": "Hello, I no longer need my checking account. How can I close it?",
+        "class": "Account Closure",
+        "class number": 6
+      },
+      {
+        "sample_text": "Hey there! I'm considering closing my credit card account. What are the steps?",
+        "class": "Account Closure",
+        "class number": 6
+      },
+      {
+        "sample_text": "Hi, I'm moving to a different bank. Can you help me close my accounts?",
+        "class": "Account Closure",
+        "class number": 6
+      },
+      {
+        "sample_text": "Hello, I want to close my account due to relocation. How do I proceed?",
+        "class": "Account Closure",
+        "class number": 6
+      },
+      {
+        "sample_text": "Hey, I'm consolidating my accounts and need to close some. Can you assist?",
+        "class": "Account Closure",
+        "class number": 6
+      },
+      {
+        "sample_text": "Hi, I'm dissatisfied with the bank's services and want to close my accounts.",
+        "class": "Account Closure",
+        "class number": 6
+      },
+      {
+        "sample_text": "Hello, I'm closing my account as I'm switching to a different bank. How do I proceed?",
+        "class": "Account Closure",
+        "class number": 6
+      },
+      {
+        "sample_text": "Hey there! I want to close my joint account with another person. Can you help?",
+        "class": "Account Closure",
+        "class number": 6
+      },
+      {
+        "sample_text": "Hi, I'm closing my account due to financial reasons. What are the next steps?",
+        "class": "Account Closure",
+        "class number": 6
+      },
+      {
+        "sample_text": "Hello, I'm closing my account as I no longer require banking services. Can you assist?",
+        "class": "Account Closure",
+        "class number": 6
+      },
+      {
+        "sample_text": "Hey, I want to close my account but still have outstanding checks. What should I do?",
+        "class": "Account Closure",
+        "class number": 6
+      },
+      {
+        "sample_text": "Hi, I'm closing my account due to dissatisfaction with the bank's policies. How do I proceed?",
+        "class": "Account Closure",
+        "class number": 6
+      },
+      {
+        "sample_text": "Hello, I'm closing my account as I'm moving abroad. Can you guide me through the process?",
+        "class": "Account Closure",
+        "class number": 6
+      },
+      {
+        "sample_text": "Hey there! I want to close my account as I'm switching to online banking only. Can you help?",
+        "class": "Account Closure",
+        "class number": 6
+      },
+      {
+        "sample_text": "Hi, I'm closing my account as I'm retiring. How do I proceed with the closure?",
+        "class": "Account Closure",
+        "class number": 6
+      },
+      {
+        "sample_text": "Hello, I'm closing my account due to a change in financial circumstances. Can you assist?",
+        "class": "Account Closure",
+        "class number": 6
+      },
+      {
+        "sample_text": "Hey, I want to close my account but have automatic payments set up. What should I do?",
+        "class": "Account Closure",
+        "class number": 6
+      },
+      {
+        "sample_text": "Hi, I'm closing my account as I'm switching to a credit union. Can you guide me through the process?",
+        "class": "Account Closure",
+        "class number": 6
+      },
+      {
+        "sample_text": "Hello, I'm closing my account due to dissatisfaction with the bank's customer service. How do I proceed?",
+        "class": "Account Closure",
+        "class number": 6
+      },
+      {
+        "sample_text": "Hi, I need to update my mailing address on file. How can I do that?",
+        "class": "Address Change",
+        "class number": 7
+      },
+      {
+        "sample_text": "Hello, I recently moved and need to update my address with the bank. Can you help?",
+        "class": "Address Change",
+        "class number": 7
+      },
+      {
+        "sample_text": "Hey there! I want to change my billing address for all my accounts. Can you assist?",
+        "class": "Address Change",
+        "class number": 7
+      },
+      {
+        "sample_text": "Hi, I've relocated and need to update my address for correspondence. How do I proceed?",
+        "class": "Address Change",
+        "class number": 7
+      },
+      {
+        "sample_text": "Hello, I'm updating my address. Can you guide me through the process?",
+        "class": "Address Change",
+        "class number": 7
+      },
+      {
+        "sample_text": "Hey, I need to change my mailing address due to a recent move. Can you help with that?",
+        "class": "Address Change",
+        "class number": 7
+      },
+      {
+        "sample_text": "Hi, I've moved homes and need to update my address on file. What are the steps?",
+        "class": "Address Change",
+        "class number": 7
+      },
+      {
+        "sample_text": "Hello, I want to update my address to ensure I receive important mailings. Can you assist?",
+        "class": "Address Change",
+        "class number": 7
+      },
+      {
+        "sample_text": "Hey there! I need to change my address for my credit card statements. How do I do that?",
+        "class": "Address Change",
+        "class number": 7
+      },
+      {
+        "sample_text": "Hi, I'm updating my contact information, including my address. Can you help me with that?",
+        "class": "Address Change",
+        "class number": 7
+      },
+      {
+        "sample_text": "Hello, I've moved to a new city and need to update my address for banking purposes. Can you assist?",
+        "class": "Address Change",
+        "class number": 7
+      },
+      {
+        "sample_text": "Hey, I need to change my address for all my accounts. Can you provide guidance?",
+        "class": "Address Change",
+        "class number": 7
+      },
+      {
+        "sample_text": "Hi, I've recently changed residences and need to update my address. Can you help me?",
+        "class": "Address Change",
+        "class number": 7
+      },
+      {
+        "sample_text": "Hello, I need to change my address to continue receiving statements. How can I do that?",
+        "class": "Address Change",
+        "class number": 7
+      },
+      {
+        "sample_text": "Hey there! I want to update my address for all my accounts. Can you assist me?",
+        "class": "Address Change",
+        "class number": 7
+      },
+      {
+        "sample_text": "Hi, I've relocated and need to update my address on file. Can you guide me through the process?",
+        "class": "Address Change",
+        "class number": 7
+      },
+      {
+        "sample_text": "Hello, I need to change my address due to a recent move. Can you help me with that?",
+        "class": "Address Change",
+        "class number": 7
+      },
+      {
+        "sample_text": "Hey, I'm updating my contact details, including my address. Can you provide assistance?",
+        "class": "Address Change",
+        "class number": 7
+      },
+      {
+        "sample_text": "Hi, I've moved homes and need to update my address for banking purposes. What are the steps?",
+        "class": "Address Change",
+        "class number": 7
+      },
+      {
+        "sample_text": "Hello, I want to update my address to ensure I receive important communications. Can you assist?",
+        "class": "Address Change",
+        "class number": 7
+      },
+      {
+        "sample_text": "Hi, I need to order new checks for my checking account. How can I do that?",
+        "class": "Check Ordering",
+        "class number": 8
+      },
+      {
+        "sample_text": "Hello, I want to order checks with a new design for my account. Can you assist?",
+        "class": "Check Ordering",
+        "class number": 8
+      },
+      {
+        "sample_text": "Hey there! I need to order a new checkbook as I've run out of checks. Can you help?",
+        "class": "Check Ordering",
+        "class number": 8
+      },
+      {
+        "sample_text": "Hi, I want to order checks for the first time. How do I go about it?",
+        "class": "Check Ordering",
+        "class number": 8
+      },
+      {
+        "sample_text": "Hello, I need to order business checks for my company's account. Can you assist?",
+        "class": "Check Ordering",
+        "class number": 8
+      },
+      {
+        "sample_text": "Hey, I'm running low on checks and need to reorder them. Can you help me with that?",
+        "class": "Check Ordering",
+        "class number": 8
+      },
+      {
+        "sample_text": "Hi, I want to order duplicate checks for my personal account. How can I do that?",
+        "class": "Check Ordering",
+        "class number": 8
+      },
+      {
+        "sample_text": "Hello, I need to order checks with my new address printed on them. Can you guide me?",
+        "class": "Check Ordering",
+        "class number": 8
+      },
+      {
+        "sample_text": "Hey there! I'm interested in ordering checks with a custom design. Can you assist?",
+        "class": "Check Ordering",
+        "class number": 8
+      },
+      {
+        "sample_text": "Hi, I want to order checks for my joint account with my spouse. How do I proceed?",
+        "class": "Check Ordering",
+        "class number": 8
+      },
+      {
+        "sample_text": "Hello, I need to order checks with my company logo printed on them. Can you help?",
+        "class": "Check Ordering",
+        "class number": 8
+      },
+      {
+        "sample_text": "Hey, I'm looking to order checks with a specific theme. Can you provide options?",
+        "class": "Check Ordering",
+        "class number": 8
+      },
+      {
+        "sample_text": "Hi, I want to order checks for my child's account. How can I do that?",
+        "class": "Check Ordering",
+        "class number": 8
+      },
+      {
+        "sample_text": "Hello, I need to order checks in a rush. Is there an expedited shipping option?",
+        "class": "Check Ordering",
+        "class number": 8
+      },
+      {
+        "sample_text": "Hey there! I'm looking to order checks with additional security features. Can you assist?",
+        "class": "Check Ordering",
+        "class number": 8
+      },
+      {
+        "sample_text": "Hi, I want to order checks for my business account. How do I proceed?",
+        "class": "Check Ordering",
+        "class number": 8
+      },
+      {
+        "sample_text": "Hello, I need to order checks with my spouse's name added. Can you guide me?",
+        "class": "Check Ordering",
+        "class number": 8
+      },
+      {
+        "sample_text": "Hey, I'm interested in ordering checks with a scenic design. Can you help me?",
+        "class": "Check Ordering",
+        "class number": 8
+      },
+      {
+        "sample_text": "Hi, I want to order checks for my personal account with express delivery. How can I do that?",
+        "class": "Check Ordering",
+        "class number": 8
+      },
+      {
+        "sample_text": "Hello, I need to order checks for my business account with rush processing. Can you assist?",
+        "class": "Check Ordering",
+        "class number": 8
+      },
+      {
+        "sample_text": "Hi, I need assistance in setting up direct deposit for my paycheck. Can you help?",
+        "class": "Direct Deposit Setup",
+        "class number": 9
+      },
+      {
+        "sample_text": "Hello, I want to enroll in direct deposit for my salary payments. How can I do that?",
+        "class": "Direct Deposit Setup",
+        "class number": 9
+      },
+      {
+        "sample_text": "Hey there! I'm new to direct deposit. Can you guide me through the setup process?",
+        "class": "Direct Deposit Setup",
+        "class number": 9
+      },
+      {
+        "sample_text": "Hi, I need assistance in linking my bank account for direct deposit. Can you assist?",
+        "class": "Direct Deposit Setup",
+        "class number": 9
+      },
+      {
+        "sample_text": "Hello, I want to set up direct deposit for my government benefits. How do I proceed?",
+        "class": "Direct Deposit Setup",
+        "class number": 9
+      },
+      {
+        "sample_text": "Hey, I'm having trouble setting up direct deposit for my pension payments. Can you help?",
+        "class": "Direct Deposit Setup",
+        "class number": 9
+      },
+      {
+        "sample_text": "Hi, I need assistance in providing my employer with the necessary information for direct deposit. Can you guide me?",
+        "class": "Direct Deposit Setup",
+        "class number": 9
+      },
+      {
+        "sample_text": "Hello, I'm trying to set up direct deposit for my Social Security benefits. Can you assist?",
+        "class": "Direct Deposit Setup",
+        "class number": 9
+      },
+      {
+        "sample_text": "Hey there! I want to switch to direct deposit for my rental income. How do I do that?",
+        "class": "Direct Deposit Setup",
+        "class number": 9
+      },
+      {
+        "sample_text": "Hi, I need help setting up direct deposit for my commission payments. Can you help me with that?",
+        "class": "Direct Deposit Setup",
+        "class number": 9
+      },
+      {
+        "sample_text": "Hello, I'm a freelancer and want to set up direct deposit for my client payments. Can you guide me?",
+        "class": "Direct Deposit Setup",
+        "class number": 9
+      },
+      {
+        "sample_text": "Hey, I'm having trouble enrolling in direct deposit for my unemployment benefits. Can you assist?",
+        "class": "Direct Deposit Setup",
+        "class number": 9
+      },
+      {
+        "sample_text": "Hi, I want to set up direct deposit for my rental property income. How can I do that?",
+        "class": "Direct Deposit Setup",
+        "class number": 9
+      },
+      {
+        "sample_text": "Hello, I need assistance in setting up direct deposit for my annuity payments. Can you help?",
+        "class": "Direct Deposit Setup",
+        "class number": 9
+      },
+      {
+        "sample_text": "Hey there! I want to switch to direct deposit for my dividend payments. How do I proceed?",
+        "class": "Direct Deposit Setup",
+        "class number": 9
+      },
+      {
+        "sample_text": "Hi, I'm having trouble setting up direct deposit for my tax refunds. Can you guide me through the process?",
+        "class": "Direct Deposit Setup",
+        "class number": 9
+      },
+      {
+        "sample_text": "Hello, I want to enroll in direct deposit for my scholarship payments. Can you assist?",
+        "class": "Direct Deposit Setup",
+        "class number": 9
+      },
+      {
+        "sample_text": "Hey, I need assistance in setting up direct deposit for my disability payments. Can you help?",
+        "class": "Direct Deposit Setup",
+        "class number": 9
+      },
+      {
+        "sample_text": "Hi, I want to set up direct deposit for my alimony payments. How do I proceed?",
+        "class": "Direct Deposit Setup",
+        "class number": 9
+      },
+      {
+        "sample_text": "Hello, I'm trying to set up direct deposit for my pension benefits. Can you assist?",
+        "class": "Direct Deposit Setup",
+        "class number": 9
+      },
+      {
+        "sample_text": "Hi, I need help understanding a recent charge on my credit card statement. Can you assist?",
+        "class": "Credit Card Statement Inquiry",
+        "class number": 10
+      },
+      {
+        "sample_text": "Hello, I noticed an unfamiliar transaction on my credit card statement. Can you help me investigate?",
+        "class": "Credit Card Statement Inquiry",
+        "class number": 10
+      },
+      {
+        "sample_text": "Hey there! I'm unsure about a fee listed on my credit card statement. Can you provide clarification?",
+        "class": "Credit Card Statement Inquiry",
+        "class number": 10
+      },
+      {
+        "sample_text": "Hi, I need assistance in understanding the interest charges on my credit card statement. Can you explain?",
+        "class": "Credit Card Statement Inquiry",
+        "class number": 10
+      },
+      {
+        "sample_text": "Hello, I want to dispute a charge on my credit card statement. How do I proceed?",
+        "class": "Credit Card Statement Inquiry",
+        "class number": 10
+      },
+      {
+        "sample_text": "Hey, I received my credit card statement and have questions about the charges. Can you help?",
+        "class": "Credit Card Statement Inquiry",
+        "class number": 10
+      },
+      {
+        "sample_text": "Hi, I'm confused about the rewards points listed on my credit card statement. Can you provide details?",
+        "class": "Credit Card Statement Inquiry",
+        "class number": 10
+      },
+      {
+        "sample_text": "Hello, I need assistance in reconciling my credit card statement. Can you guide me through the process?",
+        "class": "Credit Card Statement Inquiry",
+        "class number": 10
+      },
+      {
+        "sample_text": "Hey there! I want to inquire about a pending transaction on my credit card statement. Can you assist?",
+        "class": "Credit Card Statement Inquiry",
+        "class number": 10
+      },
+      {
+        "sample_text": "Hi, I'm unsure about the annual fee listed on my credit card statement. Can you provide information?",
+        "class": "Credit Card Statement Inquiry",
+        "class number": 10
+      },
+      {
+        "sample_text": "Hello, I need clarification on the foreign transaction fees listed on my credit card statement. Can you help?",
+        "class": "Credit Card Statement Inquiry",
+        "class number": 10
+      },
+      {
+        "sample_text": "Hey, I'm trying to understand the billing cycle on my credit card statement. Can you explain?",
+        "class": "Credit Card Statement Inquiry",
+        "class number": 10
+      },
+      {
+        "sample_text": "Hi, I noticed duplicate charges on my credit card statement. Can you assist in resolving this?",
+        "class": "Credit Card Statement Inquiry",
+        "class number": 10
+      },
+      {
+        "sample_text": "Hello, I need help interpreting the transaction descriptions on my credit card statement. Can you provide clarification?",
+        "class": "Credit Card Statement Inquiry",
+        "class number": 10
+      },
+      {
+        "sample_text": "Hey there! I want to understand the late payment charges on my credit card statement. Can you assist?",
+        "class": "Credit Card Statement Inquiry",
+        "class number": 10
+      },
+      {
+        "sample_text": "Hi, I'm unsure about the credit limit listed on my credit card statement. Can you provide information?",
+        "class": "Credit Card Statement Inquiry",
+        "class number": 10
+      },
+      {
+        "sample_text": "Hello, I need help understanding the cash advance charges on my credit card statement. Can you explain?",
+        "class": "Credit Card Statement Inquiry",
+        "class number": 10
+      },
+      {
+        "sample_text": "Hey, I'm trying to identify a charge on my credit card statement. Can you assist?",
+        "class": "Credit Card Statement Inquiry",
+        "class number": 10
+      },
+      {
+        "sample_text": "Hi, I received my credit card statement and noticed discrepancies. Can you help me reconcile?",
+        "class": "Credit Card Statement Inquiry",
+        "class number": 10
+      },
+      {
+        "sample_text": "Hello, I need assistance in understanding the payment due date on my credit card statement. Can you provide details?",
+        "class": "Credit Card Statement Inquiry",
+        "class number": 10
+      },
+      {
+        "sample_text": "Hi, I'm trying to reset my online banking password. Can you help?",
+        "class": "Password Reset",
+        "class number": 11
+      },
+      {
+        "sample_text": "Hello, I forgot my online banking password. How can I reset it?",
+        "class": "Password Reset",
+        "class number": 11
+      },
+      {
+        "sample_text": "Hey there! I need to change my online banking password. Can you assist?",
+        "class": "Password Reset",
+        "class number": 11
+      },
+      {
+        "sample_text": "Hi, I'm having trouble logging into my online banking account. Can you reset my password?",
+        "class": "Password Reset",
+        "class number": 11
+      },
+      {
+        "sample_text": "Hello, I want to update my online banking password for security reasons. How do I do that?",
+        "class": "Password Reset",
+        "class number": 11
+      },
+      {
+        "sample_text": "Hey, I received a notification to change my online banking password. Can you guide me through the process?",
+        "class": "Password Reset",
+        "class number": 11
+      },
+      {
+        "sample_text": "Hi, I need to reset my online banking password as a security measure. Can you help?",
+        "class": "Password Reset",
+        "class number": 11
+      },
+      {
+        "sample_text": "Hello, I want to reset my online banking password to something more secure. Can you assist?",
+        "class": "Password Reset",
+        "class number": 11
+      },
+      {
+        "sample_text": "Hey there! I'm locked out of my online banking account and need to reset my password. Can you help me?",
+        "class": "Password Reset",
+        "class number": 11
+      },
+      {
+        "sample_text": "Hi, I suspect my online banking password has been compromised. Can you help me reset it?",
+        "class": "Password Reset",
+        "class number": 11
+      },
+      {
+        "sample_text": "Hello, I need to reset my online banking password as I can't remember it. Can you assist?",
+        "class": "Password Reset",
+        "class number": 11
+      },
+      {
+        "sample_text": "Hey, I want to change my online banking password as a precautionary measure. How do I proceed?",
+        "class": "Password Reset",
+        "class number": 11
+      },
+      {
+        "sample_text": "Hi, I'm experiencing difficulties logging into my online banking account. Can you reset my password?",
+        "class": "Password Reset",
+        "class number": 11
+      },
+      {
+        "sample_text": "Hello, I received a notification to change my online banking password due to security concerns. Can you assist?",
+        "class": "Password Reset",
+        "class number": 11
+      },
+      {
+        "sample_text": "Hey there! I want to reset my online banking password to something more memorable. Can you help?",
+        "class": "Password Reset",
+        "class number": 11
+      },
+      {
+        "sample_text": "Hi, I need assistance in resetting my online banking password. Can you guide me through the process?",
+        "class": "Password Reset",
+        "class number": 11
+      },
+      {
+        "sample_text": "Hello, I want to change my online banking password to something more secure. Can you assist?",
+        "class": "Password Reset",
+        "class number": 11
+      },
+      {
+        "sample_text": "Hey, I forgot my online banking password and need to reset it. Can you help me?",
+        "class": "Password Reset",
+        "class number": 11
+      },
+      {
+        "sample_text": "Hi, I need to reset my online banking password as a security precaution. Can you assist?",
+        "class": "Password Reset",
+        "class number": 11
+      },
+      {
+        "sample_text": "Hello, I'm having trouble accessing my online banking account and need to reset my password. Can you help?",
+        "class": "Password Reset",
+        "class number": 11
+      },
+      {
+        "sample_text": "Hi, I need to update my contact information associated with my account. Can you assist?",
+        "class": "Contact Information Update",
+        "class number": 12
+      },
+      {
+        "sample_text": "Hello, I recently changed my phone number and need to update it in my account. How can I do that?",
+        "class": "Contact Information Update",
+        "class number": 12
+      },
+      {
+        "sample_text": "Hey there! I want to change my email address linked to my account. Can you guide me?",
+        "class": "Contact Information Update",
+        "class number": 12
+      },
+      {
+        "sample_text": "Hi, I've moved and need to update my mailing address in my account details. Can you help?",
+        "class": "Contact Information Update",
+        "class number": 12
+      },
+      {
+        "sample_text": "Hello, I need to update my emergency contact information on file. How do I proceed?",
+        "class": "Contact Information Update",
+        "class number": 12
+      },
+      {
+        "sample_text": "Hey, I recently got married and need to update my last name in my account. Can you assist?",
+        "class": "Contact Information Update",
+        "class number": 12
+      },
+      {
+        "sample_text": "Hi, I need to update my contact preferences for account notifications. Can you help?",
+        "class": "Contact Information Update",
+        "class number": 12
+      },
+      {
+        "sample_text": "Hello, I want to update my primary contact number in my account profile. How can I do that?",
+        "class": "Contact Information Update",
+        "class number": 12
+      },
+      {
+        "sample_text": "Hey there! I've changed my address and need to update it in my account information. Can you guide me?",
+        "class": "Contact Information Update",
+        "class number": 12
+      },
+      {
+        "sample_text": "Hi, I need to update my contact details for security verification purposes. Can you assist?",
+        "class": "Contact Information Update",
+        "class number": 12
+      },
+      {
+        "sample_text": "Hello, I recently got a new phone number and need to update it on my account. How do I proceed?",
+        "class": "Contact Information Update",
+        "class number": 12
+      },
+      {
+        "sample_text": "Hey, I've changed my email address and need to update it in my account settings. Can you help?",
+        "class": "Contact Information Update",
+        "class number": 12
+      },
+      {
+        "sample_text": "Hi, I need to update my contact information for billing purposes. Can you assist?",
+        "class": "Contact Information Update",
+        "class number": 12
+      },
+      {
+        "sample_text": "Hello, I want to change my mailing address for account statements. Can you guide me through the process?",
+        "class": "Contact Information Update",
+        "class number": 12
+      },
+      {
+        "sample_text": "Hey there! I need to update my contact information for account security reasons. Can you assist?",
+        "class": "Contact Information Update",
+        "class number": 12
+      },
+      {
+        "sample_text": "Hi, I recently got a new email address and need to update it on my account. How can I do that?",
+        "class": "Contact Information Update",
+        "class number": 12
+      },
+      {
+        "sample_text": "Hello, I want to update my contact details to receive account alerts. Can you help?",
+        "class": "Contact Information Update",
+        "class number": 12
+      },
+      {
+        "sample_text": "Hey, I need to update my contact information to ensure smooth communication. Can you guide me?",
+        "class": "Contact Information Update",
+        "class number": 12
+      },
+      {
+        "sample_text": "Hi, I'm updating my contact information. Can you assist me in making the changes?",
+        "class": "Contact Information Update",
+        "class number": 12
+      },
+      {
+        "sample_text": "Hello, I want to update my phone number associated with my account. Can you assist?",
+        "class": "Contact Information Update",
+        "class number": 12
+      },
+      {
+        "sample_text": "Hi, I need help in understanding my recent transaction history. Can you assist?",
+        "class": "Transaction History Inquiry",
+        "class number": 13
+      },
+      {
+        "sample_text": "Hello, I want to review my transaction history for the past month. How can I access it?",
+        "class": "Transaction History Inquiry",
+        "class number": 13
+      },
+      {
+        "sample_text": "Hey there! I'm looking for a specific transaction in my history. Can you help me find it?",
+        "class": "Transaction History Inquiry",
+        "class number": 13
+      },
+      {
+        "sample_text": "Hi, I need a copy of my transaction history for tax purposes. Can you assist?",
+        "class": "Transaction History Inquiry",
+        "class number": 13
+      },
+      {
+        "sample_text": "Hello, I want to download my transaction history for budgeting purposes. How do I do that?",
+        "class": "Transaction History Inquiry",
+        "class number": 13
+      },
+      {
+        "sample_text": "Hey, I need to reconcile my records with my transaction history. Can you provide it?",
+        "class": "Transaction History Inquiry",
+        "class number": 13
+      },
+      {
+        "sample_text": "Hi, I'm disputing a charge and need to review my transaction history. Can you help?",
+        "class": "Transaction History Inquiry",
+        "class number": 13
+      },
+      {
+        "sample_text": "Hello, I need assistance in understanding the charges in my transaction history. Can you explain?",
+        "class": "Transaction History Inquiry",
+        "class number": 13
+      },
+      {
+        "sample_text": "Hey there! I want to verify a payment in my transaction history. Can you assist?",
+        "class": "Transaction History Inquiry",
+        "class number": 13
+      },
+      {
+        "sample_text": "Hi, I need my transaction history for my business accounting. Can you provide it?",
+        "class": "Transaction History Inquiry",
+        "class number": 13
+      },
+      {
+        "sample_text": "Hello, I want to review my recent transactions to check for any unauthorized activity. How do I do that?",
+        "class": "Transaction History Inquiry",
+        "class number": 13
+      },
+      {
+        "sample_text": "Hey, I need to verify a payment made last week. Can you help me find it in my transaction history?",
+        "class": "Transaction History Inquiry",
+        "class number": 13
+      },
+      {
+        "sample_text": "Hi, I need to print out my transaction history for my records. Can you guide me through the process?",
+        "class": "Transaction History Inquiry",
+        "class number": 13
+      },
+      {
+        "sample_text": "Hello, I'm reviewing my monthly expenses and need my transaction history. Can you assist?",
+        "class": "Transaction History Inquiry",
+        "class number": 13
+      },
+      {
+        "sample_text": "Hey there! I want to view my transaction history online. How can I access it?",
+        "class": "Transaction History Inquiry",
+        "class number": 13
+      },
+      {
+        "sample_text": "Hi, I need my transaction history to reconcile my bank statement. Can you provide it?",
+        "class": "Transaction History Inquiry",
+        "class number": 13
+      },
+      {
+        "sample_text": "Hello, I'm looking for a particular transaction from last month. Can you help me find it?",
+        "class": "Transaction History Inquiry",
+        "class number": 13
+      },
+      {
+        "sample_text": "Hey, I need assistance in understanding a transaction listed in my history. Can you explain?",
+        "class": "Transaction History Inquiry",
+        "class number": 13
+      },
+      {
+        "sample_text": "Hi, I need my transaction history to provide proof of payment. Can you assist?",
+        "class": "Transaction History Inquiry",
+        "class number": 13
+      },
+      {
+        "sample_text": "Hello, I want to review my recent transactions to ensure accuracy. Can you help me access my transaction history?",
+        "class": "Transaction History Inquiry",
+        "class number": 13
+      },
+      {
+        "sample_text": "Hi, I need assistance in setting up a recurring transfer between my accounts. Can you help?",
+        "class": "Recurring Transfer Setup",
+        "class number": 14
+      },
+      {
+        "sample_text": "Hello, I want to schedule a recurring transfer from my savings to checking account. How can I do that?",
+        "class": "Recurring Transfer Setup",
+        "class number": 14
+      },
+      {
+        "sample_text": "Hey there! I need to automate a monthly transfer to my investment account. Can you assist?",
+        "class": "Recurring Transfer Setup",
+        "class number": 14
+      },
+      {
+        "sample_text": "Hi, I'm interested in setting up a recurring transfer for my bill payments. Can you guide me?",
+        "class": "Recurring Transfer Setup",
+        "class number": 14
+      },
+      {
+        "sample_text": "Hello, I want to schedule a recurring transfer to my child's account. How do I proceed?",
+        "class": "Recurring Transfer Setup",
+        "class number": 14
+      },
+      {
+        "sample_text": "Hey, I need to set up a weekly transfer to my emergency fund account. Can you help?",
+        "class": "Recurring Transfer Setup",
+        "class number": 14
+      },
+      {
+        "sample_text": "Hi, I need assistance in automating my monthly mortgage payment. Can you assist?",
+        "class": "Recurring Transfer Setup",
+        "class number": 14
+      },
+      {
+        "sample_text": "Hello, I want to set up a recurring transfer for my retirement savings. How can I do that?",
+        "class": "Recurring Transfer Setup",
+        "class number": 14
+      },
+      {
+        "sample_text": "Hey there! I'm looking to automate a weekly transfer to my vacation fund. Can you guide me through the process?",
+        "class": "Recurring Transfer Setup",
+        "class number": 14
+      },
+      {
+        "sample_text": "Hi, I need to schedule a monthly transfer to my child's education fund. Can you assist?",
+        "class": "Recurring Transfer Setup",
+        "class number": 14
+      },
+      {
+        "sample_text": "Hello, I want to automate a bi-weekly transfer to my investment portfolio. How do I proceed?",
+        "class": "Recurring Transfer Setup",
+        "class number": 14
+      },
+      {
+        "sample_text": "Hey, I need assistance in setting up a recurring transfer for my utility bill payments. Can you help?",
+        "class": "Recurring Transfer Setup",
+        "class number": 14
+      },
+      {
+        "sample_text": "Hi, I want to schedule a recurring transfer to my emergency savings account. Can you assist?",
+        "class": "Recurring Transfer Setup",
+        "class number": 14
+      },
+      {
+        "sample_text": "Hello, I'm interested in automating a monthly transfer to my IRA. How can I do that?",
+        "class": "Recurring Transfer Setup",
+        "class number": 14
+      },
+      {
+        "sample_text": "Hey there! I need to set up a bi-weekly transfer to my child's college fund. Can you guide me through the process?",
+        "class": "Recurring Transfer Setup",
+        "class number": 14
+      },
+      {
+        "sample_text": "Hi, I need assistance in automating my monthly car loan payment. Can you assist?",
+        "class": "Recurring Transfer Setup",
+        "class number": 14
+      },
+      {
+        "sample_text": "Hello, I want to schedule a recurring transfer to my vacation savings account. How do I proceed?",
+        "class": "Recurring Transfer Setup",
+        "class number": 14
+      },
+      {
+        "sample_text": "Hey, I'm looking to automate a weekly transfer to my child's allowance account. Can you help?",
+        "class": "Recurring Transfer Setup",
+        "class number": 14
+      },
+      {
+        "sample_text": "Hi, I need to set up a monthly transfer to my insurance premium account. Can you assist?",
+        "class": "Recurring Transfer Setup",
+        "class number": 14
+      },
+      {
+        "sample_text": "Hello, I want to schedule a recurring transfer to my pet's medical expenses account. How can I do that?",
+        "class": "Recurring Transfer Setup",
+        "class number": 14
+      },
+      {
+        "sample_text": "Hi, I need assistance in activating my debit card. Can you help?",
+        "class": "Debit Card Activation",
+        "class number": 15
+      },
+      {
+        "sample_text": "Hello, I just received my new debit card. How do I activate it?",
+        "class": "Debit Card Activation",
+        "class number": 15
+      },
+      {
+        "sample_text": "Hey there! I'm trying to use my new debit card for the first time. Do I need to activate it?",
+        "class": "Debit Card Activation",
+        "class number": 15
+      },
+      {
+        "sample_text": "Hi, I received my debit card in the mail. How do I activate it to start using it?",
+        "class": "Debit Card Activation",
+        "class number": 15
+      },
+      {
+        "sample_text": "Hello, I need assistance in activating my replacement debit card. Can you guide me?",
+        "class": "Debit Card Activation",
+        "class number": 15
+      },
+      {
+        "sample_text": "Hey, I lost my debit card and got a replacement. How do I activate it?",
+        "class": "Debit Card Activation",
+        "class number": 15
+      },
+      {
+        "sample_text": "Hi, I received a new debit card due to expiration. How do I activate the new one?",
+        "class": "Debit Card Activation",
+        "class number": 15
+      },
+      {
+        "sample_text": "Hello, my old debit card was damaged, and I received a new one. How do I activate it?",
+        "class": "Debit Card Activation",
+        "class number": 15
+      },
+      {
+        "sample_text": "Hey there! I received a replacement debit card after it was stolen. How do I activate it?",
+        "class": "Debit Card Activation",
+        "class number": 15
+      },
+      {
+        "sample_text": "Hi, I recently opened a new account and received a debit card. How do I activate it?",
+        "class": "Debit Card Activation",
+        "class number": 15
+      },
+      {
+        "sample_text": "Hello, my old debit card expired, and I received a new one. How do I activate the new card?",
+        "class": "Debit Card Activation",
+        "class number": 15
+      },
+      {
+        "sample_text": "Hey, I got a replacement debit card, but I'm unsure how to activate it. Can you assist?",
+        "class": "Debit Card Activation",
+        "class number": 15
+      },
+      {
+        "sample_text": "Hi, I received my new debit card in the mail today. How do I activate it?",
+        "class": "Debit Card Activation",
+        "class number": 15
+      },
+      {
+        "sample_text": "Hello, I need help activating my new debit card. Can you guide me through the process?",
+        "class": "Debit Card Activation",
+        "class number": 15
+      },
+      {
+        "sample_text": "Hey there! I received my replacement debit card. How do I activate it?",
+        "class": "Debit Card Activation",
+        "class number": 15
+      },
+      {
+        "sample_text": "Hi, I received my new debit card in the mail. How do I go about activating it?",
+        "class": "Debit Card Activation",
+        "class number": 15
+      },
+      {
+        "sample_text": "Hello, I received a new debit card. How do I activate it so I can start using it?",
+        "class": "Debit Card Activation",
+        "class number": 15
+      },
+      {
+        "sample_text": "Hey, I just received my replacement debit card. How do I activate it?",
+        "class": "Debit Card Activation",
+        "class number": 15
+      },
+      {
+        "sample_text": "Hi, I received my new debit card today. How do I activate it for use?",
+        "class": "Debit Card Activation",
+        "class number": 15
+      },
+      {
+        "sample_text": "Hello, I received a new debit card in the mail. How do I activate it?",
+        "class": "Debit Card Activation",
+        "class number": 15
+      },
+      {
+        "sample_text": "Hi, I need to report unauthorized transactions on my debit card. Can you assist?",
+        "class": "Unauthorized Transactions",
+        "class number": 16
+      },
+      {
+        "sample_text": "Hello, I noticed some unauthorized charges on my debit card statement. How do I report them?",
+        "class": "Unauthorized Transactions",
+        "class number": 16
+      },
+      {
+        "sample_text": "Hey there! There are transactions on my debit card that I didn't authorize. Can you help me resolve this?",
+        "class": "Unauthorized Transactions",
+        "class number": 16
+      },
+      {
+        "sample_text": "Hi, I need to dispute some transactions on my debit card. How do I proceed?",
+        "class": "Unauthorized Transactions",
+        "class number": 16
+      },
+      {
+        "sample_text": "Hello, I believe my debit card has been compromised. What should I do?",
+        "class": "Unauthorized Transactions",
+        "class number": 16
+      },
+      {
+        "sample_text": "Hey, there are charges on my debit card that I didn't make. Can you assist me in resolving this?",
+        "class": "Unauthorized Transactions",
+        "class number": 16
+      },
+      {
+        "sample_text": "Hi, I need to report fraudulent activity on my debit card. Can you help me with this?",
+        "class": "Unauthorized Transactions",
+        "class number": 16
+      },
+      {
+        "sample_text": "Hello, there are unauthorized withdrawals from my debit card. How can I report them?",
+        "class": "Unauthorized Transactions",
+        "class number": 16
+      },
+      {
+        "sample_text": "Hey there! I need to dispute some fraudulent charges on my debit card. Can you assist?",
+        "class": "Unauthorized Transactions",
+        "class number": 16
+      },
+      {
+        "sample_text": "Hi, I've noticed transactions on my debit card that I didn't authorize. How do I resolve this issue?",
+        "class": "Unauthorized Transactions",
+        "class number": 16
+      },
+      {
+        "sample_text": "Hello, I suspect fraudulent activity on my debit card. What steps should I take?",
+        "class": "Unauthorized Transactions",
+        "class number": 16
+      },
+      {
+        "sample_text": "Hey, there are charges on my debit card that I don't recognize. Can you help me investigate?",
+        "class": "Unauthorized Transactions",
+        "class number": 16
+      },
+      {
+        "sample_text": "Hi, I need assistance in disputing unauthorized charges on my debit card. Can you guide me?",
+        "class": "Unauthorized Transactions",
+        "class number": 16
+      },
+      {
+        "sample_text": "Hello, I need to report suspicious transactions on my debit card. How do I do that?",
+        "class": "Unauthorized Transactions",
+        "class number": 16
+      },
+      {
+        "sample_text": "Hey there! I need to dispute charges on my debit card that I didn't authorize. Can you assist?",
+        "class": "Unauthorized Transactions",
+        "class number": 16
+      },
+      {
+        "sample_text": "Hi, I noticed unauthorized charges on my debit card. Can you help me resolve this issue?",
+        "class": "Unauthorized Transactions",
+        "class number": 16
+      },
+      {
+        "sample_text": "Hello, there are transactions on my debit card that I didn't make. How can I report them?",
+        "class": "Unauthorized Transactions",
+        "class number": 16
+      },
+      {
+        "sample_text": "Hey, I need assistance in disputing unauthorized transactions on my debit card. Can you guide me?",
+        "class": "Unauthorized Transactions",
+        "class number": 16
+      },
+      {
+        "sample_text": "Hi, I suspect my debit card has been used fraudulently. What should I do?",
+        "class": "Unauthorized Transactions",
+        "class number": 16
+      },
+      {
+        "sample_text": "Hello, I need to report unauthorized charges on my debit card. Can you assist me?",
+        "class": "Unauthorized Transactions",
+        "class number": 16
+      },
+      {
+        "sample_text": "Hi, I need to request a replacement debit card as mine is damaged. Can you assist?",
+        "class": "Debit Card Replacement",
+        "class number": 17
+      },
+      {
+        "sample_text": "Hello, my debit card was stolen, and I need to request a replacement. How do I do that?",
+        "class": "Debit Card Replacement",
+        "class number": 17
+      },
+      {
+        "sample_text": "Hey there! I lost my debit card and need to request a replacement. Can you guide me?",
+        "class": "Debit Card Replacement",
+        "class number": 17
+      },
+      {
+        "sample_text": "Hi, I need to replace my debit card as it's about to expire. How do I proceed?",
+        "class": "Debit Card Replacement",
+        "class number": 17
+      },
+      {
+        "sample_text": "Hello, I accidentally damaged my debit card and need to request a replacement. Can you assist?",
+        "class": "Debit Card Replacement",
+        "class number": 17
+      },
+      {
+        "sample_text": "Hey, my debit card is worn out, and I need a replacement. How can I request one?",
+        "class": "Debit Card Replacement",
+        "class number": 17
+      },
+      {
+        "sample_text": "Hi, I need to replace my debit card as it's no longer working. Can you help me with this?",
+        "class": "Debit Card Replacement",
+        "class number": 17
+      },
+      {
+        "sample_text": "Hello, my debit card got damaged in the washing machine. How do I request a replacement?",
+        "class": "Debit Card Replacement",
+        "class number": 17
+      },
+      {
+        "sample_text": "Hey there! I need to replace my debit card as it was misplaced. Can you guide me through the process?",
+        "class": "Debit Card Replacement",
+        "class number": 17
+      },
+      {
+        "sample_text": "Hi, I lost my wallet, including my debit card. How can I request a replacement?",
+        "class": "Debit Card Replacement",
+        "class number": 17
+      },
+      {
+        "sample_text": "Hello, my debit card was damaged, and I need to request a replacement. Can you assist?",
+        "class": "Debit Card Replacement",
+        "class number": 17
+      },
+      {
+        "sample_text": "Hey, my debit card was stolen, and I need to replace it. How do I go about this?",
+        "class": "Debit Card Replacement",
+        "class number": 17
+      },
+      {
+        "sample_text": "Hi, I need to request a replacement debit card as mine is lost. Can you help me with this?",
+        "class": "Debit Card Replacement",
+        "class number": 17
+      },
+      {
+        "sample_text": "Hello, my debit card expired, and I need to request a replacement. How can I do that?",
+        "class": "Debit Card Replacement",
+        "class number": 17
+      },
+      {
+        "sample_text": "Hey there! My debit card was damaged, and I need to replace it. Can you guide me?",
+        "class": "Debit Card Replacement",
+        "class number": 17
+      },
+      {
+        "sample_text": "Hi, I need a replacement debit card as mine was stolen. Can you assist me in getting one?",
+        "class": "Debit Card Replacement",
+        "class number": 17
+      },
+      {
+        "sample_text": "Hello, I need to replace my debit card as I lost it. How do I request a new one?",
+        "class": "Debit Card Replacement",
+        "class number": 17
+      },
+      {
+        "sample_text": "Hey, my debit card is damaged, and I need a replacement. How can I get one?",
+        "class": "Debit Card Replacement",
+        "class number": 17
+      },
+      {
+        "sample_text": "Hi, I accidentally threw away my debit card and need to replace it. Can you help?",
+        "class": "Debit Card Replacement",
+        "class number": 17
+      },
+      {
+        "sample_text": "Hello, my debit card got lost while traveling, and I need to request a replacement. How do I proceed?",
+        "class": "Debit Card Replacement",
+        "class number": 17
+      },
+      {
+        "sample_text": "Hi, I need to update my phone number associated with my account. Can you assist?",
+        "class": "Contact Information Update",
+        "class number": 18
+      },
+      {
+        "sample_text": "Hello, I recently changed my phone number and need to update it in my account. How can I do that?",
+        "class": "Contact Information Update",
+        "class number": 18
+      },
+      {
+        "sample_text": "Hey there! I want to change my email address linked to my account. Can you guide me?",
+        "class": "Contact Information Update",
+        "class number": 18
+      },
+      {
+        "sample_text": "Hi, I've moved and need to update my mailing address in my account details. Can you help?",
+        "class": "Contact Information Update",
+        "class number": 18
+      },
+      {
+        "sample_text": "Hello, I need to update my emergency contact information on file. How do I proceed?",
+        "class": "Contact Information Update",
+        "class number": 18
+      },
+      {
+        "sample_text": "Hey, I recently got married and need to update my last name in my account. Can you assist?",
+        "class": "Contact Information Update",
+        "class number": 18
+      },
+      {
+        "sample_text": "Hi, I need to update my contact preferences for account notifications. Can you help?",
+        "class": "Contact Information Update",
+        "class number": 18
+      },
+      {
+        "sample_text": "Hello, I want to update my primary contact number in my account profile. How can I do that?",
+        "class": "Contact Information Update",
+        "class number": 18
+      },
+      {
+        "sample_text": "Hey there! I've changed my address and need to update it in my account information. Can you guide me?",
+        "class": "Contact Information Update",
+        "class number": 18
+      },
+      {
+        "sample_text": "Hi, I need to update my contact details for security verification purposes. Can you assist?",
+        "class": "Contact Information Update",
+        "class number": 18
+      },
+      {
+        "sample_text": "Hello, I recently got a new phone number and need to update it on my account. How do I proceed?",
+        "class": "Contact Information Update",
+        "class number": 18
+      },
+      {
+        "sample_text": "Hey, I've changed my email address and need to update it in my account settings. Can you help?",
+        "class": "Contact Information Update",
+        "class number": 18
+      },
+      {
+        "sample_text": "Hi, I need to update my contact information for billing purposes. Can you assist?",
+        "class": "Contact Information Update",
+        "class number": 18
+      },
+      {
+        "sample_text": "Hello, I want to change my mailing address for account statements. Can you guide me through the process?",
+        "class": "Contact Information Update",
+        "class number": 18
+      },
+      {
+        "sample_text": "Hey there! I need to update my contact information for account security reasons. Can you assist?",
+        "class": "Contact Information Update",
+        "class number": 18
+      },
+      {
+        "sample_text": "Hi, I recently got a new email address and need to update it on my account. How can I do that?",
+        "class": "Contact Information Update",
+        "class number": 18
+      },
+      {
+        "sample_text": "Hello, I want to update my contact details to receive account alerts. Can you help?",
+        "class": "Contact Information Update",
+        "class number": 18
+      },
+      {
+        "sample_text": "Hey, I need to update my contact information to ensure smooth communication. Can you guide me?",
+        "class": "Contact Information Update",
+        "class number": 18
+      },
+      {
+        "sample_text": "Hi, I'm updating my contact information. Can you assist me in making the changes?",
+        "class": "Contact Information Update",
+        "class number": 18
+      },
+      {
+        "sample_text": "Hello, I want to update my phone number associated with my account. Can you assist?",
+        "class": "Contact Information Update",
+        "class number": 18
+      },
+      {
+        "sample_text": "Hi, I need to know the address and operating hours of your nearest branch. Can you provide that information?",
+        "class": "Branch Location and Hours",
+        "class number": 19
+      },
+      {
+        "sample_text": "Hello, where is the closest branch located, and what are its business hours?",
+        "class": "Branch Location and Hours",
+        "class number": 19
+      },
+      {
+        "sample_text": "Hey there! Can you tell me the address of your branch and when it opens and closes?",
+        "class": "Branch Location and Hours",
+        "class number": 19
+      },
+      {
+        "sample_text": "Hi, I need to visit your branch. What is its location, and what time does it close today?",
+        "class": "Branch Location and Hours",
+        "class number": 19
+      },
+      {
+        "sample_text": "Hello, where can I find your nearest branch, and what are its hours on weekends?",
+        "class": "Branch Location and Hours",
+        "class number": 19
+      },
+      {
+        "sample_text": "Hey, I want to know the address of your branch and its opening hours on weekdays.",
+        "class": "Branch Location and Hours",
+        "class number": 19
+      },
+      {
+        "sample_text": "Hi, what is the address of your branch, and until what time is it open on Saturdays?",
+        "class": "Branch Location and Hours",
+        "class number": 19
+      },
+      {
+        "sample_text": "Hello, can you provide me with the address and closing time of your branch today?",
+        "class": "Branch Location and Hours",
+        "class number": 19
+      },
+      {
+        "sample_text": "Hey there! I need to visit your branch tomorrow. What are its hours of operation?",
+        "class": "Branch Location and Hours",
+        "class number": 19
+      },
+      {
+        "sample_text": "Hi, where is your branch located, and what time does it open on weekdays?",
+        "class": "Branch Location and Hours",
+        "class number": 19
+      },
+      {
+        "sample_text": "Hello, what are the business hours of your branch, and is it open on Sundays?",
+        "class": "Branch Location and Hours",
+        "class number": 19
+      },
+      {
+        "sample_text": "Hey, I'm looking for your branch's address and its hours on public holidays.",
+        "class": "Branch Location and Hours",
+        "class number": 19
+      },
+      {
+        "sample_text": "Hi, can you tell me the address of your branch and its closing time on Fridays?",
+        "class": "Branch Location and Hours",
+        "class number": 19
+      },
+      {
+        "sample_text": "Hello, where can I find your branch, and until what time is it open on Thursdays?",
+        "class": "Branch Location and Hours",
+        "class number": 19
+      },
+      {
+        "sample_text": "Hey there! I need to visit your branch soon. What are its operating hours?",
+        "class": "Branch Location and Hours",
+        "class number": 19
+      },
+      {
+        "sample_text": "Hi, what is the location of your branch, and does it have extended hours on weekends?",
+        "class": "Branch Location and Hours",
+        "class number": 19
+      },
+      {
+        "sample_text": "Hello, can you provide me with the address and opening time of your branch on Mondays?",
+        "class": "Branch Location and Hours",
+        "class number": 19
+      },
+      {
+        "sample_text": "Hey, where is your branch situated, and when does it open on weekdays?",
+        "class": "Branch Location and Hours",
+        "class number": 19
+      },
+      {
+        "sample_text": "Hi, I need to know the address and hours of operation of your branch this week. Can you assist?",
+        "class": "Branch Location and Hours",
+        "class number": 19
+      },
+      {
+        "sample_text": "Hello, what are the business hours of your branch, and is it open on holidays?",
+        "class": "Branch Location and Hours",
+        "class number": 19
+      },
+      {
+        "sample_text": "Hi, I have a question about how to report freelance income on my taxes. Can you help?",
+        "class": "Tax-related Questions",
+        "class number": 20
+      },
+      {
+        "sample_text": "Hello, I need assistance understanding which tax forms I need to fill out for my small business. Can you provide guidance?",
+        "class": "Tax-related Questions",
+        "class number": 20
+      },
+      {
+        "sample_text": "Hey there! I'm not sure if I qualify for any tax deductions this year. Can you help me figure it out?",
+        "class": "Tax-related Questions",
+        "class number": 20
+      },
+      {
+        "sample_text": "Hi, I need to know how to report investment income on my tax return. Can you assist?",
+        "class": "Tax-related Questions",
+        "class number": 20
+      },
+      {
+        "sample_text": "Hello, I have questions about claiming dependents on my tax return. Can you provide information on this?",
+        "class": "Tax-related Questions",
+        "class number": 20
+      },
+      {
+        "sample_text": "Hey, I'm confused about how to report rental income on my taxes. Can you clarify this for me?",
+        "class": "Tax-related Questions",
+        "class number": 20
+      },
+      {
+        "sample_text": "Hi, I need assistance understanding the tax implications of selling stocks. Can you provide guidance?",
+        "class": "Tax-related Questions",
+        "class number": 20
+      },
+      {
+        "sample_text": "Hello, I'm unsure if I need to pay taxes on my cryptocurrency investments. Can you help me with this?",
+        "class": "Tax-related Questions",
+        "class number": 20
+      },
+      {
+        "sample_text": "Hey there! I need to know if I qualify for any tax credits this year. Can you assist?",
+        "class": "Tax-related Questions",
+        "class number": 20
+      },
+      {
+        "sample_text": "Hi, I'm not sure how to report income from a side gig on my taxes. Can you provide guidance?",
+        "class": "Tax-related Questions",
+        "class number": 20
+      },
+      {
+        "sample_text": "Hello, I need assistance understanding how to file taxes as a freelancer. Can you help?",
+        "class": "Tax-related Questions",
+        "class number": 20
+      },
+      {
+        "sample_text": "Hey, I have questions about tax deductions for home office expenses. Can you clarify this for me?",
+        "class": "Tax-related Questions",
+        "class number": 20
+      },
+      {
+        "sample_text": "Hi, I need to know if I'm eligible for any tax exemptions. Can you assist?",
+        "class": "Tax-related Questions",
+        "class number": 20
+      },
+      {
+        "sample_text": "Hello, I have questions about claiming mileage deductions for my business. Can you provide information on this?",
+        "class": "Tax-related Questions",
+        "class number": 20
+      },
+      {
+        "sample_text": "Hey there! I'm not sure how to report rental property income on my taxes. Can you help me with this?",
+        "class": "Tax-related Questions",
+        "class number": 20
+      },
+      {
+        "sample_text": "Hi, what's the weather like today?",
+        "class": "General",
+        "class number": 21
+      },
+      {
+        "sample_text": "Hello, can you recommend a good book to read?",
+        "class": "General",
+        "class number": 21
+      },
+      {
+        "sample_text": "Hey there! What's your favorite movie?",
+        "class": "General",
+        "class number": 21
+      },
+      {
+        "sample_text": "Hi, do you know any good recipes for pasta?",
+        "class": "General",
+        "class number": 21
+      },
+      {
+        "sample_text": "Hello, can you suggest some fun activities to do on weekends?",
+        "class": "General",
+        "class number": 21
+      },
+      {
+        "sample_text": "Hey, what's your favorite hobby?",
+        "class": "General",
+        "class number": 21
+      },
+      {
+        "sample_text": "Hi, do you have any travel tips for visiting Europe?",
+        "class": "General",
+        "class number": 21
+      },
+      {
+        "sample_text": "Hello, what's your favorite cuisine?",
+        "class": "General",
+        "class number": 21
+      },
+      {
+        "sample_text": "Hey there! Can you recommend a good workout routine?",
+        "class": "General",
+        "class number": 21
+      },
+      {
+        "sample_text": "Hi, do you have any suggestions for improving productivity?",
+        "class": "General",
+        "class number": 21
+      },
+      {
+        "sample_text": "Hello, what's your favorite type of music?",
+        "class": "General",
+        "class number": 21
+      },
+      {
+        "sample_text": "Hey, can you recommend a good podcast to listen to?",
+        "class": "General",
+        "class number": 21
+      },
+      {
+        "sample_text": "Hi, do you have any tips for learning a new language?",
+        "class": "General",
+        "class number": 21
+      },
+      {
+        "sample_text": "Hello, what's your favorite holiday destination?",
+        "class": "General",
+        "class number": 21
+      },
+      {
+        "sample_text": "Hey there! Can you recommend a good restaurant in town?",
+        "class": "General",
+        "class number": 21
+      },
+      {
+        "sample_text": "Hi, do you know any good online courses for personal development?",
+        "class": "General",
+        "class number": 21
+      },
+      {
+        "sample_text": "Hello, what's your favorite sport?",
+        "class": "General",
+        "class number": 21
+      },
+      {
+        "sample_text": "Hey, can you suggest some tips for improving sleep quality?",
+        "class": "General",
+        "class number": 21
+      },
+      {
+        "sample_text": "Hi, do you have any recommendations for managing stress?",
+        "class": "General",
+        "class number": 21
+      },
+      {
+        "sample_text": "Hello, what's your favorite type of dessert?",
+        "class": "General",
+        "class number": 21
+      }
+    ]
   }
 ]
