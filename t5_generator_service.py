@@ -10,7 +10,8 @@ from app.utils import build_prompt
 # model_name = "google/flan-t5-xl"
 # model_name = "google/flan-t5-large"
 # model_name = "models/flan_t5_base_generator"
-model_name = "models/flan-t5-small"
+# model_name = "models/flan-t5-small"
+model_name = "Serj/intent-classifier"
 model_suffix = model_name.split("/")[1]
 model = T5ForConditionalGeneration.from_pretrained(model_name)
 tokenizer = T5Tokenizer.from_pretrained(model_name)
