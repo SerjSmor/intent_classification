@@ -1,7 +1,11 @@
+# ml
 torch
 transformers
 scikit-learn
 pandas
 sentencepiece
-invoke
 accelerate
+# runnong notebooks
+jupyter
+# creating pipelines
+invoke
