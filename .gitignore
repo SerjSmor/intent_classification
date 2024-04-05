@@ -1,5 +1,7 @@
 # Project specific
 models/
+archived_experiments/
+results/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
