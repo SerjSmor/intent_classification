@@ -5,6 +5,16 @@ Overall I'm interested in researching how far can we push the performance of sma
 
 Current focus - create the best zero shot classifier on a T5 architecture (Flan-T5-Base).
 Model link: https://huggingface.co/Serj/intent-classifier
+Throughout the project I will refer to this model as intent-classifier, and it wasn't fine tuned on Atis.
+
+# Zero shot Leaderboard on Atis 
+
+| Model name | F1 AVG |
+| -------- | ------- |
+| intent-classifier | 0.69 |
+| bart-mnli | 0.4 |
+| flan-t5-base | 0.006 |
+
 
 # Setup
 Create virtualenv 
@@ -21,3 +31,11 @@ https://serj-smor.medium.com/mlops-without-magic-100365b22d1a
 
 # Hugging Face Model Link
 https://huggingface.co/Serj/intent-classifier
+
+# Train 
+```
+$ inv train
+```
+
+# Run a prediction
+predict.py
