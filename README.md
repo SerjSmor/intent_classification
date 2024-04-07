@@ -11,11 +11,11 @@ Throughout the project I will refer to this model as intent-classifier, and it w
 
 # Zero shot Leaderboard on Atis 
 
-| Model name | F1 AVG |
-| -------- | ------- |
-| intent-classifier | 0.69 |
-| bart-mnli | 0.4 |
-| flan-t5-base | 0.006 |
+| Model name | Weighted F1 AVG | Num parameters |
+| -------- | ------- | -------|
+| intent-classifier | 0.69 | 250M |
+| bart-mnli | 0.4 | 406M |
+| flan-t5-base | 0.006 | 250M |
 
 
 # Setup
