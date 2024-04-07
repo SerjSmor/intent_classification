@@ -6,6 +6,7 @@ Overall I'm interested in researching how far can we push the performance of sma
 Current focus - create the best zero shot classifier on a T5 architecture (Flan-T5-Base).
 
 Model link: https://huggingface.co/Serj/intent-classifier
+
 Throughout the project I will refer to this model as intent-classifier, and it wasn't fine tuned on Atis.
 
 # Zero shot Leaderboard on Atis 
