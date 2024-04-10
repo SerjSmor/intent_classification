@@ -41,7 +41,7 @@ def prepare_dataset(dataset):
         company_name = company_dict["Company Name"]
         df["Company Name"] = company_name
         # BUILD prompts
-        df[GENERATOR_LABELS] = df.apply(lambda row: f"Class name: {row['class_name']}", axis=1)
+        df[GENERATOR_LABELS] = df.apply(lambda row: f"{row['class_name']}", axis=1)
         df[PROMPT_OPTIONS] = prompt_options
         df[GENERATOR_TEXT] = df.apply(
             lambda row: build_prompt(row["sample_text"], row[PROMPT_OPTIONS], row["Company Name"]), axis=1)
