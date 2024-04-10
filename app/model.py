@@ -24,5 +24,7 @@ class IntentClassifier:
         return decoded_output
 
 if __name__ == '__main__':
-    m = IntentClassifier()
-    print(m.predict("I have some stuff", "OPTIONS: 1. stuff, 2. stuff", "stuff", "stuff"))
+    m = IntentClassifier("serj/intent-classifier")
+    print(m.predict("Hey, after recent changes, I want to cancel subscription, please help.",
+                    "OPTIONS:\n refund\n cancel subscription\n damaged item\n return item\n", "Company",
+                    "Products and subscriptions"))
