@@ -1,0 +1,1111 @@
+{
+  "Company Name": "Atis Arilines",
+  "Taxonomy": {},
+  "Examples": [
+    {
+      "sample_text": "what is fare code f",
+      "class": "Abbreviation and Fare Code Meaning Inquiry",
+      "class number": 1
+    },
+    {
+      "sample_text": "what does restriction ap 57 mean",
+      "class": "Abbreviation and Fare Code Meaning Inquiry",
+      "class number": 1
+    },
+    {
+      "sample_text": "what does ewr mean",
+      "class": "Abbreviation and Fare Code Meaning Inquiry",
+      "class number": 1
+    },
+    {
+      "sample_text": "what is fare code h",
+      "class": "Abbreviation and Fare Code Meaning Inquiry",
+      "class number": 1
+    },
+    {
+      "sample_text": "what does ewr stand for",
+      "class": "Abbreviation and Fare Code Meaning Inquiry",
+      "class number": 1
+    },
+    {
+      "sample_text": "what are fare codes qw and qx",
+      "class": "Abbreviation and Fare Code Meaning Inquiry",
+      "class number": 1
+    },
+    {
+      "sample_text": "what does the fare code f mean",
+      "class": "Abbreviation and Fare Code Meaning Inquiry",
+      "class number": 1
+    },
+    {
+      "sample_text": "what is fare code f",
+      "class": "Abbreviation and Fare Code Meaning Inquiry",
+      "class number": 1
+    },
+    {
+      "sample_text": "what does restriction ap 57 mean",
+      "class": "Abbreviation and Fare Code Meaning Inquiry",
+      "class number": 1
+    },
+    {
+      "sample_text": "what is fare code f",
+      "class": "Abbreviation and Fare Code Meaning Inquiry",
+      "class number": 1
+    },
+    {
+      "sample_text": "what does the abbreviation ua mean",
+      "class": "Abbreviation and Fare Code Meaning Inquiry",
+      "class number": 1
+    },
+    {
+      "sample_text": "what is restriction ap 57",
+      "class": "Abbreviation and Fare Code Meaning Inquiry",
+      "class number": 1
+    },
+    {
+      "sample_text": "explain the fare codes",
+      "class": "Abbreviation and Fare Code Meaning Inquiry",
+      "class number": 1
+    },
+    {
+      "sample_text": "what is the ap 57 restriction",
+      "class": "Abbreviation and Fare Code Meaning Inquiry",
+      "class number": 1
+    },
+    {
+      "sample_text": "what is bur",
+      "class": "Abbreviation and Fare Code Meaning Inquiry",
+      "class number": 1
+    },
+    {
+      "sample_text": "how many passengers fit on a d9s",
+      "class": "Aircraft Seating Capacity Inquiry",
+      "class number": 2
+    },
+    {
+      "sample_text": "what is the seating capacity of the various airplanes that united airlines uses",
+      "class": "Aircraft Seating Capacity Inquiry",
+      "class number": 2
+    },
+    {
+      "sample_text": "what are the seating capacities of planes between pittsburgh and baltimore",
+      "class": "Aircraft Seating Capacity Inquiry",
+      "class number": 2
+    },
+    {
+      "sample_text": "list number of people that can be carried on each type of plane that flies between pittsburgh and baltimore",
+      "class": "Aircraft Seating Capacity Inquiry",
+      "class number": 2
+    },
+    {
+      "sample_text": "how many seats in a 734",
+      "class": "Aircraft Seating Capacity Inquiry",
+      "class number": 2
+    },
+    {
+      "sample_text": "how many people fly on a turboprop",
+      "class": "Aircraft Seating Capacity Inquiry",
+      "class number": 2
+    },
+    {
+      "sample_text": "what is the seating capacity for the f28",
+      "class": "Aircraft Seating Capacity Inquiry",
+      "class number": 2
+    },
+    {
+      "sample_text": "how many seats in a 72s",
+      "class": "Aircraft Seating Capacity Inquiry",
+      "class number": 2
+    },
+    {
+      "sample_text": "what 's the capacity of an f28",
+      "class": "Aircraft Seating Capacity Inquiry",
+      "class number": 2
+    },
+    {
+      "sample_text": "how many people fit on a 72s airplane",
+      "class": "Aircraft Seating Capacity Inquiry",
+      "class number": 2
+    },
+    {
+      "sample_text": "what is the total seating capacity of all aircraft of american airlines",
+      "class": "Aircraft Seating Capacity Inquiry",
+      "class number": 2
+    },
+    {
+      "sample_text": "how many passengers can a boeing 737 hold",
+      "class": "Aircraft Seating Capacity Inquiry",
+      "class number": 2
+    },
+    {
+      "sample_text": "what 's the capacity of a 733",
+      "class": "Aircraft Seating Capacity Inquiry",
+      "class number": 2
+    },
+    {
+      "sample_text": "what is the seating capacity of a boeing 767",
+      "class": "Aircraft Seating Capacity Inquiry",
+      "class number": 2
+    },
+    {
+      "sample_text": "how many people fit on a 73s",
+      "class": "Aircraft Seating Capacity Inquiry",
+      "class number": 2
+    },
+    {
+      "sample_text": "what planes are used by twa",
+      "class": "Aircraft Type Inquiry",
+      "class number": 3
+    },
+    {
+      "sample_text": "what types of aircraft does delta fly",
+      "class": "Aircraft Type Inquiry",
+      "class number": 3
+    },
+    {
+      "sample_text": "sure i 'd like to determine what aircraft are use on july seventh leaving from boston and arriving in atlanta on july seventh",
+      "class": "Aircraft Type Inquiry",
+      "class number": 3
+    },
+    {
+      "sample_text": "what type of plane is an m80",
+      "class": "Aircraft Type Inquiry",
+      "class number": 3
+    },
+    {
+      "sample_text": "what kind of plane is used on the earliest flight from boston to san francisco afternoon",
+      "class": "Aircraft Type Inquiry",
+      "class number": 3
+    },
+    {
+      "sample_text": "show me the aircraft that canadian airlines uses",
+      "class": "Aircraft Type Inquiry",
+      "class number": 3
+    },
+    {
+      "sample_text": "i need to find a plane from boston to san francisco on friday",
+      "class": "Aircraft Type Inquiry",
+      "class number": 3
+    },
+    {
+      "sample_text": "what type of aircraft are used on flights from cleveland to dallas that leave before noon",
+      "class": "Aircraft Type Inquiry",
+      "class number": 3
+    },
+    {
+      "sample_text": "well i 'll try last time tell me the kind of aircraft united airlines flies from denver to san francisco before 10 o'clock in the morning",
+      "class": "Aircraft Type Inquiry",
+      "class number": 3
+    },
+    {
+      "sample_text": "what 's the smallest plane that flies from pittsburgh to baltimore on eight sixteen",
+      "class": "Aircraft Type Inquiry",
+      "class number": 3
+    },
+    {
+      "sample_text": "what type of aircraft flies from pittsburgh to baltimore",
+      "class": "Aircraft Type Inquiry",
+      "class number": 3
+    },
+    {
+      "sample_text": "what type of aircraft does eastern fly from atlanta to denver before 6 pm",
+      "class": "Aircraft Type Inquiry",
+      "class number": 3
+    },
+    {
+      "sample_text": "what planes does united use",
+      "class": "Aircraft Type Inquiry",
+      "class number": 3
+    },
+    {
+      "sample_text": "is there a plane from boston to washington",
+      "class": "Aircraft Type Inquiry",
+      "class number": 3
+    },
+    {
+      "sample_text": "what aircraft is co 1209",
+      "class": "Aircraft Type Inquiry",
+      "class number": 3
+    },
+    {
+      "sample_text": "what are the fares for flights serving a meal from boston to pittsburgh before noon on thursday",
+      "class": "Airfare Information Requests",
+      "class number": 4
+    },
+    {
+      "sample_text": "show me prices of flights from baltimore to dallas",
+      "class": "Airfare Information Requests",
+      "class number": 4
+    },
+    {
+      "sample_text": "how much does it cost to fly one way from boston to washington first class",
+      "class": "Airfare Information Requests",
+      "class number": 4
+    },
+    {
+      "sample_text": "show me all the one way fares from tacoma to montreal",
+      "class": "Airfare Information Requests",
+      "class number": 4
+    },
+    {
+      "sample_text": "what 's the fare for delta flight 217 from dallas to san francisco",
+      "class": "Airfare Information Requests",
+      "class number": 4
+    },
+    {
+      "sample_text": "what 's the cheapest one way ticket from baltimore to atlanta",
+      "class": "Airfare Information Requests",
+      "class number": 4
+    },
+    {
+      "sample_text": "what is the cheapest one way fare from boston to baltimore",
+      "class": "Airfare Information Requests",
+      "class number": 4
+    },
+    {
+      "sample_text": "what is the fare on november seventh going one way from dallas to san francisco",
+      "class": "Airfare Information Requests",
+      "class number": 4
+    },
+    {
+      "sample_text": "how much does it cost to fly from atlanta to san francisco",
+      "class": "Airfare Information Requests",
+      "class number": 4
+    },
+    {
+      "sample_text": "please show me round trip tickets from denver to oakland",
+      "class": "Airfare Information Requests",
+      "class number": 4
+    },
+    {
+      "sample_text": "could you please give me a one way fare from pittsburgh to atlanta",
+      "class": "Airfare Information Requests",
+      "class number": 4
+    },
+    {
+      "sample_text": "round trip fares from denver to philadelphia under 1000 dollars and pittsburgh to philadelphia under 1000 dollars",
+      "class": "Airfare Information Requests",
+      "class number": 4
+    },
+    {
+      "sample_text": "show me fares leaving on tuesdays from denver to dallas",
+      "class": "Airfare Information Requests",
+      "class number": 4
+    },
+    {
+      "sample_text": "show me the most expensive fare",
+      "class": "Airfare Information Requests",
+      "class number": 4
+    },
+    {
+      "sample_text": "round trip fares from baltimore to philadelphia under 1000 dollars",
+      "class": "Airfare Information Requests",
+      "class number": 4
+    },
+    {
+      "sample_text": "what kind of airline is flight ua 281 from boston to denver",
+      "class": "Airline Information Request",
+      "class number": 5
+    },
+    {
+      "sample_text": "please show me airlines with service from boston to denver",
+      "class": "Airline Information Request",
+      "class number": 5
+    },
+    {
+      "sample_text": "what airlines service pittsburgh airport",
+      "class": "Airline Information Request",
+      "class number": 5
+    },
+    {
+      "sample_text": "what airlines fly from toronto to san diego with a stopover in denver",
+      "class": "Airline Information Request",
+      "class number": 5
+    },
+    {
+      "sample_text": "what airline besides continental flies between boston and denver",
+      "class": "Airline Information Request",
+      "class number": 5
+    },
+    {
+      "sample_text": "show me airlines with flights from pittsburgh to boston please",
+      "class": "Airline Information Request",
+      "class number": 5
+    },
+    {
+      "sample_text": "which airlines go from san francisco to washington by way of indianapolis",
+      "class": "Airline Information Request",
+      "class number": 5
+    },
+    {
+      "sample_text": "what airlines are ac and as",
+      "class": "Airline Information Request",
+      "class number": 5
+    },
+    {
+      "sample_text": "which airline is the cheapest to fly from dallas to baltimore on december twenty fourth",
+      "class": "Airline Information Request",
+      "class number": 5
+    },
+    {
+      "sample_text": "which airlines serve pittsburgh",
+      "class": "Airline Information Request",
+      "class number": 5
+    },
+    {
+      "sample_text": "are there any airlines that have flights from boston to philadelphia that leave before 630 am",
+      "class": "Airline Information Request",
+      "class number": 5
+    },
+    {
+      "sample_text": "list airlines serving between denver and san francisco",
+      "class": "Airline Information Request",
+      "class number": 5
+    },
+    {
+      "sample_text": "which airlines fly from boston to washington dc via other cities",
+      "class": "Airline Information Request",
+      "class number": 5
+    },
+    {
+      "sample_text": "what airline is the flight originating in atlanta on november seventh at noon and arriving in san francisco at 210 pm",
+      "class": "Airline Information Request",
+      "class number": 5
+    },
+    {
+      "sample_text": "what airlines flies out of atlanta",
+      "class": "Airline Information Request",
+      "class number": 5
+    },
+    {
+      "sample_text": "what is the distance from la guardia to new york 's downtown",
+      "class": "Airport Distance Inquiry",
+      "class number": 6
+    },
+    {
+      "sample_text": "how far is it from salt lake city airport to salt lake city",
+      "class": "Airport Distance Inquiry",
+      "class number": 6
+    },
+    {
+      "sample_text": "how long does it take to get from kansas city to st. paul",
+      "class": "Airport Distance Inquiry",
+      "class number": 6
+    },
+    {
+      "sample_text": "how long is a trip from philadelphia airport to downtown philadelphia",
+      "class": "Airport Distance Inquiry",
+      "class number": 6
+    },
+    {
+      "sample_text": "what is the distance from los angeles international airport to los angeles",
+      "class": "Airport Distance Inquiry",
+      "class number": 6
+    },
+    {
+      "sample_text": "tell me distance from orlando airport to the city",
+      "class": "Airport Distance Inquiry",
+      "class number": 6
+    },
+    {
+      "sample_text": "how far from the airport in the dallas fort worth airport is dallas",
+      "class": "Airport Distance Inquiry",
+      "class number": 6
+    },
+    {
+      "sample_text": "what is the distance from boston airport to boston",
+      "class": "Airport Distance Inquiry",
+      "class number": 6
+    },
+    {
+      "sample_text": "how long does it take to get from atlanta airport into the city of atlanta",
+      "class": "Airport Distance Inquiry",
+      "class number": 6
+    },
+    {
+      "sample_text": "how long is the flight from atlanta to san francisco at noon on november seventh",
+      "class": "Airport Distance Inquiry",
+      "class number": 6
+    },
+    {
+      "sample_text": "how far is the airport from downtown pittsburgh",
+      "class": "Airport Distance Inquiry",
+      "class number": 6
+    },
+    {
+      "sample_text": "how far is it from orlando airport to orlando",
+      "class": "Airport Distance Inquiry",
+      "class number": 6
+    },
+    {
+      "sample_text": "how long does it take to fly from boston to atlanta",
+      "class": "Airport Distance Inquiry",
+      "class number": 6
+    },
+    {
+      "sample_text": "what is the distance from toronto international airport to toronto",
+      "class": "Airport Distance Inquiry",
+      "class number": 6
+    },
+    {
+      "sample_text": "how far is oakland airport from downtown",
+      "class": "Airport Distance Inquiry",
+      "class number": 6
+    },
+    {
+      "sample_text": "what ground transportation is available from the pittsburgh airport to downtown and how much does it cost",
+      "class": "Airport Ground Transportation and Cost Query",
+      "class number": 7
+    },
+    {
+      "sample_text": "does the philadelphia airport have a name",
+      "class": "Airport Information and Queries",
+      "class number": 8
+    },
+    {
+      "sample_text": "names of airports",
+      "class": "Airport Information and Queries",
+      "class number": 8
+    },
+    {
+      "sample_text": "what airport in new york is closest to downtown",
+      "class": "Airport Information and Queries",
+      "class number": 8
+    },
+    {
+      "sample_text": "what 's the name of the denver airport",
+      "class": "Airport Information and Queries",
+      "class number": 8
+    },
+    {
+      "sample_text": "houston airports",
+      "class": "Airport Information and Queries",
+      "class number": 8
+    },
+    {
+      "sample_text": "please list information regarding san francisco airport",
+      "class": "Airport Information and Queries",
+      "class number": 8
+    },
+    {
+      "sample_text": "what is the name of the airport at denver",
+      "class": "Airport Information and Queries",
+      "class number": 8
+    },
+    {
+      "sample_text": "show me airports near washington dc",
+      "class": "Airport Information and Queries",
+      "class number": 8
+    },
+    {
+      "sample_text": "what 's the airport at orlando",
+      "class": "Airport Information and Queries",
+      "class number": 8
+    },
+    {
+      "sample_text": "airports in new york",
+      "class": "Airport Information and Queries",
+      "class number": 8
+    },
+    {
+      "sample_text": "airports in new york",
+      "class": "Airport Information and Queries",
+      "class number": 8
+    },
+    {
+      "sample_text": "what is the name of the airport in philadelphia",
+      "class": "Airport Information and Queries",
+      "class number": 8
+    },
+    {
+      "sample_text": "where do the flights from boston to oakland stop",
+      "class": "Airport Information and Queries",
+      "class number": 8
+    },
+    {
+      "sample_text": "describe pittsburgh airport",
+      "class": "Airport Information and Queries",
+      "class number": 8
+    },
+    {
+      "sample_text": "houston airports",
+      "class": "Airport Information and Queries",
+      "class number": 8
+    },
+    {
+      "sample_text": "is bwi washington",
+      "class": "Airport Location Inquiry",
+      "class number": 9
+    },
+    {
+      "sample_text": "what are the cities served by delta airlines",
+      "class": "Airport Location Inquiry",
+      "class number": 9
+    },
+    {
+      "sample_text": "what city is the airport mco in",
+      "class": "Airport Location Inquiry",
+      "class number": 9
+    },
+    {
+      "sample_text": "where is general mitchell international located",
+      "class": "Airport Location Inquiry",
+      "class number": 9
+    },
+    {
+      "sample_text": "what cities does continental service",
+      "class": "Airport Location Inquiry",
+      "class number": 9
+    },
+    {
+      "sample_text": "where is lester pearson airport",
+      "class": "Airport Location Inquiry",
+      "class number": 9
+    },
+    {
+      "sample_text": "where is general mitchell international located",
+      "class": "Airport Location Inquiry",
+      "class number": 9
+    },
+    {
+      "sample_text": "where is mco",
+      "class": "Airport Location Inquiry",
+      "class number": 9
+    },
+    {
+      "sample_text": "show me city served both by nationair and canadian airlines international",
+      "class": "Airport Location Inquiry",
+      "class number": 9
+    },
+    {
+      "sample_text": "which cities does united airlines service",
+      "class": "Airport Location Inquiry",
+      "class number": 9
+    },
+    {
+      "sample_text": "what time zone is denver in",
+      "class": "Airport Location Inquiry",
+      "class number": 9
+    },
+    {
+      "sample_text": "what are the cities that american airlines serves",
+      "class": "Airport Location Inquiry",
+      "class number": 9
+    },
+    {
+      "sample_text": "show me the cities served by nationair",
+      "class": "Airport Location Inquiry",
+      "class number": 9
+    },
+    {
+      "sample_text": "what cities are served by canadian airlines international",
+      "class": "Airport Location Inquiry",
+      "class number": 9
+    },
+    {
+      "sample_text": "show me the cities served by canadian airlines international",
+      "class": "Airport Location Inquiry",
+      "class number": 9
+    },
+    {
+      "sample_text": "show me the cheapest fare in the database",
+      "class": "Cheapest Fare Inquiry",
+      "class number": 10
+    },
+    {
+      "sample_text": "show me the flights from dallas to atlanta",
+      "class": "Flight Booking Request",
+      "class number": 11
+    },
+    {
+      "sample_text": "what are the flights from indianapolis to san diego on wednesday the twelfth",
+      "class": "Flight Booking Request",
+      "class number": 11
+    },
+    {
+      "sample_text": "i would like a flight between boston and atlanta on any day at one in the afternoon",
+      "class": "Flight Booking Request",
+      "class number": 11
+    },
+    {
+      "sample_text": "may i have a listing of flights from long beach california to columbus ohio on wednesday",
+      "class": "Flight Booking Request",
+      "class number": 11
+    },
+    {
+      "sample_text": "what flights are provided by american airlines",
+      "class": "Flight Booking Request",
+      "class number": 11
+    },
+    {
+      "sample_text": "need an inexpensive flight from baltimore to san francisco",
+      "class": "Flight Booking Request",
+      "class number": 11
+    },
+    {
+      "sample_text": "show me all the flights arriving around noon in washington dc from denver",
+      "class": "Flight Booking Request",
+      "class number": 11
+    },
+    {
+      "sample_text": "i would like to see the flights from denver to philadelphia",
+      "class": "Flight Booking Request",
+      "class number": 11
+    },
+    {
+      "sample_text": "are there any nonstop flights from indianapolis to san diego on wednesday may twelfth",
+      "class": "Flight Booking Request",
+      "class number": 11
+    },
+    {
+      "sample_text": "show me the flights from baltimore to oakland",
+      "class": "Flight Booking Request",
+      "class number": 11
+    },
+    {
+      "sample_text": "show me the flights out of love field",
+      "class": "Flight Booking Request",
+      "class number": 11
+    },
+    {
+      "sample_text": "i 'd like to know the earliest flights from boston to atlanta georgia",
+      "class": "Flight Booking Request",
+      "class number": 11
+    },
+    {
+      "sample_text": "are there any flights next monday morning from pittsburgh to san francisco",
+      "class": "Flight Booking Request",
+      "class number": 11
+    },
+    {
+      "sample_text": "what are the flights from denver to baltimore on united airlines",
+      "class": "Flight Booking Request",
+      "class number": 11
+    },
+    {
+      "sample_text": "i 'd like to fly from boston to san francisco could you find me the cheapest fare",
+      "class": "Flight Booking Request",
+      "class number": 11
+    },
+    {
+      "sample_text": "list the number of flights arriving in dallas fort worth from boston before noon",
+      "class": "Flight Number Inquiry",
+      "class number": 12
+    },
+    {
+      "sample_text": "may i have a listing of flight numbers from columbus ohio to minneapolis minnesota on monday",
+      "class": "Flight Number Inquiry",
+      "class number": 12
+    },
+    {
+      "sample_text": "what is the flight number of the earliest flight between boston and washington dc",
+      "class": "Flight Number Inquiry",
+      "class number": 12
+    },
+    {
+      "sample_text": "what is the flight number for the continental flight which leaves denver at 1220 pm and goes to san francisco",
+      "class": "Flight Number Inquiry",
+      "class number": 12
+    },
+    {
+      "sample_text": "flight numbers from columbus to minneapolis tomorrow",
+      "class": "Flight Number Inquiry",
+      "class number": 12
+    },
+    {
+      "sample_text": "flight numbers from minneapolis to long beach on june twenty six",
+      "class": "Flight Number Inquiry",
+      "class number": 12
+    },
+    {
+      "sample_text": "i would like the flight number and the time for the cheapest fare that is the least expensive first class fare from san francisco to pittsburgh leaving after 8 pm monday night",
+      "class": "Flight Number Inquiry",
+      "class number": 12
+    },
+    {
+      "sample_text": "what are the flight numbers of the flights which go from san francisco to washington via indianapolis",
+      "class": "Flight Number Inquiry",
+      "class number": 12
+    },
+    {
+      "sample_text": "which is the flight number for the us air flight from philadelphia to boston is it 279 or is it 137338",
+      "class": "Flight Number Inquiry",
+      "class number": 12
+    },
+    {
+      "sample_text": "i 'm trying to find the flight number from a flight from orlando to cleveland on us air and it arrives around 10 pm",
+      "class": "Flight Number Inquiry",
+      "class number": 12
+    },
+    {
+      "sample_text": "what is the number of first class flights on american airlines",
+      "class": "Flight Number Inquiry",
+      "class number": 12
+    },
+    {
+      "sample_text": "please show me the return flight number from toronto to st. petersburg",
+      "class": "Flight Number Inquiry",
+      "class number": 12
+    },
+    {
+      "sample_text": "how many flights go from dallas to baltimore on july nineteenth",
+      "class": "Flight Quantity Inquiry",
+      "class number": 13
+    },
+    {
+      "sample_text": "how many united flights are there to san francisco",
+      "class": "Flight Quantity Inquiry",
+      "class number": 13
+    },
+    {
+      "sample_text": "how many first class flights does delta airlines have",
+      "class": "Flight Quantity Inquiry",
+      "class number": 13
+    },
+    {
+      "sample_text": "how many first class flights does united have leaving from all cities today",
+      "class": "Flight Quantity Inquiry",
+      "class number": 13
+    },
+    {
+      "sample_text": "how many cities are served by continental with first class flights",
+      "class": "Flight Quantity Inquiry",
+      "class number": 13
+    },
+    {
+      "sample_text": "how many flights does eastern airlines have from boston to atlanta",
+      "class": "Flight Quantity Inquiry",
+      "class number": 13
+    },
+    {
+      "sample_text": "how many stops are on all flights from boston to san francisco that depart before 12 o'clock noon",
+      "class": "Flight Quantity Inquiry",
+      "class number": 13
+    },
+    {
+      "sample_text": "how many flights arrive at general mitchell international",
+      "class": "Flight Quantity Inquiry",
+      "class number": 13
+    },
+    {
+      "sample_text": "how many flights does delta have with a class of service code f",
+      "class": "Flight Quantity Inquiry",
+      "class number": 13
+    },
+    {
+      "sample_text": "how many flights does each airline have with booking class k",
+      "class": "Flight Quantity Inquiry",
+      "class number": 13
+    },
+    {
+      "sample_text": "how many airlines fly from new york to los angeles by way of milwaukee",
+      "class": "Flight Quantity Inquiry",
+      "class number": 13
+    },
+    {
+      "sample_text": "please tell me how many nonstop flights there are from boston to atlanta",
+      "class": "Flight Quantity Inquiry",
+      "class number": 13
+    },
+    {
+      "sample_text": "how many first class flights does united have leaving from all cities today",
+      "class": "Flight Quantity Inquiry",
+      "class number": 13
+    },
+    {
+      "sample_text": "how many delta flights leave from washington",
+      "class": "Flight Quantity Inquiry",
+      "class number": 13
+    },
+    {
+      "sample_text": "how many cities are served by eastern with first class flights",
+      "class": "Flight Quantity Inquiry",
+      "class number": 13
+    },
+    {
+      "sample_text": "what is restriction ap80",
+      "class": "Flight Restriction Inquiry",
+      "class number": 14
+    },
+    {
+      "sample_text": "what is restriction ap57",
+      "class": "Flight Restriction Inquiry",
+      "class number": 14
+    },
+    {
+      "sample_text": "what is restriction ap57",
+      "class": "Flight Restriction Inquiry",
+      "class number": 14
+    },
+    {
+      "sample_text": "what 's restriction ap68",
+      "class": "Flight Restriction Inquiry",
+      "class number": 14
+    },
+    {
+      "sample_text": "what are the air restrictions on flights from pittsburgh to atlanta for the airfare of 416 dollars",
+      "class": "Flight Restriction Inquiry",
+      "class number": 14
+    },
+    {
+      "sample_text": "what are the restrictions on the cheapest one way fare between boston and oakland",
+      "class": "Flight Restriction Inquiry",
+      "class number": 14
+    },
+    {
+      "sample_text": "what 's the schedule of flights from atlanta to boston on august first",
+      "class": "Flight Schedule Inquiry",
+      "class number": 15
+    },
+    {
+      "sample_text": "i would like the time of all flights from san francisco to pittsburgh on sunday",
+      "class": "Flight Schedule Inquiry",
+      "class number": 15
+    },
+    {
+      "sample_text": "can you tell me the time a flight would leave from atlanta to boston in the afternoon",
+      "class": "Flight Schedule Inquiry",
+      "class number": 15
+    },
+    {
+      "sample_text": "please list the flight times from newark to boston",
+      "class": "Flight Schedule Inquiry",
+      "class number": 15
+    },
+    {
+      "sample_text": "what is delta 's schedule of morning flights to atlanta",
+      "class": "Flight Schedule Inquiry",
+      "class number": 15
+    },
+    {
+      "sample_text": "what time does flight aa 459 depart",
+      "class": "Flight Schedule Inquiry",
+      "class number": 15
+    },
+    {
+      "sample_text": "please list the flight schedule from baltimore to san francisco on friday nights",
+      "class": "Flight Schedule Inquiry",
+      "class number": 15
+    },
+    {
+      "sample_text": "please list the flight times from newark to boston",
+      "class": "Flight Schedule Inquiry",
+      "class number": 15
+    },
+    {
+      "sample_text": "i would like the time your earliest flight from washington to philadelphia",
+      "class": "Flight Schedule Inquiry",
+      "class number": 15
+    },
+    {
+      "sample_text": "when does continental fly from philadelphia to denver on sundays",
+      "class": "Flight Schedule Inquiry",
+      "class number": 15
+    },
+    {
+      "sample_text": "show me the schedule for airlines leaving pittsburgh going to san francisco for next monday",
+      "class": "Flight Schedule Inquiry",
+      "class number": 15
+    },
+    {
+      "sample_text": "what times on wednesday could i take a plane from denver to oakland",
+      "class": "Flight Schedule Inquiry",
+      "class number": 15
+    },
+    {
+      "sample_text": "what is the arrival time in san francisco for the 755 am flight leaving washington",
+      "class": "Flight Schedule Inquiry",
+      "class number": 15
+    },
+    {
+      "sample_text": "please give me the flight times i would like to fly from boston to baltimore in the morning before 8",
+      "class": "Flight Schedule Inquiry",
+      "class number": 15
+    },
+    {
+      "sample_text": "i would like the time of your earliest flight in the morning from philadelphia to washington on american airlines",
+      "class": "Flight Schedule Inquiry",
+      "class number": 15
+    },
+    {
+      "sample_text": "how much is the ground transportation between atlanta and downtown",
+      "class": "Ground Transportation Cost Inquiry",
+      "class number": 16
+    },
+    {
+      "sample_text": "how much does the limousine service cost within pittsburgh",
+      "class": "Ground Transportation Cost Inquiry",
+      "class number": 16
+    },
+    {
+      "sample_text": "what price is a limousine service in boston",
+      "class": "Ground Transportation Cost Inquiry",
+      "class number": 16
+    },
+    {
+      "sample_text": "what are the rental car rates in san francisco",
+      "class": "Ground Transportation Cost Inquiry",
+      "class number": 16
+    },
+    {
+      "sample_text": "what are the costs of car rental in dallas",
+      "class": "Ground Transportation Cost Inquiry",
+      "class number": 16
+    },
+    {
+      "sample_text": "what price is a limousine service to new york 's la guardia",
+      "class": "Ground Transportation Cost Inquiry",
+      "class number": 16
+    },
+    {
+      "sample_text": "please list the prices for a rental car in pittsburgh",
+      "class": "Ground Transportation Cost Inquiry",
+      "class number": 16
+    },
+    {
+      "sample_text": "what are the rental car rates in dallas",
+      "class": "Ground Transportation Cost Inquiry",
+      "class number": 16
+    },
+    {
+      "sample_text": "what is the cost of limousine service at logan airport",
+      "class": "Ground Transportation Cost Inquiry",
+      "class number": 16
+    },
+    {
+      "sample_text": "what are the rental car rates in dallas",
+      "class": "Ground Transportation Cost Inquiry",
+      "class number": 16
+    },
+    {
+      "sample_text": "how much does it cost to rent a car in tacoma",
+      "class": "Ground Transportation Cost Inquiry",
+      "class number": 16
+    },
+    {
+      "sample_text": "how much would car rental cost in atlanta",
+      "class": "Ground Transportation Cost Inquiry",
+      "class number": 16
+    },
+    {
+      "sample_text": "what is the cost of limousine service in philadelphia",
+      "class": "Ground Transportation Cost Inquiry",
+      "class number": 16
+    },
+    {
+      "sample_text": "can you list costs of denver rental cars",
+      "class": "Ground Transportation Cost Inquiry",
+      "class number": 16
+    },
+    {
+      "sample_text": "how much is a limousine between dallas fort worth international airport and dallas",
+      "class": "Ground Transportation Cost Inquiry",
+      "class number": 16
+    },
+    {
+      "sample_text": "what ground transportation is available in denver",
+      "class": "Ground Transportation Inquiry",
+      "class number": 17
+    },
+    {
+      "sample_text": "is there limo service at pittsburgh airport",
+      "class": "Ground Transportation Inquiry",
+      "class number": 17
+    },
+    {
+      "sample_text": "show me the ground transportation to westchester county",
+      "class": "Ground Transportation Inquiry",
+      "class number": 17
+    },
+    {
+      "sample_text": "fine can you give me information on ground transportation in washington dc to downtown",
+      "class": "Ground Transportation Inquiry",
+      "class number": 17
+    },
+    {
+      "sample_text": "what is the ground transportation from boston airport to boston downtown",
+      "class": "Ground Transportation Inquiry",
+      "class number": 17
+    },
+    {
+      "sample_text": "ground transportation washington",
+      "class": "Ground Transportation Inquiry",
+      "class number": 17
+    },
+    {
+      "sample_text": "tell me about ground transportation at san francisco",
+      "class": "Ground Transportation Inquiry",
+      "class number": 17
+    },
+    {
+      "sample_text": "ground transportation between airport and downtown in boston",
+      "class": "Ground Transportation Inquiry",
+      "class number": 17
+    },
+    {
+      "sample_text": "i need to get downtown from the denver airport",
+      "class": "Ground Transportation Inquiry",
+      "class number": 17
+    },
+    {
+      "sample_text": "dallas ground transportation",
+      "class": "Ground Transportation Inquiry",
+      "class number": 17
+    },
+    {
+      "sample_text": "what is the ground transport in denver",
+      "class": "Ground Transportation Inquiry",
+      "class number": 17
+    },
+    {
+      "sample_text": "and i 'll need ground transportation for tuesday july sixth to wednesday july seventh in san diego",
+      "class": "Ground Transportation Inquiry",
+      "class number": 17
+    },
+    {
+      "sample_text": "what ground transportation is available from pittsburgh to downtown",
+      "class": "Ground Transportation Inquiry",
+      "class number": 17
+    },
+    {
+      "sample_text": "what kinds of ground transportation is available in dallas fort worth",
+      "class": "Ground Transportation Inquiry",
+      "class number": 17
+    },
+    {
+      "sample_text": "please list ground transportation in atlanta",
+      "class": "Ground Transportation Inquiry",
+      "class number": 17
+    },
+    {
+      "sample_text": "what types of meals are available",
+      "class": "Inquiry about In-flight Meals",
+      "class number": 18
+    },
+    {
+      "sample_text": "show me all meals on flights from atlanta to washington",
+      "class": "Inquiry about In-flight Meals",
+      "class number": 18
+    },
+    {
+      "sample_text": "is there a meal on delta flight 852 from san francisco to dallas fort worth",
+      "class": "Inquiry about In-flight Meals",
+      "class number": 18
+    },
+    {
+      "sample_text": "what are my meal options from boston to denver",
+      "class": "Inquiry about In-flight Meals",
+      "class number": 18
+    },
+    {
+      "sample_text": "what are all the available meals",
+      "class": "Inquiry about In-flight Meals",
+      "class number": 18
+    },
+    {
+      "sample_text": "do i get a meal on the atlanta to bwi flight eastern 210",
+      "class": "Inquiry about In-flight Meals",
+      "class number": 18
+    }
+  ]
+}
