@@ -4,14 +4,27 @@ from transformers import pipeline, T5ForConditionalGeneration, T5Tokenizer
 from app.model import IntentClassifier
 from preprocess import preprocess_simple_dataset
 
+@task
+def preprocess(c):
+    c.run("python preprocess.py")
+
+@task
+def train(c, model_name="google/flan-t5-base", epochs=6, batch_size=8):
+    c.run("python preprocess.py")
+    c.run(f"python t5_generator_trainer.py --model-name {model_name} -e {epochs} -bs {batch_size}")
+    model_suffix = model_name.split("/")[1]
+    c.run(f"python predict.py --model-name models/{model_suffix} -p data/test.csv")
+    c.run("python results.py -p data/predictions_test.csv -pd")
 
 @task
 def train_base(c):
-    model_name = "google/flan-t5-base"
-    c.run("python preprocess.py")
-    c.run(f"python t5_generator_trainer.py --model-name {model_name} -e 20")
-    c.run(f"python predict.py --model-name models/flan-t5-base -p data/test.csv")
-    c.run("python results.py -p data/predictions_test.csv")
+    train(c, model_name="google/flan-t5-base")
+
+@task
+def train_small(c):
+    # train(c, model_name="google/flan-t5-small")
+    # train(c, model_name="google/flan-t5-small", epochs=20)
+    train(c, model_name="flan-t5-small", epochs=20)
 
 @task
 def simple_dataset_base(c):
@@ -27,42 +40,20 @@ def simple_dataset_small(c):
 
 
 @task
-def hf_pipeline_example(c):
-    classifier = pipeline("zero-shot-classification", model="serj/intent-classifier")
-    sequence_to_classify = "Hey, after recent changes, I want to cancel subscription, please help."
-    candidate_labels = ["refund", "cancel_subscription", "damaged_item", "return_item"]
-    print(classifier(sequence_to_classify, candidate_labels))
+def predict_test_hf_model(c):
+    c.run("python preprocess.py")
+    c.run("python predict.py --model-name serj/intent-classifier -p data/test.csv")
+    c.run("python results.py -p data/predictions_test.csv -pd")
 
 @task
-def helper_classes_example(c):
-    m = IntentClassifier("serj/intent-classifier")
-    print(m.predict("Hey, after recent changes, I want to cancel subscription, please help.", "OPTIONS: refund\n cancel subscription\n damaged item\n return_item\n", "Company", "Products and subscriptions"))
-
+def upload_to_hf(c):
+    model = T5ForConditionalGeneration.from_pretrained("models/flan-t5-base")
+    # push to the hub
+    model.push_to_hub("intent-classifier", token="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", commit_message="Add Atis dataset sub samples to training dataset")
 
 @task
-def no_helper_classes_example(c, model_name="serj/intent-classifier"):
-    device = "cuda"
-    model = T5ForConditionalGeneration.from_pretrained(model_name).to(device)
-    tokenizer = T5Tokenizer.from_pretrained(model_name)
-    device = device
-    input_text = '''
-    Company name: Company, is doing: products and subscription 
-    Customer: Hey, after recent changes, I want to cancel subscription, please help.
-    END MESSAGE
-    Choose one topic that matches customer's issue.
-    OPTIONS: 
-    refund 
-    cancel subscription 
-    damaged item 
-    return_item
-    Class name: "
-    
-    '''
-    input_ids = tokenizer.encode(input_text, return_tensors="pt", max_length=512, truncation=True).to(device)
-
-    # Generate the output
-    output = model.generate(input_ids)
-
-    # Decode the output tokens
-    decoded_output = tokenizer.decode(output[0], skip_special_tokens=True)
-    print(decoded_output)
+def upload_to_hf_small(c):
+    model = T5ForConditionalGeneration.from_pretrained("models/flan-t5-small")
+    # push to the hub
+    model.push_to_hub("intent-classifier-flan-t5-small", token="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",
+                      commit_message="Add Atis dataset sub samples to training dataset")

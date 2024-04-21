@@ -24,8 +24,8 @@ def preprocess():
     dataset = load_main_dataset()
     all_df = prepare_dataset(dataset)
 
-    # df_train, df_test = train_test_split(all_df, test_size=0.2, random_state=42, stratify=all_df["class_number"])
     df_train, df_test = train_test_split(all_df, test_size=0.2, random_state=42)
+    print(f"total samples: {all_df.shape[0]}")
     df_train.to_csv("data/train.csv", index=False)
     df_test.to_csv("data/test.csv", index=False)
 
@@ -47,6 +47,7 @@ def prepare_dataset(dataset):
             lambda row: build_prompt(row["sample_text"], row[PROMPT_OPTIONS], row["Company Name"]), axis=1)
         df["dataset_name"] = company_name
         all_df = pd.concat([all_df, df])
+        print(f"company: {company_name}, samples: {df.shape[0]}")
     return all_df
 
 

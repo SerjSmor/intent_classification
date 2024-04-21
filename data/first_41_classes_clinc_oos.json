@@ -1,0 +1,3696 @@
+{
+  "Company Name": "Regular company",
+  "Taxonomy": {},
+  "Examples": [
+    {
+      "sample_text": "i want to switch out of whisper mode",
+      "class": "whisper_mode",
+      "class number": 14
+    },
+    {
+      "sample_text": "use your quiet voice",
+      "class": "whisper_mode",
+      "class number": 14
+    },
+    {
+      "sample_text": "i need your setting switched to whisper mode right away",
+      "class": "whisper_mode",
+      "class number": 14
+    },
+    {
+      "sample_text": "let's start whispering",
+      "class": "whisper_mode",
+      "class number": 14
+    },
+    {
+      "sample_text": "i think we should whisper",
+      "class": "whisper_mode",
+      "class number": 14
+    },
+    {
+      "sample_text": "volume to whisper voice",
+      "class": "whisper_mode",
+      "class number": 14
+    },
+    {
+      "sample_text": "go into whisper mode now",
+      "class": "whisper_mode",
+      "class number": 14
+    },
+    {
+      "sample_text": "whisper from here on out please",
+      "class": "whisper_mode",
+      "class number": 14
+    },
+    {
+      "sample_text": "switch to quiet mode",
+      "class": "whisper_mode",
+      "class number": 14
+    },
+    {
+      "sample_text": "i'm going to need you to be quiet now please",
+      "class": "whisper_mode",
+      "class number": 14
+    },
+    {
+      "sample_text": "can you go to the whisper voice",
+      "class": "whisper_mode",
+      "class number": 14
+    },
+    {
+      "sample_text": "stop using the whisper mode",
+      "class": "whisper_mode",
+      "class number": 14
+    },
+    {
+      "sample_text": "please switch to whisper mode for now",
+      "class": "whisper_mode",
+      "class number": 14
+    },
+    {
+      "sample_text": "i want whisper mode to be switched off",
+      "class": "whisper_mode",
+      "class number": 14
+    },
+    {
+      "sample_text": "6 inch voices please",
+      "class": "whisper_mode",
+      "class number": 14
+    },
+    {
+      "sample_text": "let's use whisper voice",
+      "class": "whisper_mode",
+      "class number": 14
+    },
+    {
+      "sample_text": "can you switch to whisper mode",
+      "class": "whisper_mode",
+      "class number": 14
+    },
+    {
+      "sample_text": "i want whisper mode",
+      "class": "whisper_mode",
+      "class number": 14
+    },
+    {
+      "sample_text": "text matt and tell him i will be late tonight",
+      "class": "text",
+      "class number": 26
+    },
+    {
+      "sample_text": "send a text to someone",
+      "class": "text",
+      "class number": 26
+    },
+    {
+      "sample_text": "can you text christopher and tell them im on my way",
+      "class": "text",
+      "class number": 26
+    },
+    {
+      "sample_text": "i have to have a text sent",
+      "class": "text",
+      "class number": 26
+    },
+    {
+      "sample_text": "text christopher and tell him i will stop by",
+      "class": "text",
+      "class number": 26
+    },
+    {
+      "sample_text": "can you text elizabeth and tell them i forgot to bring drinks",
+      "class": "text",
+      "class number": 26
+    },
+    {
+      "sample_text": "send chris a text message that says stop for milk on your way home",
+      "class": "text",
+      "class number": 26
+    },
+    {
+      "sample_text": "write a text to alice",
+      "class": "text",
+      "class number": 26
+    },
+    {
+      "sample_text": "text my mom for me and tell them i will be home soon",
+      "class": "text",
+      "class number": 26
+    },
+    {
+      "sample_text": "compose text message",
+      "class": "text",
+      "class number": 26
+    },
+    {
+      "sample_text": "text my doctor and tell him it happened again",
+      "class": "text",
+      "class number": 26
+    },
+    {
+      "sample_text": "text christy and ask her what she wants for dinner",
+      "class": "text",
+      "class number": 26
+    },
+    {
+      "sample_text": "i have to send a text",
+      "class": "text",
+      "class number": 26
+    },
+    {
+      "sample_text": "text josh and tell him i need a delivery",
+      "class": "text",
+      "class number": 26
+    },
+    {
+      "sample_text": "text billy and tell him to be at monday's meeting at 3pm",
+      "class": "text",
+      "class number": 26
+    },
+    {
+      "sample_text": "send a text message",
+      "class": "text",
+      "class number": 26
+    },
+    {
+      "sample_text": "write text message to someone",
+      "class": "text",
+      "class number": 26
+    },
+    {
+      "sample_text": "give a text to my cousin linda that says happy birthday",
+      "class": "text",
+      "class number": 26
+    },
+    {
+      "sample_text": "set the temperature to 78",
+      "class": "smart_home",
+      "class number": 10
+    },
+    {
+      "sample_text": "make the temperature 78 in here",
+      "class": "smart_home",
+      "class number": 10
+    },
+    {
+      "sample_text": "put the garage lights on",
+      "class": "smart_home",
+      "class number": 10
+    },
+    {
+      "sample_text": "please start my car",
+      "class": "smart_home",
+      "class number": 10
+    },
+    {
+      "sample_text": "can you get the fan going in here",
+      "class": "smart_home",
+      "class number": 10
+    },
+    {
+      "sample_text": "make sure all doors are locked",
+      "class": "smart_home",
+      "class number": 10
+    },
+    {
+      "sample_text": "who is knocking",
+      "class": "smart_home",
+      "class number": 10
+    },
+    {
+      "sample_text": "can you get my car started",
+      "class": "smart_home",
+      "class number": 10
+    },
+    {
+      "sample_text": "lock every door on the property",
+      "class": "smart_home",
+      "class number": 10
+    },
+    {
+      "sample_text": "can you look who is at the door",
+      "class": "smart_home",
+      "class number": 10
+    },
+    {
+      "sample_text": "turn the fan on please",
+      "class": "smart_home",
+      "class number": 10
+    },
+    {
+      "sample_text": "on the lounge lights turn",
+      "class": "smart_home",
+      "class number": 10
+    },
+    {
+      "sample_text": "turn the fan on",
+      "class": "smart_home",
+      "class number": 10
+    },
+    {
+      "sample_text": "turn the fan to the on position",
+      "class": "smart_home",
+      "class number": 10
+    },
+    {
+      "sample_text": "what is the temperature on the ac",
+      "class": "smart_home",
+      "class number": 10
+    },
+    {
+      "sample_text": "set temperature to 75",
+      "class": "smart_home",
+      "class number": 10
+    },
+    {
+      "sample_text": "what's the persons name at my door",
+      "class": "smart_home",
+      "class number": 10
+    },
+    {
+      "sample_text": "please get my car started before i go out to it",
+      "class": "smart_home",
+      "class number": 10
+    },
+    {
+      "sample_text": "i think i need to make a reservation for 8 pm at red robin for 3",
+      "class": "restaurant_reservation",
+      "class number": 23
+    },
+    {
+      "sample_text": "i need you to reserve a table for 4 at red robin under the name kevin at 7",
+      "class": "restaurant_reservation",
+      "class number": 23
+    },
+    {
+      "sample_text": "i want you to book a reservation for 8 pm at red robin under the name kevin",
+      "class": "restaurant_reservation",
+      "class number": 23
+    },
+    {
+      "sample_text": "can you get me a table for 1 at the vega at 1pm",
+      "class": "restaurant_reservation",
+      "class number": 23
+    },
+    {
+      "sample_text": "can you get me a table for two for 8:00 pm at parc",
+      "class": "restaurant_reservation",
+      "class number": 23
+    },
+    {
+      "sample_text": "please reserve me a table for 2 pm at maxwell's on the 14th",
+      "class": "restaurant_reservation",
+      "class number": 23
+    },
+    {
+      "sample_text": "can you get me a table for 8 at johnnys",
+      "class": "restaurant_reservation",
+      "class number": 23
+    },
+    {
+      "sample_text": "can i make a reservation for 2 at state bird for 8:30",
+      "class": "restaurant_reservation",
+      "class number": 23
+    },
+    {
+      "sample_text": "can you get me a table for 5 at johnnys",
+      "class": "restaurant_reservation",
+      "class number": 23
+    },
+    {
+      "sample_text": "i would like a reservation for 6:30 pm at pietro's under the name david jones",
+      "class": "restaurant_reservation",
+      "class number": 23
+    },
+    {
+      "sample_text": "can you make a reservation for me at the restaurant",
+      "class": "restaurant_reservation",
+      "class number": 23
+    },
+    {
+      "sample_text": "can you get me a table for 6 at mark's at 11am",
+      "class": "restaurant_reservation",
+      "class number": 23
+    },
+    {
+      "sample_text": "call and make a 5:45 pm reservation for jason rogers, table for four",
+      "class": "restaurant_reservation",
+      "class number": 23
+    },
+    {
+      "sample_text": "can i reserve a table for 2 at the olive garden at 8",
+      "class": "restaurant_reservation",
+      "class number": 23
+    },
+    {
+      "sample_text": "i want to make a reservation for 8 pm at red robin for 3",
+      "class": "restaurant_reservation",
+      "class number": 23
+    },
+    {
+      "sample_text": "reserve a table for 4 at red lobster under the name dave at 7:30pm",
+      "class": "restaurant_reservation",
+      "class number": 23
+    },
+    {
+      "sample_text": "you have to reserve a table for 4 at red robin under the name kevin at 7",
+      "class": "restaurant_reservation",
+      "class number": 23
+    },
+    {
+      "sample_text": "can i make a reservation for 8 pm at red robin for 3",
+      "class": "restaurant_reservation",
+      "class number": 23
+    },
+    {
+      "sample_text": "remind me of the invoice total for my plumbing bill",
+      "class": "bill_balance",
+      "class number": 27
+    },
+    {
+      "sample_text": "how much are all my bills combined",
+      "class": "bill_balance",
+      "class number": 27
+    },
+    {
+      "sample_text": "i need to know the amounts due for my utilities and cable bills",
+      "class": "bill_balance",
+      "class number": 27
+    },
+    {
+      "sample_text": "what is the total amount due on my electricity bill",
+      "class": "bill_balance",
+      "class number": 27
+    },
+    {
+      "sample_text": "can you tell me what i owe for this month's phone bill",
+      "class": "bill_balance",
+      "class number": 27
+    },
+    {
+      "sample_text": "tell me how much my cable bill is",
+      "class": "bill_balance",
+      "class number": 27
+    },
+    {
+      "sample_text": "please tell me how much i owe sprint and how much i owe hsn",
+      "class": "bill_balance",
+      "class number": 27
+    },
+    {
+      "sample_text": "what's my mortgage payment going to be this month",
+      "class": "bill_balance",
+      "class number": 27
+    },
+    {
+      "sample_text": "what is the balance on my bills",
+      "class": "bill_balance",
+      "class number": 27
+    },
+    {
+      "sample_text": "how much is my current water bill for",
+      "class": "bill_balance",
+      "class number": 27
+    },
+    {
+      "sample_text": "how much do i owe on bills",
+      "class": "bill_balance",
+      "class number": 27
+    },
+    {
+      "sample_text": "how much do i need to pay on my bills",
+      "class": "bill_balance",
+      "class number": 27
+    },
+    {
+      "sample_text": "read my bill balances",
+      "class": "bill_balance",
+      "class number": 27
+    },
+    {
+      "sample_text": "i need to know the cost of the cable bill",
+      "class": "bill_balance",
+      "class number": 27
+    },
+    {
+      "sample_text": "what am i being charged for my water bill",
+      "class": "bill_balance",
+      "class number": 27
+    },
+    {
+      "sample_text": "how much in total do i need to pay cox and at&t",
+      "class": "bill_balance",
+      "class number": 27
+    },
+    {
+      "sample_text": "how much is my groceries and gas bill",
+      "class": "bill_balance",
+      "class number": 27
+    },
+    {
+      "sample_text": "how much is my water bill for",
+      "class": "bill_balance",
+      "class number": 27
+    },
+    {
+      "sample_text": "do you like cats or dogs",
+      "class": "do_you_have_pets",
+      "class number": 34
+    },
+    {
+      "sample_text": "i gotta know what kinds of pets you have",
+      "class": "do_you_have_pets",
+      "class number": 34
+    },
+    {
+      "sample_text": "how many different pets do you have",
+      "class": "do_you_have_pets",
+      "class number": 34
+    },
+    {
+      "sample_text": "i want to hear about your pets",
+      "class": "do_you_have_pets",
+      "class number": 34
+    },
+    {
+      "sample_text": "think about if you could only say one or the other, which animal do you see yourself choosing, cats or dogs",
+      "class": "do_you_have_pets",
+      "class number": 34
+    },
+    {
+      "sample_text": "do you have many kinds of pets at your house",
+      "class": "do_you_have_pets",
+      "class number": 34
+    },
+    {
+      "sample_text": "tell me all about the creatures you own",
+      "class": "do_you_have_pets",
+      "class number": 34
+    },
+    {
+      "sample_text": "are you currently a pet owner",
+      "class": "do_you_have_pets",
+      "class number": 34
+    },
+    {
+      "sample_text": "which animals do you have at home",
+      "class": "do_you_have_pets",
+      "class number": 34
+    },
+    {
+      "sample_text": "can you tell me the types of pets you have",
+      "class": "do_you_have_pets",
+      "class number": 34
+    },
+    {
+      "sample_text": "i need to know what kinds of pets you have",
+      "class": "do_you_have_pets",
+      "class number": 34
+    },
+    {
+      "sample_text": "are you a pet owner",
+      "class": "do_you_have_pets",
+      "class number": 34
+    },
+    {
+      "sample_text": "what sort of animals are your pets",
+      "class": "do_you_have_pets",
+      "class number": 34
+    },
+    {
+      "sample_text": "what are the pet types you own",
+      "class": "do_you_have_pets",
+      "class number": 34
+    },
+    {
+      "sample_text": "would you say you like dogs more or cats more",
+      "class": "do_you_have_pets",
+      "class number": 34
+    },
+    {
+      "sample_text": "tell me about your pets",
+      "class": "do_you_have_pets",
+      "class number": 34
+    },
+    {
+      "sample_text": "the pets are all good",
+      "class": "do_you_have_pets",
+      "class number": 34
+    },
+    {
+      "sample_text": "tell me whether you are a cat or dog person",
+      "class": "do_you_have_pets",
+      "class number": 34
+    },
+    {
+      "sample_text": "who is this song that's on the stereo",
+      "class": "what_song",
+      "class number": 21
+    },
+    {
+      "sample_text": "can you tell me this song",
+      "class": "what_song",
+      "class number": 21
+    },
+    {
+      "sample_text": "can you tell me the name of this song",
+      "class": "what_song",
+      "class number": 21
+    },
+    {
+      "sample_text": "what's the name of this song i'm listening to",
+      "class": "what_song",
+      "class number": 21
+    },
+    {
+      "sample_text": "what is the track title of the song playing",
+      "class": "what_song",
+      "class number": 21
+    },
+    {
+      "sample_text": "i'd like to know this song's name",
+      "class": "what_song",
+      "class number": 21
+    },
+    {
+      "sample_text": "can you look up the name of this song",
+      "class": "what_song",
+      "class number": 21
+    },
+    {
+      "sample_text": "what's this song",
+      "class": "what_song",
+      "class number": 21
+    },
+    {
+      "sample_text": "help me to know what song is playing",
+      "class": "what_song",
+      "class number": 21
+    },
+    {
+      "sample_text": "what's the name of what's playing on my speakers",
+      "class": "what_song",
+      "class number": 21
+    },
+    {
+      "sample_text": "tell me the name of the song that is playing",
+      "class": "what_song",
+      "class number": 21
+    },
+    {
+      "sample_text": "can you tell me the song we are listening to",
+      "class": "what_song",
+      "class number": 21
+    },
+    {
+      "sample_text": "what's the artist's name of this song",
+      "class": "what_song",
+      "class number": 21
+    },
+    {
+      "sample_text": "tell me the song that's playing right now",
+      "class": "what_song",
+      "class number": 21
+    },
+    {
+      "sample_text": "i need to know this song's name",
+      "class": "what_song",
+      "class number": 21
+    },
+    {
+      "sample_text": "whats the name of the playing song",
+      "class": "what_song",
+      "class number": 21
+    },
+    {
+      "sample_text": "which song is playing now",
+      "class": "what_song",
+      "class number": 21
+    },
+    {
+      "sample_text": "what is that song that's playing",
+      "class": "what_song",
+      "class number": 21
+    },
+    {
+      "sample_text": "what's the traffic like on my way to the terminal",
+      "class": "traffic",
+      "class number": 24
+    },
+    {
+      "sample_text": "what is the traffic nearest lexington",
+      "class": "traffic",
+      "class number": 24
+    },
+    {
+      "sample_text": "i must know what the traffic typically like at 3:30 on the route to phoenix",
+      "class": "traffic",
+      "class number": 24
+    },
+    {
+      "sample_text": "how bad is traffic at 8 on the way to burger king",
+      "class": "traffic",
+      "class number": 24
+    },
+    {
+      "sample_text": "is there traffic up ahead",
+      "class": "traffic",
+      "class number": 24
+    },
+    {
+      "sample_text": "has the ice made traffic messy on the way to walmart",
+      "class": "traffic",
+      "class number": 24
+    },
+    {
+      "sample_text": "how is the traffic at the nearest wal-mart pharmacy",
+      "class": "traffic",
+      "class number": 24
+    },
+    {
+      "sample_text": "how is the traffic like on my way to fairfield",
+      "class": "traffic",
+      "class number": 24
+    },
+    {
+      "sample_text": "are there alot of cars on the road before the stadium",
+      "class": "traffic",
+      "class number": 24
+    },
+    {
+      "sample_text": "what is the traffic like on the way to kaneohe",
+      "class": "traffic",
+      "class number": 24
+    },
+    {
+      "sample_text": "is there traffic on my way to work",
+      "class": "traffic",
+      "class number": 24
+    },
+    {
+      "sample_text": "traffic looking alright going towards burger king",
+      "class": "traffic",
+      "class number": 24
+    },
+    {
+      "sample_text": "is the traffic typically bad at noon on the route to the hopsital",
+      "class": "traffic",
+      "class number": 24
+    },
+    {
+      "sample_text": "how's traffic en route to virginia",
+      "class": "traffic",
+      "class number": 24
+    },
+    {
+      "sample_text": "what's the traffic like to city hall",
+      "class": "traffic",
+      "class number": 24
+    },
+    {
+      "sample_text": "will i be able to get to the mall at 5:00, or will there be a lot of traffic",
+      "class": "traffic",
+      "class number": 24
+    },
+    {
+      "sample_text": "what is the traffic like on the way to north shore",
+      "class": "traffic",
+      "class number": 24
+    },
+    {
+      "sample_text": "give me the traffic at lexington",
+      "class": "traffic",
+      "class number": 24
+    },
+    {
+      "sample_text": "how long ago was my car last in the shop",
+      "class": "last_maintenance",
+      "class number": 37
+    },
+    {
+      "sample_text": "when did i take my car to paul's auto last",
+      "class": "last_maintenance",
+      "class number": 37
+    },
+    {
+      "sample_text": "my car was looked at when",
+      "class": "last_maintenance",
+      "class number": 37
+    },
+    {
+      "sample_text": "do you know when i last took my car in to the shop",
+      "class": "last_maintenance",
+      "class number": 37
+    },
+    {
+      "sample_text": "when did i last have my vehicle checked on",
+      "class": "last_maintenance",
+      "class number": 37
+    },
+    {
+      "sample_text": "find the date of the last oil swap for my car",
+      "class": "last_maintenance",
+      "class number": 37
+    },
+    {
+      "sample_text": "please tell me the last time i took my car to the shop",
+      "class": "last_maintenance",
+      "class number": 37
+    },
+    {
+      "sample_text": "i need to know when was the last time i had my car checked out for a tune up",
+      "class": "last_maintenance",
+      "class number": 37
+    },
+    {
+      "sample_text": "look up the date of my last oil change",
+      "class": "last_maintenance",
+      "class number": 37
+    },
+    {
+      "sample_text": "how long's it been since i had my car serviced",
+      "class": "last_maintenance",
+      "class number": 37
+    },
+    {
+      "sample_text": "you need to tell me when was car in shop",
+      "class": "last_maintenance",
+      "class number": 37
+    },
+    {
+      "sample_text": "do you have a date for the last time the car was in the shop",
+      "class": "last_maintenance",
+      "class number": 37
+    },
+    {
+      "sample_text": "when did i last take my car in for maintenance",
+      "class": "last_maintenance",
+      "class number": 37
+    },
+    {
+      "sample_text": "dates for my car in the shop",
+      "class": "last_maintenance",
+      "class number": 37
+    },
+    {
+      "sample_text": "how long has it been since my car was last in the shop",
+      "class": "last_maintenance",
+      "class number": 37
+    },
+    {
+      "sample_text": "do you know how long its been since i had my oil changed and a tune up",
+      "class": "last_maintenance",
+      "class number": 37
+    },
+    {
+      "sample_text": "tell me when was car in shop",
+      "class": "last_maintenance",
+      "class number": 37
+    },
+    {
+      "sample_text": "i can't remember when my car last went to the shop, can you find out for me",
+      "class": "last_maintenance",
+      "class number": 37
+    },
+    {
+      "sample_text": "phone call secretary",
+      "class": "make_call",
+      "class number": 25
+    },
+    {
+      "sample_text": "i want to talk to sarah",
+      "class": "make_call",
+      "class number": 25
+    },
+    {
+      "sample_text": "can you call russell",
+      "class": "make_call",
+      "class number": 25
+    },
+    {
+      "sample_text": "call robby for me",
+      "class": "make_call",
+      "class number": 25
+    },
+    {
+      "sample_text": "i have to call jane",
+      "class": "make_call",
+      "class number": 25
+    },
+    {
+      "sample_text": "i must call roderick",
+      "class": "make_call",
+      "class number": 25
+    },
+    {
+      "sample_text": "call jim",
+      "class": "make_call",
+      "class number": 25
+    },
+    {
+      "sample_text": "call someone for me",
+      "class": "make_call",
+      "class number": 25
+    },
+    {
+      "sample_text": "dial x's phone please",
+      "class": "make_call",
+      "class number": 25
+    },
+    {
+      "sample_text": "please dial christie's number",
+      "class": "make_call",
+      "class number": 25
+    },
+    {
+      "sample_text": "use my phone to dial work",
+      "class": "make_call",
+      "class number": 25
+    },
+    {
+      "sample_text": "can you call my mom",
+      "class": "make_call",
+      "class number": 25
+    },
+    {
+      "sample_text": "dial steven",
+      "class": "make_call",
+      "class number": 25
+    },
+    {
+      "sample_text": "initiate a phone call with receptionist",
+      "class": "make_call",
+      "class number": 25
+    },
+    {
+      "sample_text": "phone sarah",
+      "class": "make_call",
+      "class number": 25
+    },
+    {
+      "sample_text": "dial someone's phone number",
+      "class": "make_call",
+      "class number": 25
+    },
+    {
+      "sample_text": "call mymother",
+      "class": "make_call",
+      "class number": 25
+    },
+    {
+      "sample_text": "can you make a phone call to roger",
+      "class": "make_call",
+      "class number": 25
+    },
+    {
+      "sample_text": "tell me what type of fuel my car uses",
+      "class": "gas_type",
+      "class number": 8
+    },
+    {
+      "sample_text": "tell me what type of gas this car uses",
+      "class": "gas_type",
+      "class number": 8
+    },
+    {
+      "sample_text": "i want to know the type of gasoline for this car",
+      "class": "gas_type",
+      "class number": 8
+    },
+    {
+      "sample_text": "can i put normal unleaded in this car",
+      "class": "gas_type",
+      "class number": 8
+    },
+    {
+      "sample_text": "does this take regular unleaded",
+      "class": "gas_type",
+      "class number": 8
+    },
+    {
+      "sample_text": "what do i need to gas up this car",
+      "class": "gas_type",
+      "class number": 8
+    },
+    {
+      "sample_text": "is there a certain type of gas i need to use for this car",
+      "class": "gas_type",
+      "class number": 8
+    },
+    {
+      "sample_text": "what type of gas does this car need",
+      "class": "gas_type",
+      "class number": 8
+    },
+    {
+      "sample_text": "what type of fuel should i use in my car",
+      "class": "gas_type",
+      "class number": 8
+    },
+    {
+      "sample_text": "what type of fuel does my car use",
+      "class": "gas_type",
+      "class number": 8
+    },
+    {
+      "sample_text": "tell me the fuel my car takes",
+      "class": "gas_type",
+      "class number": 8
+    },
+    {
+      "sample_text": "what kind of gas should go in this car",
+      "class": "gas_type",
+      "class number": 8
+    },
+    {
+      "sample_text": "what kind of fuel do i need",
+      "class": "gas_type",
+      "class number": 8
+    },
+    {
+      "sample_text": "what sort of fuel do i need for my car",
+      "class": "gas_type",
+      "class number": 8
+    },
+    {
+      "sample_text": "tell me the fuel type used by my car",
+      "class": "gas_type",
+      "class number": 8
+    },
+    {
+      "sample_text": "what kind of gas does my car use",
+      "class": "gas_type",
+      "class number": 8
+    },
+    {
+      "sample_text": "which type of gas do i need to put in my car",
+      "class": "gas_type",
+      "class number": 8
+    },
+    {
+      "sample_text": "what type of gas does my car use",
+      "class": "gas_type",
+      "class number": 8
+    },
+    {
+      "sample_text": "can you sign me up for a meeting in the blue room on friday",
+      "class": "schedule_meeting",
+      "class number": 18
+    },
+    {
+      "sample_text": "i want you to schedule a meeting with carrie and lisa",
+      "class": "schedule_meeting",
+      "class number": 18
+    },
+    {
+      "sample_text": "please help me schedule a meeting with john love at 9 am tomorrow",
+      "class": "schedule_meeting",
+      "class number": 18
+    },
+    {
+      "sample_text": "i'm going to need a meeting room on 9am on tuesday",
+      "class": "schedule_meeting",
+      "class number": 18
+    },
+    {
+      "sample_text": "can you schedule a meeting with steve at the office, please",
+      "class": "schedule_meeting",
+      "class number": 18
+    },
+    {
+      "sample_text": "how can i schedule a meeting",
+      "class": "schedule_meeting",
+      "class number": 18
+    },
+    {
+      "sample_text": "i want to know if there are meeting rooms available between 9:00 am and 11:00 am",
+      "class": "schedule_meeting",
+      "class number": 18
+    },
+    {
+      "sample_text": "are there any meetings room available between 8:00 and 9:00 am",
+      "class": "schedule_meeting",
+      "class number": 18
+    },
+    {
+      "sample_text": "can you schedule a meeting with jessica at the office, please",
+      "class": "schedule_meeting",
+      "class number": 18
+    },
+    {
+      "sample_text": "can you schedule a meeting with james at the office",
+      "class": "schedule_meeting",
+      "class number": 18
+    },
+    {
+      "sample_text": "i want to schedule a meeting with tom for 6pm",
+      "class": "schedule_meeting",
+      "class number": 18
+    },
+    {
+      "sample_text": "i'd like to schedule a meeting room from 1:00 pm until 2:00 pm",
+      "class": "schedule_meeting",
+      "class number": 18
+    },
+    {
+      "sample_text": "see if you can schedule a meeting with don southerland tomorrow at noon",
+      "class": "schedule_meeting",
+      "class number": 18
+    },
+    {
+      "sample_text": "do you know how do i schedule a meeting",
+      "class": "schedule_meeting",
+      "class number": 18
+    },
+    {
+      "sample_text": "meeting room availability at 8:00 please",
+      "class": "schedule_meeting",
+      "class number": 18
+    },
+    {
+      "sample_text": "help me schedule a meeting",
+      "class": "schedule_meeting",
+      "class number": 18
+    },
+    {
+      "sample_text": "during afternoon is there a meeting room to use",
+      "class": "schedule_meeting",
+      "class number": 18
+    },
+    {
+      "sample_text": "is there an open meeting room between 2 and 4",
+      "class": "schedule_meeting",
+      "class number": 18
+    },
+    {
+      "sample_text": "what can i do to maintain good credit",
+      "class": "improve_credit_score",
+      "class number": 28
+    },
+    {
+      "sample_text": "i'm not sure if this will hurt my credit score",
+      "class": "improve_credit_score",
+      "class number": 28
+    },
+    {
+      "sample_text": "what are some way s i can do to improe my credit score",
+      "class": "improve_credit_score",
+      "class number": 28
+    },
+    {
+      "sample_text": "are there ways for me to make my credit score better",
+      "class": "improve_credit_score",
+      "class number": 28
+    },
+    {
+      "sample_text": "will checking your credit lower my score",
+      "class": "improve_credit_score",
+      "class number": 28
+    },
+    {
+      "sample_text": "what steps can i take to make sure my credit score doesn't go down",
+      "class": "improve_credit_score",
+      "class number": 28
+    },
+    {
+      "sample_text": "what can i do to keep my credit in good standing",
+      "class": "improve_credit_score",
+      "class number": 28
+    },
+    {
+      "sample_text": "what are some ways to keep my credit score up",
+      "class": "improve_credit_score",
+      "class number": 28
+    },
+    {
+      "sample_text": "how to improve my credit score",
+      "class": "improve_credit_score",
+      "class number": 28
+    },
+    {
+      "sample_text": "how can i ensure my credit score doesn't drop",
+      "class": "improve_credit_score",
+      "class number": 28
+    },
+    {
+      "sample_text": "how do i keep good credit",
+      "class": "improve_credit_score",
+      "class number": 28
+    },
+    {
+      "sample_text": "tell me how to improve my credit score",
+      "class": "improve_credit_score",
+      "class number": 28
+    },
+    {
+      "sample_text": "what factors can ruin a credit score",
+      "class": "improve_credit_score",
+      "class number": 28
+    },
+    {
+      "sample_text": "tell me if opening a new account will decrease my credit score",
+      "class": "improve_credit_score",
+      "class number": 28
+    },
+    {
+      "sample_text": "how to keep credit score high",
+      "class": "improve_credit_score",
+      "class number": 28
+    },
+    {
+      "sample_text": "how can i make my credit score better",
+      "class": "improve_credit_score",
+      "class number": 28
+    },
+    {
+      "sample_text": "tell me ways to improve my credit score",
+      "class": "improve_credit_score",
+      "class number": 28
+    },
+    {
+      "sample_text": "show me some ways to build my credit score",
+      "class": "improve_credit_score",
+      "class number": 28
+    },
+    {
+      "sample_text": "could you repeat that, please",
+      "class": "repeat",
+      "class number": 13
+    },
+    {
+      "sample_text": "will you please repeat what you said",
+      "class": "repeat",
+      "class number": 13
+    },
+    {
+      "sample_text": "i didn't understand what you just said, can you repeat it",
+      "class": "repeat",
+      "class number": 13
+    },
+    {
+      "sample_text": "i didn't get that, please repeat",
+      "class": "repeat",
+      "class number": 13
+    },
+    {
+      "sample_text": "please run that by me again",
+      "class": "repeat",
+      "class number": 13
+    },
+    {
+      "sample_text": "i need you to please repeat that",
+      "class": "repeat",
+      "class number": 13
+    },
+    {
+      "sample_text": "ai what was the question",
+      "class": "repeat",
+      "class number": 13
+    },
+    {
+      "sample_text": "i didn't hear what you said",
+      "class": "repeat",
+      "class number": 13
+    },
+    {
+      "sample_text": "just another time please",
+      "class": "repeat",
+      "class number": 13
+    },
+    {
+      "sample_text": "i didn't hear you can you repeat that",
+      "class": "repeat",
+      "class number": 13
+    },
+    {
+      "sample_text": "restate the last thing you told me",
+      "class": "repeat",
+      "class number": 13
+    },
+    {
+      "sample_text": "i must have you repeat that",
+      "class": "repeat",
+      "class number": 13
+    },
+    {
+      "sample_text": "ai please repeat",
+      "class": "repeat",
+      "class number": 13
+    },
+    {
+      "sample_text": "can you please repeat that response",
+      "class": "repeat",
+      "class number": 13
+    },
+    {
+      "sample_text": "ai i didn't hear you",
+      "class": "repeat",
+      "class number": 13
+    },
+    {
+      "sample_text": "i did not hear you",
+      "class": "repeat",
+      "class number": 13
+    },
+    {
+      "sample_text": "i want to have that repeated for me",
+      "class": "repeat",
+      "class number": 13
+    },
+    {
+      "sample_text": "i didn't catch that say it again",
+      "class": "repeat",
+      "class number": 13
+    },
+    {
+      "sample_text": "freeze my account immediately",
+      "class": "freeze_account",
+      "class number": 20
+    },
+    {
+      "sample_text": "put a stop on my deposit account",
+      "class": "freeze_account",
+      "class number": 20
+    },
+    {
+      "sample_text": "i need to hold off on my account",
+      "class": "freeze_account",
+      "class number": 20
+    },
+    {
+      "sample_text": "please block my chase account right away",
+      "class": "freeze_account",
+      "class number": 20
+    },
+    {
+      "sample_text": "please do a stop on my bank account",
+      "class": "freeze_account",
+      "class number": 20
+    },
+    {
+      "sample_text": "freeze my bank account",
+      "class": "freeze_account",
+      "class number": 20
+    },
+    {
+      "sample_text": "could you freeze my account now",
+      "class": "freeze_account",
+      "class number": 20
+    },
+    {
+      "sample_text": "please turn my account to frozen",
+      "class": "freeze_account",
+      "class number": 20
+    },
+    {
+      "sample_text": "stop payments from my bank",
+      "class": "freeze_account",
+      "class number": 20
+    },
+    {
+      "sample_text": "is it too much trouble to put a stop on my bank account",
+      "class": "freeze_account",
+      "class number": 20
+    },
+    {
+      "sample_text": "can you put a stop on my bank account, please",
+      "class": "freeze_account",
+      "class number": 20
+    },
+    {
+      "sample_text": "can you put a stop on my bank account",
+      "class": "freeze_account",
+      "class number": 20
+    },
+    {
+      "sample_text": "i need a block put on my chase account right away",
+      "class": "freeze_account",
+      "class number": 20
+    },
+    {
+      "sample_text": "i'd like to put a freeze on my bank account",
+      "class": "freeze_account",
+      "class number": 20
+    },
+    {
+      "sample_text": "do you mind putting a stop on my bank account",
+      "class": "freeze_account",
+      "class number": 20
+    },
+    {
+      "sample_text": "please freeze my bank account",
+      "class": "freeze_account",
+      "class number": 20
+    },
+    {
+      "sample_text": "help me freeze my bank account, please",
+      "class": "freeze_account",
+      "class number": 20
+    },
+    {
+      "sample_text": "block my chase account asap",
+      "class": "freeze_account",
+      "class number": 20
+    },
+    {
+      "sample_text": "i would like to listen to a funny joke",
+      "class": "tell_joke",
+      "class number": 36
+    },
+    {
+      "sample_text": "show me something funny about food",
+      "class": "tell_joke",
+      "class number": 36
+    },
+    {
+      "sample_text": "what's the funniest thing you know about peanuts",
+      "class": "tell_joke",
+      "class number": 36
+    },
+    {
+      "sample_text": "heard any good jokes lately",
+      "class": "tell_joke",
+      "class number": 36
+    },
+    {
+      "sample_text": "give me a joke about horses",
+      "class": "tell_joke",
+      "class number": 36
+    },
+    {
+      "sample_text": "indicate something funny on the topic of food",
+      "class": "tell_joke",
+      "class number": 36
+    },
+    {
+      "sample_text": "do you have any jokes to tell me",
+      "class": "tell_joke",
+      "class number": 36
+    },
+    {
+      "sample_text": "what do people find funny about food",
+      "class": "tell_joke",
+      "class number": 36
+    },
+    {
+      "sample_text": "tell me a joke about lawyers",
+      "class": "tell_joke",
+      "class number": 36
+    },
+    {
+      "sample_text": "i love dad jokes can you tell me one",
+      "class": "tell_joke",
+      "class number": 36
+    },
+    {
+      "sample_text": "can you tell me something funny",
+      "class": "tell_joke",
+      "class number": 36
+    },
+    {
+      "sample_text": "tell me something amusing",
+      "class": "tell_joke",
+      "class number": 36
+    },
+    {
+      "sample_text": "say something hilarious",
+      "class": "tell_joke",
+      "class number": 36
+    },
+    {
+      "sample_text": "what's the funniest joke you know",
+      "class": "tell_joke",
+      "class number": 36
+    },
+    {
+      "sample_text": "tell me something funny about cats",
+      "class": "tell_joke",
+      "class number": 36
+    },
+    {
+      "sample_text": "do you have any jokes",
+      "class": "tell_joke",
+      "class number": 36
+    },
+    {
+      "sample_text": "tell me something funny about people",
+      "class": "tell_joke",
+      "class number": 36
+    },
+    {
+      "sample_text": "tell me something that'll make me laugh",
+      "class": "tell_joke",
+      "class number": 36
+    },
+    {
+      "sample_text": "set a six minute timer",
+      "class": "timer",
+      "class number": 32
+    },
+    {
+      "sample_text": "let me know in 15 minutes please",
+      "class": "timer",
+      "class number": 32
+    },
+    {
+      "sample_text": "timer for 5 minutes",
+      "class": "timer",
+      "class number": 32
+    },
+    {
+      "sample_text": "please set a timer for 6 minutes",
+      "class": "timer",
+      "class number": 32
+    },
+    {
+      "sample_text": "i must set a timer",
+      "class": "timer",
+      "class number": 32
+    },
+    {
+      "sample_text": "want 5 minute timer",
+      "class": "timer",
+      "class number": 32
+    },
+    {
+      "sample_text": "start a timer for me",
+      "class": "timer",
+      "class number": 32
+    },
+    {
+      "sample_text": "alert me in 20 minutes",
+      "class": "timer",
+      "class number": 32
+    },
+    {
+      "sample_text": "please set a timer for 40 minutes",
+      "class": "timer",
+      "class number": 32
+    },
+    {
+      "sample_text": "wake me in an hour",
+      "class": "timer",
+      "class number": 32
+    },
+    {
+      "sample_text": "set a five minute timer",
+      "class": "timer",
+      "class number": 32
+    },
+    {
+      "sample_text": "let's get a timer set for 5 minutes",
+      "class": "timer",
+      "class number": 32
+    },
+    {
+      "sample_text": "start the timer now and stop at thirty minutes",
+      "class": "timer",
+      "class number": 32
+    },
+    {
+      "sample_text": "\"please set 5 minute timer",
+      "class": "timer",
+      "class number": 32
+    },
+    {
+      "sample_text": "you need to set the timer for me",
+      "class": "timer",
+      "class number": 32
+    },
+    {
+      "sample_text": "timer 10 minutes",
+      "class": "timer",
+      "class number": 32
+    },
+    {
+      "sample_text": "please run a timer for me",
+      "class": "timer",
+      "class number": 32
+    },
+    {
+      "sample_text": "make a timer for 5 minutes",
+      "class": "timer",
+      "class number": 32
+    },
+    {
+      "sample_text": "can you make reservations at hodak's",
+      "class": "accept_reservations",
+      "class number": 9
+    },
+    {
+      "sample_text": "do they take reservations at bjs",
+      "class": "accept_reservations",
+      "class number": 9
+    },
+    {
+      "sample_text": "does black rock take reservations",
+      "class": "accept_reservations",
+      "class number": 9
+    },
+    {
+      "sample_text": "does minnies cafe in modesto take reservations",
+      "class": "accept_reservations",
+      "class number": 9
+    },
+    {
+      "sample_text": "can i make a reservation at michael's",
+      "class": "accept_reservations",
+      "class number": 9
+    },
+    {
+      "sample_text": "are reservations taken at redrobin",
+      "class": "accept_reservations",
+      "class number": 9
+    },
+    {
+      "sample_text": "how many culver's take reservations",
+      "class": "accept_reservations",
+      "class number": 9
+    },
+    {
+      "sample_text": "does cielo take reservations",
+      "class": "accept_reservations",
+      "class number": 9
+    },
+    {
+      "sample_text": "does marios in brooklyn take reservations",
+      "class": "accept_reservations",
+      "class number": 9
+    },
+    {
+      "sample_text": "does bar tartine in san francisco take reservations",
+      "class": "accept_reservations",
+      "class number": 9
+    },
+    {
+      "sample_text": "is it possible to make reservations in advance for macaroni grill",
+      "class": "accept_reservations",
+      "class number": 9
+    },
+    {
+      "sample_text": "does gramercy tavern in new york accept reservations",
+      "class": "accept_reservations",
+      "class number": 9
+    },
+    {
+      "sample_text": "do they take reservations at state bird",
+      "class": "accept_reservations",
+      "class number": 9
+    },
+    {
+      "sample_text": "does buffalo wild wings take reservations",
+      "class": "accept_reservations",
+      "class number": 9
+    },
+    {
+      "sample_text": "can applebees take any reservations",
+      "class": "accept_reservations",
+      "class number": 9
+    },
+    {
+      "sample_text": "what locations of applebee's take reservations",
+      "class": "accept_reservations",
+      "class number": 9
+    },
+    {
+      "sample_text": "can i make reservations at applebee's or no",
+      "class": "accept_reservations",
+      "class number": 9
+    },
+    {
+      "sample_text": "please find out if napolis takes lunch reservations",
+      "class": "accept_reservations",
+      "class number": 9
+    },
+    {
+      "sample_text": "tell me five dollars in yen and rubles",
+      "class": "exchange_rate",
+      "class number": 38
+    },
+    {
+      "sample_text": "how many pesos in one dollar us",
+      "class": "exchange_rate",
+      "class number": 38
+    },
+    {
+      "sample_text": "how many euros can i exchange for 200 yen",
+      "class": "exchange_rate",
+      "class number": 38
+    },
+    {
+      "sample_text": "how many dollars can i exchange for 200 pounds",
+      "class": "exchange_rate",
+      "class number": 38
+    },
+    {
+      "sample_text": "usd to yen is what right now",
+      "class": "exchange_rate",
+      "class number": 38
+    },
+    {
+      "sample_text": "how many us dollars can i get for 20 euros",
+      "class": "exchange_rate",
+      "class number": 38
+    },
+    {
+      "sample_text": "what's 10 pounds in dollars",
+      "class": "exchange_rate",
+      "class number": 38
+    },
+    {
+      "sample_text": "what is the exchange rate between british pounds and yen",
+      "class": "exchange_rate",
+      "class number": 38
+    },
+    {
+      "sample_text": "what is 56 dollars in yen",
+      "class": "exchange_rate",
+      "class number": 38
+    },
+    {
+      "sample_text": "can you tell me today's rate for cad to usd",
+      "class": "exchange_rate",
+      "class number": 38
+    },
+    {
+      "sample_text": "how does 10 pounds convert to euros",
+      "class": "exchange_rate",
+      "class number": 38
+    },
+    {
+      "sample_text": "what is the equal number of dollars i can exchange for 50 pesos",
+      "class": "exchange_rate",
+      "class number": 38
+    },
+    {
+      "sample_text": "how many pesos equals 500 dollars",
+      "class": "exchange_rate",
+      "class number": 38
+    },
+    {
+      "sample_text": "i would love to know the exchange rate between rubles and pounds",
+      "class": "exchange_rate",
+      "class number": 38
+    },
+    {
+      "sample_text": "exchange rate between mexico and us",
+      "class": "exchange_rate",
+      "class number": 38
+    },
+    {
+      "sample_text": "can you tell me the exchange rate for yen to euros",
+      "class": "exchange_rate",
+      "class number": 38
+    },
+    {
+      "sample_text": "dollar to pesos exchange rate",
+      "class": "exchange_rate",
+      "class number": 38
+    },
+    {
+      "sample_text": "how many pesos can i get for one dollar",
+      "class": "exchange_rate",
+      "class number": 38
+    },
+    {
+      "sample_text": "what is the weather going to be like",
+      "class": "weather",
+      "class number": 5
+    },
+    {
+      "sample_text": "is it snowing right now in richmond, va",
+      "class": "weather",
+      "class number": 5
+    },
+    {
+      "sample_text": "what's the weekend forecast",
+      "class": "weather",
+      "class number": 5
+    },
+    {
+      "sample_text": "how is the weather in miami",
+      "class": "weather",
+      "class number": 5
+    },
+    {
+      "sample_text": "how hot will it be tomorrow",
+      "class": "weather",
+      "class number": 5
+    },
+    {
+      "sample_text": "give me the 7 day forecast",
+      "class": "weather",
+      "class number": 5
+    },
+    {
+      "sample_text": "what's it doing outside right now",
+      "class": "weather",
+      "class number": 5
+    },
+    {
+      "sample_text": "can you tell me the low tonight",
+      "class": "weather",
+      "class number": 5
+    },
+    {
+      "sample_text": "whats the forecast for the weather",
+      "class": "weather",
+      "class number": 5
+    },
+    {
+      "sample_text": "how is the weather in seattle",
+      "class": "weather",
+      "class number": 5
+    },
+    {
+      "sample_text": "what is the high temperature for tomorrow",
+      "class": "weather",
+      "class number": 5
+    },
+    {
+      "sample_text": "is it going to rain tonight",
+      "class": "weather",
+      "class number": 5
+    },
+    {
+      "sample_text": "how much snow will we be getting tomorrow",
+      "class": "weather",
+      "class number": 5
+    },
+    {
+      "sample_text": "what s the uv index tomorrow",
+      "class": "weather",
+      "class number": 5
+    },
+    {
+      "sample_text": "how's the weather",
+      "class": "weather",
+      "class number": 5
+    },
+    {
+      "sample_text": "what is the temp right now",
+      "class": "weather",
+      "class number": 5
+    },
+    {
+      "sample_text": "tell me the weather report for tallahassee",
+      "class": "weather",
+      "class number": 5
+    },
+    {
+      "sample_text": "how is it outside",
+      "class": "weather",
+      "class number": 5
+    },
+    {
+      "sample_text": "do people like chipotle",
+      "class": "restaurant_reviews",
+      "class number": 0
+    },
+    {
+      "sample_text": "does the bleu olive have decent reviews",
+      "class": "restaurant_reviews",
+      "class number": 0
+    },
+    {
+      "sample_text": "how good are the ratings for peter luger steakhouse",
+      "class": "restaurant_reviews",
+      "class number": 0
+    },
+    {
+      "sample_text": "are the reviews for applebee's good",
+      "class": "restaurant_reviews",
+      "class number": 0
+    },
+    {
+      "sample_text": "pull up the ratings for macaroni grill",
+      "class": "restaurant_reviews",
+      "class number": 0
+    },
+    {
+      "sample_text": "tell me about the reviews for olive garden",
+      "class": "restaurant_reviews",
+      "class number": 0
+    },
+    {
+      "sample_text": "i want to know how the mcdonalds reviews are",
+      "class": "restaurant_reviews",
+      "class number": 0
+    },
+    {
+      "sample_text": "how good are the ratings for outback",
+      "class": "restaurant_reviews",
+      "class number": 0
+    },
+    {
+      "sample_text": "how are the reviews for spaghetti at the olive garden",
+      "class": "restaurant_reviews",
+      "class number": 0
+    },
+    {
+      "sample_text": "at yakamoto how is their sushi",
+      "class": "restaurant_reviews",
+      "class number": 0
+    },
+    {
+      "sample_text": "what are the reviews like for mission chinese",
+      "class": "restaurant_reviews",
+      "class number": 0
+    },
+    {
+      "sample_text": "what are the reviews like at minnis",
+      "class": "restaurant_reviews",
+      "class number": 0
+    },
+    {
+      "sample_text": "does ihop have good reviews",
+      "class": "restaurant_reviews",
+      "class number": 0
+    },
+    {
+      "sample_text": "what do people say about village inn",
+      "class": "restaurant_reviews",
+      "class number": 0
+    },
+    {
+      "sample_text": "has ruby tuesday got good reviews",
+      "class": "restaurant_reviews",
+      "class number": 0
+    },
+    {
+      "sample_text": "how good are the ratings for chez panisse",
+      "class": "restaurant_reviews",
+      "class number": 0
+    },
+    {
+      "sample_text": "do people like the food at wendy's",
+      "class": "restaurant_reviews",
+      "class number": 0
+    },
+    {
+      "sample_text": "what reviews does miyabi have",
+      "class": "restaurant_reviews",
+      "class number": 0
+    },
+    {
+      "sample_text": "my capital one account has a hold; why",
+      "class": "account_blocked",
+      "class number": 2
+    },
+    {
+      "sample_text": "i think my account is block but i am not sure why",
+      "class": "account_blocked",
+      "class number": 2
+    },
+    {
+      "sample_text": "why am i seeing a hold on my boa account",
+      "class": "account_blocked",
+      "class number": 2
+    },
+    {
+      "sample_text": "there's a hold on my chase account, but why",
+      "class": "account_blocked",
+      "class number": 2
+    },
+    {
+      "sample_text": "why does my credit union account have a hold on it",
+      "class": "account_blocked",
+      "class number": 2
+    },
+    {
+      "sample_text": "what reason could the bank have had for blocking my account",
+      "class": "account_blocked",
+      "class number": 2
+    },
+    {
+      "sample_text": "why is there a hold on my charles swab account",
+      "class": "account_blocked",
+      "class number": 2
+    },
+    {
+      "sample_text": "why is there a hold on my discover account",
+      "class": "account_blocked",
+      "class number": 2
+    },
+    {
+      "sample_text": "why can't i access my bank account",
+      "class": "account_blocked",
+      "class number": 2
+    },
+    {
+      "sample_text": "please let me into my bank account",
+      "class": "account_blocked",
+      "class number": 2
+    },
+    {
+      "sample_text": "why was a hold placed on my wells fargo account",
+      "class": "account_blocked",
+      "class number": 2
+    },
+    {
+      "sample_text": "why is my account locked",
+      "class": "account_blocked",
+      "class number": 2
+    },
+    {
+      "sample_text": "why am i seeing a hold on my charles schwab account",
+      "class": "account_blocked",
+      "class number": 2
+    },
+    {
+      "sample_text": "can you find out why is my bank account frozen",
+      "class": "account_blocked",
+      "class number": 2
+    },
+    {
+      "sample_text": "can you find out what triggered a hold on my bank account",
+      "class": "account_blocked",
+      "class number": 2
+    },
+    {
+      "sample_text": "what is the reason for frozen status on my bank account",
+      "class": "account_blocked",
+      "class number": 2
+    },
+    {
+      "sample_text": "my account has a hold on it and i can't access my funds, why",
+      "class": "account_blocked",
+      "class number": 2
+    },
+    {
+      "sample_text": "why is there a hold on my american saving bank account",
+      "class": "account_blocked",
+      "class number": 2
+    },
+    {
+      "sample_text": "what types of hobbies do you enjoy",
+      "class": "what_are_your_hobbies",
+      "class number": 15
+    },
+    {
+      "sample_text": "can you tell me some of your hobbies",
+      "class": "what_are_your_hobbies",
+      "class number": 15
+    },
+    {
+      "sample_text": "what sort of things do you enjoy",
+      "class": "what_are_your_hobbies",
+      "class number": 15
+    },
+    {
+      "sample_text": "what are some things that you enjoy",
+      "class": "what_are_your_hobbies",
+      "class number": 15
+    },
+    {
+      "sample_text": "what do you enjoy doing while not working",
+      "class": "what_are_your_hobbies",
+      "class number": 15
+    },
+    {
+      "sample_text": "so what sort of hobbies are you into",
+      "class": "what_are_your_hobbies",
+      "class number": 15
+    },
+    {
+      "sample_text": "what do you like to do when you're not working",
+      "class": "what_are_your_hobbies",
+      "class number": 15
+    },
+    {
+      "sample_text": "what kinds of activities do you enjoy",
+      "class": "what_are_your_hobbies",
+      "class number": 15
+    },
+    {
+      "sample_text": "do you have any hobbies",
+      "class": "what_are_your_hobbies",
+      "class number": 15
+    },
+    {
+      "sample_text": "can you tell me about your hobbies",
+      "class": "what_are_your_hobbies",
+      "class number": 15
+    },
+    {
+      "sample_text": "what's your hobbies",
+      "class": "what_are_your_hobbies",
+      "class number": 15
+    },
+    {
+      "sample_text": "what do you do in your free time",
+      "class": "what_are_your_hobbies",
+      "class number": 15
+    },
+    {
+      "sample_text": "what other hobbies do you enjoy",
+      "class": "what_are_your_hobbies",
+      "class number": 15
+    },
+    {
+      "sample_text": "what you do at the free time",
+      "class": "what_are_your_hobbies",
+      "class number": 15
+    },
+    {
+      "sample_text": "tell me what you do in your free time",
+      "class": "what_are_your_hobbies",
+      "class number": 15
+    },
+    {
+      "sample_text": "what do you do in your down time",
+      "class": "what_are_your_hobbies",
+      "class number": 15
+    },
+    {
+      "sample_text": "what do you do for fun",
+      "class": "what_are_your_hobbies",
+      "class number": 15
+    },
+    {
+      "sample_text": "what's your favorite hobby",
+      "class": "what_are_your_hobbies",
+      "class number": 15
+    },
+    {
+      "sample_text": "how do i change my oil and choose the right oil",
+      "class": "oil_change_how",
+      "class number": 3
+    },
+    {
+      "sample_text": "how can my oil be changed in my car",
+      "class": "oil_change_how",
+      "class number": 3
+    },
+    {
+      "sample_text": "what is needed to change my oil",
+      "class": "oil_change_how",
+      "class number": 3
+    },
+    {
+      "sample_text": "how do you change car oil",
+      "class": "oil_change_how",
+      "class number": 3
+    },
+    {
+      "sample_text": "give me instructions for changing the oil in a 2015 passat",
+      "class": "oil_change_how",
+      "class number": 3
+    },
+    {
+      "sample_text": "give me instructions on how to change my oil",
+      "class": "oil_change_how",
+      "class number": 3
+    },
+    {
+      "sample_text": "give me manual on how to change oil",
+      "class": "oil_change_how",
+      "class number": 3
+    },
+    {
+      "sample_text": "i want a lesson on changing my oil",
+      "class": "oil_change_how",
+      "class number": 3
+    },
+    {
+      "sample_text": "how do i change the oil for my car",
+      "class": "oil_change_how",
+      "class number": 3
+    },
+    {
+      "sample_text": "show me how to change my oil",
+      "class": "oil_change_how",
+      "class number": 3
+    },
+    {
+      "sample_text": "what is the way i can change my oil",
+      "class": "oil_change_how",
+      "class number": 3
+    },
+    {
+      "sample_text": "i should use what kind of oil and can you help me change it",
+      "class": "oil_change_how",
+      "class number": 3
+    },
+    {
+      "sample_text": "do i need any tools to change the oil in my car",
+      "class": "oil_change_how",
+      "class number": 3
+    },
+    {
+      "sample_text": "can you assist with an oil change, and what type of oil do i get",
+      "class": "oil_change_how",
+      "class number": 3
+    },
+    {
+      "sample_text": "i need step by step instructions on how to change the oil in my car",
+      "class": "oil_change_how",
+      "class number": 3
+    },
+    {
+      "sample_text": "is it easy to change the oil in my car",
+      "class": "oil_change_how",
+      "class number": 3
+    },
+    {
+      "sample_text": "i want to change the oil in my car",
+      "class": "oil_change_how",
+      "class number": 3
+    },
+    {
+      "sample_text": "give me instructions on how to change the oil in my car",
+      "class": "oil_change_how",
+      "class number": 3
+    },
+    {
+      "sample_text": "in nashville, i need a rental car booked",
+      "class": "car_rental",
+      "class number": 40
+    },
+    {
+      "sample_text": "can you help me with a rental car",
+      "class": "car_rental",
+      "class number": 40
+    },
+    {
+      "sample_text": "how can i rent a car in boston",
+      "class": "car_rental",
+      "class number": 40
+    },
+    {
+      "sample_text": "i would like some help getting a rental car reserved in los angeles",
+      "class": "car_rental",
+      "class number": 40
+    },
+    {
+      "sample_text": "find me a rental car from 3/6 - 3/9 in port charles",
+      "class": "car_rental",
+      "class number": 40
+    },
+    {
+      "sample_text": "is there a car rental available from tuesday to thursday out of lax",
+      "class": "car_rental",
+      "class number": 40
+    },
+    {
+      "sample_text": "will you help me rent a car from march 2 to 6th in dallas i want a bmw suv, if possible",
+      "class": "car_rental",
+      "class number": 40
+    },
+    {
+      "sample_text": "please help me book a rental car in appleton",
+      "class": "car_rental",
+      "class number": 40
+    },
+    {
+      "sample_text": "will car rentals be available in boston from march 2 to march 4",
+      "class": "car_rental",
+      "class number": 40
+    },
+    {
+      "sample_text": "id like a rental car in denver colorado between january 1st and january 3rd and id like a ford if possible",
+      "class": "car_rental",
+      "class number": 40
+    },
+    {
+      "sample_text": "can i rent a car in belgium from march 01 to march 02 and have it be a porsche",
+      "class": "car_rental",
+      "class number": 40
+    },
+    {
+      "sample_text": "please help me book a rental car for nashville",
+      "class": "car_rental",
+      "class number": 40
+    },
+    {
+      "sample_text": "i want to rent a car in boise from april 12-15",
+      "class": "car_rental",
+      "class number": 40
+    },
+    {
+      "sample_text": "i will need a rental car since i'm going to travel to new york",
+      "class": "car_rental",
+      "class number": 40
+    },
+    {
+      "sample_text": "please book a car for me in bangkok",
+      "class": "car_rental",
+      "class number": 40
+    },
+    {
+      "sample_text": "will i be able to rent a car in boston from march 2 to march 4",
+      "class": "car_rental",
+      "class number": 40
+    },
+    {
+      "sample_text": "i want to rent the cheapest car for charlottesville, virginia for march 7th through 10th, that's monday, tuesday, wednesday and thursday",
+      "class": "car_rental",
+      "class number": 40
+    },
+    {
+      "sample_text": "can you see if i can rent a car from dallas on the dates of march 1, 2019 to march 3, 2019",
+      "class": "car_rental",
+      "class number": 40
+    },
+    {
+      "sample_text": "what's my name huh",
+      "class": "user_name",
+      "class number": 11
+    },
+    {
+      "sample_text": "how do you reference me",
+      "class": "user_name",
+      "class number": 11
+    },
+    {
+      "sample_text": "so what is my current name saved as",
+      "class": "user_name",
+      "class number": 11
+    },
+    {
+      "sample_text": "what is my name saved under",
+      "class": "user_name",
+      "class number": 11
+    },
+    {
+      "sample_text": "what name do you use when addressing me",
+      "class": "user_name",
+      "class number": 11
+    },
+    {
+      "sample_text": "what am i called by you",
+      "class": "user_name",
+      "class number": 11
+    },
+    {
+      "sample_text": "please tell me the name you use for me",
+      "class": "user_name",
+      "class number": 11
+    },
+    {
+      "sample_text": "what do you think i am called",
+      "class": "user_name",
+      "class number": 11
+    },
+    {
+      "sample_text": "do you know how to refer to me",
+      "class": "user_name",
+      "class number": 11
+    },
+    {
+      "sample_text": "what is my first name saved as",
+      "class": "user_name",
+      "class number": 11
+    },
+    {
+      "sample_text": "what do you have my name saved under",
+      "class": "user_name",
+      "class number": 11
+    },
+    {
+      "sample_text": "can you tell me my name",
+      "class": "user_name",
+      "class number": 11
+    },
+    {
+      "sample_text": "by what name people call me",
+      "class": "user_name",
+      "class number": 11
+    },
+    {
+      "sample_text": "what name am i under",
+      "class": "user_name",
+      "class number": 11
+    },
+    {
+      "sample_text": "i need to know what names you have for me",
+      "class": "user_name",
+      "class number": 11
+    },
+    {
+      "sample_text": "what is the name that you have for me, please",
+      "class": "user_name",
+      "class number": 11
+    },
+    {
+      "sample_text": "let me know what do you call me",
+      "class": "user_name",
+      "class number": 11
+    },
+    {
+      "sample_text": "if you were smart, would you know my name",
+      "class": "user_name",
+      "class number": 11
+    },
+    {
+      "sample_text": "is pizza considered healthy",
+      "class": "nutrition_info",
+      "class number": 1
+    },
+    {
+      "sample_text": "what's the nutritional info for a cheeseburger",
+      "class": "nutrition_info",
+      "class number": 1
+    },
+    {
+      "sample_text": "i need to know how healthy meatloaf is",
+      "class": "nutrition_info",
+      "class number": 1
+    },
+    {
+      "sample_text": "what's the nutritional value for a pizza lunchable",
+      "class": "nutrition_info",
+      "class number": 1
+    },
+    {
+      "sample_text": "do you know the nutrition facts for grapes",
+      "class": "nutrition_info",
+      "class number": 1
+    },
+    {
+      "sample_text": "how healthy is stax chips",
+      "class": "nutrition_info",
+      "class number": 1
+    },
+    {
+      "sample_text": "i would like you to share with me the nutrition info for chicken nuggets",
+      "class": "nutrition_info",
+      "class number": 1
+    },
+    {
+      "sample_text": "please give me the nutrition facts for chicken parmesan",
+      "class": "nutrition_info",
+      "class number": 1
+    },
+    {
+      "sample_text": "can you tell me how many calories are in an apple",
+      "class": "nutrition_info",
+      "class number": 1
+    },
+    {
+      "sample_text": "i need to know all about the nutrition of the beef taco",
+      "class": "nutrition_info",
+      "class number": 1
+    },
+    {
+      "sample_text": "tell me the nutritional information for chicken nuggets",
+      "class": "nutrition_info",
+      "class number": 1
+    },
+    {
+      "sample_text": "what's the nutritional information of iceberg lettuce",
+      "class": "nutrition_info",
+      "class number": 1
+    },
+    {
+      "sample_text": "i'd like to know the nutritional content of eggs, please",
+      "class": "nutrition_info",
+      "class number": 1
+    },
+    {
+      "sample_text": "what's the nutritional info for french fries",
+      "class": "nutrition_info",
+      "class number": 1
+    },
+    {
+      "sample_text": "share the nutrition info for pizza with me",
+      "class": "nutrition_info",
+      "class number": 1
+    },
+    {
+      "sample_text": "can you tell me the nutritional information for chicken nuggets",
+      "class": "nutrition_info",
+      "class number": 1
+    },
+    {
+      "sample_text": "what's the nutrient info for a donut",
+      "class": "nutrition_info",
+      "class number": 1
+    },
+    {
+      "sample_text": "what's the nutritional info for a ganola bar",
+      "class": "nutrition_info",
+      "class number": 1
+    },
+    {
+      "sample_text": "i need to do a fair coin flip",
+      "class": "flip_coin",
+      "class number": 33
+    },
+    {
+      "sample_text": "i require a coin flip",
+      "class": "flip_coin",
+      "class number": 33
+    },
+    {
+      "sample_text": "flip that dime",
+      "class": "flip_coin",
+      "class number": 33
+    },
+    {
+      "sample_text": "flip that coin once; it must be tails",
+      "class": "flip_coin",
+      "class number": 33
+    },
+    {
+      "sample_text": "ai, please flip a coin",
+      "class": "flip_coin",
+      "class number": 33
+    },
+    {
+      "sample_text": "i want you to flip a fair sided coin",
+      "class": "flip_coin",
+      "class number": 33
+    },
+    {
+      "sample_text": "can you do a coin flip",
+      "class": "flip_coin",
+      "class number": 33
+    },
+    {
+      "sample_text": "flip a coin if you will",
+      "class": "flip_coin",
+      "class number": 33
+    },
+    {
+      "sample_text": "i choose heads, now flip that coin",
+      "class": "flip_coin",
+      "class number": 33
+    },
+    {
+      "sample_text": "heads or tails please",
+      "class": "flip_coin",
+      "class number": 33
+    },
+    {
+      "sample_text": "i want a coin flip and i'll take tails",
+      "class": "flip_coin",
+      "class number": 33
+    },
+    {
+      "sample_text": "i ned you to flip a coin",
+      "class": "flip_coin",
+      "class number": 33
+    },
+    {
+      "sample_text": "flip a coin, you win with heads",
+      "class": "flip_coin",
+      "class number": 33
+    },
+    {
+      "sample_text": "go ahead and flip a coin, i am calling tails",
+      "class": "flip_coin",
+      "class number": 33
+    },
+    {
+      "sample_text": "i want a coin flip",
+      "class": "flip_coin",
+      "class number": 33
+    },
+    {
+      "sample_text": "please tell me if a coin lands on tails",
+      "class": "flip_coin",
+      "class number": 33
+    },
+    {
+      "sample_text": "please flip a coin i hope its tails",
+      "class": "flip_coin",
+      "class number": 33
+    },
+    {
+      "sample_text": "heads or tails",
+      "class": "flip_coin",
+      "class number": 33
+    },
+    {
+      "sample_text": "what is status of my bank account",
+      "class": "balance",
+      "class number": 35
+    },
+    {
+      "sample_text": "how much is left of mastercard",
+      "class": "balance",
+      "class number": 35
+    },
+    {
+      "sample_text": "i wanna know the balance of my bank of american account",
+      "class": "balance",
+      "class number": 35
+    },
+    {
+      "sample_text": "check my visa account and see if i have enough money for dinner tonight",
+      "class": "balance",
+      "class number": 35
+    },
+    {
+      "sample_text": "what is my savings account balance",
+      "class": "balance",
+      "class number": 35
+    },
+    {
+      "sample_text": "what is in my bank accounts",
+      "class": "balance",
+      "class number": 35
+    },
+    {
+      "sample_text": "how much total cash do i have in the bank",
+      "class": "balance",
+      "class number": 35
+    },
+    {
+      "sample_text": "i want my checking balance at chase",
+      "class": "balance",
+      "class number": 35
+    },
+    {
+      "sample_text": "is there enough money in my discover account for a new pair of jeans",
+      "class": "balance",
+      "class number": 35
+    },
+    {
+      "sample_text": "savings account balance at chase bank please",
+      "class": "balance",
+      "class number": 35
+    },
+    {
+      "sample_text": "please tell me my bank balance",
+      "class": "balance",
+      "class number": 35
+    },
+    {
+      "sample_text": "can you tell me how much cash i have",
+      "class": "balance",
+      "class number": 35
+    },
+    {
+      "sample_text": "what's the balance on my bank account",
+      "class": "balance",
+      "class number": 35
+    },
+    {
+      "sample_text": "how much do i have in my checking",
+      "class": "balance",
+      "class number": 35
+    },
+    {
+      "sample_text": "what what kind money is available in my bank accounts",
+      "class": "balance",
+      "class number": 35
+    },
+    {
+      "sample_text": "what is the available balance in savings",
+      "class": "balance",
+      "class number": 35
+    },
+    {
+      "sample_text": "how much is the current balance in my td bank savings account",
+      "class": "balance",
+      "class number": 35
+    },
+    {
+      "sample_text": "what is my bank balance",
+      "class": "balance",
+      "class number": 35
+    },
+    {
+      "sample_text": "tell me the conversion between tablespoons and cups",
+      "class": "measurement_conversion",
+      "class number": 31
+    },
+    {
+      "sample_text": "how do you convert millimeters to decimeters",
+      "class": "measurement_conversion",
+      "class number": 31
+    },
+    {
+      "sample_text": "how many feet are in 50 yards",
+      "class": "measurement_conversion",
+      "class number": 31
+    },
+    {
+      "sample_text": "how many centimeters are in 5 yards",
+      "class": "measurement_conversion",
+      "class number": 31
+    },
+    {
+      "sample_text": "what would be the conversion between tablespoons and teaspoons",
+      "class": "measurement_conversion",
+      "class number": 31
+    },
+    {
+      "sample_text": "convert inches to centimeters",
+      "class": "measurement_conversion",
+      "class number": 31
+    },
+    {
+      "sample_text": "how many teaspoons are in a half a cup",
+      "class": "measurement_conversion",
+      "class number": 31
+    },
+    {
+      "sample_text": "how many tablespoons and teaspoons is one cup",
+      "class": "measurement_conversion",
+      "class number": 31
+    },
+    {
+      "sample_text": "what is the conversion of inches to centimeters",
+      "class": "measurement_conversion",
+      "class number": 31
+    },
+    {
+      "sample_text": "how many quarts are in a gallon",
+      "class": "measurement_conversion",
+      "class number": 31
+    },
+    {
+      "sample_text": "how many miles is five kilometers",
+      "class": "measurement_conversion",
+      "class number": 31
+    },
+    {
+      "sample_text": "what is 10 ounces in grams",
+      "class": "measurement_conversion",
+      "class number": 31
+    },
+    {
+      "sample_text": "how do i change pounds into kilograms",
+      "class": "measurement_conversion",
+      "class number": 31
+    },
+    {
+      "sample_text": "tell me what ten pounds in kilos is",
+      "class": "measurement_conversion",
+      "class number": 31
+    },
+    {
+      "sample_text": "how do you convert pounds to kilos",
+      "class": "measurement_conversion",
+      "class number": 31
+    },
+    {
+      "sample_text": "how many centimeters are in 4 inches",
+      "class": "measurement_conversion",
+      "class number": 31
+    },
+    {
+      "sample_text": "what amount of millimeters are in 50 kilometers",
+      "class": "measurement_conversion",
+      "class number": 31
+    },
+    {
+      "sample_text": "convert cm to inch",
+      "class": "measurement_conversion",
+      "class number": 31
+    },
+    {
+      "sample_text": "get an uber to take me to my brother's house in mineola",
+      "class": "uber",
+      "class number": 39
+    },
+    {
+      "sample_text": "i want an uber",
+      "class": "uber",
+      "class number": 39
+    },
+    {
+      "sample_text": "i need an uber to times square asap",
+      "class": "uber",
+      "class number": 39
+    },
+    {
+      "sample_text": "can you send me an uber to go to a restaurant in downtown phoenix",
+      "class": "uber",
+      "class number": 39
+    },
+    {
+      "sample_text": "call an uber to mcdonalds",
+      "class": "uber",
+      "class number": 39
+    },
+    {
+      "sample_text": "i need an uber for 7 people to go to safire restaurant",
+      "class": "uber",
+      "class number": 39
+    },
+    {
+      "sample_text": "i want to book uber for 3 people to union station",
+      "class": "uber",
+      "class number": 39
+    },
+    {
+      "sample_text": "i want to get an uber for one person to go to the library",
+      "class": "uber",
+      "class number": 39
+    },
+    {
+      "sample_text": "i am stranded and need uber",
+      "class": "uber",
+      "class number": 39
+    },
+    {
+      "sample_text": "find an uber xl to take me to the kroger near me",
+      "class": "uber",
+      "class number": 39
+    },
+    {
+      "sample_text": "i need an uber for 3 passengers to go to madison square garden",
+      "class": "uber",
+      "class number": 39
+    },
+    {
+      "sample_text": "i need an uber to class tonight on the mainline campus",
+      "class": "uber",
+      "class number": 39
+    },
+    {
+      "sample_text": "i need an uber reserved to take me to the restaurant",
+      "class": "uber",
+      "class number": 39
+    },
+    {
+      "sample_text": "call an uber to mark's house",
+      "class": "uber",
+      "class number": 39
+    },
+    {
+      "sample_text": "i need to uber somewhere",
+      "class": "uber",
+      "class number": 39
+    },
+    {
+      "sample_text": "i would like to get an uber to the movies",
+      "class": "uber",
+      "class number": 39
+    },
+    {
+      "sample_text": "i would like an uber going to atlantic city, new jersey",
+      "class": "uber",
+      "class number": 39
+    },
+    {
+      "sample_text": "uber, i have 3 people who are going to union station",
+      "class": "uber",
+      "class number": 39
+    },
+    {
+      "sample_text": "is mr ceo waiting me now",
+      "class": "meeting_schedule",
+      "class number": 19
+    },
+    {
+      "sample_text": "what times are my meetings",
+      "class": "meeting_schedule",
+      "class number": 19
+    },
+    {
+      "sample_text": "what meetings are scheduled for today",
+      "class": "meeting_schedule",
+      "class number": 19
+    },
+    {
+      "sample_text": "is the gang getting together this afternoon",
+      "class": "meeting_schedule",
+      "class number": 19
+    },
+    {
+      "sample_text": "how many total meetings will i have between 2 and 5",
+      "class": "meeting_schedule",
+      "class number": 19
+    },
+    {
+      "sample_text": "tell me the meeting schdule please",
+      "class": "meeting_schedule",
+      "class number": 19
+    },
+    {
+      "sample_text": "for today only, how many meetings are with jake",
+      "class": "meeting_schedule",
+      "class number": 19
+    },
+    {
+      "sample_text": "what meetings do i have today between noon and one",
+      "class": "meeting_schedule",
+      "class number": 19
+    },
+    {
+      "sample_text": "when is my meeting with dan scheduled for",
+      "class": "meeting_schedule",
+      "class number": 19
+    },
+    {
+      "sample_text": "what meetings do i have scheduled today",
+      "class": "meeting_schedule",
+      "class number": 19
+    },
+    {
+      "sample_text": "do i have any meetings with dave today",
+      "class": "meeting_schedule",
+      "class number": 19
+    },
+    {
+      "sample_text": "do i have any meetings planned for today",
+      "class": "meeting_schedule",
+      "class number": 19
+    },
+    {
+      "sample_text": "what meetings are on my calendar",
+      "class": "meeting_schedule",
+      "class number": 19
+    },
+    {
+      "sample_text": "what meetings do i have today from 3 to 4",
+      "class": "meeting_schedule",
+      "class number": 19
+    },
+    {
+      "sample_text": "tell me how many meetings with pete i have for today",
+      "class": "meeting_schedule",
+      "class number": 19
+    },
+    {
+      "sample_text": "do i have many meetings today between 2 and 4",
+      "class": "meeting_schedule",
+      "class number": 19
+    },
+    {
+      "sample_text": "are any meetings scheduled for today",
+      "class": "meeting_schedule",
+      "class number": 19
+    },
+    {
+      "sample_text": "tell me my scheduled meetings for today only, please",
+      "class": "meeting_schedule",
+      "class number": 19
+    },
+    {
+      "sample_text": "guide me through jump starting a car",
+      "class": "jump_start",
+      "class number": 17
+    },
+    {
+      "sample_text": "what should i do if my car battery dies",
+      "class": "jump_start",
+      "class number": 17
+    },
+    {
+      "sample_text": "how do i jump start a fiat",
+      "class": "jump_start",
+      "class number": 17
+    },
+    {
+      "sample_text": "my car battery is dead, what do i do now",
+      "class": "jump_start",
+      "class number": 17
+    },
+    {
+      "sample_text": "can you help me with the steps to jump start my car",
+      "class": "jump_start",
+      "class number": 17
+    },
+    {
+      "sample_text": "what are some ways to jump start a car",
+      "class": "jump_start",
+      "class number": 17
+    },
+    {
+      "sample_text": "please help me figure out how to jump start my car",
+      "class": "jump_start",
+      "class number": 17
+    },
+    {
+      "sample_text": "what do i do if my car battery is dead",
+      "class": "jump_start",
+      "class number": 17
+    },
+    {
+      "sample_text": "i need to know how to jump start my car",
+      "class": "jump_start",
+      "class number": 17
+    },
+    {
+      "sample_text": "how do i jump start my vehicle",
+      "class": "jump_start",
+      "class number": 17
+    },
+    {
+      "sample_text": "how do i jump start a battery",
+      "class": "jump_start",
+      "class number": 17
+    },
+    {
+      "sample_text": "how do i start my car battery",
+      "class": "jump_start",
+      "class number": 17
+    },
+    {
+      "sample_text": "do you have instructions on jump starting a chevy",
+      "class": "jump_start",
+      "class number": 17
+    },
+    {
+      "sample_text": "closest auto parts store to find replace for dead car battery",
+      "class": "jump_start",
+      "class number": 17
+    },
+    {
+      "sample_text": "how can i start my car using a jump start",
+      "class": "jump_start",
+      "class number": 17
+    },
+    {
+      "sample_text": "my car is dead can you tell me how to jump start it",
+      "class": "jump_start",
+      "class number": 17
+    },
+    {
+      "sample_text": "tell me how to jump start my dead battery",
+      "class": "jump_start",
+      "class number": 17
+    },
+    {
+      "sample_text": "my car battery died, what should i do",
+      "class": "jump_start",
+      "class number": 17
+    },
+    {
+      "sample_text": "i would say that the statement is definitely false",
+      "class": "no",
+      "class number": 30
+    },
+    {
+      "sample_text": "that is not true",
+      "class": "no",
+      "class number": 30
+    },
+    {
+      "sample_text": "that's completely false",
+      "class": "no",
+      "class number": 30
+    },
+    {
+      "sample_text": "that would be a no",
+      "class": "no",
+      "class number": 30
+    },
+    {
+      "sample_text": "that\u2019s actually wrong",
+      "class": "no",
+      "class number": 30
+    },
+    {
+      "sample_text": "no thanks",
+      "class": "no",
+      "class number": 30
+    },
+    {
+      "sample_text": "i don't believe that is possible, it is false",
+      "class": "no",
+      "class number": 30
+    },
+    {
+      "sample_text": "that's not true",
+      "class": "no",
+      "class number": 30
+    },
+    {
+      "sample_text": "the answer is false",
+      "class": "no",
+      "class number": 30
+    },
+    {
+      "sample_text": "not that one",
+      "class": "no",
+      "class number": 30
+    },
+    {
+      "sample_text": "no is the answer",
+      "class": "no",
+      "class number": 30
+    },
+    {
+      "sample_text": "that is not correct",
+      "class": "no",
+      "class number": 30
+    },
+    {
+      "sample_text": "no that isn't the case",
+      "class": "no",
+      "class number": 30
+    },
+    {
+      "sample_text": "no, that can't be right",
+      "class": "no",
+      "class number": 30
+    },
+    {
+      "sample_text": "i gotta say no",
+      "class": "no",
+      "class number": 30
+    },
+    {
+      "sample_text": "nope",
+      "class": "no",
+      "class number": 30
+    },
+    {
+      "sample_text": "i do not believe that that is correct",
+      "class": "no",
+      "class number": 30
+    },
+    {
+      "sample_text": "i think it is false",
+      "class": "no",
+      "class number": 30
+    },
+    {
+      "sample_text": "what's my interest rate",
+      "class": "interest_rate",
+      "class number": 7
+    },
+    {
+      "sample_text": "what do i need to do to look up my 1st republic account's interest rate",
+      "class": "interest_rate",
+      "class number": 7
+    },
+    {
+      "sample_text": "how are the interest rates at chase bank",
+      "class": "interest_rate",
+      "class number": 7
+    },
+    {
+      "sample_text": "could you find my interest rate for me",
+      "class": "interest_rate",
+      "class number": 7
+    },
+    {
+      "sample_text": "can i find out my checking interest rate online",
+      "class": "interest_rate",
+      "class number": 7
+    },
+    {
+      "sample_text": "does my checking interest rate seem low",
+      "class": "interest_rate",
+      "class number": 7
+    },
+    {
+      "sample_text": "i need to know my interest rate",
+      "class": "interest_rate",
+      "class number": 7
+    },
+    {
+      "sample_text": "what's the interest rate on my savings",
+      "class": "interest_rate",
+      "class number": 7
+    },
+    {
+      "sample_text": "please tell me my current interest rate for my home equity line of credit",
+      "class": "interest_rate",
+      "class number": 7
+    },
+    {
+      "sample_text": "i need the interest rate on my capital one account",
+      "class": "interest_rate",
+      "class number": 7
+    },
+    {
+      "sample_text": "tell me my interest rate",
+      "class": "interest_rate",
+      "class number": 7
+    },
+    {
+      "sample_text": "i wanna know the interest rate on my bank of america cd account",
+      "class": "interest_rate",
+      "class number": 7
+    },
+    {
+      "sample_text": "what is my interest rate",
+      "class": "interest_rate",
+      "class number": 7
+    },
+    {
+      "sample_text": "what interest rate am i paying",
+      "class": "interest_rate",
+      "class number": 7
+    },
+    {
+      "sample_text": "is my savings interest rate too high",
+      "class": "interest_rate",
+      "class number": 7
+    },
+    {
+      "sample_text": "if i'm using citibank, what is the interest rate",
+      "class": "interest_rate",
+      "class number": 7
+    },
+    {
+      "sample_text": "what is the interest rate i am receiving from the start of the year",
+      "class": "interest_rate",
+      "class number": 7
+    },
+    {
+      "sample_text": "my interest rate please",
+      "class": "interest_rate",
+      "class number": 7
+    },
+    {
+      "sample_text": "i lost my card how do i report it",
+      "class": "report_lost_card",
+      "class number": 12
+    },
+    {
+      "sample_text": "i want to report my card as lost",
+      "class": "report_lost_card",
+      "class number": 12
+    },
+    {
+      "sample_text": "i think my card is stolen and needs to be reported",
+      "class": "report_lost_card",
+      "class number": 12
+    },
+    {
+      "sample_text": "i need to report that my card has been lost",
+      "class": "report_lost_card",
+      "class number": 12
+    },
+    {
+      "sample_text": "my bronze card is missing i would like to report it as lost",
+      "class": "report_lost_card",
+      "class number": 12
+    },
+    {
+      "sample_text": "i need to report credit card theft",
+      "class": "report_lost_card",
+      "class number": 12
+    },
+    {
+      "sample_text": "report my lost visa card",
+      "class": "report_lost_card",
+      "class number": 12
+    },
+    {
+      "sample_text": "what do i do to report a lost card",
+      "class": "report_lost_card",
+      "class number": 12
+    },
+    {
+      "sample_text": "my card is stolen, i need to report it",
+      "class": "report_lost_card",
+      "class number": 12
+    },
+    {
+      "sample_text": "i lost my amex and need to report it",
+      "class": "report_lost_card",
+      "class number": 12
+    },
+    {
+      "sample_text": "what do i do if i lost my card",
+      "class": "report_lost_card",
+      "class number": 12
+    },
+    {
+      "sample_text": "is there anyway, i can report my card being stolen",
+      "class": "report_lost_card",
+      "class number": 12
+    },
+    {
+      "sample_text": "what must i do to report my card lost",
+      "class": "report_lost_card",
+      "class number": 12
+    },
+    {
+      "sample_text": "i can't find my insurance card and i want to report it as lost",
+      "class": "report_lost_card",
+      "class number": 12
+    },
+    {
+      "sample_text": "i need to report my card as stolen, please",
+      "class": "report_lost_card",
+      "class number": 12
+    },
+    {
+      "sample_text": "i can't locate my mastercard and i want to report it as lost, please",
+      "class": "report_lost_card",
+      "class number": 12
+    },
+    {
+      "sample_text": "my card is lost please report it",
+      "class": "report_lost_card",
+      "class number": 12
+    },
+    {
+      "sample_text": "i would like to report my card as stolen, please",
+      "class": "report_lost_card",
+      "class number": 12
+    },
+    {
+      "sample_text": "can i convert my credit card points to milage",
+      "class": "redeem_rewards",
+      "class number": 6
+    },
+    {
+      "sample_text": "how do i redeem my credit card points",
+      "class": "redeem_rewards",
+      "class number": 6
+    },
+    {
+      "sample_text": "do i need a certain amount of points before i can redeem them",
+      "class": "redeem_rewards",
+      "class number": 6
+    },
+    {
+      "sample_text": "i want to use my credit card points",
+      "class": "redeem_rewards",
+      "class number": 6
+    },
+    {
+      "sample_text": "how can i cash in the rewards i have earned on my amex",
+      "class": "redeem_rewards",
+      "class number": 6
+    },
+    {
+      "sample_text": "how do i cash in my reward for chase",
+      "class": "redeem_rewards",
+      "class number": 6
+    },
+    {
+      "sample_text": "what are ways to utilize my credit card points",
+      "class": "redeem_rewards",
+      "class number": 6
+    },
+    {
+      "sample_text": "i would like to use my credit card points",
+      "class": "redeem_rewards",
+      "class number": 6
+    },
+    {
+      "sample_text": "how do i get cash back for the rewards on my amex card",
+      "class": "redeem_rewards",
+      "class number": 6
+    },
+    {
+      "sample_text": "what do i do to get cach back for points on my discover card",
+      "class": "redeem_rewards",
+      "class number": 6
+    },
+    {
+      "sample_text": "can you check with my credit card company and see if i can redeem my points",
+      "class": "redeem_rewards",
+      "class number": 6
+    },
+    {
+      "sample_text": "walk me through the best ways to use my credit card points",
+      "class": "redeem_rewards",
+      "class number": 6
+    },
+    {
+      "sample_text": "i'd like to redeem my credit card points",
+      "class": "redeem_rewards",
+      "class number": 6
+    },
+    {
+      "sample_text": "could i redeem my credit card points on a new tv",
+      "class": "redeem_rewards",
+      "class number": 6
+    },
+    {
+      "sample_text": "tell me how to redeem my credit card points",
+      "class": "redeem_rewards",
+      "class number": 6
+    },
+    {
+      "sample_text": "walk me through the process of cashing in on credit card points",
+      "class": "redeem_rewards",
+      "class number": 6
+    },
+    {
+      "sample_text": "i have a lot of credit card points saved up and would like to start redeeming them",
+      "class": "redeem_rewards",
+      "class number": 6
+    },
+    {
+      "sample_text": "do you think i could get a target gift card with my credit card points",
+      "class": "redeem_rewards",
+      "class number": 6
+    },
+    {
+      "sample_text": "how can i adjust the spoken language",
+      "class": "change_language",
+      "class number": 29
+    },
+    {
+      "sample_text": "do you know french",
+      "class": "change_language",
+      "class number": 29
+    },
+    {
+      "sample_text": "please respond in latin from now on",
+      "class": "change_language",
+      "class number": 29
+    },
+    {
+      "sample_text": "switch the language setting over to german",
+      "class": "change_language",
+      "class number": 29
+    },
+    {
+      "sample_text": "can you speak to me in french",
+      "class": "change_language",
+      "class number": 29
+    },
+    {
+      "sample_text": "please give me your responses only in french from now on",
+      "class": "change_language",
+      "class number": 29
+    },
+    {
+      "sample_text": "i want to put you in a different language",
+      "class": "change_language",
+      "class number": 29
+    },
+    {
+      "sample_text": "the language i am using will now be italian",
+      "class": "change_language",
+      "class number": 29
+    },
+    {
+      "sample_text": "change the language you're using to american english",
+      "class": "change_language",
+      "class number": 29
+    },
+    {
+      "sample_text": "can you talk to me in italian",
+      "class": "change_language",
+      "class number": 29
+    },
+    {
+      "sample_text": "i need to change the language to french",
+      "class": "change_language",
+      "class number": 29
+    },
+    {
+      "sample_text": "let's speak in mandarin instead of english",
+      "class": "change_language",
+      "class number": 29
+    },
+    {
+      "sample_text": "from now on, i want you to answer me using japanese",
+      "class": "change_language",
+      "class number": 29
+    },
+    {
+      "sample_text": "i want to edit the language",
+      "class": "change_language",
+      "class number": 29
+    },
+    {
+      "sample_text": "can i give you instructions in japanese",
+      "class": "change_language",
+      "class number": 29
+    },
+    {
+      "sample_text": "make your preferred language english",
+      "class": "change_language",
+      "class number": 29
+    },
+    {
+      "sample_text": "talk to me in italian from now on",
+      "class": "change_language",
+      "class number": 29
+    },
+    {
+      "sample_text": "i want to hear from you in german",
+      "class": "change_language",
+      "class number": 29
+    },
+    {
+      "sample_text": "is there a reason people exist",
+      "class": "meaning_of_life",
+      "class number": 22
+    },
+    {
+      "sample_text": "can you tell me the meaning of life",
+      "class": "meaning_of_life",
+      "class number": 22
+    },
+    {
+      "sample_text": "the meaning of life",
+      "class": "meaning_of_life",
+      "class number": 22
+    },
+    {
+      "sample_text": "life has what meaning or what's the secret to it",
+      "class": "meaning_of_life",
+      "class number": 22
+    },
+    {
+      "sample_text": "can you explain the meaning of life to me",
+      "class": "meaning_of_life",
+      "class number": 22
+    },
+    {
+      "sample_text": "what is your version on the meaning of life",
+      "class": "meaning_of_life",
+      "class number": 22
+    },
+    {
+      "sample_text": "what is our purpose here on earth",
+      "class": "meaning_of_life",
+      "class number": 22
+    },
+    {
+      "sample_text": "do you know what the meaning of life is",
+      "class": "meaning_of_life",
+      "class number": 22
+    },
+    {
+      "sample_text": "define the meaning of life",
+      "class": "meaning_of_life",
+      "class number": 22
+    },
+    {
+      "sample_text": "tell me what is the purpose of life",
+      "class": "meaning_of_life",
+      "class number": 22
+    },
+    {
+      "sample_text": "tell the meaning of life",
+      "class": "meaning_of_life",
+      "class number": 22
+    },
+    {
+      "sample_text": "i gotta know the meaning of life",
+      "class": "meaning_of_life",
+      "class number": 22
+    },
+    {
+      "sample_text": "help me figure out the meaning of life",
+      "class": "meaning_of_life",
+      "class number": 22
+    },
+    {
+      "sample_text": "what's the meaning of this life",
+      "class": "meaning_of_life",
+      "class number": 22
+    },
+    {
+      "sample_text": "what's the purpose of existence",
+      "class": "meaning_of_life",
+      "class number": 22
+    },
+    {
+      "sample_text": "what is the meaning of this life",
+      "class": "meaning_of_life",
+      "class number": 22
+    },
+    {
+      "sample_text": "i wonder if you can explain the meaning of life",
+      "class": "meaning_of_life",
+      "class number": 22
+    },
+    {
+      "sample_text": "would you tell me the meaning of life, please",
+      "class": "meaning_of_life",
+      "class number": 22
+    },
+    {
+      "sample_text": "what time is it in buenos aires",
+      "class": "time",
+      "class number": 4
+    },
+    {
+      "sample_text": "what is the time now",
+      "class": "time",
+      "class number": 4
+    },
+    {
+      "sample_text": "would you tell me the current time in the eastern timezone",
+      "class": "time",
+      "class number": 4
+    },
+    {
+      "sample_text": "in the mst time zone, what time is it right now",
+      "class": "time",
+      "class number": 4
+    },
+    {
+      "sample_text": "time in tokyo",
+      "class": "time",
+      "class number": 4
+    },
+    {
+      "sample_text": "what's the time in anchorage timezone",
+      "class": "time",
+      "class number": 4
+    },
+    {
+      "sample_text": "what time is it in russia",
+      "class": "time",
+      "class number": 4
+    },
+    {
+      "sample_text": "what's the current time in greenwhich",
+      "class": "time",
+      "class number": 4
+    },
+    {
+      "sample_text": "what is the exact time",
+      "class": "time",
+      "class number": 4
+    },
+    {
+      "sample_text": "what time do you have on your watch",
+      "class": "time",
+      "class number": 4
+    },
+    {
+      "sample_text": "please tell me the time",
+      "class": "time",
+      "class number": 4
+    },
+    {
+      "sample_text": "tell me what time it is in the central timezone",
+      "class": "time",
+      "class number": 4
+    },
+    {
+      "sample_text": "what's the current time in est",
+      "class": "time",
+      "class number": 4
+    },
+    {
+      "sample_text": "what is the current time in new york",
+      "class": "time",
+      "class number": 4
+    },
+    {
+      "sample_text": "what time is it in the eastern standard timezone",
+      "class": "time",
+      "class number": 4
+    },
+    {
+      "sample_text": "what is the time right now in the hst timezone",
+      "class": "time",
+      "class number": 4
+    },
+    {
+      "sample_text": "what time is it in london",
+      "class": "time",
+      "class number": 4
+    },
+    {
+      "sample_text": "what is the time right now in the peruvian time zone",
+      "class": "time",
+      "class number": 4
+    },
+    {
+      "sample_text": "i need to buy everything on the shopping list",
+      "class": "order",
+      "class number": 16
+    },
+    {
+      "sample_text": "can you have some new oakley's shipped to me",
+      "class": "order",
+      "class number": 16
+    },
+    {
+      "sample_text": "i'm out of shampoo so will you order me some more",
+      "class": "order",
+      "class number": 16
+    },
+    {
+      "sample_text": "i am needing you to buy me some shoes",
+      "class": "order",
+      "class number": 16
+    },
+    {
+      "sample_text": "order more cat food, i'm out",
+      "class": "order",
+      "class number": 16
+    },
+    {
+      "sample_text": "ran out of tissues and need you to put an order in for more asap",
+      "class": "order",
+      "class number": 16
+    },
+    {
+      "sample_text": "can you buy something from walmartcom for me",
+      "class": "order",
+      "class number": 16
+    },
+    {
+      "sample_text": "will you buy me underpants",
+      "class": "order",
+      "class number": 16
+    },
+    {
+      "sample_text": "can you order more printer paper",
+      "class": "order",
+      "class number": 16
+    },
+    {
+      "sample_text": "i need you to order some more lysol for me,please",
+      "class": "order",
+      "class number": 16
+    },
+    {
+      "sample_text": "i am out of ice cream so will you order me some more",
+      "class": "order",
+      "class number": 16
+    },
+    {
+      "sample_text": "grab me a new belt on amazon please",
+      "class": "order",
+      "class number": 16
+    },
+    {
+      "sample_text": "submit the order for everything on my shopping list",
+      "class": "order",
+      "class number": 16
+    },
+    {
+      "sample_text": "buy all the things on the shopping list",
+      "class": "order",
+      "class number": 16
+    },
+    {
+      "sample_text": "i do not have cookies so will you order me some more",
+      "class": "order",
+      "class number": 16
+    },
+    {
+      "sample_text": "i do not have pizza so will you order me some more",
+      "class": "order",
+      "class number": 16
+    },
+    {
+      "sample_text": "i'm out of detergent so will you order me some more",
+      "class": "order",
+      "class number": 16
+    },
+    {
+      "sample_text": "i do not have flour so will you order me some more",
+      "class": "order",
+      "class number": 16
+    }
+  ]
+}
