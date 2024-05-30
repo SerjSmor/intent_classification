@@ -1,3 +1,5 @@
+from typing import Dict, List
+
 import pandas as pd
 from sklearn.model_selection import train_test_split
 
@@ -20,8 +22,10 @@ def extract_prompt(examples):
     '''
     return prompt
 
-def preprocess():
-    dataset = load_main_dataset()
+def preprocess(dataset: List[Dict] = None):
+    if not dataset:
+        dataset = load_main_dataset()
+
     all_df = prepare_dataset(dataset)
 
     df_train, df_test = train_test_split(all_df, test_size=0.2, random_state=42)

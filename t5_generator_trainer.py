@@ -1,5 +1,6 @@
 import argparse
 
+from torch.utils.data import DataLoader
 from transformers import AutoTokenizer, AutoModelForSequenceClassification, TrainingArguments, Trainer, \
     T5ForConditionalGeneration
 from sklearn.metrics import accuracy_score, precision_recall_fscore_support
@@ -7,7 +8,7 @@ import numpy as np
 import torch
 import pandas as pd
 
-from app.utils import build_prompt
+from app.utils import build_prompt, get_model_suffix
 from consts import FULL_PROMPT, GENERATOR_TEXT, GENERATOR_LABELS
 
 FLAN_T5_BASE = "google/flan-t5-base"
@@ -60,6 +61,9 @@ def train(model_name: str = FLAN_T5_BASE, epochs: int = TWENTY_EPOCHS, batch_siz
     val_dataset = Seq2SeqDataset(val_encodings)
 
     # Load the model
+    train_loader = DataLoader(train_dataset, batch_size=batch_size, num_workers=4, pin_memory=True)
+    val_loader = DataLoader(val_dataset, batch_size=batch_size, num_workers=4, pin_memory=True)
+
 
     model = T5ForConditionalGeneration.from_pretrained(model_name)
     if torch.cuda.is_available():
@@ -94,7 +98,7 @@ def train(model_name: str = FLAN_T5_BASE, epochs: int = TWENTY_EPOCHS, batch_siz
 
     # Evaluate the model
     trainer.evaluate()
-    model_suffix = model_name.split("/")[1]
+    model_suffix = get_model_suffix(model_name)
     save_dir = f"models/{model_suffix}/"
     print(f"saving model in {save_dir}")
     trainer.save_model(save_dir)

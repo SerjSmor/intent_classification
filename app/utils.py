@@ -7,3 +7,8 @@ def build_prompt(text, prompt="", company_name="", company_specific=""):
         company_specific = "This company is an online banking."
 
     return f"Company name: {company_name} is doing: {company_specific}\nCustomer: {text}.\nEND MESSAGE\nChoose one topic that matches customer's issue.\n{prompt}\nClass name: "
+
+
+def get_model_suffix(model_name):
+    return model_name.split("/")[1]
+

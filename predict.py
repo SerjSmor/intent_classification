@@ -26,6 +26,8 @@ def predict(csv_path, model_name="models/flan-t5-small"):
     # Classify each example
     results = []
 
+
+    # TODO: change to batched predictions
     df = pd.read_csv(csv_path)
     for index, row in tqdm(df.iterrows()):
         # Concatenate the prompt with the example
@@ -44,8 +46,9 @@ def predict(csv_path, model_name="models/flan-t5-small"):
         df.loc[df.index == index, "prediction"] = decoded_output
 
     predictions_file_name_suffix = csv_path.split("/")[1].replace(".csv", "") + ".csv"
-
-    df.to_csv(f"data/predictions_{predictions_file_name_suffix}")
+    predictions_file_path = f"results/predictions_{predictions_file_name_suffix}"
+    print(f"%% Predictions file path: {predictions_file_path}")
+    df.to_csv(predictions_file_path)
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="Predict")

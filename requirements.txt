@@ -3,9 +3,10 @@ torch
 transformers
 scikit-learn
 pandas
+setfit
 sentencepiece
 accelerate
-# runnong notebooks
+# running notebooks
 jupyter
 # creating pipelines
 invoke

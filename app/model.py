@@ -4,9 +4,10 @@ from app.utils import build_prompt
 
 
 class IntentClassifier:
-    def __init__(self, model_name="models/flan-t5-base", device="cuda"):
-        self.model = T5ForConditionalGeneration.from_pretrained(model_name).to(device)
-        self.tokenizer = T5Tokenizer.from_pretrained(model_name)
+    def __init__(self, model_name="models/flan-t5-base", device="cuda", commit_hash="main"):
+        print(commit_hash, model_name)
+        self.model = T5ForConditionalGeneration.from_pretrained(model_name, revision=commit_hash).to(device)
+        self.tokenizer = T5Tokenizer.from_pretrained(model_name, revision=commit_hash)
         self.device = device
 
     def predict(self, text, prompt_options, company_name, company_portion) -> str:
@@ -31,6 +32,17 @@ class IntentClassifier:
 
 if __name__ == '__main__':
     m = IntentClassifier("serj/intent-classifier")
-    print(m.predict("Hey, after recent changes, I want to cancel subscription, please help.",
-                    "OPTIONS:\n refund\n cancel subscription\n damaged item\n return item\n", "Company",
-                    "Products and subscriptions"))
+    # print(m.predict("Hey, after recent changes, I want to cancel subscription, please help.",
+    #                 "OPTIONS:\n refund\n cancel subscription\n damaged item\n return item\n", "Company",
+    #                 "Products and subscriptions"))
+
+    # m = IntentClassifier("serj/intent-classifier")
+    # print(m.predict("Hey, after recent changes, I want to cancel subscription, please help.",
+    #                 "What is the main topic? Describe in 3 words", "", ""))
+
+    response_cot = m.predict("Hey, after recent changes, I want to cancel subscription, please help. Where is the apartement?",
+                    "What are the main keywords? Describe in 3 words", "", "")
+    print(response_cot)
+    response = m.predict(f"Hey, after recent changes, I want to cancel subscription, please help. Where is the apartement?: Keywords: {response_cot}. "
+              f"What is the topic: OPTIONS:\n refund\n cancel subscription\n damaged item\n return item\n", "", "", "")
+    print(response)
