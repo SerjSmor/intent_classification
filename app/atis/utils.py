@@ -1,3 +1,11 @@
+import pandas as pd
+from datasets import load_dataset
+from tqdm import tqdm
+from sklearn.metrics import classification_report
+
+from app.model import IntentClassifier
+from app.utils import get_model_suffix
+
 ATIS_INTENT_MAPPING = {
     'abbreviation': "Abbreviation and Fare Code Meaning Inquiry",
     'aircraft': "Aircraft Type Inquiry",
@@ -22,3 +30,43 @@ ATIS_INTENT_MAPPING = {
     'quantity': "Flight Quantity Inquiry",
     'restriction': "Flight Restriction Inquiry"
 }
+
+def test_atis_dataset(full_model_path, intent_mapping=ATIS_INTENT_MAPPING):
+    model = IntentClassifier(model_name=full_model_path)
+
+    dataset = load_dataset("tuetschek/atis")
+    intents = set([row["intent"] for row in dataset["test"]])
+
+    prompt_options = "OPTIONS\n"
+    index = 1
+
+    for intent in intents:
+        if intent not in intent_mapping:
+            continue
+
+        mapping = intent_mapping[intent]
+        prompt_options += f" {index}. {mapping} \n"
+        index += 1
+    prompt_options = f'''{prompt_options}'''
+
+    results = []
+    company_name = "Atis Airlines"
+    company_specific = "Airlines flights, meals, seats customer requests"
+
+    for row in tqdm(dataset["test"]):
+        intent = row["intent"]
+        if intent not in intent_mapping:
+            continue
+
+        prediction = model.predict(row["text"], prompt_options, company_name, company_specific)
+        # keywords = model.raw_predict(f"All of the verbs: {row['text']}")
+        results.append({"prediction": prediction, "y": intent_mapping[intent], "text": row["text"]})
+
+    y = [r["y"] for r in results]
+    predictions = [r["prediction"].replace("Class name: ", "") for r in results]
+    classification_report_df = pd.DataFrame(classification_report(y, predictions, output_dict=True)).T
+    classification_report_df["id"] = classification_report_df.index.tolist()
+    print(classification_report_df.index.tolist())
+
+    classification_report_df.to_csv("results/classification_report.csv", index=False)
+    return classification_report_df

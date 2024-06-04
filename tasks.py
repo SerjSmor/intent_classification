@@ -1,3 +1,4 @@
+from datetime import datetime
 import json
 from dataclasses import dataclass
 
@@ -26,26 +27,29 @@ def preprocess_dataset(c):
     c.run("python preprocess.py")
 
 @task
-def train(c, is_preprocess=False, model_name=FLAN_T_BASE, epochs=6, batch_size=8, per_dataset=False):
+def train(c, is_preprocess=False, model_name=FLAN_T_BASE, epochs=6, batch_size=8, per_dataset=False, name="", test_atis=False):
     if is_preprocess:
         c.run("python preprocess.py")
-
-    c.run(f"python t5_generator_trainer.py --model-name {model_name} -e {epochs} -bs {batch_size}")
-    model_suffix = model_name.split("/")[1]
-    c.run(f"python predict.py --model-name models/{model_suffix} -p data/test.csv")
-    per_dataset_str = "" if not per_dataset else " -pd "
-    c.run(f"python results.py -p results/predictions_test.csv {per_dataset_str}")
+    print(f"(train) experiment name: {name}")
+    test_atis_str = "--test-atis" if test_atis else ""
+    commands = f"--model-name {model_name} -e {epochs} -bs {batch_size} --name {name} {test_atis_str}"
+    print(commands)
+    c.run(f"python t5_generator_trainer.py {commands}")
+    # model_suffix = model_name.split("/")[1]
+    # c.run(f"python predict.py --model-name models/{model_suffix} -p data/test.csv")
+    # per_dataset_str = "" if not per_dataset else " -pd "
+    # c.run(f"python results.py -p results/predictions_test.csv {per_dataset_str}")
 
 
 @task
-def train_atis_zero_shot(c, model_name=FLAN_T_BASE, epochs=15, batch_size=8):
+def _train_atis_zero_shot(c, model_name=FLAN_T_BASE, epochs=15, batch_size=8, dataset_to_remove="Atis Arilines", name=""):
     dataset = load_main_dataset()
-    dataset_to_remove = "Atis Arilines"
     # remove atis
     filtered_dataset = [var for var in dataset if var["Company Name"] != dataset_to_remove]
 
     preprocess(filtered_dataset)
-    train(c, is_preprocess=False, model_name=model_name, epochs=epochs, batch_size=batch_size)
+    print(f"(_train_atis)experiment name: {name}")
+    train(c, is_preprocess=False, model_name=model_name, epochs=epochs, batch_size=batch_size, name=name, test_atis=True)
 
 
 @task
@@ -94,11 +98,15 @@ def test_atis(c, model_name=FLAN_T_BASE):
 
 @task
 def atis_pipeline(c, name="", model_name=FLAN_T_BASE, epochs=15, batch_size=8):
-    train_atis_zero_shot(c, model_name, epochs, batch_size)
     if len(name) == 0:
         model_suffix = get_model_suffix(model_name)
-        name = f"{model_suffix}_e{epochs}_b{batch_size}"
-    pipeline_args = {"model name": model_name, "epochs": epochs, "batch size": batch_size}
+        date_time = datetime.now().strftime("%m%d%Y-%H:%M:%S")
+        print("date and time:", date_time)
+        name = f"{model_suffix}_e{epochs}_b{batch_size}_t{date_time}"
+    print(f"experiment name: {name}")
+    _train_atis_zero_shot(c, model_name=model_name, epochs=epochs, batch_size=batch_size, name=name)
+
+    pipeline_args = {"model name": model_name, "epochs": epochs, "batch size": batch_size, "name": name}
     with open("data/train_args.txt", "w") as f:
         json.dump(pipeline_args, f)
 
@@ -112,13 +120,6 @@ def archive(c, name):
     c.run(f"cp -R data {experiment_path}/")
     c.run(f"cp -R models {experiment_path}/")
     c.run(f"cp -R results {experiment_path}/")
-
-
-
-
-
-
-
 
 
 @task
@@ -164,4 +165,4 @@ def upload_to_hf_small(c):
 
 
 if __name__ == '__main__':
-    train_atis_zero_shot(Context())
+    _train_atis_zero_shot(Context())

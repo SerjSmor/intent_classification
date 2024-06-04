@@ -48,7 +48,9 @@ def predict(csv_path, model_name="models/flan-t5-small"):
     predictions_file_name_suffix = csv_path.split("/")[1].replace(".csv", "") + ".csv"
     predictions_file_path = f"results/predictions_{predictions_file_name_suffix}"
     print(f"%% Predictions file path: {predictions_file_path}")
+
     df.to_csv(predictions_file_path)
+    return predictions_file_path
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="Predict")

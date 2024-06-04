@@ -9,7 +9,6 @@ from consts import DEFAULT_PREDICTION_CSV
 def extract_class_name(prediction_text: str) -> str:
     prediction_text = prediction_text.lower()
     class_name = prediction_text
-    print(prediction_text)
     if ":" in prediction_text:
         class_name = prediction_text.split(":")[1]
         if ":" in prediction_text:
@@ -33,7 +32,7 @@ def is_generator_label_in_prompt_options(row):
 
     return False
 
-def results(csv_path, per_dataset):
+def results(csv_path: str, per_dataset: bool):
     predictions_df = pd.read_csv(csv_path)
     if per_dataset:
         datasets = predictions_df["dataset_name"].unique().tolist()
@@ -41,7 +40,7 @@ def results(csv_path, per_dataset):
             df = predictions_df[predictions_df["dataset_name"] == dataset]
             calculate_classification_report(df)
     else:
-        calculate_classification_report(predictions_df)
+        return calculate_classification_report(predictions_df)
 
 def calculate_classification_report(df):
     print(df["prediction"].value_counts())
@@ -52,9 +51,14 @@ def calculate_classification_report(df):
         lambda row: is_generator_label_in_prompt_options(row), axis=1)
     print(df["is_generator_label_in_prompt_options"].value_counts())
     missing_class_name = df[df['is_generator_label_in_prompt_options'] == False].shape[0]
-    print(f"{missing_class_name / df.shape[0]}")
+    miss_percentage = missing_class_name / df.shape[0]
+    print(f"{miss_percentage:.3f}")
     good_df = df[df["is_generator_label_in_prompt_options"] == True]
     print(classification_report(good_df["class_name"], good_df["generator_label_prediction"]))
+    classification_report_dict = \
+        classification_report(good_df["class_name"], good_df["generator_label_prediction"], output_dict=True)
+
+    return classification_report_dict, miss_percentage
 
 
 if __name__ == '__main__':

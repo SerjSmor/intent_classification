@@ -6,6 +6,7 @@ pandas
 setfit
 sentencepiece
 accelerate
+datasets
 # running notebooks
 jupyter
 # creating pipelines
