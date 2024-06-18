@@ -7,6 +7,9 @@ from consts import DEFAULT_PREDICTION_CSV
 
 
 def extract_class_name(prediction_text: str) -> str:
+    if prediction_text == pd.isnull(prediction_text):
+        return ""
+
     prediction_text = prediction_text.lower()
     class_name = prediction_text
     if ":" in prediction_text:

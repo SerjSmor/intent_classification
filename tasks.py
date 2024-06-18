@@ -1,3 +1,4 @@
+import random
 from datetime import datetime
 import json
 from dataclasses import dataclass
@@ -8,15 +9,16 @@ from invoke import task, Context
 from transformers import pipeline, T5ForConditionalGeneration, T5Tokenizer
 from tqdm import tqdm
 
+from consts import NON_ATIS_DATASETS, ALL_DATASETS, FLAN_T5_BASE, FLAN_T5_LARGE, FLAN_T5_SMALL, \
+    ATIS_TEST_SET_CLASSIFICATION_REPORT_CSV
 # app
 from dataset import load_main_dataset
 from preprocess import preprocess_simple_dataset, preprocess
 from app.model import IntentClassifier
 from app.utils import get_model_suffix
 from app.atis.utils import ATIS_INTENT_MAPPING as intent_mapping
+from t5_generator_trainer import DEFAULT_WARMUP_STEPS, DEFAULT_WEIGHT_DECAY
 
-
-FLAN_T_BASE = "google/flan-t5-base"
 
 @dataclass
 class Summary:
@@ -27,13 +29,23 @@ def preprocess_dataset(c):
     c.run("python preprocess.py")
 
 @task
-def train(c, is_preprocess=False, model_name=FLAN_T_BASE, epochs=6, batch_size=8, per_dataset=False, name="", test_atis=False):
+def train(c, is_preprocess=False, model_name=FLAN_T5_BASE, epochs=6, batch_size=8,
+          per_dataset=False, name="", test_atis=False, dataset_names=ALL_DATASETS, peft=False,
+          warmup_steps=DEFAULT_WARMUP_STEPS, weight_decay=DEFAULT_WEIGHT_DECAY, no_company_specific=False,
+          use_positive=False):
     if is_preprocess:
         c.run("python preprocess.py")
     print(f"(train) experiment name: {name}")
     test_atis_str = "--test-atis" if test_atis else ""
-    commands = f"--model-name {model_name} -e {epochs} -bs {batch_size} --name {name} {test_atis_str}"
+    peft_str = " --peft " if peft else ""
+    no_company_specific_str = "--no-company-specific" if no_company_specific else ""
+    use_positive_str = "--use-positive-samples" if use_positive else ""
+
+    commands = f"--model-name {model_name} -e {epochs} -bs {batch_size} --name {name} {test_atis_str} " \
+               f"--dataset-names {dataset_names} {peft_str} --warmup-steps {warmup_steps} --weight-decay {weight_decay} " \
+               f" {no_company_specific_str} {use_positive_str}"
     print(commands)
+
     c.run(f"python t5_generator_trainer.py {commands}")
     # model_suffix = model_name.split("/")[1]
     # c.run(f"python predict.py --model-name models/{model_suffix} -p data/test.csv")
@@ -42,18 +54,24 @@ def train(c, is_preprocess=False, model_name=FLAN_T_BASE, epochs=6, batch_size=8
 
 
 @task
-def _train_atis_zero_shot(c, model_name=FLAN_T_BASE, epochs=15, batch_size=8, dataset_to_remove="Atis Arilines", name=""):
+def _train_atis_zero_shot(c, model_name=FLAN_T5_BASE, epochs=15, batch_size=8, name="", dataset_names="", peft=False,
+                          warmup_steps=DEFAULT_WARMUP_STEPS, weight_decay=DEFAULT_WEIGHT_DECAY,
+                          no_company_specific=True, use_positive=False):
     dataset = load_main_dataset()
     # remove atis
-    filtered_dataset = [var for var in dataset if var["Company Name"] != dataset_to_remove]
+    filtered_dataset = [var for var in dataset if var["Company Name"] in dataset_names]
 
     preprocess(filtered_dataset)
+
     print(f"(_train_atis)experiment name: {name}")
-    train(c, is_preprocess=False, model_name=model_name, epochs=epochs, batch_size=batch_size, name=name, test_atis=True)
+    train(c, is_preprocess=False, model_name=model_name, epochs=epochs,
+          batch_size=batch_size, name=name, test_atis=True, dataset_names=dataset_names, peft=peft,
+          warmup_steps=warmup_steps, weight_decay=weight_decay, no_company_specific=no_company_specific,
+          use_positive=use_positive)
 
 
 @task
-def test_atis(c, model_name=FLAN_T_BASE):
+def test_atis(c, model_name=FLAN_T5_BASE):
     # atis test set
     model_suffix = get_model_suffix(model_name)
     full_model_path = f"models/{model_suffix}"
@@ -96,22 +114,117 @@ def test_atis(c, model_name=FLAN_T_BASE):
     classification_report_df.to_csv("results/classification_report.csv", index=False)
 
 
+
+
 @task
-def atis_pipeline(c, name="", model_name=FLAN_T_BASE, epochs=15, batch_size=8):
+def atis_pipeline(c, name="", model_name=FLAN_T5_BASE, epochs=15, batch_size=8, dataset_names=NON_ATIS_DATASETS,
+                  peft=False, warmup_steps=DEFAULT_WARMUP_STEPS, weight_decay=DEFAULT_WEIGHT_DECAY,
+                  no_company_specific=True, use_positive=False, should_archive=False):
+
+    c.run("rm -rf models/*")
+    c.run("rm -rf results/*")
+
     if len(name) == 0:
         model_suffix = get_model_suffix(model_name)
         date_time = datetime.now().strftime("%m%d%Y-%H:%M:%S")
         print("date and time:", date_time)
-        name = f"{model_suffix}_e{epochs}_b{batch_size}_t{date_time}"
+        name = f"m:{model_suffix}_e:{epochs}_b:{batch_size}_t:{date_time}_ncs:{no_company_specific}_ups:{use_positive}"
+
     print(f"experiment name: {name}")
-    _train_atis_zero_shot(c, model_name=model_name, epochs=epochs, batch_size=batch_size, name=name)
+    dataset_names = dataset_names.split()
+    _train_atis_zero_shot(c, model_name=model_name, epochs=epochs, batch_size=batch_size, name=name,
+                          dataset_names=dataset_names, peft=peft, warmup_steps=warmup_steps, weight_decay=weight_decay,
+                          no_company_specific=no_company_specific, use_positive=use_positive)
 
     pipeline_args = {"model name": model_name, "epochs": epochs, "batch size": batch_size, "name": name}
     with open("data/train_args.txt", "w") as f:
         json.dump(pipeline_args, f)
 
-    test_atis(c, model_name)
-    archive(c, name)
+    atis_classification_report_df = pd.read_csv(ATIS_TEST_SET_CLASSIFICATION_REPORT_CSV)
+    # last row is weighted
+    f1_weighted = atis_classification_report_df["f1-score"].iloc[-1]
+
+    print(f"atis weighted f1: {f1_weighted}")
+    if f1_weighted > 0.77 or should_archive:
+        print(f"starting to archive weighted f1: {f1_weighted}, model: {model_name}")
+        name = f"f1w_{f1_weighted:.2f}_{name}"
+        archive(c, name)
+
+
+@task
+# finding the optimal epoch number
+def find_epoch_experiments(c, model_name, no_company_specific=True, use_positive=False, datasets=NON_ATIS_DATASETS):
+    small_model_epochs = list(range(1, 13))
+    base_model_epochs = list(range(1, 9))
+    large_model_epochs = list(range(1, 7))
+
+    epochs = small_model_epochs
+    batch_size = 16
+    if model_name == FLAN_T5_BASE:
+        epochs = base_model_epochs
+        batch_size = 8
+    elif model_name == FLAN_T5_LARGE:
+        epochs = large_model_epochs
+        batch_size = 2
+
+    for epoch in epochs:
+        atis_pipeline(c, model_name=model_name, epochs=epoch, batch_size=batch_size,
+                      no_company_specific=no_company_specific, use_positive=use_positive, dataset_names=datasets)
+
+
+@task
+# finding the optimal epoch number
+def best_epoch_experiments(c, model_name, no_company_specific=True, use_positive=False, datasets=NON_ATIS_DATASETS,
+                           should_archive=False):
+    small_model_epochs = list(range(7, 9))
+    base_model_epochs = list(range(2, 4))
+    large_model_epochs = list(range(1, 2))
+
+    epochs = small_model_epochs
+    batch_size = 16
+    if model_name == FLAN_T5_BASE:
+        epochs = base_model_epochs
+        batch_size = 8
+    elif model_name == FLAN_T5_LARGE:
+        epochs = large_model_epochs
+        batch_size = 2
+
+    for epoch in epochs:
+        atis_pipeline(c, model_name=model_name, epochs=epoch, batch_size=batch_size,
+                      no_company_specific=no_company_specific, use_positive=use_positive, dataset_names=datasets,
+                      should_archive=should_archive)
+
+@task
+def create_best_models(c):
+    best_epoch_experiments(c, FLAN_T5_SMALL, datasets=NON_ATIS_DATASETS, should_archive=True)
+    best_epoch_experiments(c, FLAN_T5_BASE, datasets=NON_ATIS_DATASETS, should_archive=True)
+    best_epoch_experiments(c, FLAN_T5_LARGE, datasets="Clinc_oos_41_classes", should_archive=True)
+
+@task
+def datasets_plot(c):
+
+    dataset_group = ["Clinc_oos_41_classes Online_Banking", "Clinc_oos_41_classes Online_Banking Pizza_Mia"]
+
+    # for num_datasets in range(1, len(dataset_name_array)):
+    for group in dataset_group:
+        # dataset_names = random.sample(dataset_name_array, num_datasets)
+        # dataset_names_str = " ".join(dataset_names)
+        find_epoch_experiments(c, FLAN_T5_SMALL, no_company_specific=True, datasets=group)
+        find_epoch_experiments(c, FLAN_T5_BASE, no_company_specific=True, datasets=group)
+        find_epoch_experiments(c, FLAN_T5_LARGE, no_company_specific=True, datasets=group)
+
+
+
+
+@task
+def find_optimal_weight_decay(c):
+    pass
+
+@task
+def find_optimal_warmup_steps(c, warmup_step):
+    pass
+
+# lets run
 
 @task
 def archive(c, name):
@@ -147,18 +260,6 @@ def predict_test_hf_model(c):
     c.run("python predict.py --model-name serj/intent-classifier -p data/test.csv")
     c.run("python results.py -p data/predictions_test.csv -pd")
 
-@task
-def upload_to_hf(c):
-    model = T5ForConditionalGeneration.from_pretrained("models/flan-t5-base")
-    # push to the hub
-    model.push_to_hub("intent-classifier", token="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", commit_message="Add clinc_oos dataset sub samples to training dataset")
-
-@task
-def upload_to_hf_small(c):
-    model = T5ForConditionalGeneration.from_pretrained("models/flan-t5-small")
-    # push to the hub
-    model.push_to_hub("intent-classifier-flan-t5-small", token="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",
-                      commit_message="Add Atis dataset sub samples to training dataset")
 
 
 

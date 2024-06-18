@@ -14,7 +14,7 @@ from app.utils import build_prompt
 # model_name = "models/flan_t5_base_generator"
 
 
-def predict(csv_path, model_name="models/flan-t5-small"):
+def predict(csv_path, model_name="models/flan-t5-small", no_company_specific=False):
     model = T5ForConditionalGeneration.from_pretrained(model_name)
     tokenizer = T5Tokenizer.from_pretrained(model_name)
 
@@ -31,13 +31,13 @@ def predict(csv_path, model_name="models/flan-t5-small"):
     df = pd.read_csv(csv_path)
     for index, row in tqdm(df.iterrows()):
         # Concatenate the prompt with the example
-        input_text = build_prompt(row["sample_text"], row["prompt_options"], row["Company Name"])
+        input_text = build_prompt(row["sample_text"], row["prompt_options"], row["Company Name"], no_company_specific)
         # print(input_text)
         # Tokenize the concatenated inp_ut text
         input_ids = tokenizer.encode(input_text, return_tensors="pt", max_length=512, truncation=True).to(device)
 
         # Generate the output
-        output = model.generate(input_ids)
+        output = model.generate(input_ids, max_new_tokens=20)
 
         # Decode the output tokens
         decoded_output = tokenizer.decode(output[0], skip_special_tokens=True)

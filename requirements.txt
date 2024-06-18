@@ -6,8 +6,12 @@ pandas
 setfit
 sentencepiece
 accelerate
+peft
 datasets
+openai
 # running notebooks
 jupyter
 # creating pipelines
 invoke
+# infra
+python-dotenv

@@ -10,8 +10,8 @@ class IntentClassifier:
         self.tokenizer = T5Tokenizer.from_pretrained(model_name, revision=commit_hash)
         self.device = device
 
-    def predict(self, text, prompt_options, company_name, company_portion) -> str:
-        input_text = build_prompt(text, prompt_options, company_name, company_portion)
+    def predict(self, text, prompt_options, company_name, company_portion, no_company_specific=False) -> str:
+        input_text = build_prompt(text, prompt_options, company_name, company_portion, no_company_specific)
         # print(input_text)
         # Tokenize the concatenated inp_ut text
         decoded_output = self._predict(input_text)
