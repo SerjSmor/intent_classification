@@ -46,7 +46,7 @@ def tokenize_pairs(tokenizer, source_texts, target_texts):
 def train(model_name: str = FLAN_T5_BASE, epochs: int = TWENTY_EPOCHS, batch_size: int = DEFAULT_BATCH_SIZE,
           test_atis: bool = False, peft: bool = False, warmup_steps=DEFAULT_WARMUP_STEPS,
           weight_decay=DEFAULT_WEIGHT_DECAY, dataset_names=[], no_company_specific: bool = False,
-          use_positive: bool =False):
+          use_positive: bool=False, no_number_prompt=False):
 
     gc.collect()
     torch.cuda.empty_cache()
@@ -70,7 +70,7 @@ def train(model_name: str = FLAN_T5_BASE, epochs: int = TWENTY_EPOCHS, batch_siz
     wandb.log({"train_rows": df_train.shape[0], "validation_rows": df_validation.shape[0],
                "dataset_names": dataset_names, "dataset_num": len(dataset_names)})
 
-    text_column = GENERATOR_TEXT if no_company_specific else GENERATOR_TEXT_NO_COMPANY
+    text_column = GENERATOR_TEXT_NO_COMPANY if no_company_specific else GENERATOR_TEXT
     df_train = df_train[[text_column, GENERATOR_LABELS]]
     df_validation = df_validation[[text_column, GENERATOR_LABELS]]
 
@@ -126,8 +126,8 @@ def train(model_name: str = FLAN_T5_BASE, epochs: int = TWENTY_EPOCHS, batch_siz
     model = T5ForConditionalGeneration.from_pretrained(model_name, **model_args)
 
     data_collator = DataCollatorForSeq2Seq(tokenizer, model=model)
-    data_collator(features)
-    print(features)
+    # data_collator(features)
+    # print(features)
 
     if not peft:
         if torch.cuda.is_available():
@@ -210,7 +210,9 @@ def train(model_name: str = FLAN_T5_BASE, epochs: int = TWENTY_EPOCHS, batch_siz
 
     if test_atis:
         atis_classification_report_df = test_atis_dataset(full_model_path=save_dir,
-                                                          no_company_specific=no_company_specific)
+                                                          no_company_specific=no_company_specific,
+                                                          no_number_prompt=no_number_prompt)
+
         atis_last_row_dict = atis_classification_report_df.iloc[-1].to_dict()
         atis_accuracy = atis_classification_report_df.iloc[-3]["precision"]
         atis_last_row_dict = rename_keys(atis_last_row_dict, "atis_weighted_")
@@ -221,6 +223,7 @@ def train(model_name: str = FLAN_T5_BASE, epochs: int = TWENTY_EPOCHS, batch_siz
                    "max_input_length": max_input_length,
             "test_set_classification_report": wandb.Table(dataframe=test_set_classification_report),
                    "tet_set_missing_percentage": missing_percentage,
+                   "no_number_prompt": no_number_prompt,
                    "atis_test_set": wandb.Table(dataframe=atis_classification_report_df)})
 
 
@@ -237,6 +240,7 @@ if __name__ == '__main__':
     parser.add_argument("--weight-decay", type=float, default=DEFAULT_WEIGHT_DECAY)
     parser.add_argument("--no-company-specific", action="store_true")
     parser.add_argument("--use-positive-samples", action="store_true")
+    parser.add_argument("--no-number-prompt", action="store_true")
 
     args = parser.parse_args()
     print(vars(args))
@@ -258,4 +262,4 @@ if __name__ == '__main__':
 
     train(args.model_name, epochs=args.epochs, batch_size=args.batch_size, test_atis=args.test_atis, peft=args.peft,
           warmup_steps=args.warmup_steps, weight_decay=args.weight_decay, dataset_names=args.dataset_names,
-          no_company_specific=args.no_company_specific, use_positive=args.use_positive_samples)
+          no_company_specific=args.no_company_specific, use_positive=args.use_positive_samples, no_number_prompt=args.no_number_prompt)

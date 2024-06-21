@@ -32,7 +32,7 @@ def preprocess_dataset(c):
 def train(c, is_preprocess=False, model_name=FLAN_T5_BASE, epochs=6, batch_size=8,
           per_dataset=False, name="", test_atis=False, dataset_names=ALL_DATASETS, peft=False,
           warmup_steps=DEFAULT_WARMUP_STEPS, weight_decay=DEFAULT_WEIGHT_DECAY, no_company_specific=False,
-          use_positive=False):
+          use_positive=False, no_number_prompt=False):
     if is_preprocess:
         c.run("python preprocess.py")
     print(f"(train) experiment name: {name}")
@@ -40,10 +40,11 @@ def train(c, is_preprocess=False, model_name=FLAN_T5_BASE, epochs=6, batch_size=
     peft_str = " --peft " if peft else ""
     no_company_specific_str = "--no-company-specific" if no_company_specific else ""
     use_positive_str = "--use-positive-samples" if use_positive else ""
+    no_number_prompt_str = "--no-number-prompt" if no_number_prompt else ""
 
     commands = f"--model-name {model_name} -e {epochs} -bs {batch_size} --name {name} {test_atis_str} " \
                f"--dataset-names {dataset_names} {peft_str} --warmup-steps {warmup_steps} --weight-decay {weight_decay} " \
-               f" {no_company_specific_str} {use_positive_str}"
+               f" {no_company_specific_str} {use_positive_str} {no_number_prompt_str}"
     print(commands)
 
     c.run(f"python t5_generator_trainer.py {commands}")
@@ -56,18 +57,18 @@ def train(c, is_preprocess=False, model_name=FLAN_T5_BASE, epochs=6, batch_size=
 @task
 def _train_atis_zero_shot(c, model_name=FLAN_T5_BASE, epochs=15, batch_size=8, name="", dataset_names="", peft=False,
                           warmup_steps=DEFAULT_WARMUP_STEPS, weight_decay=DEFAULT_WEIGHT_DECAY,
-                          no_company_specific=True, use_positive=False):
+                          no_company_specific=True, use_positive=False, no_number_prompt=False):
     dataset = load_main_dataset()
     # remove atis
     filtered_dataset = [var for var in dataset if var["Company Name"] in dataset_names]
 
-    preprocess(filtered_dataset)
+    preprocess(filtered_dataset, no_number_prompt=no_number_prompt)
 
     print(f"(_train_atis)experiment name: {name}")
     train(c, is_preprocess=False, model_name=model_name, epochs=epochs,
           batch_size=batch_size, name=name, test_atis=True, dataset_names=dataset_names, peft=peft,
           warmup_steps=warmup_steps, weight_decay=weight_decay, no_company_specific=no_company_specific,
-          use_positive=use_positive)
+          use_positive=use_positive, no_number_prompt=no_number_prompt)
 
 
 @task
@@ -119,7 +120,7 @@ def test_atis(c, model_name=FLAN_T5_BASE):
 @task
 def atis_pipeline(c, name="", model_name=FLAN_T5_BASE, epochs=15, batch_size=8, dataset_names=NON_ATIS_DATASETS,
                   peft=False, warmup_steps=DEFAULT_WARMUP_STEPS, weight_decay=DEFAULT_WEIGHT_DECAY,
-                  no_company_specific=True, use_positive=False, should_archive=False):
+                  no_company_specific=True, use_positive=False, should_archive=False, no_number_prompt=False):
 
     c.run("rm -rf models/*")
     c.run("rm -rf results/*")
@@ -134,7 +135,7 @@ def atis_pipeline(c, name="", model_name=FLAN_T5_BASE, epochs=15, batch_size=8, 
     dataset_names = dataset_names.split()
     _train_atis_zero_shot(c, model_name=model_name, epochs=epochs, batch_size=batch_size, name=name,
                           dataset_names=dataset_names, peft=peft, warmup_steps=warmup_steps, weight_decay=weight_decay,
-                          no_company_specific=no_company_specific, use_positive=use_positive)
+                          no_company_specific=no_company_specific, use_positive=use_positive, no_number_prompt=no_number_prompt)
 
     pipeline_args = {"model name": model_name, "epochs": epochs, "batch size": batch_size, "name": name}
     with open("data/train_args.txt", "w") as f:
@@ -153,7 +154,7 @@ def atis_pipeline(c, name="", model_name=FLAN_T5_BASE, epochs=15, batch_size=8, 
 
 @task
 # finding the optimal epoch number
-def find_epoch_experiments(c, model_name, no_company_specific=True, use_positive=False, datasets=NON_ATIS_DATASETS):
+def find_epoch_experiments(c, model_name, no_company_specific=True, use_positive=False, datasets=NON_ATIS_DATASETS, no_number_prompt=False):
     small_model_epochs = list(range(1, 13))
     base_model_epochs = list(range(1, 9))
     large_model_epochs = list(range(1, 7))
@@ -169,7 +170,8 @@ def find_epoch_experiments(c, model_name, no_company_specific=True, use_positive
 
     for epoch in epochs:
         atis_pipeline(c, model_name=model_name, epochs=epoch, batch_size=batch_size,
-                      no_company_specific=no_company_specific, use_positive=use_positive, dataset_names=datasets)
+                      no_company_specific=no_company_specific, use_positive=use_positive, dataset_names=datasets,
+                      no_number_prompt=no_number_prompt)
 
 
 @task

@@ -1,10 +1,11 @@
 import pandas as pd
+import torch
 from datasets import load_dataset
 from tqdm import tqdm
 from sklearn.metrics import classification_report
 
 from app.model import IntentClassifier
-from app.utils import get_model_suffix
+from app.utils import get_model_suffix, build_prompt
 from consts import ATIS_TEST_SET_CLASSIFICATION_REPORT_CSV
 
 ATIS_INTENT_MAPPING = {
@@ -32,13 +33,14 @@ ATIS_INTENT_MAPPING = {
     'restriction': "Flight Restriction Inquiry"
 }
 
-def test_atis_dataset(full_model_path, intent_mapping=ATIS_INTENT_MAPPING, no_company_specific=False):
-    model = IntentClassifier(model_name=full_model_path)
+def test_atis_dataset(full_model_path, intent_mapping=ATIS_INTENT_MAPPING, no_company_specific=False, no_number_prompt=False):
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    model = IntentClassifier(model_name=full_model_path, device=device)
 
     dataset = load_dataset("tuetschek/atis")
     intents = set([row["intent"] for row in dataset["test"]])
 
-    prompt_options = create_prompt_options(intent_mapping, intents)
+    prompt_options = create_prompt_options(intent_mapping, intents, no_number_prompt)
 
     results = []
     company_name = "Atis Airlines"
@@ -49,9 +51,12 @@ def test_atis_dataset(full_model_path, intent_mapping=ATIS_INTENT_MAPPING, no_co
         if intent not in intent_mapping:
             continue
 
-        prediction = model.predict(row["text"], prompt_options, company_name, company_specific, no_company_specific)
+        input_text = build_prompt(row["text"], prompt_options, company_name, company_specific, no_company_specific)
+        prediction = model.raw_predict(input_text)
+        prediction = prediction.replace("Class name: ", "")
         # keywords = model.raw_predict(f"All of the verbs: {row['text']}")
-        results.append({"prediction": prediction.replace("Class name: ", ""), "y": intent_mapping[intent], "text": row["text"]})
+        results.append({"prediction": prediction, "y": intent_mapping[intent], "text": row["text"], "prompt": input_text,
+                        "prompt_options": prompt_options})
 
     df_results = pd.DataFrame(results)
     df_results.to_csv("results/atis_predictions.csv", index=False)
@@ -59,15 +64,16 @@ def test_atis_dataset(full_model_path, intent_mapping=ATIS_INTENT_MAPPING, no_co
     df_errors.to_csv("results/atis_errors.csv", index=False)
     y = [r["y"] for r in results]
     predictions = [r["prediction"].replace("Class name: ", "") for r in results]
+
+    print(classification_report(y, predictions, output_dict=True))
     classification_report_df = pd.DataFrame(classification_report(y, predictions, output_dict=True)).T
     classification_report_df["id"] = classification_report_df.index.tolist()
-    print(classification_report_df.index.tolist())
 
     classification_report_df.to_csv(ATIS_TEST_SET_CLASSIFICATION_REPORT_CSV, index=False)
     return classification_report_df
 
 
-def create_prompt_options(intent_mapping, intents) -> str:
+def create_prompt_options(intent_mapping, intents, no_number_prompt=False) -> str:
     prompt_options = "OPTIONS\n"
     index = 1
     for intent in intents:
@@ -75,7 +81,11 @@ def create_prompt_options(intent_mapping, intents) -> str:
             continue
 
         mapping = intent_mapping[intent]
-        prompt_options += f" {index}. {mapping} \n"
+        if no_number_prompt:
+            prompt_options += f"% {mapping} \n"
+        else:
+            prompt_options += f" {index}. {mapping} \n"
+
         index += 1
     prompt_options = f'''{prompt_options}'''
     return prompt_options

@@ -50,16 +50,17 @@ def calculate_classification_report(df):
     df["class_name"] = df["class_name"].apply(str.lower)
     df["generator_label_prediction"] = df["prediction"].apply(extract_class_name)
     # count how many predictions are actually in the taxonomy 1X1
-    df["is_generator_label_in_prompt_options"] = df.apply(
-        lambda row: is_generator_label_in_prompt_options(row), axis=1)
-    print(df["is_generator_label_in_prompt_options"].value_counts())
-    missing_class_name = df[df['is_generator_label_in_prompt_options'] == False].shape[0]
-    miss_percentage = missing_class_name / df.shape[0]
-    print(f"{miss_percentage:.3f}")
-    good_df = df[df["is_generator_label_in_prompt_options"] == True]
-    print(classification_report(good_df["class_name"], good_df["generator_label_prediction"]))
+    # df["is_generator_label_in_prompt_options"] = df.apply(
+    #     lambda row: is_generator_label_in_prompt_options(row), axis=1)
+    # print(df["is_generator_label_in_prompt_options"].value_counts())
+    # missing_class_name = df[df['is_generator_label_in_prompt_options'] == False].shape[0]
+    # miss_percentage = missing_class_name / df.shape[0]
+    # print(f"{miss_percentage:.3f}")
+    # good_df = df[df["is_generator_label_in_prompt_options"] == True]
+    miss_percentage = 0
+    print(classification_report(df["class_name"], df["generator_label_prediction"]))
     classification_report_dict = \
-        classification_report(good_df["class_name"], good_df["generator_label_prediction"], output_dict=True)
+        classification_report(df["class_name"], df["generator_label_prediction"], output_dict=True)
 
     return classification_report_dict, miss_percentage
 

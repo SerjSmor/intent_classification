@@ -8,25 +8,29 @@ from consts import GENERATOR_LABELS, PROMPT_OPTIONS, GENERATOR_TEXT, GENERATOR_T
 from dataset import _load_dataset, load_main_dataset, load_simple_dataset
 
 
-def extract_prompt(examples):
-    # "class_name", "class number
-    class_names = []
+def extract_prompt(examples, no_number_prompt=False):
+    class_names_str = ""
+    class_names_set = set()
     for example in examples:
-        full_class_name = f"{example['class number']}.{example['class']}"
-        if full_class_name not in class_names:
-            class_names.append(full_class_name)
-    options = "\n".join(class_names)
+        if example['class'] in class_names_set:
+            continue
+        if no_number_prompt:
+            class_names_str += f"% {example['class']} \n"
+        else:
+            class_names_str += f"{example['class number']}.{example['class']} \n"
+
+        class_names_set.add(example['class'])
     prompt = f'''
         OPTIONS:
-        {options}
+        {class_names_str}
     '''
     return prompt
 
-def preprocess(dataset: List[Dict] = None, save_to_disk=True):
+def preprocess(dataset: List[Dict] = None, save_to_disk=True, no_number_prompt=False):
     if not dataset:
         dataset = load_main_dataset()
 
-    all_df = prepare_dataset(dataset)
+    all_df = prepare_dataset(dataset, no_number_prompt=no_number_prompt)
 
     df_train, df_test = train_test_split(all_df, test_size=0.2, random_state=42)
     df_train_positive_df = create_positive_negative_samples(all_df)
@@ -39,12 +43,12 @@ def preprocess(dataset: List[Dict] = None, save_to_disk=True):
     return df_train, df_test, df_train_positive_df
 
 
-def prepare_dataset(dataset):
+def prepare_dataset(dataset, no_number_prompt=False):
     all_df = pd.DataFrame()
     for company_dict in dataset:
         # create train validation split
         examples = company_dict["Examples"]
-        prompt_options = extract_prompt(examples)
+        prompt_options = extract_prompt(examples, no_number_prompt=no_number_prompt)
         df = pd.DataFrame(examples)
         df.rename(columns={"class": "class_name", "class number": "class_number"}, inplace=True)
         company_name = company_dict["Company Name"]
@@ -56,6 +60,7 @@ def prepare_dataset(dataset):
             lambda row: build_prompt(row["sample_text"], row[PROMPT_OPTIONS], row["Company Name"]), axis=1)
         df[GENERATOR_TEXT_NO_COMPANY] = df.apply(
             lambda row: build_prompt(row["sample_text"], row[PROMPT_OPTIONS], company_specific=False), axis=1)
+
         df["dataset_name"] = company_name
         all_df = pd.concat([all_df, df])
         print(f"company: {company_name}, samples: {df.shape[0]}")

@@ -6,10 +6,12 @@ def build_prompt(text, prompt="", company_name="", company_specific="", no_compa
     if company_name == "Online Banking":
         company_specific = "This company is an online banking."
 
-    if not no_company_specific:
-        return f"Topic %% Company name: {company_name} is doing: {company_specific}\nCustomer: {text}.\nEND MESSAGE\nChoose one topic that matches customer's issue.\n{prompt}\nClass name: "
-    else:
+    if no_company_specific:
         return f"Topic %% Customer: {text}.\nEND MESSAGE\nChoose one topic that matches customer's issue.\n{prompt}\nClass name: "
+
+    else:
+        return f"Topic %% Company name: {company_name} is doing: {company_specific}\nCustomer: {text}.\nEND MESSAGE\nChoose one topic that matches customer's issue.\n{prompt}\nClass name: "
+
 
 
 
