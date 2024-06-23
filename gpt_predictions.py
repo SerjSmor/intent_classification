@@ -17,7 +17,7 @@ load_dotenv()
 class OpenAIClassifier:
 
     def __init__(self, prompt_options: str, model_name: str):
-        self.client = OpenAI(api_key=os.getenv('OPENAI_API_KEY'))
+        self.client = OpenAI(api_key=os.getenv('OPEN_API_KEY'))
         self.prompt_options = prompt_options
         self.model_name = model_name
 
@@ -50,11 +50,11 @@ def clean_prediction(prediction):
         return ""
 
 
-def predict_atis(model_name):
+def predict_atis(model_name, use_default_labels=False):
     dataset = load_dataset("tuetschek/atis")
     intents = set([row["intent"] for row in dataset["test"]])
 
-    prompt_options = create_prompt_options(intent_mapping, intents)
+    prompt_options = create_prompt_options(intent_mapping, intents, use_default_labels=use_default_labels)
 
     model = OpenAIClassifier(prompt_options, model_name)
     results = []
@@ -66,9 +66,12 @@ def predict_atis(model_name):
             continue
 
         try:
+            y = intent_mapping[intent]
+            if use_default_labels:
+                y = intent
             prediction = model.predict(row["text"])
             results.append(
-                {"prediction": prediction, "y": intent_mapping[intent], "text": row["text"], "model_name": model_name})
+                {"prediction": prediction, "y": y, "text": row["text"], "model_name": model_name})
         except Exception as e:
             exceptions += 1
             print(e)
@@ -125,11 +128,11 @@ def predict_synthetic_dataset(dataset_name: str, model_name: str):
 
 if __name__ == '__main__':
     # load atis dataset
-    models = ["gpt-4o-2024-05-13", "gpt-4-turbo-2024-04-09"]
-    datasets = ["Online_Banking", "Pizza_Mia", "Clinc_oos_41_classes"]
-    # predict_atis(model_name="gpt-3.5-turbo-0125")
-    # predict_atis(model_name="gpt-4o-2024-05-13")
-    # predict_atis(model_name="gpt-4-turbo-2024-04-09")
-    for model in models:
-        for dataset in datasets:
-            predict_synthetic_dataset(dataset, model_name=model)
+    # models = ["gpt-4o-2024-05-13", "gpt-4-turbo-2024-04-09"]
+    # datasets = ["Online_Banking", "Pizza_Mia", "Clinc_oos_41_classes"]
+    predict_atis(model_name="gpt-3.5-turbo-0125", use_default_labels=True)
+    # predict_atis(model_name="gpt-4o-2024-05-13", use_default_labels=True)
+    # predict_atis(model_name="gpt-4-turbo-2024-04-09", use_default_labels=True)
+    # for model in models:
+    #     for dataset in datasets:
+    #         predict_synthetic_dataset(dataset, model_name=model)

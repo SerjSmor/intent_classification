@@ -16,7 +16,7 @@ from app.atis.utils import test_atis_dataset
 from app.utils import get_model_suffix
 from consts import GENERATOR_TEXT, GENERATOR_LABELS, FLAN_T5_BASE, TWENTY_EPOCHS, DEFAULT_WARMUP_STEPS, \
     DEFAULT_BATCH_SIZE, DEFAULT_WEIGHT_DECAY, FLAN_T5_LARGE, DEFAULT_EXPERIMENT_NAME, GENERATOR_TEXT_NO_COMPANY, \
-    TEST_SET_CLASSIFICATION_REPORT_CSV
+    TEST_SET_CLASSIFICATION_REPORT_CSV, ATIS_TEST_SET_CLASSIFICATION_REPORT_CSV, ATIS_PREDICTIONS_CSV
 from predict import predict
 from results import calculate_classification_report, results
 
@@ -46,7 +46,7 @@ def tokenize_pairs(tokenizer, source_texts, target_texts):
 def train(model_name: str = FLAN_T5_BASE, epochs: int = TWENTY_EPOCHS, batch_size: int = DEFAULT_BATCH_SIZE,
           test_atis: bool = False, peft: bool = False, warmup_steps=DEFAULT_WARMUP_STEPS,
           weight_decay=DEFAULT_WEIGHT_DECAY, dataset_names=[], no_company_specific: bool = False,
-          use_positive: bool=False, no_number_prompt=False):
+          use_positive: bool=False, no_number_prompt=False, use_default_labels=False):
 
     gc.collect()
     torch.cuda.empty_cache()
@@ -200,6 +200,8 @@ def train(model_name: str = FLAN_T5_BASE, epochs: int = TWENTY_EPOCHS, batch_siz
     test_set_last_row_dict = test_set_classification_report_df.iloc[-1].to_dict()
     test_set_accuracy = test_set_classification_report_df.iloc[-3]["precision"]
     test_set_classification_report_df.to_csv(TEST_SET_CLASSIFICATION_REPORT_CSV, index=False)
+
+    test_set_predictions_df = pd.read_csv(predictions_file_path)
     # Function to rename keys
     def rename_keys(d: Dict, prefix: str):
         renamed_dict = {prefix + key: value for key, value in d.items()}
@@ -211,20 +213,27 @@ def train(model_name: str = FLAN_T5_BASE, epochs: int = TWENTY_EPOCHS, batch_siz
     if test_atis:
         atis_classification_report_df = test_atis_dataset(full_model_path=save_dir,
                                                           no_company_specific=no_company_specific,
-                                                          no_number_prompt=no_number_prompt)
+                                                          no_number_prompt=no_number_prompt,
+                                                          use_default_labels=use_default_labels)
 
         atis_last_row_dict = atis_classification_report_df.iloc[-1].to_dict()
         atis_accuracy = atis_classification_report_df.iloc[-3]["precision"]
         atis_last_row_dict = rename_keys(atis_last_row_dict, "atis_weighted_")
+
+        atis_predictions_df = pd.read_csv(ATIS_PREDICTIONS_CSV)
+        atis_sampled_predictions = atis_predictions_df.sample(100)
 
         wandb.log({**atis_last_row_dict, **test_set_last_row_dict,
                    "weight_decay": weight_decay, "peft": peft, "warmup_steps": warmup_steps,
                    "val_set_accuracy": test_set_accuracy, "atis_accuracy": atis_accuracy,
                    "max_input_length": max_input_length,
             "test_set_classification_report": wandb.Table(dataframe=test_set_classification_report),
+                   "atis_sampled_predictions": wandb.Table(dataframe=atis_sampled_predictions),
+                   "test_set_predictions": wandb.Table(dataframe=test_set_predictions_df),
                    "tet_set_missing_percentage": missing_percentage,
                    "no_number_prompt": no_number_prompt,
-                   "atis_test_set": wandb.Table(dataframe=atis_classification_report_df)})
+                   "use_default_labels": use_default_labels,
+                   "atis_test_set_classification_report": wandb.Table(dataframe=atis_classification_report_df)})
 
 
 if __name__ == '__main__':
@@ -241,6 +250,7 @@ if __name__ == '__main__':
     parser.add_argument("--no-company-specific", action="store_true")
     parser.add_argument("--use-positive-samples", action="store_true")
     parser.add_argument("--no-number-prompt", action="store_true")
+    parser.add_argument("--use-default-labels", action="store_true")
 
     args = parser.parse_args()
     print(vars(args))
@@ -262,4 +272,5 @@ if __name__ == '__main__':
 
     train(args.model_name, epochs=args.epochs, batch_size=args.batch_size, test_atis=args.test_atis, peft=args.peft,
           warmup_steps=args.warmup_steps, weight_decay=args.weight_decay, dataset_names=args.dataset_names,
-          no_company_specific=args.no_company_specific, use_positive=args.use_positive_samples, no_number_prompt=args.no_number_prompt)
+          no_company_specific=args.no_company_specific, use_positive=args.use_positive_samples, no_number_prompt=args.no_number_prompt,
+          use_default_labels=args.use_default_labels)
