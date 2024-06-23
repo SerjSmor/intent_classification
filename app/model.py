@@ -21,7 +21,7 @@ class IntentClassifier:
         input_ids = self.tokenizer.encode(input_text, return_tensors="pt", max_length=512, truncation=True).to(
             self.device)
         # Generate the output
-        output = self.model.generate(input_ids)
+        output = self.model.generate(input_ids, max_new_tokens=20, temperature=0)
         # Decode the output tokens
         decoded_output = self.tokenizer.decode(output[0], skip_special_tokens=True)
         return decoded_output
