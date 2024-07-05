@@ -8,14 +8,15 @@ from tqdm import tqdm
 from sklearn.metrics import classification_report
 
 from app.model import IntentClassifier
-from app.utils import get_model_suffix, build_prompt
-from consts import ATIS_TEST_SET_CLASSIFICATION_REPORT_CSV, ATIS_PREDICTIONS_CSV, FLAN_T5_SMALL, LOCAL_FLAN_T5_SMALL
+from app.utils import get_model_suffix, build_prompt, build_entity_extraction_prompt
+from consts import ATIS_TEST_SET_CLASSIFICATION_REPORT_CSV, ATIS_PREDICTIONS_CSV, FLAN_T5_SMALL, LOCAL_FLAN_T5_SMALL, \
+    BEST_LONG_FORMAT_SINGLE_TASK_EXTRACTION_MODEL, BEST_SHORT_FORMAT_SINGLE_TASK_EXTRACTION_MODEL, ANOTHER_MODEL
 
 ATIS_INTENT_MAPPING = {
     'abbreviation': "Abbreviation and Fare Code Meaning Inquiry",
     'aircraft': "Aircraft Type Inquiry",
     # 'aircraft+flight+flight_no': "Flight Details Inquiry",
-    'airfare': "Airfare Information Request",
+    'airfare': "Airfare and Fares Questions",
     # 'airfare+flight_time': "Flight Cost and Duration Inquiry",
     'airline': "Airline Information Request",
     # 'airline+flight_no': "Airline and Flight Number Query",
