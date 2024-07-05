@@ -3,1084 +3,884 @@
     "Company Name": "Pizza_Mia",
     "Examples": [
       {
-        "sample_text": "Hi there! I'd like to place an order for delivery to 123 Main Street.",
-        "class": "Order Placement",
-        "entity_action": "place order$delivery",
-        "class number": 0
+        "sample_text": "I need to update my shipping address for my recent order.",
+        "entity_action": "shipping address$update",
+        "all_entity_action": "shipping address$update, order$update address"
       },
       {
-        "sample_text": "Good evening! Can I order a large pepperoni pizza with extra cheese for pickup?",
-        "class": "Order Placement",
-        "entity_action": "order$large pepperoni pizza",
-        "class number": 0
+        "sample_text": "My credit card was declined during checkout. What should I do?",
+        "entity_action": "credit card$declined",
+        "all_entity_action": "credit card$declined, checkout$issue"
       },
       {
-        "sample_text": "Hello! I'd like to order a vegetarian pizza with no onions, please.",
-        "class": "Order Placement",
-        "class number": 0
+        "sample_text": "The product warranty was not included in the package. How can I get it?",
+        "entity_action": "warranty$missing",
+        "all_entity_action": "warranty$missing, package$get warranty"
       },
       {
-        "sample_text": "Hi, can I place an order for two medium pizzas, one Hawaiian and one Margherita?",
-        "class": "Order Placement",
-        "class number": 0
+        "sample_text": "I received a defective item in my last order. Can I get a replacement?",
+        "entity_action": "item$defective",
+        "all_entity_action": "item$defective, item$replacement"
       },
       {
-        "sample_text": "Hey! I'm interested in ordering a combo deal with a pizza, garlic knots, and soda.",
-        "class": "Order Placement",
-        "class number": 0
+        "sample_text": "I need help with setting up my new device. The instructions are unclear.",
+        "entity_action": "device$setup help",
+        "all_entity_action": "device$setup help, instructions$unclear"
       },
       {
-        "sample_text": "Hi, can you assist me in adding a side of buffalo wings to my existing order?",
-        "class": "Order Placement",
-        "class number": 0
+        "sample_text": "The promotional code I used didn't apply to my order. Can you assist?",
+        "entity_action": "promotional code$not applied",
+        "all_entity_action": "promotional code$not applied, order$issue"
       },
       {
-        "sample_text": "Good morning! I'd like to order a gluten-free pizza with chicken and mushrooms.",
-        "class": "Order Placement",
-        "class number": 0
+        "sample_text": "I want to downgrade my subscription plan. How do I do that?",
+        "entity_action": "subscription$downgrade",
+        "all_entity_action": "subscription$downgrade"
       },
       {
-        "sample_text": "Hello, I'm looking to place a delivery order for a family-sized feast including pizza, pasta, and salad.",
-        "class": "Order Placement",
-        "class number": 0
+        "sample_text": "The item I received is missing some parts. Can you send the missing parts?",
+        "entity_action": "item$missing parts",
+        "all_entity_action": "item$missing parts, parts$send"
       },
       {
-        "sample_text": "Hi! Can I customize a half-and-half pizza with different toppings on each side?",
-        "class": "Order Placement",
-        "class number": 0
+        "sample_text": "My account is locked after multiple failed login attempts. How can I unlock it?",
+        "entity_action": "account$locked",
+        "all_entity_action": "account$locked, login attempts$failed, account$unlock"
       },
       {
-        "sample_text": "Hey there! I'd like to place an order for a party pack including multiple pizzas and sides.",
-        "class": "Order Placement",
-        "class number": 0
+        "sample_text": "I need to update my profile picture on my account.",
+        "entity_action": "profile picture$update",
+        "all_entity_action": "profile picture$update, account$update"
       },
       {
-        "sample_text": "Good afternoon! I'd like to order a specialty pizza with the chef's recommended toppings.",
-        "class": "Order Placement",
-        "class number": 0
+        "sample_text": "The delivery date for my order has changed. Can you confirm the new date?",
+        "entity_action": "delivery date$changed",
+        "all_entity_action": "delivery date$changed, order$confirm date"
       },
       {
-        "sample_text": "Hello, I'd like to place an order for delivery to my office address. Can you please confirm the nearest branch?",
-        "class": "Order Placement",
-        "class number": 0
+        "sample_text": "I can't find the option to cancel my order online. Can you help?",
+        "entity_action": "order$cancel",
+        "all_entity_action": "order$cancel, option$missing"
       },
       {
-        "sample_text": "Hi, can I order a dessert pizza along with my regular order?",
-        "class": "Order Placement",
-        "class number": 0
+        "sample_text": "The invoice I received is incorrect. Can you send me a corrected version?",
+        "entity_action": "invoice$incorrect",
+        "all_entity_action": "invoice$incorrect, invoice$corrected"
       },
       {
-        "sample_text": "Good evening! I'm looking to order a pizza for pickup, but I need it ready in 20 minutes. Is that possible?",
-        "class": "Order Placement",
-        "entity_action": "pizza$pickup order",
-        "class number": 0
+        "sample_text": "I want to change my notification preferences in my account settings.",
+        "entity_action": "notification preferences$change",
+        "all_entity_action": "notification preferences$change, account settings$update"
       },
       {
-        "sample_text": "Hey there! Can I place an order for a half-sized pizza for a solo dinner?",
-        "class": "Order Placement",
-        "class number": 0
+        "sample_text": "The app is not recognizing my login credentials. What can I do?",
+        "entity_action": "app$login issue",
+        "all_entity_action": "app$login issue, credentials$not recognized"
       },
       {
-        "sample_text": "Hello! I'd like to order a cheeseless pizza with extra veggies, please.",
-        "class": "Order Placement",
-        "class number": 0
+        "sample_text": "I need to update my subscription billing cycle. Can you assist?",
+        "entity_action": "subscription billing cycle$update",
+        "all_entity_action": "subscription billing cycle$update, subscription$update"
       },
       {
-        "sample_text": "Hi, I'm interested in ordering a deep-dish pizza with extra sauce. Can you accommodate that?",
-        "class": "Order Placement",
-        "class number": 0
+        "sample_text": "The package tracking information hasn't updated in days. Is it lost?",
+        "entity_action": "tracking information$not updated",
+        "all_entity_action": "tracking information$not updated, package$lost"
       },
       {
-        "sample_text": "Good morning! I'd like to place an order for a pizza party package for my child's birthday.",
-        "class": "Order Placement",
-        "class number": 0
+        "sample_text": "I received an extra item in my order. How should I return it?",
+        "entity_action": "item$extra",
+        "all_entity_action": "item$extra, item$return"
       },
       {
-        "sample_text": "Hello, can I add a note to my order requesting no olives on the pizza?",
-        "class": "Order Placement",
-        "class number": 0
+        "sample_text": "The product description on your site is inaccurate. Can you correct it?",
+        "entity_action": "product description$inaccurate",
+        "all_entity_action": "product description$inaccurate, site$correct description"
       },
       {
-        "sample_text": "Hi, I'm ready to place an order for pickup. Can you recommend your specialty pizza?",
-        "class": "Order Placement",
-        "class number": 0
+        "sample_text": "I can't access my purchase history. Can you help me retrieve it?",
+        "entity_action": "purchase history$access issue",
+        "all_entity_action": "purchase history$access issue, history$retrieve"
       },
       {
-        "sample_text": "Hi, I placed an order about 30 minutes ago. Can you please provide an update on its status?",
-        "class": "Order Tracking",
-        "class number": 1
+        "sample_text": "I want to reset my account password. The reset link is not working.",
+        "entity_action": "password$reset",
+        "all_entity_action": "password$reset, reset link$not working"
       },
       {
-        "sample_text": "Hello, I'm trying to track my order but the tracking link isn't working. Can you assist?",
-        "class": "Order Tracking",
-        "class number": 1
+        "sample_text": "My order status says delivered, but I haven't received it. Can you help?",
+        "entity_action": "order status$delivered",
+        "all_entity_action": "order status$delivered, order$not received"
       },
       {
-        "sample_text": "Hey there! My order was scheduled for delivery an hour ago, but I haven't received it yet. What's the status?",
-        "class": "Order Tracking",
-        "class number": 1
+        "sample_text": "The color of the product I received is different from what I ordered.",
+        "entity_action": "product color$different",
+        "all_entity_action": "product color$different, product$order mismatch"
       },
       {
-        "sample_text": "Hi, I need to change the delivery address for my order. Can you update it in your system?",
-        "class": "Order Tracking",
-        "class number": 1
+        "sample_text": "I need to update my email address in your system.",
+        "entity_action": "email address$update",
+        "all_entity_action": "email address$update, system$update"
       },
       {
-        "sample_text": "Hello, I received a notification that my order was delivered, but I haven't received it. Can you check the delivery status?",
-        "class": "Order Tracking",
-        "class number": 1
+        "sample_text": "The website is down. When will it be back up?",
+        "entity_action": "website$down",
+        "all_entity_action": "website$down, website$back up"
       },
       {
-        "sample_text": "Hi, I'm tracking my order and it shows it's out for delivery. Can you provide an estimated arrival time?",
-        "class": "Order Tracking",
-        "class number": 1
+        "sample_text": "The discount applied to my order is incorrect. Can you fix it?",
+        "entity_action": "discount$incorrect",
+        "all_entity_action": "discount$incorrect, order$fix"
       },
       {
-        "sample_text": "Hello, I accidentally closed the order tracking page. Can you resend the tracking link?",
-        "class": "Order Tracking",
-        "class number": 1
+        "sample_text": "I can't find the download link for my software purchase.",
+        "entity_action": "download link$missing",
+        "all_entity_action": "download link$missing, software purchase$find link"
       },
       {
-        "sample_text": "Hi, I need to cancel my order, but I can't track it. Can you confirm its status and cancel it for me?",
-        "class": "Order Tracking",
-        "class number": 1
+        "sample_text": "The service I signed up for is not available in my area.",
+        "entity_action": "service$not available",
+        "all_entity_action": "service$not available, area$availability"
       },
       {
-        "sample_text": "Hello, I placed an order but forgot to note any special delivery instructions. Can I add them now?",
-        "class": "Order Tracking",
-        "class number": 1
+        "sample_text": "I want to change my payment method for my subscription.",
+        "entity_action": "payment method$change",
+        "all_entity_action": "payment method$change, subscription$update payment"
       },
       {
-        "sample_text": "Hi, my order was supposed to be delivered by now, but I haven't received any updates. Can you check on it?",
-        "class": "Order Tracking",
-        "class number": 1
+        "sample_text": "The billing cycle on my account is incorrect. Can you update it?",
+        "entity_action": "billing cycle$incorrect",
+        "all_entity_action": "billing cycle$incorrect, account$update billing"
       },
       {
-        "sample_text": "Hello, my tracking link is showing an error message. Can you troubleshoot the issue?",
-        "class": "Order Tracking",
-        "entity_action": "tracking link$error message",
-        "class number": 1
+        "sample_text": "The product arrived late. Can I get a partial refund?",
+        "entity_action": "product$late",
+        "all_entity_action": "product$late, refund$partial"
       },
       {
-        "sample_text": "Hi, I just received a notification that my order is delayed. Can you provide more information?",
-        "class": "Order Tracking",
-        "entity_action": "order$delayed",
-        "class number": 1
+        "sample_text": "I want to opt out of marketing emails.",
+        "entity_action": "marketing emails$opt out",
+        "all_entity_action": "marketing emails$opt out"
       },
       {
-        "sample_text": "Hello, I'm trying to track my order, but it's saying no information is available. Can you help?",
-        "class": "Order Tracking",
-        "entity_action": "track order$no information is available",
-        "class number": 1
+        "sample_text": "My membership was cancelled without my consent. Can you reinstate it?",
+        "entity_action": "membership$cancelled",
+        "all_entity_action": "membership$cancelled, membership$reinstate"
       },
       {
-        "sample_text": "Hi, my order was marked as delivered, but I haven't received it yet. Can you investigate?",
-        "class": "Order Tracking",
-        "entity_action": "order$haven't received it yet",
-        "class number": 1
+        "sample_text": "The link to download my e-book is broken. Can you send a new one?",
+        "entity_action": "e-book$download link broken",
+        "all_entity_action": "e-book$download link broken, link$send new"
       },
       {
-        "sample_text": "Hello, my order status hasn't been updated for a while. Can you provide an update?",
-        "class": "Order Tracking",
-        "entity_action": "order status$hasn't been updated",
-        "class number": 1
+        "sample_text": "I need to change the shipping method for my order.",
+        "entity_action": "shipping method$change",
+        "all_entity_action": "shipping method$change, order$update shipping"
       },
       {
-        "sample_text": "Hi, I accidentally closed the order confirmation page before noting the order number. Can you help me track it?",
-        "class": "Order Tracking",
-        "class number": 1
+        "sample_text": "I can't update my phone number in my account settings.",
+        "entity_action": "phone number$update",
+        "all_entity_action": "phone number$update, account settings$update"
       },
       {
-        "sample_text": "Hello, my order was supposed to arrive 30 minutes ago, but it hasn't. Can you check its status?",
-        "class": "Order Tracking",
-        "entity_extraction": "order$supposed to arrive",
-        "class number": 1
+        "sample_text": "The item I received doesn't work. Can I get a refund?",
+        "entity_action": "item$not working",
+        "all_entity_action": "item$not working, item$refund"
       },
       {
-        "sample_text": "Hi, I'm trying to track my order, but the website is showing an error. Can you assist?",
-        "class": "Order Tracking",
-        "class number": 1
+        "sample_text": "The promotional code expired before I could use it. Can you extend it?",
+        "entity_action": "promotional code$expired",
+        "all_entity_action": "promotional code$expired, code$extend"
       },
       {
-        "sample_text": "Hello, I received a message that my order is delayed due to weather conditions. Can you confirm?",
-        "class": "Order Tracking",
-        "entity_action": "order$delayed",
-        "class number": 1
+        "sample_text": "I want to change my username. How can I do that?",
+        "entity_action": "username$change",
+        "all_entity_action": "username$change"
       },
       {
-        "sample_text": "Hi, I'm tracking my order, but it seems stuck at a certain location. Can you provide more information?",
-        "class": "Order Tracking",
-        "class number": 1
+        "sample_text": "The delivery was left outside my building. Can you reschedule it?",
+        "entity_action": "delivery$left outside",
+        "all_entity_action": "delivery$left outside, delivery$reschedule"
       },
       {
-        "sample_text": "Hi, I'm curious about the ingredients used in your BBQ Chicken Pizza. Can you provide details?",
-        "class": "Menu and Ingredients",
-        "class number": 2
+        "sample_text": "I want to add an additional user to my account.",
+        "entity_action": "user$add",
+        "all_entity_action": "user$add, account$update"
       },
       {
-        "sample_text": "Hello, I have a nut allergy. Can you tell me which pizzas are safe for me to order?",
-        "class": "Menu and Ingredients",
-        "class number": 2
+        "sample_text": "My subscription was automatically renewed without my permission.",
+        "entity_action": "subscription$auto-renewal",
+        "all_entity_action": "subscription$auto-renewal, permission$not given"
       },
       {
-        "sample_text": "Hey there! Do you have any gluten-free crust options available?",
-        "class": "Menu and Ingredients",
-        "entity_action": "gluten-free crust options$available?",
-        "class number": 2
+        "sample_text": "I received a different model than what I ordered. Can you fix this?",
+        "entity_action": "model$different",
+        "all_entity_action": "model$different, order$fix"
       },
       {
-        "sample_text": "Hi, can you recommend some vegetarian pizza options?",
-        "class": "Menu and Ingredients",
-        "class number": 2
+        "sample_text": "The app crashes when I try to upload photos. What should I do?",
+        "entity_action": "app$crashes",
+        "all_entity_action": "app$crashes, photos$upload issue"
       },
       {
-        "sample_text": "Hello, I'm interested in the nutritional information for your Margherita Pizza. Where can I find it?",
-        "class": "Menu and Ingredients",
-        "class number": 2
+        "sample_text": "I need to update my shipping preferences for future orders.",
+        "entity_action": "shipping preferences$update",
+        "all_entity_action": "shipping preferences$update, orders$future"
       },
       {
-        "sample_text": "Hi, do you offer any vegan cheese substitutes for your pizzas?",
-        "class": "Menu and Ingredients",
-        "class number": 2
+        "sample_text": "My account shows a negative balance. Can you investigate this?",
+        "entity_action": "balance$negative",
+        "all_entity_action": "balance$negative, account$investigate"
       },
       {
-        "sample_text": "Hello, I'm looking to order a pizza for my son's birthday party. Do you have any kid-friendly options?",
-        "class": "Menu and Ingredients",
-        "class number": 2
+        "sample_text": "The item I received is the wrong size. Can I exchange it?",
+        "entity_action": "item$wrong size",
+        "all_entity_action": "item$wrong size, item$exchange"
       },
       {
-        "sample_text": "Hi, are there any spicy pizza options on your menu?",
-        "class": "Menu and Ingredients",
-        "class number": 2
+        "sample_text": "The support ticket I opened hasn't been addressed. Can you expedite it?",
+        "entity_action": "support ticket$not addressed",
+        "all_entity_action": "support ticket$not addressed, support$expedite"
       },
       {
-        "sample_text": "Hello, I'm interested in trying a specialty pizza. Can you provide some recommendations?",
-        "class": "Menu and Ingredients",
-        "class number": 2
+        "sample_text": "I need a copy of my recent purchase receipt.",
+        "entity_action": "receipt$copy",
+        "all_entity_action": "receipt$copy, purchase$recent"
       },
       {
-        "sample_text": "Hi, I'm planning a party and would like to order some appetizers along with the pizzas. What do you recommend?",
-        "class": "Menu and Ingredients",
-        "class number": 2
+        "sample_text": "My account was charged for an order I didn't place.",
+        "entity_action": "account$charged",
+        "all_entity_action": "account$charged, order$not placed"
       },
       {
-        "sample_text": "Hello, I have a dairy intolerance. Can you tell me which pizzas I should avoid?",
-        "class": "Menu and Ingredients",
-        "entity_action": "pizzas$I should avoid?",
-        "class number": 2
+        "sample_text": "The product manual is missing from my package. Can you send it?",
+        "entity_action": "product manual$missing",
+        "all_entity_action": "product manual$missing, package$send"
       },
       {
-        "sample_text": "Hi, do you offer any low-carb options for your pizzas?",
-        "class": "Menu and Ingredients",
-        "class number": 2
+        "sample_text": "I want to unsubscribe from your mailing list.",
+        "entity_action": "mailing list$unsubscribe",
+        "all_entity_action": "mailing list$unsubscribe"
       },
       {
-        "sample_text": "Hello, are your pizza crusts made with whole wheat flour?",
-        "class": "Menu and Ingredients",
-        "entity_action": "pizza crusts$made with whole meat flour?",
-        "class number": 2
+        "sample_text": "The payment confirmation email didn't arrive. Can you resend it?",
+        "entity_action": "confirmation email$not received",
+        "all_entity_action": "confirmation email$not received, email$resend"
       },
       {
-        "sample_text": "Hi, I'm interested in the ingredients used in your Alfredo sauce. Can you provide more information?",
-        "class": "Menu and Ingredients",
-        "class number": 2
+        "sample_text": "I need help with configuring my new device. The setup guide is confusing.",
+        "entity_action": "device$configure",
+        "all_entity_action": "device$configure, setup guide$confusing"
       },
       {
-        "sample_text": "Hello, I have a shellfish allergy. Are there any pizzas that may contain shellfish or traces of it?",
-        "class": "Menu and Ingredients",
-        "class number": 2
+        "sample_text": "My order was cancelled without explanation. Can you clarify?",
+        "entity_action": "order$cancelled",
+        "all_entity_action": "order$cancelled, explanation$clarify"
       },
       {
-        "sample_text": "Hi, do you offer any specialty crust options like cauliflower crust?",
-        "class": "Menu and Ingredients",
-        "class number": 2
+        "sample_text": "The store credit I was issued is not reflecting in my account.",
+        "entity_action": "store credit$not reflecting",
+        "all_entity_action": "store credit$not reflecting, account$update"
       },
       {
-        "sample_text": "Hello, I'm looking for a pizza with a good balance of protein and carbs. Can you recommend one?",
-        "class": "Menu and Ingredients",
-        "class number": 2
+        "sample_text": "I want to change my notification settings. How can I do this?",
+        "entity_action": "notification settings$change",
+        "all_entity_action": "notification settings$change"
       },
       {
-        "sample_text": "Hi, I'm interested in the vegetarian options for your salads. Can you provide details?",
-        "class": "Menu and Ingredients",
-        "class number": 2
+        "sample_text": "The warranty registration link is broken. Can you provide a new one?",
+        "entity_action": "warranty registration link$broken",
+        "all_entity_action": "warranty registration link$broken, link$provide new"
       },
       {
-        "sample_text": "Hello, do you offer any specialty toppings that are unique to your pizzeria?",
-        "class": "Menu and Ingredients",
-        "class number": 2
+        "sample_text": "I need to download the software I purchased. Where can I find it?",
+        "entity_action": "software$download",
+        "all_entity_action": "software$download, purchase$find"
       },
       {
-        "sample_text": "Hi, are your pizzas made with organic ingredients?",
-        "class": "Menu and Ingredients",
-        "class number": 2
+        "sample_text": "My account balance is incorrect. Can you correct it?",
+        "entity_action": "account balance$incorrect",
+        "all_entity_action": "account balance$incorrect, balance$correct"
       },
       {
-        "sample_text": "Hi, my order was supposed to arrive 30 minutes ago, but it hasn't. Can you check its status?",
-        "class": "Delivery Issues",
-        "class number": 3
+        "sample_text": "I need to add a secondary email to my account for notifications.",
+        "entity_action": "secondary email$add",
+        "all_entity_action": "secondary email$add, notifications$update"
       },
       {
-        "sample_text": "Hello, I received my order, but one of the pizzas is missing. Can you please assist?",
-        "class": "Delivery Issues",
-        "class number": 3
+        "sample_text": "The packaging of my product was damaged. Can you send a replacement?",
+        "entity_action": "packaging$damaged",
+        "all_entity_action": "packaging$damaged, product$replacement"
       },
       {
-        "sample_text": "Hey there! I received the wrong order. Can you help me get the correct one?",
-        "class": "Delivery Issues",
-        "entity_action": "order$received wrong",
-        "class number": 3
+        "sample_text": "I want to pause my subscription for two months.",
+        "entity_action": "subscription$pause",
+        "all_entity_action": "subscription$pause"
       },
       {
-        "sample_text": "Hi, I ordered a large pizza, but it arrived cold. Can you send a replacement?",
-        "class": "Delivery Issues",
-        "class number": 3
+        "sample_text": "The support chat is not responsive. Can I get help through email?",
+        "entity_action": "support chat$not responsive",
+        "all_entity_action": "support chat$not responsive, help$email"
       },
       {
-        "sample_text": "Hello, the delivery driver left my order at the wrong address. What should I do?",
-        "class": "Delivery Issues",
-        "class number": 3
+        "sample_text": "My recent payment didn't go through. Can you check the issue?",
+        "entity_action": "payment$didn't go through",
+        "all_entity_action": "payment$didn't go through, payment$check issue"
       },
       {
-        "sample_text": "Hi, I requested contactless delivery, but the driver insisted on handing me the food directly. Can you address this?",
-        "class": "Delivery Issues",
-        "class number": 3
+        "sample_text": "I need a detailed invoice for my last purchase.",
+        "entity_action": "invoice$detailed",
+        "all_entity_action": "invoice$detailed, purchase$last"
       },
       {
-        "sample_text": "Hello, my order was delivered late, and I missed my lunch break waiting for it. Can you compensate for the inconvenience?",
-        "class": "Delivery Issues",
-        "entity_action": "order$delivered late",
-        "class number": 3
+        "sample_text": "I received an email about a promotion, but the code isn't working.",
+        "entity_action": "promotion code$not working",
+        "all_entity_action": "promotion code$not working, email$promotion"
       },
       {
-        "sample_text": "Hi, I received my order, but the garlic knots are burnt. Can you replace them?",
-        "class": "Delivery Issues",
-        "entity_action": "garlic knots$replace",
-        "class number": 3
+        "sample_text": "The service I booked was cancelled. Can you rebook it for me?",
+        "entity_action": "service$cancelled",
+        "all_entity_action": "service$cancelled, service$rebook"
       },
       {
-        "sample_text": "Hello, my order was damaged during delivery, and some items are squished. Can you send a replacement?",
-        "class": "Delivery Issues",
-        "class number": 3
+        "sample_text": "I need to verify my identity to access my account.",
+        "entity_action": "identity$verify",
+        "all_entity_action": "identity$verify, account$access"
       },
       {
-        "sample_text": "Hi, I ordered extra sauce with my pizza, but it wasn't included in the delivery. Can you fix this?",
-        "class": "Delivery Issues",
-        "class number": 3
+        "sample_text": "My order was shipped to the wrong address. How can I correct this?",
+        "entity_action": "order$wrong address",
+        "all_entity_action": "order$wrong address, address$correct"
       },
       {
-        "sample_text": "Hello, the delivery driver was rude and refused to follow my instructions for contactless delivery. Can you address this behavior?",
-        "class": "Delivery Issues",
-        "class number": 3
+        "sample_text": "I want to change the frequency of my subscription deliveries.",
+        "entity_action": "subscription deliveries$frequency change",
+        "all_entity_action": "subscription deliveries$frequency change"
       },
       {
-        "sample_text": "Hi, I received my order, but the pizza was cold and soggy. Can you send a fresh one?",
-        "class": "Delivery Issues",
-        "class number": 3
+        "sample_text": "The live chat feature is not working. Can I call customer support?",
+        "entity_action": "live chat$not working",
+        "all_entity_action": "live chat$not working, customer support$call"
       },
       {
-        "sample_text": "Hello, I ordered extra cheese on my pizza, but it seems like there's hardly any. Can you rectify this?",
-        "class": "Delivery Issues",
-        "class number": 3
+        "sample_text": "I was overcharged for my last purchase. Can you refund the difference?",
+        "entity_action": "purchase$overcharged",
+        "all_entity_action": "purchase$overcharged, refund$difference"
       },
       {
-        "sample_text": "Hi, my order was delivered to the wrong address entirely. Can you ensure this doesn't happen again?",
-        "class": "Delivery Issues",
-        "entity_action": "order$delivered to the wrong address",
-        "class number": 3
+        "sample_text": "The installation instructions are missing. Can you send them to me?",
+        "entity_action": "installation instructions$missing",
+        "all_entity_action": "installation instructions$missing, instructions$send"
       },
       {
-        "sample_text": "Hello, I received my order, but the pizza box was torn and leaking grease. Can you replace it?",
-        "class": "Delivery Issues",
-        "class number": 3
+        "sample_text": "My membership points are not updating after my recent purchase.",
+        "entity_action": "membership points$not updating",
+        "all_entity_action": "membership points$not updating, purchase$recent"
       },
       {
-        "sample_text": "Hi, the delivery driver forgot to include my drink with the order. Can you arrange to send it separately?",
-        "class": "Delivery Issues",
-        "class number": 3
+        "sample_text": "I want to delete my account permanently.",
+        "entity_action": "account$delete",
+        "all_entity_action": "account$delete"
       },
       {
-        "sample_text": "Hello, my order was delivered much later than the estimated time. Can you provide an explanation?",
-        "class": "Delivery Issues",
-        "class number": 3
+        "sample_text": "I can't submit a support ticket. The form isn't working.",
+        "entity_action": "support ticket$submit issue",
+        "all_entity_action": "support ticket$submit issue, form$not working"
       },
       {
-        "sample_text": "Hi, I received my order, but the pizza toppings are not what I requested. Can you fix this?",
-        "class": "Delivery Issues",
-        "class number": 3
+        "sample_text": "The product I ordered is out of stock. Can I get a notification when it's available?",
+        "entity_action": "product$out of stock",
+        "all_entity_action": "product$out of stock, notification$when available"
       },
       {
-        "sample_text": "Hello, I ordered a salad, but it was missing the dressing. Can you send it separately?",
-        "class": "Delivery Issues",
-        "class number": 3
+        "sample_text": "I need to update my credit card information for my recurring order.",
+        "entity_action": "credit card$update",
+        "all_entity_action": "credit card$update, recurring order$update payment"
       },
       {
-        "sample_text": "Hi, my order was delivered with the wrong dipping sauce. Can you provide the correct one?",
-        "class": "Delivery Issues",
-        "entity_action": "dipping sauce$wrongly delivered",
-        "class number": 3
+        "sample_text": "The chat support is not recognizing my issue. Can I speak to a manager?",
+        "entity_action": "chat support$issue not recognized",
+        "all_entity_action": "chat support$issue not recognized, manager$speak"
       },
       {
-        "sample_text": "Hi, I'm trying to use my gift card to pay for my order, but it's not working. Can you assist?",
-        "class": "Payment and Billing",
-        "class number": 4
+        "sample_text": "I want to change the payment date for my monthly subscription.",
+        "entity_action": "payment date$change",
+        "all_entity_action": "payment date$change, subscription$monthly"
       },
       {
-        "sample_text": "Hello, I just noticed a discrepancy in the total amount charged on my credit card statement. Can you help me understand?",
-        "class": "Payment and Billing",
-        "class number": 4
+        "sample_text": "The confirmation email contains incorrect details. Can you resend it?",
+        "entity_action": "confirmation email$incorrect details",
+        "all_entity_action": "confirmation email$incorrect details, email$resend"
       },
       {
-        "sample_text": "Hey there! I received a promo code for a discount, but it's not being applied to my order. Can you check?",
-        "class": "Payment and Billing",
-        "entity_action": "promo code$not being applied",
-        "class number": 4
+        "sample_text": "I received an empty box instead of my order. What should I do?",
+        "entity_action": "order$empty box",
+        "all_entity_action": "order$empty box, order$missing"
       },
       {
-        "sample_text": "Hi, my payment went through, but I didn't receive an order confirmation. Can you verify if my order was placed?",
-        "class": "Payment and Billing",
-        "entity_action": "order confirmation$didn't receive",
-        "class number": 4
+        "sample_text": "The customer service representative was rude. I want to file a complaint.",
+        "entity_action": "representative$rude",
+        "all_entity_action": "representative$rude, complaint$file"
       },
       {
-        "sample_text": "Hello, I'm trying to redeem my rewards points for a free pizza, but the system won't let me. Can you assist?",
-        "class": "Payment and Billing",
-        "entity_action": "points$system won't let me redeem",
-        "class number": 4
+        "sample_text": "The promotional offer wasn't applied to my purchase. Can you assist?",
+        "entity_action": "promotional offer$not applied",
+        "all_entity_action": "promotional offer$not applied, purchase$assist"
       },
       {
-        "sample_text": "Hi, I received my order, but the receipt shows an incorrect item. Can you update it?",
-        "class": "Payment and Billing",
-        "entity_action": "receipt$shows incorrect item",
-        "class number": 4
+        "sample_text": "I want to add a secondary email address to my account.",
+        "entity_action": "email address$add",
+        "all_entity_action": "email address$add, account$update"
       },
       {
-        "sample_text": "Hello, my credit card was charged twice for the same order. Can you refund the duplicate charge?",
-        "class": "Payment and Billing",
-        "class number": 4
+        "sample_text": "The product I received is expired. Can I get a refund?",
+        "entity_action": "product$expired",
+        "all_entity_action": "product$expired, product$refund"
       },
       {
-        "sample_text": "Hi, I'd like to apply a store credit to my order. How can I do that?",
-        "class": "Payment and Billing",
-        "class number": 4
+        "sample_text": "I can't change my password. The current password field is unresponsive.",
+        "entity_action": "password$change issue",
+        "all_entity_action": "password$change issue, current password$unresponsive"
       },
       {
-        "sample_text": "Hello, I have a coupon for a free dessert with my order. How do I ensure it's included?",
-        "class": "Payment and Billing",
-        "class number": 4
+        "sample_text": "The live chat support is unavailable. When will it be back online?",
+        "entity_action": "live chat$unavailable",
+        "all_entity_action": "live chat$unavailable, support$back online"
       },
       {
-        "sample_text": "Hi, my payment method was declined, but I know the funds are available. Can you help resolve this issue?",
-        "class": "Payment and Billing",
-        "class number": 4
+        "sample_text": "I want to switch my subscription from monthly to yearly.",
+        "entity_action": "subscription$switch",
+        "all_entity_action": "subscription$switch, plan$monthly to yearly"
       },
       {
-        "sample_text": "Hello, I received an email saying my payment didn't go through, but my bank statement shows the charge. Can you confirm the payment status?",
-        "class": "Payment and Billing",
-        "class number": 4
+        "sample_text": "The service technician missed the scheduled appointment. Can we reschedule?",
+        "entity_action": "technician$missed appointment",
+        "all_entity_action": "technician$missed appointment, appointment$reschedule"
       },
       {
-        "sample_text": "Hi, I accidentally placed an order and need to cancel it before it's processed. Can you assist?",
-        "class": "Payment and Billing",
-        "entity_action": "order$need to cancel",
-        "class number": 4
+        "sample_text": "I need a VAT invoice for my recent purchase.",
+        "entity_action": "invoice$VAT",
+        "all_entity_action": "invoice$VAT, purchase$recent"
       },
       {
-        "sample_text": "Hello, my order total seems higher than expected. Can you review the charges for me?",
-        "class": "Payment and Billing",
-        "class number": 4
+        "sample_text": "My order is missing the installation instructions. Can you send them?",
+        "entity_action": "order$missing instructions",
+        "all_entity_action": "order$missing instructions, instructions$send"
       },
       {
-        "sample_text": "Hi, I'd like to split the payment for my order between two credit cards. Is that possible?",
-        "class": "Payment and Billing",
-        "class number": 4
+        "sample_text": "The loyalty points from my recent purchase haven't been credited.",
+        "entity_action": "loyalty points$not credited",
+        "all_entity_action": "loyalty points$not credited, purchase$recent"
       },
       {
-        "sample_text": "Hello, I received a notification that my payment failed, but I'm not sure why. Can you provide more information?",
-        "class": "Payment and Billing",
-        "entity_action": "payment%failed",
-        "class number": 4
+        "sample_text": "I want to change my communication preferences to receive fewer emails.",
+        "entity_action": "communication preferences$change",
+        "all_entity_action": "communication preferences$change, emails$fewer"
       },
       {
-        "sample_text": "Hi, I accidentally used the wrong payment method for my order. Can you update it for me?",
-        "class": "Payment and Billing",
-        "class number": 4
+        "sample_text": "The website's FAQ section is not helpful. Can you provide more details?",
+        "entity_action": "FAQ section$not helpful",
+        "all_entity_action": "FAQ section$not helpful, details$provide more"
       },
       {
-        "sample_text": "Hello, I placed an order and selected cash on delivery, but now I want to change the payment method. Can you assist?",
-        "class": "Payment and Billing",
-        "class number": 4
+        "sample_text": "I received a partial shipment. When will the rest arrive?",
+        "entity_action": "shipment$partial",
+        "all_entity_action": "shipment$partial, shipment$remaining arrival"
       },
       {
-        "sample_text": "Hi, I'm trying to add a new payment method to my account, but it's not being accepted. Can you troubleshoot?",
-        "class": "Payment and Billing",
-        "class number": 4
+        "sample_text": "I can't access the premium content even though I subscribed.",
+        "entity_action": "premium content$not accessible",
+        "all_entity_action": "premium content$not accessible, subscription$active"
       },
       {
-        "sample_text": "Hello, my order total was higher than expected due to a service fee. Can you explain the additional charge?",
-        "class": "Payment and Billing",
-        "class number": 4
+        "sample_text": "The return policy is unclear. Can you explain the process?",
+        "entity_action": "return policy$unclear",
+        "all_entity_action": "return policy$unclear, process$explain"
       },
       {
-        "sample_text": "Hi, I accidentally made a duplicate payment for my order. Can you refund one of the charges?",
-        "class": "Payment and Billing",
-        "entity_action": "order$accidentally made a duplicate payment",
-        "class number": 4
+        "sample_text": "I need assistance with linking my account to a social media profile.",
+        "entity_action": "account$link",
+        "all_entity_action": "account$link, social media$profile"
       },
       {
-        "sample_text": "Hi, I'm having trouble logging into my account. It keeps saying my password is incorrect. Can you help?",
-        "class": "Technical Support",
-        "class number": 5
+        "sample_text": "I need to reschedule my appointment with Dr. Smith.",
+        "entity_action": "appointment$reschedule",
+        "all_entity_action": "appointment$reschedule, Dr. Smith$appointment"
       },
       {
-        "sample_text": "Hello, I'm trying to place an order on your website, but it's not loading properly. Can you check if there's an issue?",
-        "class": "Technical Support",
-        "class number": 5
+        "sample_text": "The prescription I received is incorrect. Can you fix it?",
+        "entity_action": "prescription$incorrect",
+        "all_entity_action": "prescription$incorrect, prescription$fix"
       },
       {
-        "sample_text": "Hey there! I'm unable to add items to my cart on the mobile app. Can you provide assistance?",
-        "class": "Technical Support",
-        "entity_action": "cart$unable to add items",
-        "class number": 5
+        "sample_text": "I want to update my insurance information.",
+        "entity_action": "insurance information$update",
+        "all_entity_action": "insurance information$update, account$update"
       },
       {
-        "sample_text": "Hi, I'm using the mobile app to order, but it's crashing every time I try to proceed to checkout. Can you help me troubleshoot?",
-        "class": "Technical Support",
-        "class number": 5
+        "sample_text": "The lab results are not showing up in my online account.",
+        "entity_action": "lab results$not showing",
+        "all_entity_action": "lab results$not showing, online account$update"
       },
       {
-        "sample_text": "Hello, the website is displaying an error message when I try to select my delivery address. Can you assist?",
-        "class": "Technical Support",
-        "class number": 5
+        "sample_text": "I have a billing question about my recent visit.",
+        "entity_action": "billing question$ask",
+        "all_entity_action": "billing question$ask, visit$recent"
       },
       {
-        "sample_text": "Hi, I'm experiencing issues with the payment processing on the website. Can you look into it?",
-        "class": "Technical Support",
-        "class number": 5
+        "sample_text": "I need to change my primary care physician.",
+        "entity_action": "primary care physician$change",
+        "all_entity_action": "primary care physician$change, account$update"
       },
       {
-        "sample_text": "Hello, I'm unable to update my account information. Can you help me resolve this?",
-        "class": "Technical Support",
-        "entity_action": "account information$unable to update",
-        "class number": 5
+        "sample_text": "My medication was not delivered on time. When will it arrive?",
+        "entity_action": "medication$not delivered",
+        "all_entity_action": "medication$not delivered, delivery$check"
       },
       {
-        "sample_text": "Hi, I keep getting logged out of my account automatically. Can you fix this issue?",
-        "class": "Technical Support",
-        "entity_action": "account$logged out automatically",
-        "class number": 5
+        "sample_text": "I want to request a copy of my medical records.",
+        "entity_action": "medical records$request",
+        "all_entity_action": "medical records$request, records$copy"
       },
       {
-        "sample_text": "Hello, I'm trying to apply a promo code, but the website is not accepting it. Can you assist with this?",
-        "class": "Technical Support",
-        "entity_action": "promo code$website is not accepting it",
-        "class number": 5
+        "sample_text": "The doctor's office didn't provide a follow-up appointment.",
+        "entity_action": "follow-up appointment$missing",
+        "all_entity_action": "follow-up appointment$missing, office$contact"
       },
       {
-        "sample_text": "Hi, the images of menu items are not loading on the website. Can you check what's causing the problem?",
-        "class": "Technical Support",
-        "entity_action": "images of menu items$not loading on the website",
-        "class number": 5
+        "sample_text": "I need to update my contact information for emergency notifications.",
+        "entity_action": "contact information$update",
+        "all_entity_action": "contact information$update, emergency notifications$update"
       },
       {
-        "sample_text": "Hello, the 'forgot password' link on the login page is not working. Can you provide another way to reset my password?",
-        "class": "Technical Support",
-        "class number": 5
+        "sample_text": "The test results were inconclusive. What are the next steps?",
+        "entity_action": "test results$inconclusive",
+        "all_entity_action": "test results$inconclusive, next steps$ask"
       },
       {
-        "sample_text": "Hi, I'm trying to view my order history, but the page is not loading. Can you help me access it?",
-        "class": "Technical Support",
-        "entity_action": "order history$not loading",
-        "class number": 5
+        "sample_text": "I want to cancel my dental appointment for next week.",
+        "entity_action": "dental appointment$cancel",
+        "all_entity_action": "dental appointment$cancel, appointment$next week"
       },
       {
-        "sample_text": "Hello, I'm encountering an error message when I try to update my payment method. Can you assist with this issue?",
-        "class": "Technical Support",
-        "entity_action": "update payment method$error message",
-        "class number": 5
+        "sample_text": "I have a question about the side effects of my medication.",
+        "entity_action": "medication$side effects",
+        "all_entity_action": "medication$side effects, question$ask"
       },
       {
-        "sample_text": "Hi, the website is not displaying the current deals and promotions. Can you refresh the page or update the information?",
-        "class": "Technical Support",
-        "entity_action": "current deals and promotions$website not displaying",
-        "class number": 5
+        "sample_text": "The specialist I was referred to is out of network. What should I do?",
+        "entity_action": "specialist$out of network",
+        "all_entity_action": "specialist$out of network, referral$check"
       },
       {
-        "sample_text": "Hello, I'm having trouble navigating through the menu options on the mobile app. Can you provide guidance?",
-        "class": "Technical Support",
-        "class number": 5
+        "sample_text": "I need to set up a payment plan for my medical bills.",
+        "entity_action": "payment plan$set up",
+        "all_entity_action": "payment plan$set up, medical bills$pay"
       },
       {
-        "sample_text": "Hi, I'm trying to change my delivery address, but the system is not saving the changes. Can you assist with this issue?",
-        "class": "Technical Support",
-        "class number": 5
+        "sample_text": "The patient portal is not accessible. How can I log in?",
+        "entity_action": "patient portal$not accessible",
+        "all_entity_action": "patient portal$not accessible, login$issue"
       },
       {
-        "sample_text": "Hello, I'm encountering a 'server error' message when I try to complete my order. Can you help me proceed?",
-        "entity_action": "server error$complete order",
-        "class": "Technical Support",
-        "class number": 5
+        "sample_text": "I want to transfer my medical records to another provider.",
+        "entity_action": "medical records$transfer",
+        "all_entity_action": "medical records$transfer, provider$new"
       },
       {
-        "sample_text": "Hi, I'm having difficulty finding the customer support contact information on the website. Can you provide it to me?",
-        "class": "Technical Support",
-        "entity_action": "customer support contact information$difficulty finding",
-        "class number": 5
+        "sample_text": "The immunization record for my child is incomplete. Can you update it?",
+        "entity_action": "immunization record$incomplete",
+        "all_entity_action": "immunization record$incomplete, record$update"
       },
       {
-        "sample_text": "Hello, the mobile app is not showing my saved addresses. Can you troubleshoot this issue?",
-        "class": "Technical Support",
-        "class number": 5
+        "sample_text": "I need help understanding my test results.",
+        "entity_action": "test results$understanding",
+        "all_entity_action": "test results$understanding, help$request"
       },
       {
-        "sample_text": "Hi, the website is displaying an error message when I try to access the 'help' section. Can you provide assistance?",
-        "class": "Technical Support",
-        "class number": 5
+        "sample_text": "The appointment reminder was sent to the wrong phone number. Can you correct it?",
+        "entity_action": "appointment reminder$wrong number",
+        "all_entity_action": "appointment reminder$wrong number, phone number$correct"
       },
       {
-        "sample_text": "Hi, I ordered a pizza and it arrived burnt. Can you ensure better quality next time?",
-        "class": "Quality Concerns",
-        "class number": 6
+        "sample_text": "I would like to increase my credit card limit because I have upcoming travel plans and need more flexibility.",
+        "entity_action": "credit card limit$increase",
+        "all_entity_action": "credit card limit$increase, travel plans$prepare"
       },
       {
-        "sample_text": "Hello, the pizza I received was cold and soggy. Can you send a fresh one?",
-        "class": "Quality Concerns",
-        "class number": 6
+        "sample_text": "My recent bank statement shows an unauthorized transaction that I did not make. How can I dispute this charge?",
+        "entity_action": "unauthorized transaction$dispute",
+        "all_entity_action": "unauthorized transaction$dispute, bank statement$review"
       },
       {
-        "sample_text": "Hey there! I ordered a salad, but the lettuce looks wilted and old. Can you provide a replacement?",
-        "class": "Quality Concerns",
-        "entity_action": "lettuce$looks wilted and old",
-        "class number": 6
+        "sample_text": "I need to update my personal information, including my address and phone number, due to a recent move.",
+        "entity_action": "personal information$update",
+        "all_entity_action": "personal information$update, address$change, phone number$update"
       },
       {
-        "sample_text": "Hi, the garlic knots I received were stale and hard. Can you send a new batch?",
-        "class": "Quality Concerns",
-        "class number": 6
+        "sample_text": "The ATM at my local branch malfunctioned and did not dispense the cash I requested. What should I do next?",
+        "entity_action": "ATM$malfunction",
+        "all_entity_action": "ATM$malfunction, cash$not dispensed"
       },
       {
-        "sample_text": "Hello, I ordered a pizza with extra cheese, but it seems like there's hardly any cheese on it. Can you fix this?",
-        "class": "Quality Concerns",
-        "class number": 6
+        "sample_text": "I want to open a new savings account to better manage my finances and earn interest on my deposits.",
+        "entity_action": "savings account$open",
+        "all_entity_action": "savings account$open, finances$manage"
       },
       {
-        "sample_text": "Hi, I ordered a pizza and it was dripping with grease. Can you ensure less oily toppings next time?",
-        "class": "Quality Concerns",
-        "class number": 6
+        "sample_text": "The online banking system is not allowing me to transfer funds between my accounts. Can you assist me with this issue?",
+        "entity_action": "online banking$transfer issue",
+        "all_entity_action": "online banking$transfer issue, funds$transfer"
       },
       {
-        "sample_text": "Hello, the pizza crust was burnt and tough to chew. Can you improve the crust quality?",
-        "class": "Quality Concerns",
-        "class number": 6
+        "sample_text": "I recently lost my debit card and need to report it as lost to prevent any unauthorized transactions.",
+        "entity_action": "debit card$report lost",
+        "all_entity_action": "debit card$report lost, unauthorized transactions$prevent"
       },
       {
-        "sample_text": "Hi, I ordered a pasta dish, but it was overcooked and mushy. Can you provide a replacement?",
-        "class": "Quality Concerns",
-        "class number": 6
+        "sample_text": "I would like to set up automatic bill payments from my checking account to ensure my bills are paid on time.",
+        "entity_action": "automatic bill payments$set up",
+        "all_entity_action": "automatic bill payments$set up, checking account$use"
       },
       {
-        "sample_text": "Hello, the toppings on my pizza were not evenly distributed. Can you ensure better toppings distribution next time?",
-        "class": "Quality Concerns",
-        "class number": 6
+        "sample_text": "My loan application status has been pending for an unusually long time. Can you provide an update on its progress?",
+        "entity_action": "loan application$status update",
+        "all_entity_action": "loan application$status update, application$pending"
       },
       {
-        "sample_text": "Hi, the salad dressing I received was expired. Can you send a fresh one?",
-        "class": "Quality Concerns",
-        "class number": 6
+        "sample_text": "The mobile banking app crashes every time I try to log in, making it impossible for me to access my account.",
+        "entity_action": "mobile banking app$crashes",
+        "all_entity_action": "mobile banking app$crashes, account$log in"
       },
       {
-        "sample_text": "Hello, I ordered a pizza with extra sauce, but it seems like there's hardly any sauce on it. Can you fix this?",
-        "class": "Quality Concerns",
-        "class number": 6
+        "sample_text": "I need to change the beneficiaries on my retirement account due to recent changes in my personal circumstances.",
+        "entity_action": "beneficiaries$change",
+        "all_entity_action": "beneficiaries$change, retirement account$update"
       },
       {
-        "sample_text": "Hi, I ordered a dessert, but it was stale and tasted old. Can you provide a fresh one?",
-        "class": "Quality Concerns",
-        "class number": 6
+        "sample_text": "The interest rate on my mortgage seems higher than what was initially agreed upon. Can you clarify this discrepancy?",
+        "entity_action": "interest rate$clarify",
+        "all_entity_action": "interest rate$clarify, mortgage$review"
       },
       {
-        "sample_text": "Hello, the pizza box was damaged, and some of the pizza toppings got squished. Can you replace the damaged items?",
-        "class": "Quality Concerns",
-        "class number": 6
+        "sample_text": "I want to close my existing checking account because I am relocating to a different country and will be using a local bank there.",
+        "entity_action": "checking account$close",
+        "all_entity_action": "checking account$close, relocating$reason"
       },
       {
-        "sample_text": "Hi, I ordered a pizza with vegetables, but they were undercooked and crunchy. Can you ensure better cooking next time?",
-        "class": "Quality Concerns",
-        "class number": 6
+        "sample_text": "The recent security breach has me concerned about the safety of my online banking account. What measures are being taken to protect my information?",
+        "entity_action": "security breach$concern",
+        "all_entity_action": "security breach$concern, online banking$security measures"
       },
       {
-        "sample_text": "Hello, I ordered a gluten-free pizza, but it seems like it was contaminated with gluten. Can you ensure better handling?",
-        "class": "Quality Concerns",
-        "class number": 6
+        "sample_text": "I received a notification about an overdraft fee, but my account should have sufficient funds. Can you investigate this issue?",
+        "entity_action": "overdraft fee$investigate",
+        "all_entity_action": "overdraft fee$investigate, account$funds"
       },
       {
-        "sample_text": "Hi, the pizza sauce tasted off. Can you improve the sauce quality?",
-        "class": "Quality Concerns",
-        "entity_action": "pizza sauce$tasted off",
-        "class number": 6
+        "sample_text": "I need to set up a wire transfer to an international account for an upcoming business transaction. Can you guide me through the process?",
+        "entity_action": "wire transfer$set up",
+        "all_entity_action": "wire transfer$set up, international account$business transaction"
       },
       {
-        "sample_text": "Hello, I ordered a pizza with fresh basil, but it was wilted and brown. Can you provide fresh toppings?",
-        "class": "Quality Concerns",
-        "class number": 6
+        "sample_text": "The credit card reward points I earned from my recent purchases have not been credited to my account. How can this be resolved?",
+        "entity_action": "reward points$credit",
+        "all_entity_action": "reward points$credit, recent purchases$earn"
       },
       {
-        "sample_text": "Hi, the cheese on my pizza was rubbery and didn't melt properly. Can you ensure better cheese quality?",
-        "class": "Quality Concerns",
-        "entity_action": "cheese$rubbery and didn't melt properly",
-        "class number": 6
+        "sample_text": "I am having trouble accessing my e-statements from last year. Can you help me retrieve these documents?",
+        "entity_action": "e-statements$access",
+        "all_entity_action": "e-statements$access, documents$retrieve"
       },
       {
-        "sample_text": "Hello, I ordered a pizza and it was overcooked and burnt on the edges. Can you improve the cooking time?",
-        "class": "Quality Concerns",
-        "class number": 6
+        "sample_text": "I would like to apply for a personal loan to cover some unexpected medical expenses. Can you provide information on the application process?",
+        "entity_action": "personal loan$apply",
+        "all_entity_action": "personal loan$apply, medical expenses$cover"
       },
       {
-        "sample_text": "Hi, the salad I received was missing some of the advertised ingredients. Can you ensure better preparation?",
-        "class": "Quality Concerns",
-        "class number": 6
+        "sample_text": "I want to enable two-factor authentication for my online banking to increase security. How can I set this up?",
+        "entity_action": "two-factor authentication$enable",
+        "all_entity_action": "two-factor authentication$enable, online banking$security"
       },
       {
-        "sample_text": "Hi, what are your opening hours on weekends?",
-        "class": "General Inquiry",
-        "class number": 7
+        "sample_text": "Dear Customer Support, I would like to request an increase in my credit card limit due to upcoming travel plans. Thank you for your assistance.",
+        "entity_action": "credit card limit$increase",
+        "all_entity_action": "credit card limit$increase, travel plans$request"
       },
       {
-        "sample_text": "Hello, do you offer any discounts for large orders?",
-        "class": "General Inquiry",
-        "class number": 7
+        "sample_text": "Hello, I noticed an unauthorized transaction on my bank statement. Please assist me in disputing this charge as soon as possible.",
+        "entity_action": "unauthorized transaction$dispute",
+        "all_entity_action": "unauthorized transaction$dispute, bank statement$review"
       },
       {
-        "sample_text": "Hey there! Can you tell me if you have any vegan options on your menu?",
-        "class": "General Inquiry",
-        "class number": 7
+        "sample_text": "Hi, I recently moved and need to update my address and phone number in your system. Could you please guide me through the process? Thank you.",
+        "entity_action": "personal information$update",
+        "all_entity_action": "personal information$update, address$change, phone number$update"
       },
       {
-        "sample_text": "Hi, what's the estimated delivery time for my area?",
-        "class": "General Inquiry",
-        "class number": 7
+        "sample_text": "Dear Bank Team, The ATM at my local branch did not dispense the cash I requested. What should I do next to resolve this issue?",
+        "entity_action": "ATM$malfunction",
+        "all_entity_action": "ATM$malfunction, cash$not dispensed"
       },
       {
-        "sample_text": "Hello, do you provide catering services for events?",
-        "class": "General Inquiry",
-        "class number": 7
+        "sample_text": "Hello, I would like to open a new savings account to help manage my finances better. Can you provide me with the necessary steps? Thanks.",
+        "entity_action": "savings account$open",
+        "all_entity_action": "savings account$open, finances$manage"
       },
       {
-        "sample_text": "Hey, what's the difference between your thin crust and hand-tossed pizzas?",
-        "class": "General Inquiry",
-        "class number": 7
+        "sample_text": "Hi there, The online banking system isn't allowing me to transfer funds between my accounts. Could someone please assist with this issue?",
+        "entity_action": "online banking$transfer issue",
+        "all_entity_action": "online banking$transfer issue, funds$transfer"
       },
       {
-        "sample_text": "Hi, can you tell me if your ingredients are sourced locally?",
-        "class": "General Inquiry",
-        "class number": 7
+        "sample_text": "Dear Support, I recently lost my debit card and need to report it as lost to prevent unauthorized transactions. Thank you for your prompt assistance.",
+        "entity_action": "debit card$report lost",
+        "all_entity_action": "debit card$report lost, unauthorized transactions$prevent"
       },
       {
-        "sample_text": "Hello, do you offer any options for customers with dietary restrictions?",
-        "class": "General Inquiry",
-        "class number": 7
+        "sample_text": "Hi, I am looking to set up automatic bill payments from my checking account. Could you guide me on how to do this? Thanks in advance.",
+        "entity_action": "automatic bill payments$set up",
+        "all_entity_action": "automatic bill payments$set up, checking account$use"
       },
       {
-        "sample_text": "Hey there! Is there a minimum order requirement for delivery?",
-        "class": "General Inquiry",
-        "class number": 7
+        "sample_text": "Dear Loan Department, My loan application status has been pending for quite some time. Could you please provide me with an update? Thank you.",
+        "entity_action": "loan application$status update",
+        "all_entity_action": "loan application$status update, application$pending"
       },
       {
-        "sample_text": "Hi, do you have any special promotions for first-time customers?",
-        "class": "General Inquiry",
-        "class number": 7
+        "sample_text": "Hello, The mobile banking app crashes every time I try to log in. Can you assist me in resolving this issue so I can access my account?",
+        "entity_action": "mobile banking app$crashes",
+        "all_entity_action": "mobile banking app$crashes, account$log in"
       },
       {
-        "sample_text": "Hello, can you provide information about the ingredients used in your gluten-free crust?",
-        "class": "General Inquiry",
-        "class number": 7
+        "sample_text": "Dear Bank Customer Service, I am writing to express my frustration with the recent issues I have encountered with my credit card. Last month, I noticed multiple unauthorized transactions on my account, amounting to a significant sum. Despite immediately reporting these fraudulent activities to your support team, I have not received any updates or resolutions. Additionally, the temporary card you provided has not yet arrived, and I am unable to use my current card due to the ongoing investigation. Please expedite the resolution process and ensure my new card is delivered promptly.",
+        "entity_action": "unauthorized transactions$report",
+        "all_entity_action": "unauthorized transactions$report, support team$no updates, temporary card$not arrived, resolution process$expedite"
       },
       {
-        "sample_text": "Hi, do you offer any options for customers with nut allergies?",
-        "class": "General Inquiry",
-        "class number": 7
+        "sample_text": "Hello, I am reaching out because I have been experiencing significant difficulties with my mortgage account. The interest rate that was applied to my account is substantially higher than what was initially agreed upon during the application process. I have tried contacting your mortgage department multiple times, but my calls and emails have gone unanswered. This discrepancy has caused undue financial strain, and I urgently need assistance to rectify this issue. Please have a representative contact me to discuss adjusting the interest rate to the correct amount and refunding any overpaid interest.",
+        "entity_action": "interest rate$discrepancy",
+        "all_entity_action": "interest rate$discrepancy, mortgage department$unresponsive, financial strain$rectify, interest rate$adjust, overpaid interest$refund"
       },
       {
-        "sample_text": "Hello, can you provide details about your loyalty rewards program?",
-        "class": "General Inquiry",
-        "class number": 7
+        "sample_text": "Dear Support Team, I recently applied for a business loan to support the expansion of my company. Despite submitting all required documentation and following up diligently, the application status remains pending, and it has been over two months since I first applied. This delay is severely impacting my business operations, as we had planned to use the funds for a critical project. I am requesting an immediate review and approval of my loan application. Additionally, I need to know the exact reasons for this delay and the steps being taken to expedite the approval process.",
+        "entity_action": "business loan$application",
+        "all_entity_action": "business loan$application, application status$pending, business operations$impact, loan application$review, approval process$expedite"
       },
       {
-        "sample_text": "Hey there! Do you have any recommendations for pairing wines with your pizzas?",
-        "class": "General Inquiry",
-        "class number": 7
+        "sample_text": "To Whom It May Concern, I am writing to address a serious issue with my recent account statement. There are multiple errors, including duplicate charges and missing credits that were supposed to be applied from returned items. I have been on hold with customer service for hours and have yet to speak to a representative who can resolve these discrepancies. This is causing significant stress as it impacts my account balance and financial planning. I require an immediate correction to my statement, a detailed explanation of how these errors occurred, and assurance that my account will be properly monitored going forward.",
+        "entity_action": "account statement$errors",
+        "all_entity_action": "account statement$errors, duplicate charges$correction, missing credits$apply, customer service$unresponsive, account balance$impact, financial planning$disruption"
       },
       {
-        "sample_text": "Hi, can you tell me if you offer any gluten-free dessert options?",
-        "class": "General Inquiry",
-        "class number": 7
+        "sample_text": "Hello Customer Service, I am writing to escalate a problem I have been facing with the online banking portal. For the past several weeks, I have been unable to access my account due to a technical issue that your IT department has not been able to resolve. Each time I attempt to log in, I receive an error message stating that my credentials are invalid, despite resetting my password multiple times. This issue is preventing me from managing my finances, paying bills, and transferring funds. I need a high-priority resolution and compensation for any late fees incurred due to this problem.",
+        "entity_action": "online banking portal$access issue",
+        "all_entity_action": "online banking portal$access issue, IT department$unresolved, credentials$invalid, password$reset, finances$manage, bills$pay, funds$transfer, resolution$high-priority, late fees$compensation"
       },
       {
-        "sample_text": "Hello, do you have nutritional information available for your menu items?",
-        "class": "General Inquiry",
-        "class number": 7
+        "sample_text": "Dear Bank Manager, I am writing to report a severe problem with the customer support service I received regarding my home equity line of credit (HELOC). Despite being promised a follow-up call within 48 hours, I have not heard back from your team in over a week. The issue pertains to a sudden and unexplained increase in my HELOC interest rate, which was supposed to be fixed for the duration of the term. This change has significantly increased my monthly payments, and I am now at risk of defaulting on my obligations. I demand an immediate investigation and correction of my interest rate, as well as a formal apology for the poor customer service.",
+        "entity_action": "HELOC$interest rate increase",
+        "all_entity_action": "HELOC$interest rate increase, customer support$poor service, follow-up call$missing, interest rate$fixed term, monthly payments$increase, default$risk, interest rate$correct, formal apology$request"
       },
       {
-        "sample_text": "Hi, do you provide contactless delivery options?",
-        "class": "General Inquiry",
-        "class number": 7
+        "sample_text": "Hello, I am contacting you regarding a dispute over the handling of my credit card fraud case. Several months ago, I reported unauthorized charges totaling over $1,000 on my credit card. Despite numerous communications with your fraud department and assurances that the issue would be resolved swiftly, these charges have not been refunded, and the investigation appears to have stalled. This delay is unacceptable and has caused significant stress and financial hardship. I require an immediate update on the status of my case, a timeline for resolution, and a refund of the disputed charges.",
+        "entity_action": "credit card fraud$dispute",
+        "all_entity_action": "credit card fraud$dispute, unauthorized charges$refund, fraud department$unresponsive, investigation$stalled, stress$cause, financial hardship$impact, case$status update, charges$refund"
       },
       {
-        "sample_text": "Hello, what's the best way to reheat leftover pizza?",
-        "class": "General Inquiry",
-        "class number": 7
+        "sample_text": "Dear Support Team, I am writing to express my dissatisfaction with the recent update to your mobile banking app. Since the update, I have experienced numerous glitches, including app crashes, slow loading times, and inaccurate display of my account balances. These issues are severely impacting my ability to conduct essential banking activities, such as checking my balance, transferring funds, and depositing checks. Despite reinstalling the app and reaching out to your technical support, the problems persist. I need these technical issues addressed immediately and compensation for any inconvenience caused.",
+        "entity_action": "mobile banking app$update issues",
+        "all_entity_action": "mobile banking app$update issues, app crashes$experience, loading times$slow, account balances$inaccurate, banking activities$impact, technical support$unresolved, issues$address, compensation$request"
       },
       {
-        "sample_text": "Hi, can you tell me if you offer any vegan cheese alternatives?",
-        "class": "General Inquiry",
-        "class number": 7
+        "sample_text": "To Whom It May Concern, I am writing to bring to your attention a serious problem with my joint account. Recently, I noticed several unauthorized withdrawals that neither I nor my co-account holder authorized. Despite contacting your customer service multiple times, I have not received any satisfactory explanation or resolution. This situation is causing significant concern as it impacts our ability to manage our finances securely. I demand a thorough investigation into these unauthorized withdrawals, immediate reversal of the charges, and a detailed report on how this breach occurred.",
+        "entity_action": "joint account$unauthorized withdrawals",
+        "all_entity_action": "joint account$unauthorized withdrawals, customer service$no resolution, finances$manage securely, investigation$thorough, charges$reversal, breach$report"
       },
       {
-        "sample_text": "Hello, do you accept orders over the phone?",
-        "class": "General Inquiry",
-        "class number": 7
+        "sample_text": "Dear Bank Team, I am writing to report a persistent problem with the automated bill payment system linked to my checking account. For the past three months, several of my utility bills have either been paid late or not at all, despite having sufficient funds in my account. This has resulted in late fees and service interruptions that have caused significant inconvenience. I have spoken to your support team on multiple occasions, but the issue remains unresolved. I require an immediate fix to the automated payment system, reimbursement for all late fees, and assurance that my future payments will be processed correctly.",
+        "entity_action": "automated bill payment$system issue",
+        "all_entity_action": "automated bill payment$system issue, utility bills$late payment, funds$sufficient, late fees$reimbursement, service interruptions$inconvenience, support team$unresolved, payment system$fix, future payments$assurance"
       },
       {
-        "sample_text": "Hi, I just wanted to say that your pizza was absolutely delicious!",
-        "class": "Compliments and Feedback",
-        "class number": 8
+        "sample_text": "Dear Customer Service, I am writing to express my dissatisfaction with my recent purchase. The product I received was not only the wrong color but also damaged upon arrival. Additionally, the packaging was poorly done, leading to several components being broken. I have already tried reaching out through the chat support, but the issue remains unresolved. I demand a replacement of the correct item, proper packaging this time, and compensation for the inconvenience caused.",
+        "entity_action": "product$wrong color",
+        "all_entity_action": "product$wrong color, product$damaged, packaging$poor, components$broken, replacement$request, inconvenience$compensation"
       },
       {
-        "sample_text": "Hello, I wanted to compliment your delivery driver for being so friendly and polite!",
-        "class": "Compliments and Feedback",
-        "class number": 8
+        "sample_text": "Hello, I placed an order for a new laptop two weeks ago, and the delivery status still shows 'processing'. This delay is unacceptable as I needed the laptop for an important project. Despite multiple follow-ups, I have not received any clear update on when my order will be shipped. I need an immediate update on the status of my order and assurance that it will be expedited to meet my needs.",
+        "entity_action": "order$delay",
+        "all_entity_action": "order$delay, delivery status$processing, follow-ups$no response, order status$update, order$expedite"
       },
       {
-        "sample_text": "Hey there! I just wanted to say that your customer service team was very helpful and attentive!",
-        "class": "Compliments and Feedback",
-        "entity_action": "customer service team$was very helpful and attentive",
-        "class number": 8
+        "sample_text": "Dear Support Team, I am extremely frustrated with the recurring issues I have faced with your subscription service. Despite setting up automatic renewals, my account was deactivated last month without any notice. I lost access to several essential features and faced disruptions in my workflow. I request an immediate reactivation of my account, a thorough investigation into why this happened, and compensation for the disruption caused.",
+        "entity_action": "subscription service$deactivation",
+        "all_entity_action": "subscription service$deactivation, automatic renewals$setup, account$reactivation, investigation$request, disruption$compensation"
       },
       {
-        "sample_text": "Hi, I need to check the balance of my checking account before making a purchase.",
-        "class": "Account Balance Inquiry",
-        "entity_action": "checking account$check balance",
-        "class number": 1
+        "sample_text": "To Whom It May Concern, I recently made a purchase during your flash sale event, but I did not receive the discount that was advertised. I have double-checked the promotion details and ensured that I met all the criteria. However, my invoice shows the full price being charged. I have tried contacting your customer service, but the issue has not been resolved. I expect a prompt correction of my invoice to reflect the discount and a refund of the excess amount charged.",
+        "entity_action": "flash sale$discount missing",
+        "all_entity_action": "flash sale$discount missing, promotion details$met criteria, invoice$full price, customer service$unresponsive, invoice$correction, refund$excess amount"
       },
       {
-        "sample_text": "Hello, could you please provide me with the balance of my savings account?",
-        "class": "Account Balance Inquiry",
-        "entity_action": "savings account$provide balance",
-        "class number": 1
+        "sample_text": "Dear E-commerce Team, I am writing to address a significant problem with the delivery of my order. The courier service left the package at the wrong address, and I have been unable to retrieve it. Despite numerous attempts to contact both your support team and the courier, there has been no resolution. This is causing me great inconvenience, and I require an immediate replacement of my order or a full refund if the package cannot be recovered.",
+        "entity_action": "delivery$wrong address",
+        "all_entity_action": "delivery$wrong address, package$unretrieved, support team$no resolution, courier$unresponsive, order$replacement, refund$request"
       },
       {
-        "sample_text": "Hello, the mobile app is not displaying recent transactions. Can you troubleshoot?",
-        "class": "Mobile Banking Support",
-        "entity_action": "mobile app$not displaying recent transactions",
-        "class number": 5
+        "sample_text": "Hello, I recently returned an item as per your return policy, but I have not received any confirmation or refund. It has been over three weeks, and this delay is causing financial inconvenience. I need an immediate update on the status of my return and assurance that the refund will be processed without further delay.",
+        "entity_action": "return$no confirmation",
+        "all_entity_action": "return$no confirmation, refund$pending, delay$three weeks, financial inconvenience$impact, return status$update, refund$process"
       },
       {
-        "sample_text": "Hey, I'm unable to update the mobile app to the latest version. Can you provide guidance?",
-        "class": "Mobile Banking Support",
-        "entity_action": "mobile app$unable to update",
-        "class number": 5
+        "sample_text": "Dear Customer Support, I am extremely disappointed with the customer service I received regarding my recent complaint. My order arrived incomplete, missing several key items. I contacted support immediately, but my issue has not been addressed satisfactorily. I need the missing items shipped to me as soon as possible and an explanation as to why this error occurred.",
+        "entity_action": "order$incomplete",
+        "all_entity_action": "order$incomplete, items$missing, customer service$poor response, missing items$ship, error$explanation"
       },
       {
-        "sample_text": "Hi, I'm receiving an error message when trying to link accounts on the mobile app. Can you assist?",
-        "class": "Mobile Banking Support",
-        "entity_action": "error message$link accounts",
-        "class number": 5
+        "sample_text": "Hello, I purchased a gift card from your website, but the recipient is unable to redeem it due to an 'invalid code' error. This is highly embarrassing as it was meant to be a gift for a special occasion. I need this issue resolved immediately and a new gift card issued to the recipient.",
+        "entity_action": "gift card$invalid code",
+        "all_entity_action": "gift card$invalid code, recipient$unable to redeem, issue$resolution, new gift card$issue"
       },
       {
-        "sample_text": "Hello, I'm trying to find the mobile check deposit feature in the app. Can you help?",
-        "class": "Mobile Banking Support",
-        "entity_action": "mobile check deposit feature$trying to find",
-        "class number": 5
+        "sample_text": "Dear E-commerce Team, I recently placed an order for a custom product that was supposed to be delivered within a week. However, it has now been over a month, and I have not received any updates on the status of my order. This delay is unacceptable as the product was intended for a specific event. I need an immediate status update and assurance that my order will be prioritized.",
+        "entity_action": "custom product$delivery delay",
+        "all_entity_action": "custom product$delivery delay, order status$update, order$prioritize"
       },
       {
-        "sample_text": "Hey, I'm consolidating my accounts and need to close some. Can you assist?",
-        "class": "Account Closure",
-        "entity_action": "accounts$close some",
-        "class number": 6
+        "sample_text": "Hello, I am writing to report a serious issue with my recent purchase. The product description on your website was misleading, and the item does not meet my expectations. Additionally, the customer reviews seem to have been filtered to only show positive feedback, which influenced my purchase decision. I request a full refund and a review of your product listing practices.",
+        "entity_action": "product description$misleading",
+        "all_entity_action": "product description$misleading, item$not meet expectations, customer reviews$filtered, refund$request, product listing$review"
       },
       {
-        "sample_text": "Hi, I'm dissatisfied with the bank's services and want to close my accounts.",
-        "class": "Account Closure",
-        "entity_action": "accounts$close",
-        "class number": 6
+        "sample_text": "Dear Customer Support, I am writing to complain about the poor quality of the product I received. The item is significantly different from the images and description on your website. Additionally, it stopped working after just a few days of use. I demand a full refund and compensation for the inconvenience caused, as well as an explanation for this discrepancy.",
+        "entity_action": "product$poor quality",
+        "all_entity_action": "product$poor quality, images$different, description$misleading, product$stopped working, refund$request, inconvenience$compensation, discrepancy$explanation"
       },
       {
-        "sample_text": "Hello, I'm closing my account as I'm switching to a different bank. How do I proceed?",
-        "class": "Account Closure",
-        "entity_action": "account$closing",
-        "class number": 6
+        "sample_text": "Hello, I recently experienced a technical issue with your website that caused my order to be duplicated. I was charged twice for the same item and received two shipments. I need an immediate correction to my account, a refund for the duplicate charge, and instructions on how to return the extra item.",
+        "entity_action": "order$duplicated",
+        "all_entity_action": "order$duplicated, account$correction, refund$duplicate charge, item$return instructions"
       },
       {
-        "sample_text": "Hey there! I want to close my joint account with another person. Can you help?",
-        "class": "Account Closure",
-        "entity_action": "join account$close",
-        "class number": 6
+        "sample_text": "Dear E-commerce Team, I am writing to report a problem with the loyalty points system. Despite making several qualifying purchases, my loyalty points balance has not been updated. I rely on these points for future discounts and rewards. Please investigate this issue and ensure that my points are correctly credited to my account.",
+        "entity_action": "loyalty points$not updated",
+        "all_entity_action": "loyalty points$not updated, purchases$qualifying, points$credited"
       },
       {
-        "sample_text": "Hi, I've recently changed residences and need to update my address. Can you help me?",
-        "class": "Address Change",
-        "entity_action": "address$update",
-        "class number": 7
+        "sample_text": "Hello, I pre-ordered a product from your website with the promise of receiving it on the release date. However, the release date has passed, and I have not received any shipping confirmation. This delay is unacceptable, and I need an immediate update on when my order will be shipped. Additionally, I request compensation for the delay.",
+        "entity_action": "pre-order$delay",
+        "all_entity_action": "pre-order$delay, shipping confirmation$missing, order status$update, compensation$delay"
       },
       {
-        "sample_text": "Hello, I need to change my address to continue receiving statements. How can I do that?",
-        "class": "Address Change",
-        "entity_action": "address$change",
-        "class number": 7
+        "sample_text": "Dear Customer Service, I am writing to address an issue with a promotional offer I tried to use. The discount code provided in your marketing email did not work at checkout. Despite meeting all the criteria, the system kept rejecting the code. I need assistance in applying the discount and an explanation as to why this occurred.",
+        "entity_action": "discount code$not working",
+        "all_entity_action": "discount code$not working, marketing email$provided, criteria$met, discount$apply, issue$explanation"
       },
       {
-        "sample_text": "Hey there! I want to update my address for all my accounts. Can you assist me?",
-        "class": "Address Change",
-        "entity_action": "address$update",
-        "class number": 7
-      },
-      {
-        "sample_text": "Hello, I want to update my address to ensure I receive important communications. Can you assist?",
-        "class": "Address Change",
-        "entity_action": "address$update",
-        "class number": 7
-      },
-      {
-        "sample_text": "Hi, I need to order new checks for my checking account. How can I do that?",
-        "class": "Check Ordering",
-        "entity_action": "checks$order new",
-        "class number": 8
-      },
-      {
-        "sample_text": "Hello, I want to order checks with a new design for my account. Can you assist?",
-        "class": "Check Ordering",
-        "entity_action": "checks$order with a new design",
-        "class number": 8
-      },
-      {
-        "sample_text": "Hey there! I need to order a new checkbook as I've run out of checks. Can you help?",
-        "class": "Check Ordering",
-        "entity_action": "order$new checkbook",
-        "class number": 8
-      },
-      {
-        "sample_text": "Hi, I want to order checks for the first time. How do I go about it?",
-        "class": "Check Ordering",
-        "entity_action": "checks$order for the first time",
-        "class number": 8
-      },
-      {
-        "sample_text": "Hey there! Your pizza never fails to satisfy my cravings. Thank you for always delivering excellence!",
-        "class": "Compliments and Feedback",
-        "class number": 8
-      },
-      {
-        "sample_text": "Hi, I just wanted to say that your online ordering process is seamless and hassle-free. Great job!",
-        "class": "Compliments and Feedback",
-        "class number": 8
-      },
-      {
-        "sample_text": "Hello, I wanted to give feedback on the friendliness and professionalism of your staff. They're amazing!",
-        "class": "Compliments and Feedback",
-        "entity_action": "staff$friendliness and professionalism",
-        "class number": 8
-      },
-      {
-        "sample_text": "Hi, I'd like to request extra cheese on my pizza, please.",
-        "class": "Special Requests",
-        "entity_action": "pizza$extra cheese",
-        "class number": 9
-      },
-      {
-        "sample_text": "Hello, can you make my pizza with half pepperoni and half mushrooms?",
-        "class": "Special Requests",
-        "entity_action": "pizza$make half pepperoni half mushrooms",
-        "class number": 9
-      },
-      {
-        "sample_text": "Hey there! I'm allergic to onions. Can you ensure my order is onion-free?",
-        "class": "Special Requests",
-        "class number": 9
-      },
-      {
-        "sample_text": "Hi, can you make my pizza well-done with crispy crust?",
-        "class": "Special Requests",
-        "class number": 9
-      },
-      {
-        "sample_text": "Hello, I'd like to request extra sauce on the side for dipping.",
-        "class": "Special Requests",
-        "class number": 9
-      },
-      {
-        "sample_text": "Hey there! Can you make my salad without croutons?",
-        "class": "Special Requests",
-        "class number": 9
-      },
-      {
-        "sample_text": "Hi, I'd like my pizza sliced into squares instead of traditional wedges.",
-        "class": "Special Requests",
-        "class number": 9
-      },
-      {
-        "sample_text": "Hello, can you make my pasta dish with gluten-free noodles?",
-        "class": "Special Requests",
-        "class number": 9
-      },
-      {
-        "sample_text": "Hey there! I'd like to request extra garlic butter sauce for my breadsticks.",
-        "class": "Special Requests",
-        "class number": 9
-      },
-      {
-        "sample_text": "Hi, can you make my pizza with a gluten-free crust?",
-        "class": "Special Requests",
-        "class number": 9
-      },
-      {
-        "sample_text": "Hello, I'd like to customize my pizza with BBQ sauce instead of marinara.",
-        "class": "Special Requests",
-        "class number": 9
-      },
-      {
-        "sample_text": "Hey there! Can you make my pizza with a mix of mozzarella and cheddar cheese?",
-        "class": "Special Requests",
-        "class number": 9
-      },
-      {
-        "sample_text": "Hi, can you add extra olives to my pizza, please?",
-        "class": "Special Requests",
-        "class number": 9
-      },
-      {
-        "sample_text": "Hello, I'm vegetarian. Can you ensure my pizza has no meat toppings?",
-        "class": "Special Requests",
-        "class number": 9
-      },
-      {
-        "sample_text": "Hey there! Can you make my pizza with a stuffed crust?",
-        "class": "Special Requests",
-        "class number": 9
-      },
-      {
-        "sample_text": "Hi, I'd like to request extra spice on my wings.",
-        "class": "Special Requests",
-        "class number": 9
-      },
-      {
-        "sample_text": "Hello, can you make my pizza with a combination of regular and spicy sausage?",
-        "class": "Special Requests",
-        "class number": 9
-      },
-      {
-        "sample_text": "Hey there! Can you add pineapple to my pizza, please?",
-        "class": "Special Requests",
-        "class number": 9
-      },
-      {
-        "sample_text": "Hi, I'm lactose intolerant. Can you make my pizza with dairy-free cheese?",
-        "class": "Special Requests",
-        "class number": 9
-      },
-      {
-        "sample_text": "Hello, I'd like to request extra marinara sauce for my pasta.",
-        "class": "Special Requests",
-        "class number": 9
+        "sample_text": "Hello, I recently upgraded my membership to your premium service, but I have not received access to the promised benefits. The main reason for my upgrade was to take advantage of these exclusive offers. I need an immediate resolution to this issue and assurance that I will receive all the benefits outlined in the membership agreement.",
+        "entity_action": "membership upgrade$benefits missing",
+        "all_entity_action": "membership upgrade$benefits missing, exclusive offers$access, issue$resolution, benefits$assurance"
       }
     ]
   }
