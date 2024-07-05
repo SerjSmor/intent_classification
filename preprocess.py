@@ -1,12 +1,12 @@
+import json
 from typing import Dict, List
 
 import pandas as pd
 from sklearn.model_selection import train_test_split
 
-from app.utils import build_prompt
+from app.utils import build_prompt, build_entity_extraction_prompt, ENTITY_EXTRACTION_DATASET_JSON
 from consts import GENERATOR_LABELS, PROMPT_OPTIONS, GENERATOR_TEXT, GENERATOR_TEXT_NO_COMPANY
 from dataset import _load_dataset, load_main_dataset, load_simple_dataset
-
 
 def extract_prompt(examples, no_number_prompt=False):
     class_names_str = ""
@@ -26,15 +26,55 @@ def extract_prompt(examples, no_number_prompt=False):
     '''
     return prompt
 
-def preprocess(dataset: List[Dict] = None, save_to_disk=True, no_number_prompt=False):
+def parse_entity_extraction_dataset(json_dataset_path) -> pd.DataFrame:
+    f = open(json_dataset_path)
+    dataset = json.load(f)
+    results = []
+    for company_dict in dataset:
+        for row in company_dict["Examples"]:
+            if "entity_action" not in row:
+                continue
+            result = {"sample_text": row["sample_text"], GENERATOR_TEXT: build_entity_extraction_prompt(row['sample_text']),
+                      GENERATOR_LABELS: row["entity_action"], "task": "entity_extraction"}
+            result[GENERATOR_TEXT_NO_COMPANY] = result[GENERATOR_TEXT]
+            results.append(result)
+
+    return pd.DataFrame(results)
+
+
+def preprocess(dataset: List[Dict] = None, no_classification_task=False, save_to_disk=True, no_number_prompt=False, positive_samples=False, entity_extraction_task=False):
+    print(f"(preprocess) no number prompt: {no_number_prompt}, positive samples: {positive_samples}, "
+          f"entity_extraction_task: {entity_extraction_task}")
     if not dataset:
         dataset = load_main_dataset()
 
+
     all_df = prepare_dataset(dataset, no_number_prompt=no_number_prompt)
+    print(f"total samples: {all_df.shape[0]}")
 
     df_train, df_test = train_test_split(all_df, test_size=0.2, random_state=42)
     df_train_positive_df = create_positive_negative_samples(all_df)
-    print(f"total samples: {all_df.shape[0]}")
+    if entity_extraction_task:
+        entity_extraction_df = parse_entity_extraction_dataset(ENTITY_EXTRACTION_DATASET_JSON)
+        # entity_extraction_df = pd.concat([entity_extraction_df.copy(), entity_extraction_df.copy(), entity_extraction_df.copy(),
+        #                                   entity_extraction_df.copy(), entity_extraction_df.copy(), entity_extraction_df.copy(),
+        #                                   entity_extraction_df.copy(), entity_extraction_df.copy()
+        #                                   ])
+
+        if no_classification_task:
+            df_train, df_test = train_test_split(entity_extraction_df, test_size=0.2, random_state=42)
+        else:
+            sample_texts = entity_extraction_df["sample_text"].tolist()
+            df_train_entity, df_test_entity = train_test_split(entity_extraction_df, test_size=0.2, random_state=42)
+
+            df_train = df_train[~df_train["sample_text"].isin(sample_texts)]
+            df_test = df_test[~df_test["sample_text"].isin(sample_texts)]
+            df_train = pd.concat([df_train, df_train_entity], ignore_index=True)
+            df_test = pd.concat([df_test, df_test_entity], ignore_index=True)
+
+            # df_train = pd.concat([df_train, entity_extraction_df], ignore_index=True)
+        print(f"total entity extraction samples: {entity_extraction_df.shape[0]}")
+        print(f"total train: {df_train.shape[0]}")
     if save_to_disk:
         df_train.to_csv("data/train.csv", index=False)
         df_train_positive_df.to_csv("data/train_positive.csv", index=False)
@@ -62,6 +102,7 @@ def prepare_dataset(dataset, no_number_prompt=False):
             lambda row: build_prompt(row["sample_text"], row[PROMPT_OPTIONS], company_specific=False), axis=1)
 
         df["dataset_name"] = company_name
+        df["task"] = "classification"
         all_df = pd.concat([all_df, df])
         print(f"company: {company_name}, samples: {df.shape[0]}")
     return all_df

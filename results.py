@@ -1,10 +1,16 @@
 import argparse
 
+import evaluate
 import pandas as pd
+from datasets import Dataset
 from sklearn.metrics import classification_report
+from transformers import AutoTokenizer
 
-from consts import DEFAULT_PREDICTION_CSV
+from app.model import IntentClassifier
+from consts import DEFAULT_PREDICTION_CSV, TEST_CSV, BEST_ENTITY_EXTRACTION_MODEL_COMBINED, GENERATOR_TEXT_NO_COMPANY, \
+    GENERATOR_LABELS
 
+bleu = evaluate.load("sacrebleu")
 
 def extract_class_name(prediction_text: str) -> str:
     if prediction_text == pd.isnull(prediction_text):
@@ -63,6 +69,21 @@ def calculate_classification_report(df):
         classification_report(df["class_name"], df["generator_label_prediction"], output_dict=True)
 
     return classification_report_dict, miss_percentage
+
+
+def calculate_bleu_file(output_csv=TEST_CSV, model_path=BEST_ENTITY_EXTRACTION_MODEL_COMBINED,
+                        text_column=GENERATOR_TEXT_NO_COMPANY, label_column=GENERATOR_LABELS, tasks=["entity_extraction"]):
+    df_validation = pd.read_csv(output_csv)
+    df_validation = df_validation[df_validation["task"].isin(tasks)]
+    df_validation = df_validation[[text_column, label_column]]
+
+    m = IntentClassifier(model_path)
+    decoded_preds = []
+    for index, row in df_validation.iterrows():
+        decoded_preds.append(m.raw_predict(row[text_column]))
+
+    result = bleu.compute(predictions=decoded_preds, references=df_validation[label_column].tolist())
+    return result
 
 
 if __name__ == '__main__':

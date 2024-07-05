@@ -1,13 +1,17 @@
 # ml
 torch
-transformers
 scikit-learn
 pandas
 setfit
 sentencepiece
-accelerate
+# hugging face
+transformers
 peft
+accelerate
 datasets
+evaluate
+sacrebleu
+
 openai
 # running notebooks
 jupyter

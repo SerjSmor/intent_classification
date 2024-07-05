@@ -38,39 +38,53 @@ ATIS_INTENT_MAPPING = {
 }
 
 def test_atis_dataset(full_model_path, intent_mapping=ATIS_INTENT_MAPPING, save_file=True, use_default_labels=False,
-                      no_company_specific=True, no_number_prompt=False):
+                      no_company_specific=True, no_number_prompt=False, extract_entities=False):
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     model = IntentClassifier(model_name=full_model_path, device=device)
-
+    print(f"extract entities: {extract_entities}")
     dataset = load_dataset("tuetschek/atis")
     all_intents = [row["intent"] for row in dataset["test"]]
     intents = np.unique(all_intents)
 
     prompt_options = create_prompt_options(intent_mapping, intents, no_number_prompt, use_default_labels)
-
     results = []
     company_name = "Atis Airlines"
     company_specific = "Airlines flights, meals, seats customer requests"
 
+    extraction_model = None
+    if extract_entities:
+        extraction_model = IntentClassifier(ANOTHER_MODEL)
+    unique_texts = []
     for row in tqdm(dataset["test"]):
         intent = row["intent"]
+        text = row["text"]
+        original = ""
         if intent not in intent_mapping:
             continue
+        if text in unique_texts:
+            continue
 
-        input_text = build_prompt(row["text"], prompt_options, company_name, company_specific, no_company_specific)
+        if extract_entities:
+            original = text
+            # text = model.raw_predict(build_entity_extraction_prompt(text))
+            text = extraction_model.raw_predict(build_entity_extraction_prompt(text))
+        input_text = build_prompt(text, prompt_options, company_name, company_specific, no_company_specific)
         prediction = model.raw_predict(input_text)
         prediction = prediction.replace("Class name: ", "")
         # keywords = model.raw_predict(f"All of the verbs: {row['text']}")
         y = intent_mapping[intent]
         if use_default_labels:
             y = row["intent"]
+        result = {"prediction": prediction, "y": y, "text": text, "prompt": input_text,
+                        "prompt_options": prompt_options}
+        if len(original) > 0:
+            result["original"] = original
+        results.append(result)
 
-        results.append({"prediction": prediction, "y": y, "text": row["text"], "prompt": input_text,
-                        "prompt_options": prompt_options})
-
+        unique_texts.append(row["text"])
 
     df_results = pd.DataFrame(results)
-    print(f"## printing atis predictions distribution for model: {full_model_path}")
+    print(f"## total rows: {len(results)}, printing atis predictions distribution for model: {full_model_path}")
     print(df_results["prediction"].value_counts())
 
     if save_file:
