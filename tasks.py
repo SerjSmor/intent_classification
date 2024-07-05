@@ -151,7 +151,7 @@ def atis_pipeline(c, name="", model_name=FLAN_T5_BASE, epochs=15, batch_size=8, 
 def find_epoch_experiments(c, model_name, no_company_specific=True, use_positive=False, datasets=NON_ATIS_DATASETS, no_number_prompt=False,
                            use_default_labels=False, entity_extraction_task=False, no_classification_task=False, should_archive=False):
     small_model_epochs = list(range(1, 9))
-    base_model_epochs = list(range(1, 6))
+    base_model_epochs = list(range(1, 4))
     # base_model_epochs = list(range(9, 10))
     large_model_epochs = list(range(1, 4))
 
@@ -233,7 +233,7 @@ def train_entity_extraction(c):
     # find_epoch_experiments(c, FLAN_T5_BASE, entity_extraction_task=True, no_classification_task=True,
     #                        should_archive=True)
     find_epoch_experiments(c, FLAN_T5_BASE, entity_extraction_task=True, no_classification_task=False,
-                           should_archive=True, use_default_labels=True)
+                           should_archive=True, no_number_prompt=True)
 
 
 @task

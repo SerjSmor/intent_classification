@@ -8,7 +8,7 @@ from transformers import AutoTokenizer
 
 from app.model import IntentClassifier
 from consts import DEFAULT_PREDICTION_CSV, TEST_CSV, BEST_ENTITY_EXTRACTION_MODEL_COMBINED, GENERATOR_TEXT_NO_COMPANY, \
-    GENERATOR_LABELS
+    GENERATOR_LABELS, BLEU_PREDICTIONS_CSV
 
 bleu = evaluate.load("sacrebleu")
 
@@ -78,11 +78,15 @@ def calculate_bleu_file(output_csv=TEST_CSV, model_path=BEST_ENTITY_EXTRACTION_M
     df_validation = df_validation[[text_column, label_column]]
 
     m = IntentClassifier(model_path)
-    decoded_preds = []
+    pred_results = []
     for index, row in df_validation.iterrows():
-        decoded_preds.append(m.raw_predict(row[text_column]))
+        decoded_pred = m.raw_predict(row[text_column])
+        pred_results.append({"text": row[text_column], "pred": decoded_pred, "label": row[label_column]})
 
-    result = bleu.compute(predictions=decoded_preds, references=df_validation[label_column].tolist())
+    result = bleu.compute(predictions=[v["pred"] for v in pred_results], references=[v["label"] for v in pred_results])
+    df = pd.DataFrame(pred_results)
+    df.to_csv(BLEU_PREDICTIONS_CSV, index=False)
+
     return result
 
 
