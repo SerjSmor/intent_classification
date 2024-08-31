@@ -31,7 +31,7 @@ TEST_CSV = "data/test.csv"
 
 # hyperparams
 TWENTY_EPOCHS = 1
-DEFAULT_BATCH_SIZE = 16
+DEFAULT_BATCH_SIZE = 8
 DEFAULT_EXPERIMENT_NAME = "test"
 DEFAULT_WARMUP_STEPS = 500
 DEFAULT_WEIGHT_DECAY = 0.01
@@ -45,7 +45,11 @@ ATIS_PREDICTIONS_CSV = "results/atis_predictions.csv"
 ATIS_TEST_SET_CLASSIFICATION_REPORT_CSV = "results/atis_classification_report.csv"
 TEST_SET_CLASSIFICATION_REPORT_CSV = "results/test_set_classification_report.csv"
 BLEU_RESULTS_JSON = "results/bleu_results.json"
-
+BLEU_CLASSIFICATION_RESULTS = "results/bleu_classification.json"
+BLEU_PREDICTIONS_CSV = "results/bleu_predictions.csv"
+HUNDRED_COMPANIES_DATASET = "data/100_companies_1_shot.json"
+BANKING77_PREDICTIONS_CSV = "data/banking77_predictions.csv"
+BANKING77_CLASSIFICATION_REPORT_CSV = "data/banking77_classification_report.txt"
 # best model
 BEST_MODEL_W87 = "archived_experiments/f1w_0.87_m:flan-t5-base_e:2_b:8_t:06232024-23:03:05_ncs:True_ups:False_udl:False_nnp:True_best/models/flan-t5-base"
 BEST_MODEL_W90 = "archived_experiments/f1w_0.90_m:flan-t5-base_e:2_b:8_t:06282024-11:55:57_ncs:True_ups:False_udl:False_nnp:True_eet:False/models/flan-t5-base"
@@ -55,3 +59,6 @@ BEST_SHORT_FORMAT_SINGLE_TASK_EXTRACTION_MODEL = "archived_experiments/with_shor
 ANOTHER_MODEL = "archived_experiments/f1w_0.00_no_classification_m:flan-t5-base_e:5_b:8_t:06302024-08:46:19/models/flan-t5-base"
 
 BEST_ENTITY_EXTRACTION_MODEL_COMBINED = "archived_experiments/f1w_0.88_m:flan-t5-base_e:3_b:8_t:06292024-14:04:22_ncs:True_ups:False_udl:False_nnp:True_eet:True/models/flan-t5-base"
+
+# best banking model
+BEST_BANKING_MODEL = "archived_experiments/b0.00_f1w_0.86_m:flan-t5-base_e:3_b:8_t:07122024-14:28:46_ncs:True_ups:False_udl:False_nnp:True_eet:False/models/flan-t5-base"
