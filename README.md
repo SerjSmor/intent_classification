@@ -13,11 +13,17 @@ Throughout the project I will refer to this model as intent-classifier, and it w
 
 | Model name             | Weighted F1 AVG | Accuracy | Num parameters |
 |------------------------|-----------------|----------|---------------|
-| intent-classifier      | 0.87             | 0.86     | 248M          |
+| intent-classifier      | 0.84             | 0.82     | 248M          |
 | setfit (BAAI/bge-small-en-v1.5) | 0.687            | 0.58     | 33.4M         |
 | bart-mnli              | 0.4             | 0.32     | 406M          |
 | flan-t5-base           | 0.006           | 0.01     | 248M          |
 
+# Zero shot Leaderboard on Banking77
+
+| Model name             | Weighted F1 AVG | Accuracy | Num parameters |
+|------------------------|-----------------|----------|---------------|
+| intent-classifier      | 0.56             | 0.58     | 248M          |
+| setfit (BAAI/bge-small-en-v1.5) | 0.68            | 0.69     | 33.4M         |
 
 # Setup
 Create virtualenv 
