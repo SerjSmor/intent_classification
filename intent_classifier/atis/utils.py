@@ -7,8 +7,8 @@ from datasets import load_dataset
 from tqdm import tqdm
 from sklearn.metrics import classification_report
 
-from app.model import IntentClassifier
-from app.utils import get_model_suffix, build_prompt, build_entity_extraction_prompt
+from intent_classifier.model import IntentClassifier
+from intent_classifier.utils import get_model_suffix, build_prompt, build_entity_extraction_prompt
 from consts import ATIS_TEST_SET_CLASSIFICATION_REPORT_CSV, ATIS_PREDICTIONS_CSV, FLAN_T5_SMALL, LOCAL_FLAN_T5_SMALL, \
     BEST_LONG_FORMAT_SINGLE_TASK_EXTRACTION_MODEL, BEST_SHORT_FORMAT_SINGLE_TASK_EXTRACTION_MODEL, ANOTHER_MODEL
 

@@ -5,7 +5,7 @@ from typing import List
 
 import pandas as pd
 
-from app.banking77.banking_utils import BANKING77_INTENT_MAPPING
+from intent_classifier.banking77.banking_utils import BANKING77_INTENT_MAPPING
 
 
 def analyze(predictions: List[str], label_names: List[str]) -> List[str]:

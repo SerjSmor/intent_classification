@@ -2,7 +2,7 @@ from typing import Optional
 
 from transformers import T5ForConditionalGeneration, T5Tokenizer
 
-from app.utils import build_prompt
+from intent_classifier.utils import build_prompt
 
 
 class IntentClassifier:

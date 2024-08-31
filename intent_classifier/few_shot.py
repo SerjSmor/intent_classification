@@ -12,12 +12,12 @@ from sklearn.metrics import classification_report, precision_recall_fscore_suppo
 from sklearn.metrics.pairwise import cosine_similarity
 from tqdm import tqdm
 
-from app.atis.utils import ATIS_INTENT_MAPPING, create_prompt_options
-from app.banking77.banking_utils import BANKING77_INTENT_MAPPING
-from app.embeddings import Embedder
-from app.model import IntentClassifier
-from app.utils import build_prompt
-from app.verbalizer import analyze
+from intent_classifier.atis.utils import ATIS_INTENT_MAPPING, create_prompt_options
+from intent_classifier.banking77.banking_utils import BANKING77_INTENT_MAPPING
+from intent_classifier.embeddings import Embedder
+from intent_classifier.model import IntentClassifier
+from intent_classifier.utils import build_prompt
+from intent_classifier.verbalizer import analyze
 from consts import BEST_BANKING_MODEL
 
 BAII_SMALL = "BAAI/bge-small-en-v1.5"
