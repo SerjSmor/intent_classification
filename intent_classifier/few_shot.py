@@ -8,7 +8,7 @@ import pandas as pd
 from datasets import load_dataset
 from sentence_transformers import SentenceTransformer
 from setfit import get_templated_dataset, TrainingArguments, SetFitModel, Trainer
-from sklearn.metrics import classification_report
+from sklearn.metrics import classification_report, precision_recall_fscore_support
 from sklearn.metrics.pairwise import cosine_similarity
 from tqdm import tqdm
 
@@ -279,6 +279,20 @@ def banking77_pipeline(use_similarity=True, few_shot_n = 0, top_n=5, use_verbali
     zero_shot.pipeline(test_dataset, use_similarity=use_similarity, top_n_similarity=top_n, use_verbalizer=True)
 
 
+def compute_metrics(pred):
+    labels = pred.label_ids
+    preds = pred.predictions.argmax(-1)
+
+    precision, recall, f1, _ = precision_recall_fscore_support(
+        labels, preds, average='weighted')
+
+    # You can include any other metrics you want here
+    return {
+        'precision': precision,
+        'recall': recall,
+        'f1': f1,
+    }
+
 
 def setfit_zero_shot_pipeline_banking77(model_name="BAAI/bge-small-en-v1.5"):
 
@@ -309,20 +323,39 @@ def setfit_zero_shot_pipeline_banking77(model_name="BAAI/bge-small-en-v1.5"):
         args=args,
         train_dataset=train_dataset,
         eval_dataset=test_dataset,
+        # metric="f1",
+        # metric_kwargs={"weighted": ""}
+        # compute_metrics=compute_metrics
+
     )
     trainer.train()
 
     metrics = trainer.evaluate()
     print(metrics)
 
+    # Evaluate the model
+    preds = trainer.model.predict(df["text"].tolist())
+    y_true = df["label"].tolist()
+
+    # Calculate weighted metrics
+    precision, recall, f1, _ = precision_recall_fscore_support(
+        y_true, preds, average='weighted'
+    )
+
+    # Print the metrics
+    print(f"Weighted Precision: {precision:.4f}")
+    print(f"Weighted Recall: {recall:.4f}")
+    print(f"Weighted F1-Score: {f1:.4f}")
+
 
 
 if __name__ == '__main__':
-    atis_pipeline(n_shot=0, n_similarity=10, use_similarity=False, embedding_model=BAII_SMALL, use_only_similarity=False)
+    # atis_pipeline(n_shot=5, n_similarity=20, use_similarity=True, embedding_model=BAII_SMALL, use_only_similarity=False)
+    # banking77_pipeline(use_similarity=False, top_n=20, few_shot_n=5, embeddings_model=BAII_LARGE)
 
     # banking77_pipeline(True, top_n=20, few_shot_n=5, embeddings_model=BAII_LARGE)
     # banking77_pipeline(True, top_n=5, few_shot_n=0, num_samples=100, embeddings_model=BAII_SMALL, use_only_similarity=False)
-    # setfit_zero_shot_pipeline_banking77(model_name="BAAI/bge-small-en-v1.5")
+    setfit_zero_shot_pipeline_banking77(model_name="BAAI/bge-small-en-v1.5")
 
     # setfit_zero_shot_pipeline_banking77(model_name="Snowflake/snowflake-arctic-embed-m-v1.5")
 

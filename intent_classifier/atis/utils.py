@@ -28,7 +28,7 @@ ATIS_INTENT_MAPPING = {
     'flight': "Flight Booking Request",
     # 'flight+airfare': "Flight and Fare Inquiry",
     'flight_no': "Flight Number Inquiry",
-    'flight_time': "Flight Schedule Inquiry",
+    'flight_time': "Time Inquiry",
     'ground_fare': "Ground Transportation Cost Inquiry",
     'ground_service': "Ground Transportation Inquiry",
     'ground_service+ground_fare': "Airport Ground Transportation and Cost Query",
